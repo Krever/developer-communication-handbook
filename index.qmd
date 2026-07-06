@@ -91,7 +91,7 @@ important to do it effectively: extract as much _correct_ information as possibl
 <tr>
   <td valign="top">
     <ul>
-      <li>Business people think in terms of happy paths; edge cases and errors are hard for them to consider.</li>
+      <li>Business people think in terms of happy paths, and edge cases or errors are hard for them to consider.</li>
     </ul>
   </td>
   <td valign="top">
@@ -146,7 +146,8 @@ important to do it effectively: extract as much _correct_ information as possibl
   </td>
   <td valign="top">
     <ul>
-      <li>Tell them the cost when it matters; they are often keen to adjust the requirements once they see the price.</li>
+      <li>Tell them the cost when it matters, since they are often keen to adjust the requirements once they see the
+        price.</li>
     </ul>
   </td>
 </tr>
@@ -160,8 +161,8 @@ important to do it effectively: extract as much _correct_ information as possibl
   </td>
   <td valign="top">
     <ul>
-      <li>Propose solutions instead of asking for direction; criticising a proposal takes far less of their attention
-        than producing a starting point.</li>
+      <li>Propose solutions instead of asking for direction, because criticising a proposal takes far less of their
+        attention than producing a starting point.</li>
     </ul>
   </td>
 </tr>
@@ -183,42 +184,159 @@ important to do it effectively: extract as much _correct_ information as possibl
 
 ### Providing estimates
 
-As a software developer you will be frequently asked about
+As a software developer you will be asked for estimates constantly, whether you like it or not. It may not look like a
+communication problem at first, but consider: you say "about a week", meaning the coding effort on the happy path, and
+the asker hears "live in production for everyone, next Friday". The number was fine, but its meaning got lost on the
+way.
+A good estimate is a number that means the same thing on both sides.
 
-**Understand**
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People ask for estimates for many different reasons: internal planning, a public announcement, an external
+        deadline such as a legal requirement, comparing work items by cost, or pricing work for a client. And sometimes
+        there is no reason at all. Each calls for a different kind of answer.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>If the reason isn't clear, <em>always</em> ask why the number is needed. It's the single most useful
+        question in estimating. If no reason can be given, push back on the estimate itself.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Some reasons call for an estimate and others for a commitment, but people rarely distinguish the two words.
+<ul>
+<li><strong>Estimate</strong>: an approximation of the effort needed to deliver.</li>
+<li><strong>Commitment</strong>: a promise that something will be delivered by a certain date.</li>
+</ul>
+</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Explicitly confirm which of the two is needed. Don't assume the asker knows the difference.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Estimates vary in scope and can include any subset of: gathering requirements, core development, automated
+        tests, manual testing, deployment (to one or many environments), canary releases, monitoring, and post-release adjustments.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Be explicit about what your number covers. "Done" can mean anything from "compiles on my machine" to
+        "monitored in production".</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Estimated time can mean two different things.
+<ul>
+<li><strong>Work-time</strong>: how much time has to be spent on the scope.</li>
+<li><strong>Calendar time</strong>: work-time adjusted for the number of people involved, their availability,
+holidays, competing projects, maintenance and unplanned fire-fighting.</li>
+</ul>
+</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Say which of the two you are giving. Ten days of work can easily be a month on the calendar.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Every estimate is an approximation, and the uncertainty varies wildly. Integrating yet another data source
+        into the data lake is a monthly routine, while a completely new product line is mostly guesswork.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Be explicit about the uncertainty and what it does to the number.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The person asking usually doesn't care about any of these details. They want one number that fits their
+        model and their context.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Lead with the number and provide caveats later. A wall of qualifications will get skipped but can be referred to when ambiguity arises.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Lowering an estimate because of perceived pressure is a form of lying.
+<ul>
+<li>A correct but uncomfortably big number can start a useful negotiation, like adding people or
+cutting features.</li>
+<li>A wrong number quietly steers the project into failure.</li>
+</ul>
+</li>
+      <li>If you deliver sooner than estimated, everyone is happy. If you deliver later, everyone is angry.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Underpromise and overdeliver. Don't inflate estimates artificially, but when in doubt give the bigger
+        number and adjust later.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Estimates get more accurate as the remaining distance to the goal shrinks.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Re-estimate regularly, weekly or monthly, as unknowns get discovered and work gets completed.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
 
-* People ask for estimates for multiple reasons, all of which require different approach. Those could be: internal
-  planning of work without external consequences,
-  planning public announcements, adhering to external deadlines (e.g. legal/compliance requirements or public events),
-  comparing work items in terms of cost, adjusting pricing for the client (in-case of software houses)
-* Some reasons require estimates and some commitments
-    * estimate: approximation of effort needed to deliver a feature
-    * commitment: promise that a feature will be delivered by certain date
-* Estimates might vary in scope and can include any subset of: requirements’ acquisition, core logic development,
-  writing automated tests, conducting manual testing, deploying to certain envrionments, canary deployments, monitoring,
-  post-release adjustments
-* Estimating time might mean either work-time or calendar time. Work time is simply how much time has to be spent on
-  scope. Calendar time is work time adjusted for the number of people
-  involved, holidays, other conflicting projects, maintenance of existing features and unplanned fire-fighting.
-* Every estimate is an approximation by definition and might come with a different uncertainty factor. Doing something
-  you do every month (e.g. integrating a new datasource into the data lake) is different from creating a completely new
-  product line
-* People asking for an estimate usually don't care about all those details and just want to see the number that matches
-  their model and context.
-* Lowering the estimate, e.g. due to perceived pressure, is equal to lying. If the provided number is correct but too
-  big it can spark negotiations, e.g. adding more people or removing features. Taking decision based on incorrect number
-  is an easy
-  way to a failed project.
-* If you deliver sooner than estimate, everyone will be happy. If you deliver later, everyone will be angry.
-* Approximations get more correct the smaller the distance to the goal.
+Below is an example of what an estimation message could look like.
 
-**Adjust**
-
-* If not clear, *always* ask about the reason for the estimate
-* Don't assume people know the difference between estimate and commitment. Explicitly confirm which one is needed.
-* Be explicit about what's in the scope of the estimate
-* When estimating time, be explicit if it's work-time or estimate time.
-* Be explicit about the uncertainity and the impact it has on the numbers.
-* Underpromise, overdeliver. Don't inflate the estimates artificially, but when it doubt it's saffer to provide a bigger
-  number and adjust if needed.
-* Repeat estimations e.g. every week or month, as new things are disocvered and work gets completed. 
+> **Backend estimate for the payment-provider integration**
+>
+> * Total effort: **36 dev-days** (detailed breakdown in the linked doc)
+> * Uncertainty factor: **1.3** — the domain is well known to us, but the provider is new
+> * 36 × 1.3 = 47 effective dev-days
+> * Each developer can dedicate 4 days a week (on-call, ops and meetings taken out)
+> * Two developers assigned: 47 / 4 / 2 = **6 calendar weeks**
+> * Today + 6 weeks = **23rd August**
+>
+> That is one week past the 15th August deadline. We will be delivering in small increments, so by the 15th
+> everything except a part of the withdrawal flow should be in production. Hitting the full deadline is possible but
+> not likely.
+>
+> The estimate covers development, testing on staging and integration with the provider's sandbox. Going to
+> production might add time for non-dev activities (e.g. compliance sign-off), which we can't predict. Not included:
+> spending limits and automatic conversions, both out of scope for the MVP.
+>
+> Usual disclaimer: the closer we get to the date, the more precise the estimate will be.
