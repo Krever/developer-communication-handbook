@@ -1,0 +1,30 @@
+project:
+  type: default
+  output-dir: public
+  render:
+    - index.qmd
+
+# Setup carried over from the Fintech Engineering Handbook so styling decisions
+# can be previewed immediately. Left behind (bring back when needed):
+#   - _includes/head.html (favicon + Cloudflare analytics — needs its own token)
+#   - _includes/enhance.html (sidebar download bar, social links, scrollspy)
+#   - typst (PDF) and epub formats (epub needs a cover asset)
+format:
+  html:
+    theme:
+      - cosmo
+      - theme.scss
+    toc: true
+    toc-location: left
+    toc-depth: 4
+    toc-expand: true
+    toc-title: "Contents"
+    smooth-scroll: true
+    anchor-sections: true
+    link-external-icon: true
+    link-external-newwindow: true
+    code-copy: true
+    format-links: false
+    grid:
+      sidebar-width: 320px
+      body-width: 860px

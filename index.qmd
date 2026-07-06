@@ -1,4 +1,8 @@
-# The Developer Communication Handbook
+---
+title: "The Developer Communication Handbook"
+author: "Voytek Pitula"
+date-modified: last-modified
+---
 
 ## Intro
 
@@ -44,33 +48,140 @@ to build a skill of unconsciously predicting and adapting our interactions.
 
 ### Gathering requirements
 
-To deliver a product or a feature we have to know what are the requirements. Those lucky of us have a product manager or
-business analysts
-who make this process simpler, but even then a significant amount of work has to be put into refining their vision.
-Alternatively (or parallely), we need to talk with stakeholders (most of which will be non-technical) directly and
-figure out
-the requirements on our own. In either case there is a lot of talking involved and its important to do it effectively:
-extract as much _correct_ information as possible in as little time as possible (because likes spending times in
-meetings?).
+To deliver a product or a feature we have to know what the requirements are. The lucky among us have a product manager
+or a business analyst who makes this process simpler, but even then a significant amount of work has to be put into
+refining their vision. Alternatively (or in parallel), we need to talk directly with stakeholders (most of whom will be
+non-technical) and figure out the requirements on our own. In either case there is a lot of talking involved and it's
+important to do it effectively: extract as much _correct_ information as possible in as little time as possible
+(because who likes spending time in meetings?).
 
-**Understand**
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Stakeholders usually don't know what solution they want, but they do know what problems they have. They
+        will still ask for a solution ("add a button X") rather than explain the problem.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Make sure you understand why a feature is needed, not only what it's supposed to do. Propose your own
+        solution only once you know enough about the problem, otherwise you anchor the conversation early and risk
+        solving the wrong problem.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People have a tendency to assume you know things that are obvious to them.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't assume something has been thought through unless it was explicitly stated. Confirm everything of
+        importance.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Business people think in terms of happy paths; edge cases and errors are hard for them to consider.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Walk through concrete examples together: they confirm your understanding and flush out the edge cases
+        nobody mentioned.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Some words have a specific meaning or are part of the jargon of a particular domain.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Start building a domain dictionary (a ubiquitous language) early, to capture misunderstandings and
+        surprising terms.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Product managers are not omniscient and might lack information.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Share any concerns you have about the project. Don't assume the PM already knows about them.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Neither the PM nor the stakeholders are responsible for the technical side of the project.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Raise technical concerns yourself, because nobody else will. Phrase them in as non-technical way as you can.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Stakeholders (and PMs, to some extent) can't tell how much a requirement costs to build.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Tell them the cost when it matters; they are often keen to adjust the requirements once they see the price.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Product managers are busy and often work on multiple things at once.</li>
+      <li>Stakeholders have their own priorities and cannot be expected to care about the project as much as you
+        do.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Propose solutions instead of asking for direction; criticising a proposal takes far less of their attention
+        than producing a starting point.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>You and everyone else will eventually forget things.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Write everything down, whether as meeting notes or a Confluence page, so that decisions and the inputs
+        behind them don't depend on anyone's memory.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
 
-* Product Managers are not omniscient and might lack information
-* Product Managers are busy and often work on multiple things at once
-* Stakeholders have their own priorities and cannot be expected to care about the project as much as you do
-* Stakeholders usually don't know what solution they want, but they do know what problems they have
-* Neither PM nor stakeholders are responsible for the technical side of the project
-* People have a tendency to assume you know things that are obvious to them
-
-**Adjust**
-
-* Share with the PM or the team any concerns you might have with the project
-* Try to propose solutions instead of asking for direction - it's much easier for Them to criticize than to come up with
-  the satrting point
-* Don't assume things have been thought about if not explicitly stated. Confirm everything of importance.
-* ...
-
-### Estimates
+### Providing estimates
 
 As a software developer you will be frequently asked about
 
@@ -107,7 +218,7 @@ As a software developer you will be frequently asked about
 * Don't assume people know the difference between estimate and commitment. Explicitly confirm which one is needed.
 * Be explicit about what's in the scope of the estimate
 * When estimating time, be explicit if it's work-time or estimate time.
-* Be explicit about the uncertainity and the impact it has on the numbers. 
+* Be explicit about the uncertainity and the impact it has on the numbers.
 * Underpromise, overdeliver. Don't inflate the estimates artificially, but when it doubt it's saffer to provide a bigger
   number and adjust if needed.
 * Repeat estimations e.g. every week or month, as new things are disocvered and work gets completed. 
