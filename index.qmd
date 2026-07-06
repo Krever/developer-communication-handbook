@@ -46,6 +46,9 @@ to build a skill of unconsciously predicting and adapting our interactions.
 
 ## Before development
 
+Before the first line of code, a project exists only as words which makes misunderstandings easy to create but also to fix.
+This part covers the conversations and messages that happen before coding starts.
+
 ### Gathering requirements
 
 To deliver a product or a feature we have to know what the requirements are. The lucky among us have a product manager
