@@ -7,8 +7,7 @@ project:
 # Setup carried over from the Fintech Engineering Handbook so styling decisions
 # can be previewed immediately. Left behind (bring back when needed):
 #   - _includes/head.html (favicon + Cloudflare analytics — needs its own token)
-#   - _includes/enhance.html (sidebar download bar, social links, scrollspy)
-#   - typst (PDF) and epub formats (epub needs a cover asset)
+#   - epub format (needs a cover asset)
 format:
   html:
     theme:
@@ -25,6 +24,19 @@ format:
     link-external-newwindow: true
     code-copy: true
     format-links: false
+    include-after-body:
+      - _includes/enhance.html
     grid:
       sidebar-width: 320px
       body-width: 860px
+
+  # Print/share format. Typst is bundled with Quarto, so no LaTeX install needed.
+  # Fonts and colours come from _brand.yml; table styling from the include.
+  typst:
+    papersize: a4
+    toc: true
+    toc-title: "Contents"
+    font-paths:
+      - assets/fonts
+    include-before-body:
+      - _includes/typst-style.typ

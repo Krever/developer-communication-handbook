@@ -55,6 +55,7 @@ non-technical) and figure out the requirements on our own. In either case there 
 important to do it effectively: extract as much _correct_ information as possible in as little time as possible
 (because who likes spending time in meetings?).
 
+```{=html}
 <table>
 <thead>
 <tr><th>Understand</th><th>Adjust</th></tr>
@@ -63,13 +64,13 @@ important to do it effectively: extract as much _correct_ information as possibl
 <tr>
   <td valign="top">
     <ul>
-      <li>Stakeholders usually don't know what solution they want, but they do know what problems they have. They
-        will still ask for a solution ("add a button X") rather than explain the problem.</li>
+      <li>Stakeholders usually don’t know what solution they want, but they do know what problems they have. They
+        will still ask for a solution (“add a button X”) rather than explain the problem.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Make sure you understand why a feature is needed, not only what it's supposed to do. Propose your own
+      <li>Make sure you understand why a feature is needed, not only what it’s supposed to do. Propose your own
         solution only once you know enough about the problem, otherwise you anchor the conversation early and risk
         solving the wrong problem.</li>
     </ul>
@@ -83,7 +84,7 @@ important to do it effectively: extract as much _correct_ information as possibl
   </td>
   <td valign="top">
     <ul>
-      <li>Don't assume something has been thought through unless it was explicitly stated. Confirm everything of
+      <li>Don’t assume something has been thought through unless it was explicitly stated. Confirm everything of
         importance.</li>
     </ul>
   </td>
@@ -122,7 +123,7 @@ important to do it effectively: extract as much _correct_ information as possibl
   </td>
   <td valign="top">
     <ul>
-      <li>Share any concerns you have about the project. Don't assume the PM already knows about them.</li>
+      <li>Share any concerns you have about the project. Don’t assume the PM already knows about them.</li>
     </ul>
   </td>
 </tr>
@@ -141,7 +142,7 @@ important to do it effectively: extract as much _correct_ information as possibl
 <tr>
   <td valign="top">
     <ul>
-      <li>Stakeholders (and PMs, to some extent) can't tell how much a requirement costs to build.</li>
+      <li>Stakeholders (and PMs, to some extent) can’t tell how much a requirement costs to build.</li>
     </ul>
   </td>
   <td valign="top">
@@ -175,12 +176,13 @@ important to do it effectively: extract as much _correct_ information as possibl
   <td valign="top">
     <ul>
       <li>Write everything down, whether as meeting notes or a Confluence page, so that decisions and the inputs
-        behind them don't depend on anyone's memory.</li>
+        behind them don’t depend on anyone’s memory.</li>
     </ul>
   </td>
 </tr>
 </tbody>
 </table>
+```
 
 ### Providing estimates
 
@@ -190,6 +192,7 @@ the asker hears "live in production for everyone, next Friday". The number was f
 way.
 A good estimate is a number that means the same thing on both sides.
 
+```{=html}
 <table>
 <thead>
 <tr><th>Understand</th><th>Adjust</th></tr>
@@ -205,7 +208,7 @@ A good estimate is a number that means the same thing on both sides.
   </td>
   <td valign="top">
     <ul>
-      <li>If the reason isn't clear, <em>always</em> ask why the number is needed. It's the single most useful
+      <li>If the reason isn’t clear, <em>always</em> ask why the number is needed. It’s the single most useful
         question in estimating. If no reason can be given, push back on the estimate itself.</li>
     </ul>
   </td>
@@ -223,7 +226,7 @@ A good estimate is a number that means the same thing on both sides.
   </td>
   <td valign="top">
     <ul>
-      <li>Explicitly confirm which of the two is needed. Don't assume the asker knows the difference.</li>
+      <li>Explicitly confirm which of the two is needed. Don’t assume the asker knows the difference.</li>
     </ul>
   </td>
 </tr>
@@ -236,8 +239,8 @@ A good estimate is a number that means the same thing on both sides.
   </td>
   <td valign="top">
     <ul>
-      <li>Be explicit about what your number covers. "Done" can mean anything from "compiles on my machine" to
-        "monitored in production".</li>
+      <li>Be explicit about what your number covers. “Done” can mean anything from “compiles on my machine” to
+        “monitored in production”.</li>
     </ul>
   </td>
 </tr>
@@ -275,7 +278,7 @@ holidays, competing projects, maintenance and unplanned fire-fighting.</li>
 <tr>
   <td valign="top">
     <ul>
-      <li>The person asking usually doesn't care about any of these details. They want one number that fits their
+      <li>The person asking usually doesn’t care about any of these details. They want one number that fits their
         model and their context.</li>
     </ul>
   </td>
@@ -300,7 +303,7 @@ cutting features.</li>
   </td>
   <td valign="top">
     <ul>
-      <li>Underpromise and overdeliver. Don't inflate estimates artificially, but when in doubt give the bigger
+      <li>Underpromise and overdeliver. Don’t inflate estimates artificially, but when in doubt give the bigger
         number and adjust later.</li>
     </ul>
   </td>
@@ -319,6 +322,7 @@ cutting features.</li>
 </tr>
 </tbody>
 </table>
+```
 
 Below is an example of what an estimation message could look like.
 

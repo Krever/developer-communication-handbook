@@ -1,0 +1,121 @@
+<script>
+// Two sidebar enhancements that Quarto can't express declaratively for a
+// single-document, left-TOC layout (carried over from the Fintech Engineering
+// Handbook, trimmed: no EPUB/audiobook pills, no GitHub row, no download
+// tracking):
+//   1. A "Take it with you" download section pinned below the TOC.
+//   2. A scrollspy that highlights the current section as you scroll/click
+//      (Quarto's built-in highlight does not track scroll for a left TOC).
+(function () {
+  // External links shown in the sidebar footer. Edit these URLs as needed.
+  var LINKEDIN_URL = 'https://www.linkedin.com/in/krever/';
+  var X_URL = 'https://x.com/Krever01';
+  var HOME_URL = 'https://w.pitula.me';
+
+  // Matched social chips: identical rounded-square badges (currentColor
+  // background, paper-coloured mark) so the icons read as a true set.
+  var LI_SVG = '<svg class="social-ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">' +
+    '<rect width="24" height="24" rx="5" fill="currentColor"/>' +
+    '<path transform="translate(6.4 5.6) scale(0.0246)" fill="#fbf9f4" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>';
+  var X_SVG = '<svg class="social-ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">' +
+    '<rect width="24" height="24" rx="5" fill="currentColor"/>' +
+    '<path transform="translate(5.6 5.7) scale(0.533)" fill="#fbf9f4" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932zm-1.291 19.491h2.039L6.486 3.24H4.298l13.312 17.404z"/></svg>';
+  var HOME_SVG = '<svg class="social-ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">' +
+    '<rect width="24" height="24" rx="5" fill="currentColor"/>' +
+    '<path transform="translate(5.5 5.5) scale(0.8125)" fill="#fbf9f4" d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/></svg>';
+
+  function authorRow() {
+    return '' +
+      '<span class="sidebar-row">' +
+        '<span class="sidebar-row__label">Voytek Pitula</span>' +
+        '<span class="author-socials">' +
+          '<a href="' + HOME_URL + '" target="_blank" rel="noopener" aria-label="Homepage">' + HOME_SVG + '</a>' +
+          '<a href="' + LINKEDIN_URL + '" target="_blank" rel="noopener" aria-label="LinkedIn">' + LI_SVG + '</a>' +
+          '<a href="' + X_URL + '" target="_blank" rel="noopener" aria-label="X">' + X_SVG + '</a>' +
+        '</span>' +
+      '</span>';
+  }
+
+  function footerMarkup() {
+    return '' +
+      '<nav class="download-bar" aria-label="Download this handbook">' +
+        '<span class="download-bar__label">Take it with you</span>' +
+        '<span class="download-pills">' +
+          '<a class="download-pill" href="index.pdf" download>PDF</a>' +
+        '</span>' +
+      '</nav>' +
+      '<nav class="sidebar-links" aria-label="Author">' +
+        authorRow() +
+      '</nav>';
+  }
+
+  // Mobile-only "grab it" card. The left TOC (and its pinned footer) is hidden
+  // below 768px, so the download/author links would otherwise be unreachable.
+  function grabCardMarkup() {
+    return '' +
+      '<span class="grab-card__label">Take it with you</span>' +
+      '<div class="grab-card__actions">' +
+        '<a class="grab-card__btn" href="index.pdf" download><i class="bi bi-file-earmark-arrow-down"></i> PDF</a>' +
+      '</div>' +
+      '<nav class="grab-card__links" aria-label="Author">' +
+        authorRow() +
+      '</nav>';
+  }
+
+  function injectFooter() {
+    // Desktop/tablet (>=768px): pinned below the left TOC.
+    const sidebar = document.querySelector('#quarto-sidebar-toc-left');
+    if (sidebar && !sidebar.querySelector('.sidebar-footer')) {
+      const footer = document.createElement('div');
+      footer.className = 'sidebar-footer';
+      footer.innerHTML = footerMarkup();
+      sidebar.appendChild(footer);
+    }
+    // Mobile (<768px): a discoverable card just after the title block.
+    const title = document.querySelector('#title-block-header');
+    if (title && !document.querySelector('.grab-card')) {
+      const card = document.createElement('aside');
+      card.className = 'grab-card';
+      card.setAttribute('aria-label', 'Get this handbook');
+      card.innerHTML = grabCardMarkup();
+      title.insertAdjacentElement('afterend', card);
+    }
+  }
+
+  function scrollspy() {
+    const links = Array.from(document.querySelectorAll('#TOC .nav-link'));
+    if (!links.length) return;
+    const items = links.map(link => {
+      const target = (link.getAttribute('data-scroll-target') || link.getAttribute('href') || '').replace(/^#/, '');
+      const el = target ? document.getElementById(target) : null;
+      return el ? { link, el } : null;
+    }).filter(Boolean); // document order === TOC order
+    if (!items.length) return;
+
+    const OFFSET = 120;
+    let activeLink = null;
+    function update() {
+      let current = items[0];
+      for (const it of items) {
+        if (it.el.getBoundingClientRect().top - OFFSET <= 0) current = it;
+        else break;
+      }
+      if (current.link === activeLink) return;
+      if (activeLink) activeLink.classList.remove('active');
+      current.link.classList.add('active');
+      activeLink = current.link;
+    }
+    document.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  }
+
+  function init() { injectFooter(); scrollspy(); }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>

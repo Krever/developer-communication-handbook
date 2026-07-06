@@ -1,0 +1,25 @@
+# Shared visual identity, consumed by the Typst PDF (and available to HTML,
+# where theme.scss remains the source of truth and overrides this layer).
+# Values mirror theme.scss — keep the two in sync.
+color:
+  palette:
+    rust: "#a8502e"
+    slate: "#3f5e8c"
+    paper: "#fbf9f4"
+    ink: "#23262b"
+  background: paper
+  foreground: ink
+  primary: rust
+
+# Static TTF instances live in assets/fonts (Typst can't use Google's variable
+# fonts, so `source: google` doesn't work; the typst format sets font-paths).
+typography:
+  base:
+    family: Newsreader
+  headings:
+    family: Fraunces
+    weight: 600
+  monospace:
+    family: IBM Plex Mono
+  link:
+    color: rust
