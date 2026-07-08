@@ -443,3 +443,97 @@ Comments are messages toward the people reading the code in the future and hence
 </tbody>
 </table>
 ```
+
+The general advice here is to **imagine what information might be needed to someone reading the code 5 years from now and provide it**.
+
+### Error messages
+
+Like a comment, an error message is a message into the future, except that the communication is about something that didn't go well.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A single failure might be communicated to multiple parties, all of which have different needs:
+        <ul>
+          <li>an on-call engineer being alerted,</li>
+          <li>a developer analysing the logs,</li>
+          <li>a user seeing the message in response to their action,</li>
+          <li>a support agent helping that user resolve the issue,</li>
+          <li>an external automated system interacting with your API,</li>
+          <li>the developer using your library.</li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Decide who a given message is for before writing it and accommodate their needs. Using the same string for multiple things might be fine but should be done consciously.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The reader usually has some of the context that produced the error, such as a stack trace, the screen it happened on, the call being made or input values used.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't repeat what's already available, include things that can’t be easily accessed or reconstructed.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The goal of an error message is either for the error to get fixed or for it not to happen again.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Give the reader enough information to act on, e.g. what failed, why, and what should be the next step.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>An error might need to be talked about, searched for, or quoted in a support ticket.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Consider attaching a stable error code to the message.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A user-facing error can leak information to whoever triggered it, including an adversary. E.g. “No account with
+        that email” confirms which emails are registered.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>In user-facing messages, say enough to act and no more. Keep the diagnostic detail (internal IDs, the stack trace) in the logs.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+Here is the same error message done in two different ways.
+
+> Operation unsupported
+
+vs.
+
+> Can't update the address of an inactive user. Reactivate the account on the user main screen first, then try again.
