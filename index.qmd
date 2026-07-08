@@ -46,8 +46,8 @@ to build a skill of unconsciously predicting and adapting our interactions.
 
 ## Before development
 
-Before the first line of code, a project exists only as words which makes misunderstandings easy to create but also to fix.
-This part covers the conversations and messages that happen before coding starts.
+Before the first line of code, a project exists only as words, which makes misunderstandings easy to create but also
+to fix. This part covers the conversations and messages that happen before coding starts.
 
 ### Gathering requirements
 
@@ -347,3 +347,99 @@ Below is an example of what an estimation message could look like.
 > spending limits and automatic conversions, both out of scope for the MVP.
 >
 > Usual disclaimer: the closer we get to the date, the more precise the estimate will be.
+
+
+## During development
+
+### Code comments
+
+Comments are messages toward the people reading the code in the future and hence should be treated as a communication concern.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The code already encodes the logic of the program. That used to depend on the code being readable and
+        self-explanatory, but even that matters less with AI around to explain it.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don’t explain what the code does (unless you have a very good reason to do so).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People reading the code won’t have your context. They won’t know why it was written, what conversations you
+        held about it, what constraints you were under, or what influenced the design.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Include everything that is relevant to the reader and can’t be recovered from the code itself.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Comments are not validated or kept in sync in any way. Anything you put in a comment that isn’t a historical
+        fact will become invalid at some point, and a misleading comment wastes the reader’s time.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Favour things that stay true such as "the why", the constraints or the historical context. Treat a comment as part of
+        the diff and update or delete it when the code around it changes.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The longer the comment, the more effort it takes to read and the less likely anyone reads it.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keep comments short and concise.</li>
+      <li>Link out to external resources for the long story: wiki pages, issue trackers, internet resources.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People don’t have a tendency to revisit repos hunting for TODOs.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Use a TODO to record that something was thought of but left as low priority for some <em>undefined</em>
+        future. Don’t use it as a tracker for issues you actually want resolved, since there is usually no guarantee
+        they will be.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Humans reading your code are likely to be overworked, stressed and short on patience.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Drop in the occasional joke or snarky comment to make that person’s day a little better.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
