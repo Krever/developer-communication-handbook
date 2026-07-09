@@ -710,3 +710,143 @@ vs.
 > \@Paolo \@Ezequiel, could you look into this PR for improved tracing in the fiat-service? I'd like to merge it by Thursday morning.
 
 The second is aimed at two named people and gives them both a reason to care and a date to aim for. The first is addressed to nobody and offers no reason to bother.
+
+### Providing a PR review
+
+On the other side of the review, the roles reverse: now your comments potentially block or help someone else.
+A good review catches problems (that matter) without making an enemy of the author.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Not all issues are equally important. People have finite patience for adjusting their work.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Communicate clearly on the importance of a particular issue. You can use
+        <a href="https://conventionalcomments.org/">conventional comments</a>, the
+        <a href="https://blog.danlew.net/2020/04/15/the-logaf-scale/">LOGAF scale</a> or free text addition.</li>
+      <li>Pick your battles. Perfect is the enemy of good, so try to ask yourself which points are most
+        important.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The author might have context you don’t, such as constraints agreed elsewhere or approaches already tried
+        and abandoned. What looks like a mistake might be deliberate.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Ask before asserting: “is there a reason this isn’t X?” rather than “change this to X”. Half the time
+        there is a reason.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Criticism of code is easy to take as criticism of its author.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Comment on the code, not the person: “this function swallows the error” rather than “you swallowed the
+        error”.</li>
+      <li>Keep the formalities and the occasional smile. They cost nothing and soften the plain text.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>“This is confusing” tells the author something is wrong but not what would satisfy you, so they have to
+        guess and possibly go through another round.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Propose a solution, e.g. suggest the actual name you have in mind.</li>
+      <li>For bigger issues, offer help instead of a demand, e.g. a pairing session on the fix.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The author is often blocked on your review, and a waiting pull request might accumulate merge
+        conflicts.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Review quickly, or say explicitly when you’ll get to it. A decent review today is usually better than a
+        thorough one in a week.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>An objection to the whole approach costs the most when it arrives after two rounds of naming nits.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Read top-down: approach and architecture first, details later. If the approach is wrong, say so
+        immediately and hold the nits. Consider doing a first skim on an early draft to save as much wasted effort
+        as possible.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Some issues predate the pull request and only became visible in the diff.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Weigh the <a href="https://deviq.com/principles/boy-scout-rule">boy scout rule</a> against the pressure
+        the author is under. With no deadline in sight, asking for the cleanup is fair game, because nearby mess
+        rarely gets fixed any other way. When the change is urgent, a ticket or a non-blocking comment is
+        enough.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A review consisting only of flaws is demotivating, even when every flaw is real.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Point out the parts you genuinely liked. Don’t invent praise though, people can smell it.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>After a few rounds of comment ping-pong, a thread stops converging and starts generating heat.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Move it to a call, then write the conclusion back into the thread so the record survives.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
