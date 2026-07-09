@@ -3,16 +3,22 @@ project:
   output-dir: public
   render:
     - index.qmd
+  # Copy the favicon into the output dir (it's referenced from the <head> below;
+  # the format-level `favicon:` key only works for website projects, not this one).
+  resources:
+    - assets/favicon.png
 
 # Setup carried over from the Fintech Engineering Handbook so styling decisions
 # can be previewed immediately. Left behind (bring back when needed):
-#   - _includes/head.html (favicon + Cloudflare analytics — needs its own token)
+#   - Cloudflare analytics in _includes/head.html (needs its own token)
 #   - epub format (needs a cover asset)
 format:
   html:
     theme:
       - cosmo
       - theme.scss
+    include-in-header:
+      - _includes/head.html
     toc: true
     toc-location: left
     toc-depth: 4

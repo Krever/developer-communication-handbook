@@ -351,6 +351,16 @@ Below is an example of what an estimation message could look like.
 
 ## During development
 
+### Meetings
+
+* keep short
+* keep little people
+* people might get offended if not invited
+
+#### Daily standups
+
+
+
 ### Code comments
 
 Comments are messages toward the people reading the code in the future and hence should be treated as a communication concern.
