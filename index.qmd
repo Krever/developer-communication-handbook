@@ -74,7 +74,8 @@ important to do it effectively: extract as much _correct_ information as possibl
   <td valign="top">
     <ul>
       <li>Make sure you understand why a feature is needed, not only what it’s supposed to do. Propose your own
-        solution only once you know enough about the problem, otherwise you anchor the conversation early and risk
+        solution only once you know enough about the problem, otherwise you
+        <a href="https://en.wikipedia.org/wiki/Anchoring_effect">anchor</a> the conversation early and risk
         solving the wrong problem.</li>
     </ul>
   </td>
@@ -95,7 +96,8 @@ important to do it effectively: extract as much _correct_ information as possibl
 <tr>
   <td valign="top">
     <ul>
-      <li>Business people think in terms of happy paths, and edge cases or errors are hard for them to consider.</li>
+      <li>Business people think in terms of <a href="https://en.wikipedia.org/wiki/Happy_path">happy paths</a>, and
+        edge cases or errors are hard for them to consider.</li>
     </ul>
   </td>
   <td valign="top">
@@ -113,8 +115,9 @@ important to do it effectively: extract as much _correct_ information as possibl
   </td>
   <td valign="top">
     <ul>
-      <li>Start building a domain dictionary (a ubiquitous language) early, to capture misunderstandings and
-        surprising terms.</li>
+      <li>Start building a domain dictionary (a
+        <a href="https://en.wikipedia.org/wiki/Domain-driven_design">ubiquitous language</a>) early, to capture
+        misunderstandings and surprising terms.</li>
     </ul>
   </td>
 </tr>
@@ -351,16 +354,6 @@ Below is an example of what an estimation message could look like.
 
 ## During development
 
-### Meetings
-
-* keep short
-* keep little people
-* people might get offended if not invited
-
-#### Daily standups
-
-
-
 ### Code comments
 
 Comments are messages toward the people reading the code in the future and hence should be treated as a communication concern.
@@ -547,3 +540,173 @@ Here is the same error message done in two different ways.
 vs.
 
 > Can't update the address of an inactive user. Reactivate the account on the user main screen first, then try again.
+
+### Getting a PR review
+
+Getting your code reviewed in a timely and thorough way is mostly the author's job, even though it is someone else doing the reading. Most of it comes down to lowering the effort you ask of the people whose attention you need.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>No one likes finding obvious issues or reviewing half-baked pull requests. It signals that you didn’t value
+        the reviewer’s time, and they might be slower to pick up your next request.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Do a self-review first, before passing it to other people.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The bigger the changeset, the less likely it is to be thoroughly reviewed.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Try to make the review as small as possible. If the work can’t be delivered (merged) in chunks, use a
+        short-lived feature branch and open the smaller pull requests against it.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People need context to review the changes meaningfully.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Provide an explanation of why the change is being made, e.g. in the pull request description or a Slack
+        message.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Some parts of the changeset might be more important than others.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Put comments on those parts to focus the reviewer’s attention.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A review might happen at different stages of completion, e.g. before tests are written, before manual
+        testing, before self-review, or before some edge cases are covered. This changes how reviewers approach the
+        pull request.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Use a draft marker and/or put a TODO list in the description.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>When a review request goes to a group, everyone assumes someone else will pick it up. This is the
+        <a href="https://en.wikipedia.org/wiki/Bystander_effect">bystander effect</a>, and the more people the request
+        reaches, the stronger it gets (<a href="https://en.wikipedia.org/wiki/Diffusion_of_responsibility">diffusion of
+        responsibility</a>).</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Ask specific people, not a group.</li>
+      <li>Ask no more than two or three of them.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People have a tendency to procrastinate.</li>
+      <li>People have their own priorities.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Put a soft deadline or expectation on when you want the review.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>On some platforms, force-pushing kills the incrementality of the work and makes it impossible to review
+        only the changes since the previous review.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don’t force-push once the pull request is public and someone might have started looking at it.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People would like to see that their feedback was addressed.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Respond to each comment explicitly.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People might want to verify how their feedback was addressed and add further comments.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don’t resolve the reviewer’s comments yourself, unless your team has agreed otherwise. If in doubt, leave
+        the formal resolution to whoever raised the comment.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A review comment lands on code you wrote, so criticism of the code is easy to take as criticism of you.
+        Plain text also hides tone, which can make a blunt comment read as harsher than it was meant.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Assume good intent and read comments as being about the work. If one genuinely stings, sort it out in a
+        quick call rather than in the thread.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+Here is the same request for review made badly and well:
+
+> Hey, anyone up for a review? [PR]
+
+vs.
+
+> \@Paolo \@Ezequiel, could you look into this PR for improved tracing in the fiat-service? I'd like to merge it by Thursday morning.
+
+The second is aimed at two named people and gives them both a reason to care and a date to aim for. The first is addressed to nobody and offers no reason to bother.
