@@ -874,3 +874,150 @@ vs.
 > **issue (blocking):** passing the raw string skips the validation that `UserId` does on construction. Could we parse it at the boundary instead? Happy to pair on it if the change spreads too far.
 
 The second explains the actual problem and offers a way out, while its label says how much the reviewer cares.
+
+### Making your work visible
+
+Most of your work becomes visible only when you share it. This section is about sharing it the right way and knowing why it's important to do it.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People will form an opinion of you based on the work they see, not the work you do.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>If you want to be appreciated, share your progress and achievements without being asked.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Certain types of work are almost invisible to the outside world, e.g. fixing flaky tests, refactoring
+        done alongside a feature, helping teammates, reviewing their work, handling support tickets, or answering
+        stakeholder questions. Those usually don’t produce standalone artifacts but are no less important.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>If those activities eat a significant chunk of your workday, share them like any other progress and
+        achievements.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Talking about your own work feels like bragging, and the natural instinct is to stay quiet and let the
+        work speak for itself. Unfortunately, the work stays silent without you. Expect the awkwardness and don’t
+        wait for it to go away on its own.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Remind yourself that by posting about your work you help not only yourself but also (often primarily)
+        others.</li>
+      <li>Stick to facts and let the reader judge: “the import now runs in 5 minutes instead of 40, using
+        incremental computation” informs and helps, while “I did an amazing job on the import” brags and is
+        useless.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>You can never know who is affected by your work or holds context you’re missing. Someone might have
+        already solved the same problem, or is working on it right now, or learned (often the hard way) why it
+        can’t be fixed.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Build in the open: discuss in public channels by default and treat DMs as the exception. This increases
+        the chance someone will notice and respond, even if the message is not directed at them.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People formulate plans around your work and need to update those plans continuously.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keep people in the loop and inform them about any change of schedule as soon as possible. Don’t try to
+        avoid bad news.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Software development is a team sport, and the team needs to survive if you’re absent, be it due to
+        holidays or career changes. A big part of your job is to make yourself replaceable.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Share knowledge deliberately and continuously through demos, conversations, code reviews and any other
+        means that make others familiar with what you do and help them continue that work.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People don’t like noise and will start ignoring messages that come too often or are too long.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keep updates short and scannable, and make sure everything there is valuable. E.g. if you want to post
+        about solving 10 different bugs last week, don’t include their details (unless some are particularly
+        important).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Someone in the future might be investigating the work you did and the context around it.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Leave breadcrumbs behind by linking together everything that is relevant: commits, pull requests, Jira
+        tickets, Slack conversations, Confluence pages, etc.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>One day you will apply for a promotion or raise and will need to justify it. Doing it from memory alone is really hard.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keeping public records of your work will make it easier to prepare such a justification.</li>
+      <li>Read Julia Evans’ <a href="https://jvns.ca/blog/brag-documents/">post about brag documents</a> for more
+        details.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+You might want to use an existing format for sharing your work. A
+[5-15 report](https://swyx.io/the-importance-of-writing-weekly-updates) is a weekly update designed to take fifteen
+minutes to write and five to read. Alternatively, you can consider practices such as a demo Friday or a `#shipped`
+channel.
