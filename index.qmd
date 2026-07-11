@@ -725,7 +725,8 @@ A good review catches problems (that matter) without making an enemy of the auth
 <tr>
   <td valign="top">
     <ul>
-      <li>Not all issues are equally important. People have finite patience for adjusting their work.</li>
+      <li>Not all issues are equally important</li>
+      <li>People have finite patience for adjusting their work.</li>
     </ul>
   </td>
   <td valign="top">
@@ -735,6 +736,19 @@ A good review catches problems (that matter) without making an enemy of the auth
         <a href="https://blog.danlew.net/2020/04/15/the-logaf-scale/">LOGAF scale</a> or free text addition.</li>
       <li>Pick your battles. Perfect is the enemy of good, so try to ask yourself which points are most
         important.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Some comments enforce a shared standard while others are personal taste, and the author can’t always tell
+        which one they are reading.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Label taste as taste (“I’d have used a map here, but that’s me”) and let the author decide.</li>
     </ul>
   </td>
 </tr>
@@ -850,3 +864,13 @@ A good review catches problems (that matter) without making an enemy of the auth
 </tbody>
 </table>
 ```
+
+Here is the same review comment in two versions:
+
+> This is wrong, don't pass a raw string here.
+
+vs.
+
+> **issue (blocking):** passing the raw string skips the validation that `UserId` does on construction. Could we parse it at the boundary instead? Happy to pair on it if the change spreads too far.
+
+The second explains the actual problem and offers a way out, while its label says how much the reviewer cares.
