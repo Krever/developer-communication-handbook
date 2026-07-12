@@ -1026,14 +1026,132 @@ channel.
 
 ### Asking
 
-* No hello ([nohello.net](https://nohello.net)) — put the question in the first message, don't make people wait through a greeting handshake
-* Don't ask to ask — "can I ask about Kafka?" wastes a round-trip; ask the actual question with context
-* The [XY problem](https://xyproblem.info/) — ask about the real goal, not about your attempted solution
-* Show what you already tried — helps the helper and signals the question isn't laziness
-* Target your messages — a question to nobody is answered by nobody (diffusion of responsibility); @mention a specific person even if unsure they're the right one
-* Explain why you need something (the Xerox/Langer "because" study — even a weak reason boosts compliance)
-* Explain when you need it — a message with no deadline lands in the "later" bucket, and "later" never comes
-* Pick the channel consciously — Slack vs email vs ticket vs doc; each has a different response-time expectation and a different lifespan
+Asking a colleague for something looks too simple to get wrong, yet questions go unanswered every day. Your question
+competes with everything else in the receiver's inbox, and whether the answer arrives in five minutes or never is
+largely decided by how the question was written. Few of the fixes below cost more than one extra sentence.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>In asynchronous communication you have to expect that every message might take minutes or hours to get a
+        response. If you start a conversation with a single “hello” or “can I ask you about something?”, you waste
+        a round-trip without providing or receiving any information.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Put the whole question in the first message (<a href="https://nohello.net">no hello</a>,
+        <a href="https://dontasktoask.com/">don’t ask to ask</a>). The greeting can be put alongside the
+        question.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People will usually answer the question you asked, which is not always the question you should have
+        asked. If you ask about the solution you tried, they’ll help you debug it, while a far better or easier one
+        might exist. This is known as the <a href="https://xyproblem.info/">XY problem</a>.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>State your goal alongside the problem you’re facing.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>If the person helping you doesn’t know what you’ve already tried, they’ll either suggest the same things
+        or ask you about them.</li>
+      <li>A question with no visible effort behind it makes responders less likely to help.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>List the things you already tried and what you found.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A message with several questions usually gets an answer only to the first one or a subset of them.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Number your questions so it’s easy to track which ones got an answer. If the topics are separable,
+        consider separate messages.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People will respond to non-targeted messages according to their availability and personal habits. Also,
+        the more people are targeted, the less likely it is that any particular person will respond
+        (<a href="https://en.wikipedia.org/wiki/Diffusion_of_responsibility">diffusion of responsibility</a> again,
+        same as with PR reviews).</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Always try to @mention a specific person, even if you’re not sure they’re the right one to solve your
+        problem. If you pick wrongly, you will most likely be pointed in the right direction.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People are more willing to comply when given a reason, even a weak one. In
+        <a href="https://en.wikipedia.org/wiki/Ellen_Langer">Ellen Langer’s copy-machine study</a>, “may I use the
+        Xerox, because I have to make copies” beat the reasonless version.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Say why you need the thing.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People are busy, and requests with no deadline are usually classified as the least urgent.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Say when you need it, even roughly, e.g. “by Thursday” or “no rush, sometime this week”.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+Here is the same question asked in two ways:
+
+> Hey, where can I find CPU usage metrics?
+
+vs.
+
+> Hey, I need to get CPU usage of our servers. Not sure who can help with this, maybe \@tiago? We are releasing a
+> CPU-heavy feature on Wednesday and I need to prepare the setup.
+
+The second names a person, states the actual goal and explains why the answer is needed by Wednesday. The first
+looks cheaper to write, but it opens a slow guessing game: whoever answers doesn't know it's urgent, and "where can
+I find metrics" might not even be the right question for preparing a release.
+
 
 ### Writing
 
