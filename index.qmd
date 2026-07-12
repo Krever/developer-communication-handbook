@@ -1155,12 +1155,127 @@ I find metrics" might not even be the right question for preparing a release.
 
 ### Writing
 
-* Make messages scannable — TL;DR at the top, bold the essence, bullet points; don't overdo the formatting or nothing stands out
-* Front-load the ask — the request in the first line, background after
-* Brevity — the shorter the message, the higher the chance it's read in full
-* Tone — humans like smiles, but over-enthusiasm can be worse than grumpiness; don't be a pushover, some messages need to be firm
-* Sarcasm and irony don't survive text — emojis exist partly to patch this
-* Language proficiency matters less than you think — plain words beat sophisticated ones, native speakers included
+Once you know what to say, there is still the matter of how, and it often decides how effective the message is.
+This section is about the form of a message: its structure, length, tone and words.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People rarely read messages in full — most of the time they scan them. A wall of text gets postponed for
+        “later”, which might never come.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Make the message scannable:
+        <ul>
+          <li>TL;DR at the top,</li>
+          <li>clearly separated paragraphs,</li>
+          <li>the essence in bold,</li>
+          <li>lists as bullet points.</li>
+        </ul>
+      </li>
+      <li>Don’t overdo the formatting: if half of the message is bold, nothing gets special attention.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The reader’s attention is highest at the beginning of the message and decays fast.</li>
+      <li>The first line shows up in the notification preview.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>The core of the message (the ask or the key fact) should go first and the background after, so that a reader who stops
+        after one line still knows what you want from them.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The longer the message, the lower the chance it will be read in full.</li>
+      <li>Writing short takes more effort, and when the author skips that effort, all the readers pay the
+        price.</li>
+      <li>“I would have written a shorter letter, but I did not have the time” (Blaise Pascal, though the internet
+        prefers to credit Mark Twain).</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Spend the time to trim your messages. They should be as short as possible but not shorter.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Text carries no tone of voice, so it leaves a lot to interpretation, which is strongly influenced by the
+        reader’s current mood. A neutral message can read as cold, and a hurried one as hostile.</li>
+      <li>Over-enthusiasm can be worse than grumpiness — if everything is “great”, “awesome” and “incredible”, you
+        lose the ability to express something exceptionally good.</li>
+      <li>Readers judge how negotiable a message is by its tone. Some messages carry non-negotiable content (e.g.
+        an incident that has to be handled now, or a request that was already ignored twice), and a soft tone might
+        lead to expensive misunderstandings.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Aim for warm and plain: use greetings, a “thanks”, emojis and the like to properly express your
+        intentions.</li>
+      <li>Don’t be a pushover and don’t sugarcoat when firmness is needed. Unfortunately, figuring out the exact
+        level of “firmness” is hard and an art.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Strictly professional communication keeps people at arm’s length, while shared informality brings people
+        closer. Silly emojis and memes make you “one of us” — imagine which resonates with you more: a CTO posting
+        memes or an open-door policy.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don’t over-sanitize your messages. Match the level of informality your team actually uses, reactions and
+        dumb gifs included.</li>
+      <li>Calibrate to the room. Informality that bonds one team reads as unserious in another.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Sophisticated vocabulary adds decoding effort for every reader and makes life harder for non-native
+        speakers.</li>
+      <li>Words matter, and certain more complicated words add clarity in the long term (especially if they are
+        part of the domain). The same applies to more complicated grammar constructions.</li>
+      <li>Most of the people you interact with won’t hold imperfect English against you: they are either non-native
+        speakers themselves or have long stopped noticing.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Default to plain and simple words and sentences, but don’t be afraid of more complicated ones when there
+        is a real benefit.</li>
+      <li>Don’t be afraid of your English. Improve it if you find it subpar, but don’t let it stop you from talking
+        to people.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
 
 ### Responding
 
