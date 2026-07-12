@@ -1021,3 +1021,45 @@ You might want to use an existing format for sharing your work. A
 [5-15 report](https://swyx.io/the-importance-of-writing-weekly-updates) is a weekly update designed to take fifteen
 minutes to write and five to read. Alternatively, you can consider practices such as a demo Friday or a `#shipped`
 channel.
+
+## Everyday communication
+
+### Asking
+
+* No hello ([nohello.net](https://nohello.net)) — put the question in the first message, don't make people wait through a greeting handshake
+* Don't ask to ask — "can I ask about Kafka?" wastes a round-trip; ask the actual question with context
+* The [XY problem](https://xyproblem.info/) — ask about the real goal, not about your attempted solution
+* Show what you already tried — helps the helper and signals the question isn't laziness
+* Target your messages — a question to nobody is answered by nobody (diffusion of responsibility); @mention a specific person even if unsure they're the right one
+* Explain why you need something (the Xerox/Langer "because" study — even a weak reason boosts compliance)
+* Explain when you need it — a message with no deadline lands in the "later" bucket, and "later" never comes
+* Pick the channel consciously — Slack vs email vs ticket vs doc; each has a different response-time expectation and a different lifespan
+
+### Writing
+
+* Make messages scannable — TL;DR at the top, bold the essence, bullet points; don't overdo the formatting or nothing stands out
+* Front-load the ask — the request in the first line, background after
+* Brevity — the shorter the message, the higher the chance it's read in full
+* Tone — humans like smiles, but over-enthusiasm can be worse than grumpiness; don't be a pushover, some messages need to be firm
+* Sarcasm and irony don't survive text — emojis exist partly to patch this
+* Language proficiency matters less than you think — plain words beat sophisticated ones, native speakers included
+
+### Responding
+
+* Repeat, repeat, repeat — people forget, miss messages and misinterpret; this is normal and not an insult
+* Ensure the message was understood — don't be the UDP; important messages deserve an ack, and silence isn't one
+* Give the responses you want to get — redirect to someone who might know, say "no time now, will look Thursday", never leave a question hanging
+* Be gentle with @pings — as few as possible but not fewer; when pinging someone into a long thread, summarize it instead of saying "see above"
+* Bump politely — following up on an unanswered message is fine (expected, even); resenting having to is not
+* Emoji acks as protocol — 👀 "I saw it", ✅ "done" cost one click and kill a whole class of "did you see my message?" follow-ups
+* Respect working hours and time zones — schedule-send instead of expecting instant replies; your 9am is someone's dinner
+* Controlling emotions — never send angry; draft it, sit on it, delete most of it
+
+### Talking
+
+* Call or message — meetings are costly but high-bandwidth; heuristic: more than 10 messages in an hour, make it a call
+* Write the conclusion back — a decision made on a call doesn't exist until it's in the thread/ticket
+* Meetings: keep them short and small — every extra person multiplies the cost and divides the attention
+* Invitation politics — people might get offended when not invited; optional invites and shared notes are the pressure valve
+* No agenda, no meeting — and notes with decisions/actions afterwards
+* Daily standups — the audience is your team, not your manager; share what others can act on (blockers, discoveries, "don't touch X today"), not a diary of yesterday
