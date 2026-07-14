@@ -1104,8 +1104,8 @@ largely decided by how the question was written. Few of the fixes below cost mor
   </td>
   <td valign="top">
     <ul>
-      <li>Always try to @mention a specific person, even if you’re not sure they’re the right one to solve your
-        problem. If you pick wrongly, you will most likely be pointed in the right direction.</li>
+      <li>Always try to <code>@mention</code> a specific person, even if you’re not sure they’re the right one to
+        solve your problem. If you pick wrongly, you will most likely be pointed in the right direction.</li>
     </ul>
   </td>
 </tr>
@@ -1279,14 +1279,126 @@ This section is about the form of a message: its structure, length, tone and wor
 
 ### Responding
 
-* Repeat, repeat, repeat — people forget, miss messages and misinterpret; this is normal and not an insult
-* Ensure the message was understood — don't be the UDP; important messages deserve an ack, and silence isn't one
-* Give the responses you want to get — redirect to someone who might know, say "no time now, will look Thursday", never leave a question hanging
-* Be gentle with @pings — as few as possible but not fewer; when pinging someone into a long thread, summarize it instead of saying "see above"
-* Bump politely — following up on an unanswered message is fine (expected, even); resenting having to is not
-* Emoji acks as protocol — 👀 "I saw it", ✅ "done" cost one click and kill a whole class of "did you see my message?" follow-ups
-* Respect working hours and time zones — schedule-send instead of expecting instant replies; your 9am is someone's dinner
-* Controlling emotions — never send angry; draft it, sit on it, delete most of it
+A lot of communication happens after the initial message is sent: your questions need chasing, and other people's
+questions need answering. The way you handle other people's messages and responses (or the lack of them) affects how they
+will handle yours.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People will forget, miss and misinterpret messages you send them. This is completely normal and shouldn’t be
+        held against those people as long as it’s not pathological (i.e. it doesn’t happen every time).</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Repeat important messages and questions. Try to change the phrasing a bit to increase the chance
+        of being understood.</li>
+      <li>Try to analyse why the message could have been ignored: not clear enough? Too long? Without a clear
+        recipient?</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Sending a message is just the first step, and your goal is to make sure it’s also received, understood
+        and acted upon.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>For important messages ask for a confirmation and treat silence as “not received”. Don’t act like the UDP protocol.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Your behaviour will often be mirrored by your peers.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Give the responses you want to get, even if you don’t know the answer:
+        <ul>
+          <li>redirect to someone who might know,</li>
+          <li>say “no time now, will look on Thursday”.</li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The asker needs feedback on their message to know it was seen and that they don’t need to follow up.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Acknowledge what you see, either with a short message or an emoji (e.g. 👀 for “looking into it”, ✅ for
+        “done”).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Every <code>@ping</code> is an interruption which can break focus, decrease productivity and annoy the
+        receiver.</li>
+      <li>A person pinged into a long thread has to read the whole thing to learn why they’re there.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Ping as few people as possible (but don’t hesitate to bring in people who are actually needed).</li>
+      <li>When pulling someone into a long thread, give a one-line summary of what’s needed from them instead of
+        “see above”.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>In a distributed team it’s hard to predict everyone’s working schedule, so the usual courtesy of “contact
+        only during working hours” is hard to obey.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Send messages immediately and let the receiver manage their notifications. But don’t expect an answer
+        right away.</li>
+      <li>Reciprocate by muting your notifications outside your hours and don’t resent people contacting you at
+        weird times.</li>
+      <li>Make sure this matches the culture around you. In some teams a message from a senior person is treated as
+        urgent no matter the hour, and there this approach needs an explicit agreement first.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Humans are largely driven by emotions, and emotions come and go. Unfortunately, the message will still be
+        there when they are gone.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Never send a message under strong emotions, anger especially. Write the draft if it helps, then sit on it and delete
+        it (or not) after some time.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
 
 ### Talking
 
