@@ -1024,6 +1024,12 @@ channel.
 
 ## Everyday communication
 
+The previous parts followed a project through its stages. This one steps outside that timeline and looks at the
+messages, pings and calls that fill every working day, whatever stage you are at. None of it is hard on its own, but
+it adds up: your message is one of the hundred the receiver will see today, and small habits decide whether it lands
+or gets lost in the pile. The sections follow a message through its life: asking for something, writing it so it gets
+read, responding to what comes back, and knowing when to stop typing and talk instead.
+
 ### Asking
 
 Asking a colleague for something looks too simple to get wrong, yet questions go unanswered every day. Your question
@@ -1402,9 +1408,125 @@ will handle yours.
 
 ### Talking
 
-* Call or message — meetings are costly but high-bandwidth; heuristic: more than 10 messages in an hour, make it a call
-* Write the conclusion back — a decision made on a call doesn't exist until it's in the thread/ticket
-* Meetings: keep them short and small — every extra person multiplies the cost and divides the attention
-* Invitation politics — people might get offended when not invited; optional invites and shared notes are the pressure valve
-* No agenda, no meeting — and notes with decisions/actions afterwards
-* Daily standups — the audience is your team, not your manager; share what others can act on (blockers, discoveries, "don't touch X today"), not a diary of yesterday
+Let's now talk about the most dreaded but also the most effective (if done right) way to communicate: meetings.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A call is costly. It demands everyone’s full attention at the same time (at least in theory), but
+        its bandwidth is far higher than text — you can discuss much more in the same amount of time.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Default to asynchronous communication, but switch to a call when it’s not enough. A useful heuristic:
+        make it a call if you exchanged more than 10 messages within an hour.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Neither you nor anyone else will remember what you discussed after a week.</li>
+      <li>There might be people who were not on the call but might be interested in the topic.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Write the conclusions back into the thread where the discussion started.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A meeting’s cost is its length multiplied by the number of participants. Try to calculate it for some
+        slots in your calendar as an experiment.</li>
+      <li>Nobody has ever complained about a meeting ending early.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keep meetings as short and small as possible, and end them as soon as the goal is reached.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Meeting invitations are tricky because people can get offended when left out, and will feel obliged to join if invited.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Use optional invites and share the notes afterwards, so nobody is locked out of the
+        loop but those who are not mandatory feel free to skip the meeting.</li>
+      <li>Don’t be afraid to decline an invitation when you don’t think you add or gain value there.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A meeting needs a stated goal for invitees to prepare and later to assess if it was successful.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Try to put an agenda, or at least a goal, in the meeting invitation. Repeat it at the beginning of the
+        call.</li>
+      <li>Send any materials you might have upfront. Most people won’t read them, but there is a chance someone
+        will.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Meetings, especially recurring ones, often run on inertia, as nobody feels authorised to cancel
+        them.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Question the purpose of your meetings from time to time, and propose killing or shortening the ones that
+        no longer make sense.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A very big chunk of communication is non-verbal, e.g. facial expressions or reactions.</li>
+      <li>There are very few reasons to have your camera off.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Make camera-on your strong default on calls. Don’t be afraid to ask the same from your coworkers.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A natural dynamic during a standup is to discuss an issue in detail, often taking a lot of time from
+        everyone on the call, even if only a few are interested.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Once a topic exceeds a minute or two, take it after the standup with only the people involved.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
