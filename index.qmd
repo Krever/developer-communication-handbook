@@ -354,6 +354,8 @@ Below is an example of what an estimation message could look like.
 
 ## During development
 
+This part covers the communication that happens while the features are being developed, from code constructs to stakeholders interactions and work visibility.
+
 ### Code comments
 
 Comments are messages toward the people reading the code in the future and hence should be treated as a communication concern.
