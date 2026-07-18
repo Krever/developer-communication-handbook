@@ -541,6 +541,118 @@ vs.
 
 > Can't update the address of an inactive user. Reactivate the account on the user main screen first, then try again.
 
+### Naming things
+
+A name is a small message to the person who reads the code next. It will be read far more often than written and has to survive years or decades.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A name’s scope varies a lot: from a single-line lambda, through a method, a class body, a module/namespace, up to a public API.
+      The wider the scope, the more people and code depend on the name and the more costly a change to it becomes.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Scale naming effort to scope. A single letter is often enough for a lambda variable, while a public API field is worth dedicated thought.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Most names are defined inside a context, e.g. a module, package, namespace, type, class etc.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>If a given thing (e.g. a field or method) is used mostly inside (or alongside) that context, you don’t need to repeat it — <code>user.userName</code> makes little sense.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Your domain most likely already has precise words for its concepts (see
+        <a href="https://en.wikipedia.org/wiki/Domain-driven_design">DDD ubiquitous language</a>).</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Talk with your business stakeholders and use the domain’s term rather than a personal synonym.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>It’s normal to assume that different words mean different things.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Use one term per concept — don’t mix <code>get</code>, <code>fetch</code>, <code>load</code> and <code>retrieve</code> if there is no semantic difference.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Abbreviations significantly decrease approachability and increase the learning curve of the codebase.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Use abbreviations only if they are core domain terms, and don’t invent new ones for local convenience.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A reader builds a mental model based on the names and their intuition around it.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Analyse how a name might be understood and whether it might be ambiguous or confusing. Assume that many people won’t read the explanation or documentation you add around the name.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The most important names get spoken aloud all the time, whenever the system is discussed.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Consider how a name sounds, how it’s abbreviated and how easy it is to pronounce. Those aspects don’t change with time, and you can’t get used to them.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The name of a service shapes what people assume it does and what they later try to put inside it.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Name a service after its domain rather than its current purpose, so the name still fits as its responsibilities grow.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
 ### Getting a PR review
 
 Getting your code reviewed in a timely and thorough way is mostly the author's job, even though it is someone else doing the reading. Most of it comes down to lowering the effort you ask of the people whose attention you need.
