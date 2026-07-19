@@ -989,6 +989,139 @@ vs.
 
 The second explains the actual problem and offers a way out, while its label says how much the reviewer cares.
 
+### Talking to non-developers
+
+Sooner or later your work has to be explained to someone who doesn't read code, like a product manager or a support agent.
+In such cases you have to become a translator from technicalese to legalese, accountinglese and other dialects that resemble English only on the surface.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Non-developers don’t share your vocabulary — words like <code>PR</code>, <code>commit</code> or <code>branch</code> mean nothing to them.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Drop the jargon and keep a mental list of forbidden words. Speak the way your parents would understand.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Specific terms you treat as distinct collapse into one for them: deploy, release, ship, launch all sound the same to a non-technical audience.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Spell out the distinction when it matters (a release is not a deployment), and use their coarser word when it doesn’t.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Non-devs speak imprecisely from a technical perspective — the app is “the website”, the service is “the system”. Developers speak imprecisely from a business perspective.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don’t correct every imprecision; go with their words unless the difference actually matters.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Developers usually sit in one large, fairly interchangeable department, while business teams are small, specialised and often disconnected from each other. “The business” is not a single voice — two teams under the same roof can hold completely different perspectives and priorities.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don’t treat the business as one entity. Understand the specific teams you interact with, their responsibilities and perspectives, and don’t assume one team speaks for another or even knows what the other is doing.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>They care about outcomes (what changes for them and when), not the mechanics of how the feature was built.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Focus on impact and timing; keep the implementation out unless someone asks.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Your words might be misinterpreted and acted on — “it’s almost done” can turn into “we release on Friday”.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Watch your qualifiers, be precise and make sure you’ve been understood.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>They can’t assess technical cost or risk, so they won’t notice the trade-offs on their own.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Communicate the trade-offs in business terms and let them decide.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Over-explaining the details loses attention and focus.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Provide the amount of detail they need. It’s ok to underexplain and be asked for details.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Abstract technical details are received as noise, while a concrete example or an analogy is tangible and understandable.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Explain things in terms of what the user sees, or map them to something they already know.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+Here is the same status update to a non-technical stakeholder in two versions:
+
+> The PR for the idempotency keys is merged, just waiting on the migration to run in prod.
+
+vs
+
+> The duplicate-charge fix is done and should be live for customers on Tuesday.
+
+The first is accurate and means nothing to the person waiting on it. The second drops every word they'd have to translate and answers what they came for: is it fixed, and when do customers get it.
+
 ### Making your work visible
 
 Most of your work becomes visible only when you share it. This section is about sharing it the right way and knowing why it's important to do it.
