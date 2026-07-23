@@ -1460,6 +1460,18 @@ In such cases you have to become a translator from technicalese to legalese, acc
     </ul>
   </td>
 </tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Once in a while the non-developer is a senior manager or an executive, and you might face them without any prior experience.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don’t be intimidated. A good high-level manager is usually an excellent communicator, and it’s their job to bridge the gap: they’ll put you at ease, ask the right questions, and pull out what they need. Answer honestly and plainly, and let them do the steering. It feels daunting the first time, but you get used to it.</li>
+    </ul>
+  </td>
+</tr>
 </tbody>
 </table>
 ```
