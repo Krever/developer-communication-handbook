@@ -351,6 +351,258 @@ Below is an example of what an estimation message could look like.
 >
 > Usual disclaimer: the closer we get to the date, the more precise the estimate will be.
 
+### Technical design
+
+We write a technical design to communicate our intent to build something: the vision, context and justification for the decisions taken.
+In return we expect others to poke holes in it while it's still only words and cheap to change. Here we cover only the _delivery_ side of this
+problem (for the _content_ you'll have to look into other resources).
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People are busy, and reviewing takes time and effort. The longer the doc, the harder it is to get a thorough
+        review and an approval.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keep it short, put the decision and its consequences first, and consider a ready-made template.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Many people won’t go deep into your ideas, because they don’t have days or weeks to think about the
+        topic and consider it from all angles.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>If you want a thorough review, document as many of the problem’s aspects and caveats as you can. Merely
+        hinting at a problem might invite a lot of comments.</li>
+      <li>If your goal is approval without discussion, polish the doc as much as possible but keep it shallow. Be mindful, though, that
+        this removes the safeguards and increases the risk.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>It’s far easier for a reviewer to criticise a concrete answer than to design from a blank space, so gaps
+        come back as vague or unhelpful comments.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Answer as many of the questions as you can before sharing the doc.</li>
+      <li>If your design still has open questions, mark them explicitly.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A design is itself a cost (in your time to write it and others’ time to review it). It’s worth paying only in
+        proportion to how important the decision is and how hard it is to undo.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Scale the format to the weight of the decision: choose between a quick FYI message, a short discussion, an ADR or a
+        full RFC.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Full consensus in a big group is hard to reach, because it's hard to make everyone happy.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Consider aiming for <a href="https://datatracker.ietf.org/doc/html/rfc7282#section-3">rough consensus</a>
+        instead.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Humans are largely visual processors and comprehend images faster than text.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Use a diagram to convey a high-level explanation. Add the details as prose if necessary (an
+        overcomplicated image doesn’t help much).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Months or years after publishing, no one can tell if the design still reflects reality (it starts to drift
+        from the code the moment it’s merged). People (should) trust a document less the older it is.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Be explicit about whether it’s a snapshot or a living document. A snapshot is usually the safer choice,
+        since readers already expect it to be out of date — put a date in the filename or the content so its age is
+        obvious. Try to generate live documents from code wherever possible.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+See also [Getting a PR review] and [Providing a PR review], as some of the advice there applies to technical designs as well.
+
+### Getting buy-in
+
+This section is a bit special, as it leans heavily on persuasion and politics and isn't really specific to
+developers. Still, I've too often seen developers struggle to get approval for things like automation, tech-debt
+reduction or adopting a new library or pattern. So it's here to help, and to limit the frustration and learned
+helplessness.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A decision-maker hearing your idea for the first time in front of others might default to the safe answer, which is
+        usually “no”.</li>
+      <li>People follow the crowd and agree more willingly when they see others do the same.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Present the idea in one-to-ones first and gather some backing. Either keep the decision off multi-person calls and
+        use async communication instead, or use such a call only to ratify what was already agreed.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The decider cares about outcomes and costs, very little about the implementation details.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Focus on the result and why it matters to them, in their currency (e.g. bug rate, development speed).
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Doing nothing always looks free, because that cost is hard to spot (things run on inertia).</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Name the cost of inaction, e.g. the support load, slowed development or customer churn.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Doing anything carries an opportunity cost, which might be used against your proposal.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Be prepared to defend your idea against alternative initiatives — not necessarily ones solving the same
+        problem, but ones competing for the same resources.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The same proposal can be accepted from someone with a track record and dismissed when it comes from a
+        stranger, because the decider bets on you as much as on the idea.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Make sure you have enough credibility and social capital to cover the risks and bets in your proposal.</li>
+      <li>Spend the credibility you have on the asks that matter.</li>
+      <li>If you don’t feel confident enough, find a sponsor or backer who will co-own it with you.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>If something goes wrong, it hurts both you and the person who approved it.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Make the execution safe: reversible, incremental, small blast radius, cancellable. Mention this explicitly
+        as an extra argument.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A big bet with a big reward is much harder to get approved than a small one with a proportionally smaller
+        reward, because the risk is higher.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Instead of asking for the whole thing (e.g. a migration), ask for a spike or a prototype. If it succeeds,
+        repeat until the whole thing is done.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Starting a project can take a comparable or even bigger effort than executing it.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Attach the work to something already underway. “Since we’re touching this code anyway, let’s improve it a bit
+        by doing X” has a much higher chance of happening than a standalone refactoring effort.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>You might face a “who approved this?” question at some point.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Get the approval in writing.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
 
 ## During development
 
