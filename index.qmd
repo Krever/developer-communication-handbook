@@ -608,7 +608,11 @@ helplessness.
 
 This part covers the communication that happens while the features are being developed, from code constructs to stakeholders interactions and work visibility.
 
-### Code comments
+### In the code
+
+We start with the messages that live in the code itself: comments, error messages, log lines and names.
+
+#### Comments
 
 Comments are messages toward the people reading the code in the future and hence should be treated as a communication concern.
 
@@ -703,7 +707,7 @@ Comments are messages toward the people reading the code in the future and hence
 
 The general advice here is to **imagine what information might be needed to someone reading the code 5 years from now and provide it**.
 
-### Error messages
+#### Error messages
 
 Like a comment, an error message is a message into the future, except that the communication is about something that didn't go well.
 
@@ -795,7 +799,103 @@ vs.
 
 > Can't update the address of an inactive user. Reactivate the account on the user main screen first, then try again.
 
-### Naming things
+#### Logging
+
+A log line completes the trio of messages into the future: a comment explains the code, an error message speaks up when something breaks,
+and a log line explains what happened.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The reader is likely scanning logs under pressure, e.g. during an incident.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Say what happened briefly and add enough context to act on it.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Nobody reads logs until something breaks, and then they read a flood of lines at once. Noise hides the signal.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Log at the right level. Reserve WARN and ERROR for things a human should actually act on.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Logs are searched, filtered and grepped across millions of lines, not read like prose.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keep lines greppable and consistent: stable prefixes and structured <code>key=value</code> fields rather than free text.</li>
+      <li>Structured logging is even better: output the line as JSON with the fields as separate attributes, so the tooling can index and filter them instead of parsing the message.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The logging infrastructure usually attaches data such as a timestamp, service, host or request id.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't repeat what is already there. Add what can't be reconstructed: the why and the values involved.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A single request crosses many services and log streams.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Carry a correlation or request id so the lines can be stitched back together, either manually or with distributed tracing tools such as OpenTelemetry.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Logs often land somewhere with weaker access controls than the database.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Never log secrets, tokens or personal data. Log an id to correlate instead.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+Here is the same event logged in two different ways.
+
+> `ERROR Failed to send email to john.smith@gmail.com! Will retry.`
+
+vs.
+
+> `INFO email send failed, retry scheduled kind=weekly_digest user_id=u_1029 provider=mailgun error=connection_timeout attempt=2 max_attempts=5`
+
+#### Naming things
 
 A name is a small message to the person who reads the code next. It will be read far more often than written and has to survive years or decades.
 
