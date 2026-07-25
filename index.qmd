@@ -2141,3 +2141,122 @@ Let's now talk about the most dreaded but also the most effective (if done right
 </table>
 ```
 
+## Hard conversations
+
+Sooner or later communication stops being routine and casual and starts carrying some stakes.
+Almost all such conversations get easier if you shift your perspective from "you against them" to "it's you and them against the problem".
+But it doesn't work unless you keep your own emotions in check first.
+
+### Disagreeing and pushing back
+
+Disagreement is one of the main points of communication (if everyone agrees, what's the point of talking?).
+The goal, though, is not to win the discussion but to reach the better decision and _still be able to work together afterwards_.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Disagreement feels personal, but it rarely is.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Focus on the problem instead of the person: “the deadline is tight”, not “your deadline is wrong”.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>You might be the one missing context. The other side might have reasons you can't see.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Ask (and understand) why before declaring something wrong.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People can't weigh your opinion if they can't tell how strongly you hold it or why.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>State your view, how sure you are, and your reasons: “I think X because Y, but it's not a hill I'll die on”.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Pushing back on someone senior feels insubordinate (or at least intimidating), but a good manager or senior IC
+      wants a plurality of opinions. Silent nodding doesn't add any value.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Say it, maybe in private first, depending on the context.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Bringing back the same issue over and over is annoying and unhelpful, even if you're right.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>The next time you mention the problem, make sure there is some result/agreement/decision from the discussion.</li>
+      <li>If the result is not what you wanted, “disagree and commit”: argue hard before the decision, then support it fully; don't relitigate (if nothing changed) or quietly sabotage.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Your disagreement capital is limited. If you fight everything, people will stop listening.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Pick your battles. If you have five problems, discuss the most important ones, and only one at a time.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Spoken disagreements evaporate. If you're overruled and it later goes wrong, nobody remembers the trade-off was flagged.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>When it matters, put it in writing.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Spotting a problem is the easy half. A bare “this is broken” annoys people even if you're right.</li>
+      <li>This becomes even more important with seniority. At some point you have to become a person with solutions, not just problems.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>You don't always need the full fix, but bring something to the table, e.g. the problem analysis or the options you see.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
