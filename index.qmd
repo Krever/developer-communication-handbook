@@ -2412,3 +2412,116 @@ Here we focus on what to do when a good ask wasn't enough.
 </tbody>
 </table>
 ```
+
+### Delivering bad news
+
+Sooner or later you'll have to tell someone something they don't want to hear.
+You can't change the past but you can change how you deliver it.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Bad news only gets worse with time.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Share it immediately, even if the situation is still unfolding and you don't have the full picture yet.</li>
+      <li>If you're uncertain about the shape or impact, say so — it can even reduce the panic.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People would like to know what is happening and whether the problem is being taken care of.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>If you're handling the problem, keep the audience updated. Share when they can expect the next update, e.g. “I should know more by the end of the day” or “I will let you know once I finish investigating” (and then actually do let them know).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Sugarcoating or burying the message doesn't help anybody.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Start with the news, then add the details: “we'll miss the deadline”, and only then the why.</li>
+      <li>Be honest about the severity; don't soften it into something it isn't. If you downplay the news, the reaction from the audience might become inappropriate (e.g. not urgent enough).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Over-apologising makes it about your feelings and doesn't improve the situation.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Focus on what happened, the impact and what you're doing about it. A short “sorry” is enough.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People will be impacted by the news, e.g. a slipped deadline can wreck their plans or cause pressure from above.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Acknowledge the impact on them, e.g. “I know this messes up your timeline”. </li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Hiding the problem or shifting blame costs your credibility and trust.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Take responsibility for your part, even when it's not entirely your fault. There is no such thing as too much ownership.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Bad news might cause panic, overreaction, confusion or fear.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Consider what reaction you might get and match the channel to the news: a call or DM for the personal or highly critical, the broad channel for the broadly-impacting.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>“Here's a disaster” with no next step is useful but it's only half of the story.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Bring a plan, or at least the first step towards mitigation, alongside the news.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
