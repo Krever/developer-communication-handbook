@@ -2260,3 +2260,155 @@ The goal, though, is not to win the discussion but to reach the better decision 
 </tbody>
 </table>
 ```
+
+### Escalating when you're stuck
+
+What do you do when you need to proceed but get blocked? Here we talk about situations where you need a decision or an agreement from someone else, but can't get it,
+either because of lack of response or disagreement. This assumes you already asked well; if not, fix that first (see [Asking](#asking)) — a lot of blockers are just a vague request.
+Here we focus on what to do when a good ask wasn't enough.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A polite ask buried in a thread is easy to ignore, miss or forget about.</li>
+      <li>Escalating feels like snitching, nagging, or applying pressure, so it's natural to sit on a blocker instead of doing something about it.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Escalating is just part of the job. Do it once enough time has passed (based on the urgency of the topic) — in the end you're responsible for your results and doing nothing is failing that responsibility. Just do it carefully (see below).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Escalation takes different forms with different weight. It's usually a bad move to go straight for heavy artillery.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Raise urgency in steps:
+        <ul>
+          <li>a nudge: “Bumping this 🙂”</li>
+          <li>a direct ask with a deadline: “Can you approve this by Thursday EOD? I'm blocked until then.”</li>
+          <li>a default-decision: “Going with Postgres on Friday unless someone objects.”</li>
+          <li>looping in managers: cc your manager (or theirs) on the next message.</li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Re-pinging the same “any update?” over and over is annoying and some people might ignore you.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Add something with each follow-up, for example more explanation of impact, stakes at play or context around the request.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Decisions are costly to make, especially if they are not obvious and there are multiple things to consider.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Make the decision cheap to give. Some strategies for this:
+        <ul>
+          <li>a recommendation: “I'd go with X, any objections?”</li>
+          <li>a yes/no: turn an open question into one they can answer in a word, e.g. “Can we ship without the banner?”.</li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A stalemate can persist just because nobody wants (or feels responsible enough) to be the one to decide.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Use a default-decision: “I'll do X on Friday unless someone objects.” Silence becomes a yes and you can move.</li>
+      <li>Or point at a decision-maker: instead of leaving it to the group, name who you think should call it, e.g. “@Alice, I think this is your call — can you decide by Friday?”.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Escalation is about the problem. If you make it about a person, it's called a complaint.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Raise the problem and its impact, e.g. “this is blocked and we might miss the deadline” instead of “XXX is slacking”.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A private nudge is easy and polite, but it's invisible: it leaves no record and no one else can jump in to unblock you.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Start with the private nudge, but be prepared it might not work.</li>
+      <li>If it doesn't work, move to a shared channel or ticket, keeping the problem public and the person out of it (don't call anyone out in front of an audience).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Sometimes the person simply can't say yes because the blocker is outside their area of influence, e.g. it's their manager who owns priorities or budget.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>In such a case, talking with the right person isn't “going over someone's head”. Bring that decision-maker in, ideally with the original person in the loop, not behind their back.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>When the blocker is the person themselves, it starts to get tricky.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Talk to your own manager first, and try to show a pattern (a single situation is usually not worth the discussion). It's better not to try to solve it yourself, unless you really know what you're doing (but then, why are you reading this book?).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Escalation creates a bit of friction and might affect relations.</li>
+      <li>An escalation left hanging makes people wonder if it's still live.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Once you're unblocked, thank whoever helped. It smooths over any friction and keeps them willing to help next time.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
