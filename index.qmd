@@ -2828,7 +2828,7 @@ A postmortem is a way for the organisation to learn from the incident and not re
 
 ## Career and special occasions
 
-### Giving and taking feedback
+### Giving and receiving feedback
 
 Feedback serves two purposes: to learn what you do well and to learn what can be improved. This section is about feedback on people and the way they work — feedback on code lives in [Providing a PR review](#providing-a-pr-review).
 
@@ -2940,3 +2940,185 @@ Feedback serves two purposes: to learn what you do well and to learn what can be
 </tbody>
 </table>
 ```
+
+### Performance reviews
+
+Let's now talk about evaluating how well you or your colleagues did over a specific period (usually a year or half of it) in a formal process.
+This is a form of [giving and receiving feedback](#giving-and-receiving-feedback), but with quite a few nuances.
+
+#### Your own
+
+When you have to evaluate yourself and receive an evaluation from your manager.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Your manager doesn't see or remember most of what you did.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Bring it yourself, don't assume they see what you see.</li>
+      <li><a href="#making-your-work-visible">Making your work visible</a> all year removes a lot of work here — the sentiment sticks even if the details get forgotten, so there's less to prove at review time.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>You won't remember most of your accomplishments either. A year/semester/quarter is long and memory is short.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keep a running log for yourself where you note anything worth noting (achievements, deliverables, learning and so on).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Underselling harms your result. Inflating harms your credibility.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Stick to the facts. Emphasise things you think might be underappreciated.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Self-awareness is an important skill and it's also about knowing your weak points.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Be ready to name something you don't excel at.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>How much you grew usually matters more than how good you are.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Frame your review as a trajectory — bigger scope, new responsibilities, new skills and competencies and so on.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>“Meets expectations” is the default grade. Ratings are calibrated so most people land there by design.</li>
+      <li>The bar rises with your title: higher position, higher expectations, harder to exceed.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't take a “meets” too hard on yourself. Judge it against the level you're at.</li>
+      <li>If you're aiming to exceed, ask your manager what that would mean in practice.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>You should roughly know where you stand before the review process even starts. If the result is a surprise, something went wrong during the period.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Work out why: either your manager never voiced it (their fault) or you missed the signals (a lesson on its own). Either way, fix the loop — make sure you know where you stand from your regular 1:1s.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+#### Your peers'
+
+When you have to evaluate your colleagues and help their manager.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>360 feedback goes to the manager, not to the person, so it doesn't have to be polite.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't sugarcoat it or spend time softening it. Be as blunt as it needs to be and save your time writing it and the manager's time reading it.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The manager has to relay your feedback, and vague input becomes something like “someone said X, but I don't really know what they meant”.</li>
+      <li>In theory they should come back to you for details, but it's not always the case. And when they do, it's work you could have saved.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Be specific.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A single incident doesn't matter much, but a pattern does.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>If you notice some suboptimal behaviour in someone, look for a pattern. If you find one, keep a record of it so the specifics are easier to give.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>“Anonymous” feedback often isn't as anonymous as you might think — content, phrasing and perspective can give you away. If only the two of you touched feature X and the feedback is about feature X, it's kind of obvious, isn't it?</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't count on anonymity. Write it as if they'll know it came from you. Don't make enemies.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Your feedback has consequences. If you're too polite, someone incompetent might get promoted. If you're too harsh, someone might face problems they don't deserve.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Aim to be accurate; describe what you observed. Write only what you genuinely believe, not what you think you're supposed to write. Integrity beats everything else.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
