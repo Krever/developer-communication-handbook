@@ -2825,3 +2825,118 @@ A postmortem is a way for the organisation to learn from the incident and not re
 </tbody>
 </table>
 ```
+
+## Career and special occasions
+
+### Giving and taking feedback
+
+Feedback serves two purposes: to learn what you do well and to learn what can be improved. This section is about feedback on people and the way they work — feedback on code lives in [Providing a PR review](#providing-a-pr-review).
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Criticism in front of an audience is an attack on their reputation and makes people defensive. Defence is the opposite of listening.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Criticise in private.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Praise in front of others lifts the person's standing and shows everyone what good looks like.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Praise in public whenever you can.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Not everyone wants to hear the feedback, either in general or at a particular moment.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Ask first: “Would you like some feedback on X?”. It hands them control and primes them to listen.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Vague feedback has very limited use. “Good job” or “be more proactive” carries only the sentiment and is almost impossible to act on.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Point at the specific thing and its effect. SBI (<a href="https://untools.co/situation-behavior-impact/">Situation–Behaviour–Impact</a>) is a decent template: “in yesterday's standup (S) you cut Ana off twice (B), and she went quiet for the rest of it (I)”.</li>
+      <li>This works for praise too — “your migration plan caught the rollback case” lands much better and deeper than “good job”.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Crediting “everyone involved” is pure noise — nobody feels seen and nobody remembers who did something nice.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Use names. Public credit is nearly free and people remember it for years.</li>
+      <li>If there are many people involved, try to pick the most impactful ones or split the feedback into a couple of separate messages. If you list 20 names, it's almost equivalent to saying “everyone”.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>If you save the feedback for review season, there are a few weeks or months when it couldn't be addressed. And the memories of the exact situations have faded by then.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Give it while it's fresh and still actionable.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The only thing you know for a fact is what you observed and what you felt. You can never know what actually happened (think magic tricks) or what the people involved intended.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Offer feedback as something you noticed, and don't try to judge the person.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>On the receiving end, the instinct is to defend or explain your behaviour, which defeats the purpose (learning something).</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Say thanks and ask for an example.</li>
+      <li>If you have something to clarify, do it a bit later, once you've had time to analyse what you heard.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
