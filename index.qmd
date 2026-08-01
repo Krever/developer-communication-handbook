@@ -2336,6 +2336,16 @@ Sometimes you will have to push back not against an idea or opinion but against 
 </table>
 ```
 
+Here is the same refusal in two ways.
+
+> yeah I'll try to squeeze it in this week, we'll see
+
+vs.
+
+> I can't take this on this week without dropping the billing fix. If it can wait until Monday I'm in, otherwise you might need to ask someone else.
+
+The first sounds nicer but helps no one (assuming you won't manage to squeeze it in). The second lets the other side make the call.
+
 ### Escalating when you're stuck
 
 What do you do when you need to proceed but get blocked? Here we talk about situations where you need a decision or an agreement from someone else, but can't get it,
@@ -2600,6 +2610,16 @@ You can't change the past but you can change how you deliver it.
 </tbody>
 </table>
 ```
+
+Here is the same bad news delivered two ways.
+
+> Hey, so I've been digging into the payment migration and there were a few complications, and I think there might be a small delay.
+
+vs.
+
+> Heads up: the payment migration won't hit the Tuesday deadline. A migration step failed in staging. I'm on the fix and will confirm by end of day.
+
+Which one brings more clarity?
 
 ### Incident coordination
 
