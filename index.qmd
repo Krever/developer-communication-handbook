@@ -2367,7 +2367,7 @@ Here we focus on what to do when a good ask wasn't enough.
   </td>
   <td valign="top">
     <ul>
-      <li>Start with the private nudge, but be prepared it might not work.</li>
+      <li>Start with the private nudge, but be prepared that it might not work.</li>
       <li>If it doesn't work, move to a shared channel or ticket, keeping the problem public and the person out of it (don't call anyone out in front of an audience).</li>
     </ul>
   </td>
@@ -2513,12 +2513,217 @@ You can't change the past but you can change how you deliver it.
 <tr>
   <td valign="top">
     <ul>
-      <li>“Here's a disaster” with no next step is useful but it's only half of the story.</li>
+      <li>“Here's a disaster” with no next step is useful, but it's only half of the story.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>Bring a plan, or at least the first step towards mitigation, alongside the news.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+### Incident coordination
+
+An incident is a special kind of bad news — one that is unfolding live, requires immediate remediation,
+and usually comes with high stakes (a system, or part of it, being down; revenue or reputation being lost).
+The communication around it is as important as the remediation itself,
+and sometimes more.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People hesitate to “raise the alarm”, e.g. for fear of overreacting, creating noise or drawing attention to themselves.</li>
+      <li>Postponing the alert means postponing the fix and more downtime for the system.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>When something looks wrong, confirm immediately and raise it as soon as you're fairly confident the problem exists.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>During an incident people don't care about the root cause — they want to know it's being handled, what's affected, and when it might be resolved.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Save the deep analysis for later. Focus on the status updates.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Silence during an incident creates immediate chaos — people assume nobody's on it and start pinging around.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Post on a fixed cadence even when there's nothing new, e.g. “still investigating, next update in 30 min”.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People tend to follow the “room temperature” and escalate it.</li>
+      <li>Panic helps no one. Being too calm can soften the reaction below the optimal point.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keep the updates calm and factual, even when it's on fire. Make urgency explicit.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>It's hard to debug and answer questions at the same time.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>If possible, split the roles: a dedicated person owns communication and coordination so the others can focus on the fix (the <a href="https://en.wikipedia.org/wiki/Incident_commander">incident-commander</a> pattern).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Coordinating a serious fix over asynchronous chat is too slow and inefficient.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Spin up a war room (get the responders onto a call to work in real time) while the comms owner keeps posting written updates to the channel for everyone else.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>During debugging it's critical to differentiate guesses from facts — it directly affects the reasoning chain and investigation steps.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Be very explicit about how confident you are in a given statement.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>It's natural for multiple conversations to start about the same issue.</li>
+      <li>Scattered communication makes it impossible to track the progress and the impact.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keep one source of truth — a single pinned thread or status doc.</li>
+      <li>Kill all other conversations explicitly with a pointer to the main one, so no one keeps answering there by accident.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People stay on edge until they're told it's actually over. They don't go and periodically verify if the problem is still live.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Mark the end explicitly — what was resolved and that normal service is back.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+#### Postmortems
+
+A postmortem is a way for the organisation to learn from the incident and not repeat it.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Blame makes people hide the next incident, and fear kills the honest account you need in order to learn anything.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keep it <a href="https://sre.google/sre-book/postmortem-culture/">blameless</a> — describe what the system did and what people knew at the time, not who made a mistake.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The people in the room already learned most of the lesson, but there are plenty of people who were not there.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Write it for people who didn't participate. It's the organisation's memory of what happened.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Most postmortems need follow-ups (e.g. a systemic way to avoid the same problem in the future).</li>
+      <li>Action items without an owner have very little chance of getting done.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Turn the lessons into action items, each with an explicitly assigned owner.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A postmortem nobody reads is wasted effort — the point is that others read and learn from it.</li>
+      <li>The bad thing already happened; sharing it doesn't make it worse, but it can make the future much better.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Share it publicly and widely, and make it findable.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Not every incident is the same, and a postmortem is itself a cost.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Match the effort to the severity of the issue. Sometimes a short message is enough, sometimes you will need a full report and hours of discussion.</li>
     </ul>
   </td>
 </tr>
