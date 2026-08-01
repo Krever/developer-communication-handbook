@@ -2261,6 +2261,81 @@ The goal, though, is not to win the discussion but to reach the better decision 
 </table>
 ```
 
+#### Saying no
+
+Sometimes you will have to push back not against an idea or opinion but against a request directed at you, like an unrealistic deadline, scope creep, or a "quick favour".
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A vague “maybe” or “I'll try” feels polite but sets a false expectation and hurts later.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Give a clear answer so the person can act accordingly.</li>
+      <li><a href="https://www.youtube.com/watch?v=BQ4yd2W50No&amp;t=3"><em>Do. Or do not. There is no try</em></a>.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A flat “no” with no reasoning feels like a wall and invites a fight.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Explain what made you reject the request.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Every yes is a no to something else (<a href="https://en.wikipedia.org/wiki/Opportunity_cost">opportunity cost</a>) — your time and focus are finite.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Weigh a new request against what it displaces before accepting it. Use that as your justification and frame the no as a tradeoff.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Giving something is almost always better than giving nothing.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Offer an alternative (“I don't have time to investigate right now, but you can see the raw data here”) or a delay (“not now, but please ping me again tomorrow”) instead of a plain refusal.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A reflexive yes under pressure is often wrong and hard to walk back.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>It's fine to say “let me check and get back to you” and answer once you've thought it through.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
 ### Escalating when you're stuck
 
 What do you do when you need to proceed but get blocked? Here we talk about situations where you need a decision or an agreement from someone else, but can't get it,
