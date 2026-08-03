@@ -3122,3 +3122,113 @@ When you have to evaluate your colleagues and help their manager.
 </table>
 ```
 
+### Mentoring
+
+At some point your job will be not only about you and the tasks but also about the people around you. And one aspect of that is helping them learn through mentoring sessions.
+And this activity is made almost entirely out of communication.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Asking to be mentored takes real humility (it's not easy to say out loud that your skills are not good enough). Plenty of people never manage it.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Make it as easy as possible for them to get started. Run a structured programme if possible, or offer the sessions directly (it's easier to agree than to ask for it).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Mentoring and coaching often get mixed up. Coaching is about drawing the answer out of someone without giving it (basically just asking questions). Developers are not expected to do that usually.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Focus on mentoring: share what you know and what you'd do in their place. Learn more about coaching if you get interested.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>When explaining things, it's critical to know how much they know already. Assume too much understanding and they will not get the point. Assume too little and they will be offended.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Make sure you know where they stand. Just ask if you're not sure.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Most things don't have a clear answer, and everything is a tradeoff of some sort.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Instead of telling them what to do (or what you would do in their place), explain your reasoning process and the options you weigh. (You will need that skill in design interviews anyway.)</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People don't ask questions that make them feel dumb.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Make it safe to ask any question. Treat a basic question as normal, and admit your own gaps when possible. Never make judgements about their level or competency.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A mentee will make communication mistakes too, like talking too much or burying the point. Most devs spend very little focus and energy on things like this.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Raise it directly and help them communicate better. Your sessions don't have to be about technical topics only.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Mentoring without a goal is dangerously close to watercooler conversation.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Make sure both sides agree on what the mentee actually wants to get better at, and use it as the north star for the sessions.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Almost nobody has the tenacity to keep the sessions happening. They want them to happen, but inertia and “real work” quietly win, and the sessions are missed or delayed ad infinitum.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Make it a recurring standing slot in the calendar so it takes no decision to attend and a bit of effort to cancel.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
