@@ -3232,3 +3232,288 @@ And this activity is made almost entirely out of communication.
 </tbody>
 </table>
 ```
+
+### Job hunting
+
+Job hunting is almost pure communication again, with a small twist — the thing you're selling is yourself.
+
+#### The search
+
+The first step to landing a new job is to find interesting ones and get invited to interview. This is what we will discuss here.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>You can skip job-seeking altogether if you maintain a network of connections and relationships that can refer you to a new place.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Stay in touch with people you've worked with or at least build relationships when working together. Reach out when you need a new job.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A public presence — code, articles, conference talks — can help differentiate you from other applicants and get you through the CV screening.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Do something and make it visible. The more and better things you do, the better the results.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The world is a small place. Recruiters might remember how you treated them.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Even when you turn down an offer, do it with at least a basic level of decency.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Your CV gets a few seconds of attention before it's binned or kept (unless you come in as a referral).</li>
+      <li>Your CV is a signal medium through which you communicate with the recruiter — there are different messages you might want to transfer over it:
+        <ul>
+          <li>deep technical expertise — familiarity with a particular tech or stack</li>
+          <li>broad technical expertise — familiarity with many different stacks</li>
+          <li>experience with a particular problem domain</li>
+        </ul>
+        And many more.
+      </li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Decide which signal you want to send and make the CV carry it clearly. It has to get through in those few seconds your CV gets.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The same signal might be relevant for multiple companies.</li>
+      <li>The less focused the CV, the weaker the signal.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Life is more nuanced than “adjust your CV to a particular job”. You have to predict who is reading your CV, what signals they're looking for, and how clear those signals are in your CV.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>“Quantify your impact” is the standard advice, but it's a trap. Measuring things honestly (in a way that properly reflects your personal contribution to the work, and the impact that work made on the company) is horrendously hard.</li>
+      <li>Any number you do use has to survive scrutiny.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Be cautious about throwing numbers around — use them only when you can really defend them.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Anything you put in the CV can be asked about. The more impressive, the higher the chance.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't put anything on it you can't talk about for a couple of minutes. If you can't defend it, remove it.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+#### The interviews
+
+Once you get invited to an interview, you start speaking to humans (hopefully). And the core struggle begins.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>In a technical interview they want to see how you think, not just the final answer.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Think out loud — narrate your reasoning and your assumptions.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>How you come across is weighed alongside what you say. Visible nerves or imposter syndrome don't help you.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Speak with confidence whatever you feel inside — leave the imposter syndrome at the door and talk like someone who knows their job. Don't bluff though: admit what you don't know, and own a mistake the moment you spot it.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Your communication skills are also judged. If you ramble or stay too abstract, it's a problem.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Tell <em>short</em> stories: the situation, what you did, and how it turned out. Absolute minimum of details to get your point across.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A hiring loop is several people, and each is judging a different thing — a recruiter typically screens for communication and red flags, an engineer for how you work, a manager for whether you'd fit the team, a CEO for whether you move the organisation forward.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't give all of them the same pitch. Work out what each one is there to evaluate and lean into it.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Software is a team sport and companies hire for it. Someone who claims they did everything alone is a red flag, regardless of their achievements.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Frame your wins as your contribution to the team's success.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The questions you ask are sometimes as important as your answers, and are being evaluated too.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Come with real questions about the team and the work you'd be doing. Good questions read as competence and genuine interest.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>“Why are you leaving?” is a trap. Trashing your current job or manager reads as a red flag about you, not them.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keep it forward-looking: talk about what you're moving toward.</li>
+      <li>Frame it as a tradeoff and show some understanding of the other side. Not “management is dumb” but “they optimise for things I don't agree with”.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+#### The result
+
+You went through the interviews and got some kind of result (good or bad). What to do now?
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Negotiating the offer feels adversarial, but by then they've decided they want you — you have more room than it feels like.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Treat it as a conversation, not a fight. It's fine to ask for time instead of answering on the spot, and to let them put a number down first. For the actual tactics, read dedicated materials like <a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/">patio11's guide</a> — it's a good one.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Telling your manager you're leaving is not an easy conversation, and the instinct might be to soften it or dump every grievance.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Tell them directly and early. Try to keep as good a relationship as possible and don't burn bridges.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A resignation might trigger a counteroffer.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Decide how you'd respond before you announce it. To do that, you have to really understand why you're leaving in the first place.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Your last month is the last impression you leave.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Hand over cleanly: document what's in your head, wrap up or transfer what you can. Don't leave a slammed door behind you.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The industry is smaller than it feels and people move around; how you take a “no” gets remembered. (For when the result is a rejection.)</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Respond to rejection gracefully, and it's fine to ask for feedback.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
