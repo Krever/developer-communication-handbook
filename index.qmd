@@ -3233,11 +3233,11 @@ And this activity is made almost entirely out of communication.
 </table>
 ```
 
-### Job hunting
+### Changing jobs
 
-Job hunting is almost pure communication again, with a small twist — the thing you're selling is yourself.
+Job hunting is almost pure communication again, with a small twist — the thing you're selling is yourself. And when you finally land the new one it doesn't get much easier.
 
-#### The search
+#### Search
 
 The first step to landing a new job is to find interesting ones and get invited to interview. This is what we will discuss here.
 
@@ -3345,7 +3345,7 @@ The first step to landing a new job is to find interesting ones and get invited 
 </table>
 ```
 
-#### The interviews
+#### Interviews
 
 Once you get invited to an interview, you start speaking to humans (hopefully). And the core struggle begins.
 
@@ -3444,7 +3444,7 @@ Once you get invited to an interview, you start speaking to humans (hopefully). 
 </table>
 ```
 
-#### The result
+#### Result
 
 You went through the interviews and got some kind of result (good or bad). What to do now?
 
@@ -3511,6 +3511,46 @@ You went through the interviews and got some kind of result (good or bad). What 
   <td valign="top">
     <ul>
       <li>Respond to rejection gracefully, and it's fine to ask for feedback.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+#### Onboarding
+
+You got the job, but there are sitll few things to play well.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>You're the only one who can still see what's confusing, undocumented or weird. In a month you'll get used to it and become blind like everyone else.</li>
+      <li>The code, patterns, practices are usually “wrong” for a reason.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Write down what you notice.</li>
+      <li>Learn the history and context before proposing changes. Assume the weird thing has a reason until proven otherwise.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Many things you will need aren't written down and reside in people's heads.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Focus on learning the company's structure and people as much as reading code and docs, if not more.</li>
     </ul>
   </td>
 </tr>
