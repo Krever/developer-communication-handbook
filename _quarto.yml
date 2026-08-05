@@ -22,7 +22,9 @@ format:
     toc: true
     toc-location: left
     toc-depth: 4
-    toc-expand: true
+    # Show Parts (##) and Sections (###) by default; fold the #### subsections
+    # until you scroll into their section (Quarto auto-expands the active one).
+    toc-expand: 2
     toc-title: "Contents"
     smooth-scroll: true
     anchor-sections: true

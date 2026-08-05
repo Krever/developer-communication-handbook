@@ -150,12 +150,24 @@ blockquote {
 #TOC .nav-link:hover {
   color: $ink;
 }
-// Keep the full TOC expanded. Quarto's collapse/expand of nested subsection
-// lists is driven by its built-in scrollspy (which we replaced), so without
-// this the H3 links stay hidden and the active highlight appears to vanish
-// whenever the current section is a subsection.
-#TOC ul.collapse {
-  display: block !important;
+// Subsection (H4) lists fold by default; the scrollspy in enhance.html reveals
+// the active section's list by toggling `.show` (and folds the rest). This
+// replaces Quarto's built-in fold/reveal, which we lost when we swapped its
+// scrollspy for our own left-TOC one.
+#TOC ul.collapse { display: none; }
+#TOC ul.collapse.show { display: block; }
+// Disclosure caret on section links that have foldable subsections; points
+// right when folded, rotates down when the scrollspy opens the list.
+#TOC li:has(> ul.collapse) > .nav-link::after {
+  content: "›";
+  display: inline-block;
+  margin-left: 0.35em;
+  opacity: 0.55;
+  transition: transform 0.15s ease;
+}
+#TOC li:has(> ul.collapse.show) > .nav-link::after {
+  transform: rotate(90deg);
+  opacity: 0.8;
 }
 // Progressive indentation so the H2 › H3 › H4 hierarchy is legible at a glance.
 // The accent rail stays at a common left edge; only the text indents.

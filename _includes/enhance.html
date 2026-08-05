@@ -92,6 +92,21 @@
     }).filter(Boolean); // document order === TOC order
     if (!items.length) return;
 
+    // Subsection (H4) lists fold by default (see theme.scss). Reveal the one
+    // belonging to the active section and fold the rest.
+    const collapses = Array.from(document.querySelectorAll('#TOC ul.collapse'));
+    function syncSubnav(activeLink) {
+      let toShow = null;
+      const li = activeLink.closest('li');
+      if (li) {
+        // Active link is a section whose subsection list should open...
+        toShow = li.querySelector(':scope > ul.collapse');
+        // ...or it is itself a subsection, so open its containing list.
+        if (!toShow) toShow = activeLink.closest('ul.collapse');
+      }
+      collapses.forEach(ul => ul.classList.toggle('show', ul === toShow));
+    }
+
     const OFFSET = 120;
     let activeLink = null;
     function update() {
@@ -104,6 +119,7 @@
       if (activeLink) activeLink.classList.remove('active');
       current.link.classList.add('active');
       activeLink = current.link;
+      syncSubnav(current.link);
     }
     document.addEventListener('scroll', update, { passive: true });
     window.addEventListener('resize', update);
