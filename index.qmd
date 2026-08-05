@@ -3628,3 +3628,92 @@ Sooner or later you'll be on the other side of the table, interviewing candidate
 </tbody>
 </table>
 ```
+
+### Public speaking
+
+At some point in your career you will be forced to present something. It can be a new feature, a new idea, a knowledge sharing session or anything in between.
+This section is targeted toward people who got dragged into it without any prior interest in the craft.
+You won't become a keynote speaker from one handbook section, but that's not the goal.
+The goal is to help you survive — and maybe even like — the internal talk you got handed. If you want to go deeper, you will find whole books on the topic in [resources](#resources).
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>An internal audience is your colleagues, they want you to do well, and they notice far less of your mistakes than you feel.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Walk in assuming goodwill. Don't apologise for nerves or restart — keep going.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Most talks try to say too much, and the audience leaves remembering nothing.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Pick the one thing they should walk away with. Cut whatever doesn't serve it. Less is more.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A design review for your team and a demo for stakeholders are different talks, even about the same work.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Find out who's in the room and what they came for, then adjust to that (see <a href="#talking-to-non-developers">talking to non-developers</a> for inspiration).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Nerves never fully go away, not even for people who do this for a living.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Prepare instead of hoping the fear passes. Rehearsals help a lot.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Slides read out word-for-word are worse than no slides; people read ahead and stop listening to you.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keep them sparse and don't recite. A single sentence or image per slide is the best thing you can do.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>It's a skill, trainable like any other. Most public speakers were subpar in the beginning.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Do more of it, even if it hurts. Internal knowledge sharing sessions, local meetups, etc. Read books on the subject.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
