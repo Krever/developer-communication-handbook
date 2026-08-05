@@ -3517,3 +3517,114 @@ You went through the interviews and got some kind of result (good or bad). What 
 </tbody>
 </table>
 ```
+
+### Interviewing candidates
+
+Sooner or later you'll be on the other side of the table, interviewing candidates yourself — quite likely with no training, or very little of it. The golden rule here is "treat others like you would like to be treated yourself".
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>You're evaluating the candidate, but they're also evaluating you and the company.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>It's a two-way sell. Be on time, be prepared, be someone they'd want to work with. Just be a decent human being (hopefully just yourself).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A nervous candidate performs worse, and then you get a worse read on them. Your task is to evaluate how they will do on the job, so the stress level should be similar. Unless you work in a really harsh environment, the interview is not fully representative by definition.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Open warmly, explain how the session will go, and make it clear you want to see their best — not catch them out. Say it's fine to think out loud and ask questions. Smile a lot.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>It's tempting to ask tricky questions and push the candidate to the limits.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>It's fine, but comfort them if they don't know the answer. Make sure your question has a purpose and is not about you showing off or trying to sink the candidate.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>When you talk, you don't collect information.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Ask, then be quiet and listen. Let silences sit — people fill them with the good stuff.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>There is a chance you will form a verdict in the first couple of minutes, then spend the rest of the interview gathering evidence for it.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Notice it and deliberately test the opposite. Let the candidate change your mind.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Your input feeds the hiring decision, and will be used as a baseline for the feedback given to the candidate if they ask for it.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Take notes during the call and afterwards give specifics with examples — similar rules to any useful <a href="#giving-and-receiving-feedback">feedback</a>.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Sugarcoating the role or environment just to close someone might result in a disappointed hire who leaves in a few months.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Be honest about the work, the team, and the rough edges. Let them opt in with eyes open and full context.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Letting the person ask their own questions is comforting and good for the candidate.</li>
+      <li>You can get quite a lot of signal from questions they ask if you look for it.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Reserve significant time for their questions.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
