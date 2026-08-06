@@ -2828,6 +2828,80 @@ A postmortem is a way for the organisation to learn from the incident and not re
 
 ## Career and special occasions
 
+### Working with your manager
+
+Conversations with your manager will likely be the ones with the most impact on your career, and hence your life in general. Improving them even slightly might yield a lot.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>The 1:1 exists for you, and you have all the power to drive what gets discussed there.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Bring your own topics: blockers, growth, frustrations, highs, lows, and anything else you want to share. Collect topics as you go. Figuring them out on the spot is much trickier.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Your manager can only help with what they know.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Make sure they know. Surface problems early (see <a href="#delivering-bad-news">delivering bad news</a>).</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A manager's job is to help you grow, but they aren't mind readers. If you never say you want to work on X or grow toward Y, you won't.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Say what you want (project, direction, money, responsibility, freedom, etc.). The worst you can hear is “not (yet)”, hopefully with some justification and context you can act on.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Some developers hide problems from their manager, when unblocking you is literally their job.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Use them. Ask for context, backing, pointers, decisions and anything else that helps you do your job better.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Your manager's manager (your “skip”) is even scarier.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't be afraid. A skip-level chat is normal and useful — just don't use it to go around your manager.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
 ### Giving and receiving feedback
 
 Feedback serves two purposes: to learn what you do well and to learn what can be improved. This section is about feedback on people and the way they work — feedback on code lives in [Providing a PR review](#providing-a-pr-review).
