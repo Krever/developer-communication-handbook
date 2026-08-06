@@ -3743,7 +3743,7 @@ Sooner or later you'll be on the other side of the table, interviewing candidate
 </table>
 ```
 
-### Public speaking
+### Presenting
 
 At some point in your career you will be forced to present something. It can be a new feature, a new idea, a knowledge sharing session or anything in between.
 This section is targeted toward people who got dragged into it without any prior interest in the craft.
@@ -3825,6 +3825,68 @@ The goal is to help you survive — and maybe even like — the internal talk yo
   <td valign="top">
     <ul>
       <li>Do more of it, even if it hurts. Internal knowledge sharing sessions, local meetups, etc. Read books on the subject.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+### Communicating in public
+
+Everything you say in the open leaves a trail that can help you or backfire spectacularly.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A PR comment, an issue, a Stack Overflow answer, a tweet — all of it is public, permanent, and tied to your name (even if you try to stay anonymous).</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Write it as if the person you're talking about, and your next employer, will read it. They can. And will.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Public tech spaces reward snarky comments, hot takes and flame wars.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't get pulled into that. People will be wrong on the internet, but you don't have to correct them.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Open-source maintainers are usually unpaid volunteers who don't owe anyone anything.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Do your best when interacting: search first, bring a reproduction, be gracious and understanding.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Public means public — internal details, unreleased plans, or a client's name don't belong there.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>When in doubt, keep it vague or keep it private. Nothing disappears from the internet. Be especially careful with the logs you paste.</li>
     </ul>
   </td>
 </tr>
