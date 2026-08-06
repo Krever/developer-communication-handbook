@@ -2826,7 +2826,9 @@ A postmortem is a way for the organisation to learn from the incident and not re
 </table>
 ```
 
-## Career and special occasions
+## Career and people
+
+Everything so far has been about the work you do, the tasks you complete. This part is about your career and the people in it.
 
 ### Working with your manager
 
