@@ -1659,13 +1659,13 @@ largely decided by how the question was written. Few of the fixes below cost mor
       <li>In asynchronous communication you have to expect that every message might take minutes or hours to get a
         response. If you start a conversation with a single “hello” or “can I ask you about something?”, you waste
         a round-trip without providing or receiving any information.</li>
+      <li>When the person you're asking is in a distant timezone, you will see the response the next day.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Put the whole question in the first message (<a href="https://nohello.net">no hello</a>,
-        <a href="https://dontasktoask.com/">don’t ask to ask</a>). The greeting can be put alongside the
-        question.</li>
+      <li>Put the whole question and its context in the first message (<a href="https://nohello.net">no hello</a>,
+        <a href="https://dontasktoask.com/">don’t ask to ask</a>), so the person can act without your further input.</li>
     </ul>
   </td>
 </tr>
@@ -1889,6 +1889,18 @@ This section is about the form of a message: its structure, length, tone and wor
     </ul>
   </td>
 </tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>It's hard and very inconvenient to discuss two topics in a single thread.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Start a new thread for a new topic instead of hijacking an existing one.</li>
+    </ul>
+  </td>
+</tr>
 </tbody>
 </table>
 ```
@@ -2010,6 +2022,20 @@ will handle yours.
     <ul>
       <li>Never send a message under strong emotions, anger especially. Write the draft if it helps, then sit on it and delete
         it (or not) after some time.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>When someone asks you something, it’s tempting to answer a nearby question, or bury the answer under context. Assume they asked X for a reason.</li>
+      <li>Sometimes the literal question is the wrong one — they’re asking how to do X when Y would serve them better (the <a href="#asking">XY problem</a>, now from the answering side).</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Answer the actual question first and plainly, then add the caveats.</li>
+      <li>If you smell an XY problem, flag it: “here’s how to do X — though if you’re trying to Z, Y is simpler.”</li>
     </ul>
   </td>
 </tr>
