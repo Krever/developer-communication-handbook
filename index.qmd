@@ -2167,6 +2167,105 @@ Let's now talk about the most dreaded but also the most effective (if done right
 </table>
 ```
 
+### Using AI
+
+LLMs draft more and more of the messages, reviews and docs flying around. And it's a double-edged sword.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Current LLM output is verbose, generic and completely soulless. What's worse, people are really good at detecting it.</li>
+      <li>There is also the absurd loop: you inflate three bullets into three paragraphs only so that the reader can feed them back to a model to get three bullets.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't send raw output. Cut it to what you'd actually say; the model's default length is never your message's right length.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Used well, it's a genuine help, e.g. for fixing grammar, tightening or getting past a blank page (especially for non-native speakers).</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Use it as an editor, not a ghostwriter. Fix and tighten, but keep your voice.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>AI will happily phrase things it doesn't understand (if it actually understands anything in the first place), and it doesn't have your context. The roughest words with substance are better than the smoothest without.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't outsource the thinking. You still need something to say.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Pasting an AI answer into a review or as a technical claim puts your name on something you might not be able to defend.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Only send what you understand and would stand behind yourself. “AI wrote it” is not an acceptable excuse.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Most AI output still needs a human to review it, and your AI is your responsibility. Forwarding it raw dumps your work on the reader.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Review everything yourself first. Twice.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Talking to the machine is communication too — context, a clear goal and specifics help it like they help a real person.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Brief it as clearly as you would a very competent junior.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>With the current spread of AI, a polished message stops signalling effort or care.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>A genuine, slightly imperfect human message now stands out. Sometimes that's the better move and can get you more credit.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
 ## Hard conversations
 
 Sooner or later communication stops being routine and casual and starts carrying some stakes.
