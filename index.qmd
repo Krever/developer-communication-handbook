@@ -2253,6 +2253,18 @@ LLMs draft more and more of the messages, reviews and docs flying around. And it
 <tr>
   <td valign="top">
     <ul>
+      <li>Whatever you paste into an AI tool leaves your machine. Treat a public tool as fully public; a sanctioned enterprise one is safer (covered by an agreement) but still puts your data in a vendor's hands.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keep anything sensitive out of public tools, and know what your enterprise agreement actually allows.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
       <li>With the current spread of AI, a polished message stops signalling effort or care.</li>
     </ul>
   </td>
