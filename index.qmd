@@ -1454,6 +1454,18 @@ In such cases you have to become a translator from technicalese to legalese, acc
 <tr>
   <td valign="top">
     <ul>
+      <li>Translating every term, every time, is tiring and loses nuance — and some terms are worth the whole team simply knowing.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>When a term keeps coming up and the distinction matters, teach it once instead of translating it forever. At some point a non-technical person might benefit from knowing what a data projection or a pull request is.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
       <li>Specific terms you treat as distinct collapse into one for them: deploy, release, ship, launch all sound the same to a non-technical audience.</li>
     </ul>
   </td>
