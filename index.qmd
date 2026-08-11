@@ -1007,6 +1007,93 @@ A name is a small message to the person who reads the code next. It will be read
 </table>
 ```
 
+### Documentation
+
+Docs are a way to move the knowledge from your head to other people, some of whom you might never meet. But what people rarely realise is that those docs are also a liability, the same way the code is —
+every documentation page has to be kept up-to-date or it turns into a trap. The art is writing as little as you can get away with, but enough to solve the real problems that arise from the lack of it.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A doc written just in case (without a real demand) will most likely never be read.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't write what nobody asked for. This applies to both standalone pages and the content within them.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People don't reach for docs by default — they ask. A question usually means the thing wasn't obvious enough, or the doc was not obviously visible.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Make the thing self-explanatory first, so no doc is needed. When you do document, keep it as close to the thing as you can — a code comment, then a package README, then docs in the repo, then the wiki, in that order.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A doc goes stale without any signal (no test failure, no build break), so first it rots and then it misleads.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Generate docs from the source whenever you can; that's the only kind that can't drift. Otherwise keep them next to the code and update them in the same change.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Not all docs age the same. A live doc (setup, API reference) describes how things are now and must be kept in sync forever. A snapshot (a design doc, a postmortem, a decision record) captures a moment and is never meant to change.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Know which you're writing. A live doc is a standing liability — keep it current or kill it. A snapshot is cheap, since you never touch it again; just date it so nobody reads it as current.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>People don't read docs (or almost anything else) start to finish; they scan for the things they need.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Focus on headings and snippets so a reader can jump straight to what they need. Prose should be minimal and reserved for actual nuance.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Code shows what and how, but the why behind a decision evaporates from the heads that made it.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>The why is the one thing worth writing down even when the code is clear. That's why we have design docs, ADRs and RFCs.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
 ### Getting a PR review
 
 Getting your code reviewed in a timely and thorough way is mostly the author's job, even though it is someone else doing the reading. Most of it comes down to lowering the effort you ask of the people whose attention you need.
