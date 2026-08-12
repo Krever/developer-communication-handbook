@@ -1737,8 +1737,9 @@ channel.
 The previous parts followed a project through its stages. This one steps outside that timeline and looks at the
 messages, pings and calls that fill every working day, whatever stage you are at. None of it is hard on its own, but
 it adds up: your message is one of the hundred the receiver will see today, and small habits decide whether it lands
-or gets lost in the pile. The sections follow a message through its life: asking for something, writing it so it gets
-read, responding to what comes back, and knowing when to stop typing and talk instead.
+or gets lost. Most of the sections follow a message through its life: asking for something, writing it so it gets
+read, responding to what comes back, and knowing when to stop typing and talk instead. The last two step
+outside that — how culture bends the rules, and how AI is starting to reshape them.
 
 ### Asking
 
@@ -2265,6 +2266,120 @@ Let's now talk about the most dreaded but also the most effective (if done right
 </tbody>
 </table>
 ```
+
+### Crossing cultures
+
+Communication norms vary a lot by culture: how direct is polite, how much you say versus imply, how you treat hierarchy, what a joke or an emoji means.
+On a remote, international team — which we assume in this book — you face those nuances every day, and your own defaults are just one option among many.
+
+```{=html}
+<table>
+<thead>
+<tr><th>Understand</th><th>Adjust</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>What feels normal to you — how blunt, how formal, how much you spell out — is a cultural default, not a uniformly accepted baseline.</li>
+      <li>Blunt feedback that feels plain-honest to you can land as an attack elsewhere.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't assume your style is the neutral one. Calibrate to the room.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>How much gets said out loud varies. A “yes” might mean “I agree” or only “I heard you”.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't read a nod or a silence as agreement. Confirm what they actually mean.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Challenging a senior openly is normal in some cultures and unthinkable in others, so the same pushback lands very differently.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Learn the room's norms before you <a href="#disagreeing-and-pushing-back">disagree</a> up the chain.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Idioms, insider jokes and emojis can be very culture-specific. Even the “same” English word can mean different things.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Within the known group you can use anything, but with a mixed audience it's safer to keep it plain and literal.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>In some places trust comes from the work you deliver. In others it comes first from the relationship — a meal, some small talk, being known as a person before any business.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't always jump straight to the task. With relationship-first people, a big part of the work happens around it.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A norm mismatch cuts both ways. When someone seems too blunt, too formal or too quiet, it's usually their background, not rudeness — and changing ingrained habits takes time.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Assume good intent, and offer a gentle hint over a cold shoulder. People adjust faster with help than with judgement.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Culture is more than nationality. Every company, team and generation (“no cap, that fit is bussin fr fr” -> “honestly, that outfit is excellent, for real”) has its own norms, so switching between any of them is a smaller version of the same problem.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Treat a new company or team as a new culture, even in your own country.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A culture is an average, not any individual. “People from X are blunt” is a useful starting guess, but plenty of people break their own culture's norms.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Treat it as a hypothesis and let the actual person correct it. Adjust to who's in front of you, not some arbitrary stereotype.</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+```
+
+For the deeper version of all this, read *The Culture Map* (E. Meyer).
 
 ### Using AI
 
