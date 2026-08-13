@@ -53,14 +53,15 @@ understand people we talk with and how to adjust our communication so they hear 
 ### How to read it
 
 * **In full.** The sections cover specific scenarios, but the real goal is the intuition that accumulates along the
-  way — no one can keep tens or hundreds of tiny rules in their head anyway.
+  way — no one can keep tens or hundreds of tiny rules in their head anyway. (If you won't read it in full, at least
+  steal the [parting principles](#parting-principles) — the rest of the book is them, expanded.)
 * **With your brain on.** The book shows nuances and trade-offs so that you can weigh them for your particular
   situation, because it's easier to find two systems that need the same design than two conversations that need the
   same approach. It also assumes an approximate average working environment, which certainly diverges from yours
   somewhere — that's your cue to consciously ignore the advice or adjust it. And not every situation justifies the
   careful treatment described here; knowing when to let go is part of the skill.
 * **As a baseline.** Communication is an art and you will end up with your own style eventually. One book won't get
-  you there either — there is a lot here, but expect to read [half a dozen more](#resources) to actually get good at
+  you there either — there is a lot here, but expect to read [half a dozen more](#appendix-resources) to actually get good at
   this.
 
 ## Before development
@@ -4450,7 +4451,7 @@ Sooner or later you'll be on the other side of the table, interviewing candidate
 At some point in your career you will be forced to present something. It can be a new feature, a new idea, a knowledge sharing session or anything in between.
 This section is targeted toward people who got dragged into it without any prior interest in the craft.
 You won't become a keynote speaker from one handbook section, but that's not the goal.
-The goal is to help you survive — and maybe even like — the internal talk you got handed. If you want to go deeper, you will find whole books on the topic in [resources](#resources).
+The goal is to help you survive — and maybe even like — the internal talk you got handed. If you want to go deeper, you will find whole books on the topic in the [resources](#appendix-resources).
 
 ```{=html}
 <table>
@@ -4891,7 +4892,20 @@ where the book leans on it.
   - [Performance reviews](#performance-reviews): a rating that surprises you means the feedback loop broke months earlier — fix it so your 1:1s always tell you where you stand.
   :::
 
-## Resources
+## Outro
+
+One caveat before you go. This whole book was about packaging: how to shape a message, whom to aim it at, when to
+send it. And that packaging is not optional, but it's also not enough. **At the end of the day you have to have something to say**,
+and no amount of technique will hide it if you don't.
+
+The other thing worth saying: this skill compounds. The estimate that was believed, the review that didn't
+make an enemy, the escalation that worked — none of them look like much on their own, but stack a few years of them
+and people start noticing. They might not know what they notice exactly, but the way you're perceived changes. And that's something that
+can push your career forward when you've already achieved technical mastery.
+
+There is still no way to know what's inside the receiver's head. Until evolution ships that update, understand, adjust, repeat.
+
+## Appendix: Resources
 
 The intro promised you'd need half a dozen more books to actually get good at this. Here they are (rounding up), in
 roughly the order I'd reach for them, followed by deeper dives on single topics.
