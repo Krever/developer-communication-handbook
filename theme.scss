@@ -418,6 +418,59 @@ nav[role="doc-toc"] .nav-link.active {
   border-left-color: #c17c11;
 }
 
+// Principle example folds ("Examples" in Parting principles). Quarto renders
+// each collapsed callout as a full-width bordered box, and 24 of those bury
+// the principles between empty rectangles. Restyle to a quiet inline
+// disclosure — a small-caps "EXAMPLES ›" hanging under the principle, no box —
+// with a hairline-indented list when opened.
+.callout.callout-note.callout-style-simple {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin: -0.55rem 0 0.3rem;   // tuck the toggle up under its principle;
+                               // the list's own item gap handles the rest
+}
+.callout.callout-note.callout-style-simple > .callout-header.d-flex {
+  display: inline-flex !important;   // shrink from full-width bar to content
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.12s ease;
+}
+.callout.callout-note.callout-style-simple > .callout-header:hover {
+  opacity: 1;
+}
+.callout.callout-note.callout-style-simple .callout-title-container.flex-fill {
+  flex: 0 0 auto !important;         // keep the chevron next to the label
+  font-family: $font-family-sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $ink-soft;
+}
+.callout.callout-note.callout-style-simple .callout-icon-container {
+  display: none;                     // empty no-icon spacer
+}
+.callout.callout-note.callout-style-simple .callout-btn-toggle {
+  padding: 0 !important;
+  margin: 0;
+  float: none;
+}
+.callout.callout-note.callout-style-simple .callout-body-container {
+  margin-top: 0.55rem;
+  padding: 0.1rem 0 0.1rem 1rem;
+  border-left: 2px solid $rule;
+  font-size: 0.95rem;
+}
+.callout.callout-note.callout-style-simple .callout-body-container ul {
+  margin-bottom: 0;
+}
+
 // ── Understand / Adjust tables ──────────────────────────────────────────────
 // The book's signature device: what's true about the other side on the left,
 // what to do about it on the right. The two hues encode the two principles —

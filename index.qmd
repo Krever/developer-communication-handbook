@@ -4612,6 +4612,272 @@ Everything you say in the open leaves a permanent trail. The career upside of th
 </table>
 ```
 
+## Parting principles
+
+The whole book applies two moves — understand, then adjust — to different corners of a developer's job. One level
+below sits this list: the principles behind most of the advice here. Each folds out into a few (of many) places
+where the book leans on it.
+
+### Shaping the message
+
+- **Nobody reads in full** — people scan, losing attention as they move further from the first line. Leading with
+  the point, brevity and scannable structure are all required to deliver the message.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Writing](#writing): a wall of text gets postponed for “later” — TL;DR at the top, the ask in the first line, essence in bold, so a reader who stops after the notification preview still knows what you want.
+  - [Providing estimates](#providing-estimates): lead with the number (“3 weeks, 5 if the provider surprises us”) and keep the caveats for later — a wall of qualifications up front gets skipped.
+  - [Delivering bad news](#delivering-bad-news): start with the news itself — “we'll miss the deadline” — and only then the why.
+  - [Technical design](#technical-design): the longer the doc, the less likely a thorough review — keep it short, goal, decision and consequences first.
+  - [Documentation](#documentation): nobody reads docs start to finish — build them from headings and snippets a reader can jump to.
+  - [Search](#search): your CV gets a few seconds before it's binned or kept — pick clear signals and make them land within those seconds.
+  :::
+
+- **Concrete beats abstract** — examples, names, numbers, quoted phrases; vague phrasing can't be acted on and won't be
+  remembered.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Giving and receiving feedback](#giving-and-receiving-feedback): “good job” and “be more proactive” carry only sentiment — point at the thing and its effect: “in yesterday's standup you cut Ana off twice, and she went quiet for the rest of it”.
+  - [Gathering requirements](#gathering-requirements): business people think in happy paths — walking through concrete examples (“so the refund always goes back to the original card, right?”) flushes out the edge cases not mentioned before.
+  - [Making your work visible](#making-your-work-visible): “the import now runs in 5 minutes instead of 40” informs; “I did an amazing job on the import” brags and is useless.
+  - [Your peers'](#your-peers): “Marek is hard to work with” gives the manager nothing — “in the last two design reviews he dismissed the alternatives before they were explained” names the pattern, the situations and the impact.
+  - [Talking to non-developers](#talking-to-non-developers): abstract detail lands as noise — say what the user sees: “the duplicate-charge fix should be live for customers on Tuesday”, not “the PR is merged, waiting on the migration”.
+  :::
+
+- **Explicit beats implicit** — whatever you don't spell out gets substituted with a guess. Assumptions,
+  confidence, intent: say them out loud.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Providing estimates](#providing-estimates): confirm whether they want an estimate or a commitment, and whether the number is work-time or calendar time — ten days of work can easily be a month on the calendar.
+  - [Incident coordination](#incident-coordination): separate guesses from facts out loud — “root cause not confirmed; rolling back the 13:50 deploy as the most likely fix” — because everyone's next steps depend on which is which.
+  - [Gathering requirements](#gathering-requirements): people assume you already know what's obvious to them — treat nothing as thought through unless it was explicitly stated.
+  - [Providing a PR review](#providing-a-pr-review): the author can't tell a shared standard from your personal preference — label taste as taste: “I'd have used a map here, but that's me”.
+  - [Disagreeing and pushing back](#disagreeing-and-pushing-back): state the view, the confidence and the reasons together: “I think X because Y, but it's not a hill I'll die on”.
+  :::
+
+- **Your words are not their words** — every receiver decodes with their own dictionary: the meaning of "done",
+  "deliver", even "yes" varies by person. Default to clear words and teach the loaded ones.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Providing estimates](#providing-estimates): you say “about a week” meaning happy-path coding and they hear “live in production next Friday” — “done” spans anything from “compiles on my machine” to “monitored in production”.
+  - [Talking to non-developers](#talking-to-non-developers): deploy, release, ship and launch collapse into one word for a non-technical listener — spell out the difference when it matters, use their coarser word when it doesn't.
+  - [Crossing cultures](#crossing-cultures): a “yes” might mean “I agree” or only “I heard you” — don't read a nod as agreement; confirm what they actually meant.
+  - [Naming things](#naming-things): readers assume different words mean different things — `get`, `fetch` and `load` for the same behaviour suggest differences that don't exist.
+  - [Gathering requirements](#gathering-requirements): domain words carry precise meanings you don't know yet — start a domain dictionary early to capture them.
+  :::
+
+- **Much of what you write is read in the future** — comments, logs, error messages, names, docs. That reader has none
+  of your context and no way to ask, so include what can't be reconstructed.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Comments](#comments): a comment is a message to a stranger reading the code five years from now — record what can't be recovered from the code itself: the why, the constraints, the history.
+  - [Error messages](#error-messages): give the future reader enough to act on — “can't update the address of an inactive user; reactivate the account first” beats “operation unsupported”.
+  - [Logging](#logging): the infrastructure already stamps time, service and host — a log line should add what can't be reconstructed: the why and the values involved.
+  - [Naming things](#naming-things): a name is read far more often than it's written and has to survive years of readers who won't open the docs around it.
+  - [Postmortems](#postmortems): the people in the room already learned the lesson — write it for those who weren't there; it's the organisation's memory of what happened.
+  - [Making your work visible](#making-your-work-visible): someone will investigate your work when you're not around to ask — leave breadcrumbs by linking the commits, tickets and conversations together.
+  :::
+
+### Reading the other side
+
+- **Look behind the message** — think why a question is asked or a message is posted; don't take it at face value.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Gathering requirements](#gathering-requirements): stakeholders ask for a solution (“add a button X”) when what they have is a problem — dig into why the feature is needed before building what was literally requested.
+  - [Providing estimates](#providing-estimates): always ask why the number is needed — planning, a public announcement and a legal deadline each call for a different answer, and no reason at all is grounds to push back.
+  - [Asking](#asking), [Responding](#responding): people answer the question you asked, not the one you should have asked (the XY problem) — state your goal alongside the problem, and flag it when you smell it in someone else's question.
+  - [Interviews](#interviews): “why are you leaving?” is not curiosity about your old job — it checks whether you'll trash it. Keep the answer forward-looking.
+  :::
+
+- **What looks wrong might be deliberate** — the other side can have context you can't see. Ask why before judging.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Providing a PR review](#providing-a-pr-review): the author may have constraints agreed elsewhere or approaches already tried — ask “is there a reason this isn't X?” rather than “change this to X”. Half the time there is a reason.
+  - [Onboarding](#onboarding): in a new codebase the weird code, patterns and practices are usually “wrong” for a reason — learn the history before proposing changes.
+  - [Disagreeing and pushing back](#disagreeing-and-pushing-back): you might be the one missing context — ask and understand why before declaring something wrong.
+  - [Crossing cultures](#crossing-cultures): a colleague who seems too blunt or too quiet is usually following their culture's defaults, not being rude — assume good intent.
+  :::
+
+- **When you talk, you don't hear** — ask, then listen and collect information.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Interviewing candidates](#interviewing-candidates): ask, then be quiet — let the silences sit, because people fill them with the good stuff.
+  - [Gathering requirements](#gathering-requirements): keep extracting before you propose — an early solution anchors the conversation and you risk solving the wrong problem.
+  - [Giving and receiving feedback](#giving-and-receiving-feedback): on the receiving end, defending yourself defeats the point — say thanks, ask for an example, clarify later.
+  :::
+
+- **Make acting cheap** — people act when acting is easy: full context upfront, yes/no over open questions, a
+  recommendation over a blank page.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Asking](#asking): put the whole question and its context in the first message — no “hello”, no “can I ask you something?” — so the receiver can act without a round-trip that might cost a day across timezones.
+  - [Getting a PR review](#getting-a-pr-review): lower the reviewer's bill — small changesets, the why in the description, self-review done and CI green.
+  - [Escalating when you're stuck](#escalating-when-youre-stuck): decisions are costly to give — turn the open question into a yes/no (“can we ship without the banner?”) or attach a recommendation (“I'd go with X, any objections?”).
+  :::
+
+- **Everyone's job is no one's job** — responsibility diffuses in a crowd. Asks, decisions, action items and even
+  praise need a name on them.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Getting a PR review](#getting-a-pr-review): a request to a group triggers the bystander effect, and the more people it reaches the stronger it gets — ask two or three named people.
+  - [Asking](#asking): always `@mention` someone, even if you're not sure they're the right one — a wrong pick gets redirected; an untargeted message gets silence.
+  - [Escalating when you're stuck](#escalating-when-youre-stuck): a stalemate can persist just because nobody feels entitled to decide — name the decision-maker: “\@Alice, I think this is your call”.
+  - [Incident coordination](#incident-coordination): a dedicated, named comms owner (the incident commander) keeps the updates flowing while everyone else focuses on the fix.
+  - [Postmortems](#postmortems): action items without an owner have very little chance of getting done — assign each one explicitly.
+  - [Giving and receiving feedback](#giving-and-receiving-feedback): crediting “everyone involved” means nobody feels seen — praise names (and a list of 20 names is “everyone” again).
+  :::
+
+### Owning the exchange
+
+- **You own the outcome, not just the sending** — sent doesn't mean received, received doesn't mean
+  understood. Getting the answer/review/decision is your job, not just asking for it.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Getting a PR review](#getting-a-pr-review): getting code reviewed promptly and thoroughly is the author's job, even though someone else does the reading.
+  - [Responding](#responding): for important messages ask for a confirmation and treat silence as “not received”.
+  - [Escalating when you're stuck](#escalating-when-youre-stuck): escalating feels like nagging, so the natural move is to sit on the blocker — but you're responsible for your results, and doing nothing is failing that responsibility.
+  - [Talking to non-developers](#talking-to-non-developers): your words get acted on — “it's almost done” turns into “we release on Friday” — so make sure you've been understood, not just heard.
+  :::
+
+- **Close the loop** — silence is ambiguous, so mark the ends: conclusions into the thread, incident over, comment
+  answered, thanks after unblocking.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Talking](#talking): nobody remembers what a call decided after a week — write the conclusions back into the thread where the discussion started.
+  - [Incident coordination](#incident-coordination): people stay on edge until told it's over — mark the end explicitly: what was resolved and that normal service is back.
+  - [Responding](#responding): the asker needs to know their message was seen or they'll keep chasing — even a 👀 or ✅ closes that gap.
+  - [Getting a PR review](#getting-a-pr-review): respond to each review comment explicitly, and leave the formal “resolve” to whoever raised it.
+  - [Delivering bad news](#delivering-bad-news): say when the next update comes (“I should know more by end of day”) — and then actually deliver it.
+  - [Escalating when you're stuck](#escalating-when-youre-stuck): once unblocked, thank whoever helped — it marks the escalation closed and smooths the friction it created.
+  :::
+
+- **Say it early and say it straight** — discomfort tempts you to delay hard messages or dilute them, and both just
+  make it pricier in the long term.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Delivering bad news](#delivering-bad-news): bad news only gets worse with time — share it immediately, even mid-investigation, and don't soften the severity: a downplayed “small delay” gets a reaction that isn't urgent enough.
+  - [Providing estimates](#providing-estimates): lowering an estimate under pressure is a form of lying — the honest, uncomfortable number starts a useful negotiation, while the wrong one quietly steers the project into failure.
+  - [Saying no](#saying-no): “I'll try to squeeze it in” feels polite but sets a false expectation — “I can't take this without dropping the billing fix” lets the other side act.
+  - [Incident coordination](#incident-coordination): people hesitate to raise the alarm for fear of overreacting, but postponing the alert postpones the fix.
+  - [Providing a PR review](#providing-a-pr-review): an objection to the whole approach costs the most when it arrives after two rounds of naming nits — say it immediately and hold the small stuff.
+  :::
+
+- **Write it down** — memory fades, records don't.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Disagreeing and pushing back](#disagreeing-and-pushing-back): spoken disagreements evaporate — if it later goes wrong, nobody remembers the trade-off was flagged. Put “we chose X, accepting risk Y” on record, as a shared note rather than an “I told you so” in waiting.
+  - [Gathering requirements](#gathering-requirements): everyone forgets what was agreed — capture the decisions and the reasoning, not a transcript nobody will read.
+  - [Incident coordination](#incident-coordination): mid-firefight nobody remembers what was changed when, and two responders can roll back different things at once — keep a running log; it becomes the postmortem timeline.
+  - [Getting buy-in](#getting-buy-in): you might face “who approved this?” one day — get the approval in writing if the ask demands it.
+  - [Making your work visible](#making-your-work-visible): justifying a promotion from memory alone is really hard — build a brag document as you go.
+  :::
+
+- **Communicate in the open** — easier to ignore a message than to become a telepath; DMs as the exception, not the
+  norm.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Making your work visible](#making-your-work-visible): you can never know who already solved your problem, is solving it right now, or learned the hard way why it can't be solved — discuss in public channels by default, DMs as the exception.
+  - [Escalating when you're stuck](#escalating-when-youre-stuck): a private nudge is polite but invisible — when it fails, move to a shared channel, keeping the problem public and the person out of it.
+  - [Postmortems](#postmortems): the bad thing already happened and sharing it can't make it worse — publish widely and make it findable.
+  - [Giving and receiving feedback](#giving-and-receiving-feedback): praise in public, where it lifts the person and shows everyone what good looks like; keep criticism private.
+  :::
+
+### Conducting yourself
+
+- **It's a [repeated game](https://en.wikipedia.org/wiki/Repeated_game)** — the industry is smaller than it feels and people remember. Don't be a jerk: formalities,
+  conventions and smiles matter, and every review, refusal or rejection builds or spends social capital.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Getting a PR review](#getting-a-pr-review): a half-baked pull request signals you didn't value the reviewer's time — they'll be slower to pick up your next one.
+  - [Communicating in public](#communicating-in-public): every public comment is permanent and tied to your name — write it as if the person you're talking about, and your next employer, will read it. They can, and will.
+  - [Search](#search): recruiters remember how you treated them — turn down offers with basic decency.
+  - [Result](#result): take a rejection gracefully (asking for feedback is fine) — the industry is smaller than it feels, and how you took the “no” gets remembered.
+  :::
+
+- **Control your emotions** — emotions pass but messages stay. Never send under strong emotion; draft, sit on it,
+  then delete (or not).
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Responding](#responding): never send under strong emotion, anger especially — write the draft, sit on it, then delete it (or not).
+  - [Performance reviews](#performance-reviews): a low rating stings, but don't fight it in the meeting — ask what it was based on, take it away, come back with evidence rather than emotion.
+  - [Giving and receiving feedback](#giving-and-receiving-feedback): give feedback fresh, but never in the heat of the moment — let the emotions settle first, yours and theirs.
+  - [Incident coordination](#incident-coordination): people follow the room temperature and escalate it — keep updates calm and factual even when everything is on fire.
+  - [Postmortems](#postmortems): don't write it mid-adrenaline — mitigate, rest, then write while it's still fresh.
+  :::
+
+- **You and them against the problem** — code not person, problem not complaint, blameless postmortems, behaviour not
+  character.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Providing a PR review](#providing-a-pr-review): comment on the code, not the person — “this function swallows the error”, not “you swallowed the error”.
+  - [Postmortems](#postmortems): blameless by design — describe what the system did and what people knew, never who made the mistake; blame makes people hide the next incident.
+  - [Escalating when you're stuck](#escalating-when-youre-stuck): escalation is about the problem; the moment it's about a person it becomes a complaint — “this is blocked and we might miss the deadline”, never “XXX is slacking”.
+  - [Disagreeing and pushing back](#disagreeing-and-pushing-back): aim at the problem — “the deadline is tight”, not “your deadline is wrong”.
+  :::
+
+- **Bring something to the table** — criticising is far cheaper than creating, so come with options, an analysis or a
+  plan next to every problem. Use the asymmetry in both directions.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Gathering requirements](#gathering-requirements): once you understand the problem, propose solutions instead of asking for direction — criticising a proposal takes far less of a busy PM's attention than producing one.
+  - [Technical design](#technical-design): reviewers criticise a concrete answer far more easily than they design from blank space — answer the open questions before sharing, or the gaps come back as vague comments.
+  - [Disagreeing and pushing back](#disagreeing-and-pushing-back): a bare “this is broken” annoys people even when you're right — bring the analysis or the options you see.
+  - [Delivering bad news](#delivering-bad-news): “here's a disaster” is half the story — bring a plan, or at least the first step towards mitigation.
+  - [Providing a PR review](#providing-a-pr-review): “this is confusing” forces the author to guess — suggest the actual name you have in mind, or offer a pairing session for the bigger fixes.
+  :::
+
+- **Guard your credibility** — it's a budget: honesty and integrity refill it slowly, while inflated urgency, padded
+  estimates and unbacked numbers spend it fast. Framing still matters.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Asking](#asking): don't inflate urgency — if everything you send is “urgent”, your real deadlines stop being trusted.
+  - [Providing estimates](#providing-estimates): don't overdo the padding — always beating your estimates by a wide margin teaches people to discount them.
+  - [Performance reviews](#performance-reviews): underselling harms your result, inflating harms your credibility — stick to facts you can defend.
+  - [Search](#search): “quantify your impact” is a trap unless the number survives scrutiny — remove from your CV anything you can't talk about for a couple of minutes.
+  - [Getting buy-in](#getting-buy-in): the decider bets on you as much as on the idea — spend your credibility on the asks that matter, and find a sponsor when you're short.
+  :::
+
+### Spending wisely
+
+- **Communication is hard and costly** — not always worth the effort. Scale it to the stakes.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Technical design](#technical-design): scale the format to how important and hard to undo the decision is — a quick FYI, a discussion, an ADR or a full RFC.
+  - [Documentation](#documentation): every doc is a liability that has to be kept current or it turns into a trap — write as little as you can get away with, and skip the pages nobody asked for.
+  - [Naming things](#naming-things): a single letter is fine for a lambda variable, while a public API field will be read for years and deserves dedicated thought.
+  - [Postmortems](#postmortems): match the effort to the severity — sometimes a short message, sometimes a full report and hours of discussion.
+  - [Getting buy-in](#getting-buy-in): a 👍 on Slack covers a small reversible change; save the formal sign-off for the weighty ones — demanding it for everything looks weird.
+  :::
+
+- **Text is cheap, talk is powerful** — switch to a call when text stops converging, then write the outcome back to
+  where the discussion started.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Talking](#talking): default to async, but once you've exchanged more than ten messages in an hour, make it a call.
+  - [Providing a PR review](#providing-a-pr-review): after a few rounds of comment ping-pong a thread stops converging and starts generating heat — move to a call, then write the conclusion back so the record survives.
+  - [Incident coordination](#incident-coordination): chat is too slow for a serious fix — spin up a war room, while a comms owner keeps posting written updates for everyone else.
+  :::
+
+- **Pick your battles and let go** — disagreement capital is limited; five problems usually means discussing the most
+  important one, not all five.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Disagreeing and pushing back](#disagreeing-and-pushing-back): disagreement capital is limited — if you fight everything, people stop listening.
+  - [Providing a PR review](#providing-a-pr-review): don't block the merge on nits or taste — approve with the comments marked optional and let the author decide.
+  - [Disagreeing and pushing back](#disagreeing-and-pushing-back): when the decision goes against you, disagree and commit — argue hard before, support it fully after, no relitigating and no quiet sabotage.
+  - [Talking to non-developers](#talking-to-non-developers): the app is “the website” and the service is “the system” — don't correct every imprecision; go with their words unless the difference matters.
+  - [Communicating in public](#communicating-in-public): people will be wrong on the internet — you don't have to correct them.
+  :::
+
+- **Consult your manager** — the universal escape hatch. Whatever the mess (a conflict, a blocker, politics), helping
+  you through it is literally their job.
+
+  ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
+  - [Working with your manager](#working-with-your-manager): some developers hide problems from the one person whose literal job is unblocking them — surface problems early and ask for context, backing, decisions.
+  - [Escalating when you're stuck](#escalating-when-youre-stuck): when the blocker is a person rather than a decision, go to your manager first, with a pattern of situations — don't try to fix a person yourself.
+  - [Saying no](#saying-no): an outright refusal upward is usually off-limits — re-prioritise instead: “I can do X or Y this week, not both. Which one wins?”
+  - [Performance reviews](#performance-reviews): a rating that surprises you means the feedback loop broke months earlier — fix it so your 1:1s always tell you where you stand.
+  :::
+
 ## Resources
 
 The intro promised you'd need half a dozen more books to actually get good at this. Here they are (rounding up), in

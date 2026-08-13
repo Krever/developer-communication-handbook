@@ -4,5 +4,6 @@
 # Quarto build artifacts (everything is regenerated from index.qmd)
 /public/
 /.quarto/
+/index.typ
 
 **/*.quarto_ipynb

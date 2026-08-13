@@ -7,7 +7,6 @@ color:
     slate: "#3f5e8c"
     paper: "#fbf9f4"
     ink: "#23262b"
-  background: paper
   foreground: ink
   primary: rust
 
