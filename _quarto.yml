@@ -10,8 +10,7 @@ project:
 
 # Setup carried over from the Fintech Engineering Handbook so styling decisions
 # can be previewed immediately. Left behind (bring back when needed):
-#   - Cloudflare analytics in _includes/head.html (needs its own token)
-#   - epub format (needs a cover asset)
+#   - Cloudflare analytics + download tracking (needs its own token)
 format:
   html:
     theme:
@@ -48,3 +47,8 @@ format:
       - assets/fonts
     include-before-body:
       - _includes/typst-style.typ
+
+  epub:
+    toc: true
+    # Use the rendered cover (assets/cover.png, from cover.typ) as the EPUB cover.
+    cover-image: assets/cover.png
