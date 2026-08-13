@@ -33,7 +33,7 @@ And so every piece of advice in this handbook distills down to two moves:
 2. **Adjust to that.**
 
 The whole of this book looks into different aspects of software development from those two angles: how to better
-understand people we talk with and how to adjust our communication to they hear exactly what we wanted to say.
+understand people we talk with and how to adjust our communication so they hear exactly what we wanted to say.
 
 ### What this book is
 
@@ -60,7 +60,8 @@ understand people we talk with and how to adjust our communication to they hear 
   somewhere — that's your cue to consciously ignore the advice or adjust it. And not every situation justifies the
   careful treatment described here; knowing when to let go is part of the skill.
 * **As a baseline.** Communication is an art and you will end up with your own style eventually. One book won't get
-  you there either — there is a lot here, but expect to read half a dozen more to actually get good at this.
+  you there either — there is a lot here, but expect to read [half a dozen more](#resources) to actually get good at
+  this.
 
 ## Before development
 
@@ -4610,3 +4611,52 @@ Everything you say in the open leaves a permanent trail. The career upside of th
 </tbody>
 </table>
 ```
+
+## Resources
+
+The intro promised you'd need half a dozen more books to actually get good at this. Here they are (rounding up), in
+roughly the order I'd reach for them, followed by deeper dives on single topics.
+
+**On communication itself:**
+
+* [kind.engineering](https://kind.engineering) (Evan Smith) — how to be kind *and* honest at work: code reviews,
+  feedback, one-to-ones. Free, short and developer-native, so start here.
+* [Emotional Intelligence for Engineers](https://www.youtube.com/watch?v=ZU1B9LGjnAA) (April Wensel) — a conference
+  talk making the case for empathy as an engineering skill.
+* [*Simply Said*](https://www.goodreads.com/book/show/33232697-simply-said) (Jay Sullivan) — the general
+  how-to-communicate book: plain language, focusing on the listener, structuring what you say.
+* [*Nonviolent Communication*](https://www.goodreads.com/book/show/71730.Nonviolent_Communication) (Marshall
+  Rosenberg) — the classic on saying hard things without starting a war. Much of the thinking behind
+  [Hard conversations](#hard-conversations) traces back to it.
+* [*Surrounded by Idiots*](https://www.goodreads.com/book/show/39101777-surrounded-by-idiots) (Thomas Erikson) — a
+  four-colour model of how differently people want to be talked to. The science behind it is shaky, but as a working
+  vocabulary for "adjust to the receiver" it does the job.
+* [*How to Win Friends and Influence People*](https://www.goodreads.com/book/show/4865.How_to_Win_Friends_Influence_People)
+  (Dale Carnegie) — the 1936 classic on making people feel heard. The examples show their age, but the mechanics
+  still work.
+* [*The Culture Map*](https://www.goodreads.com/book/show/22085568-the-culture-map) (Erin Meyer) — how bluntness,
+  deadlines and decisions read across cultures. Already recommended in [Crossing cultures](#crossing-cultures), and
+  it earns the second mention.
+* [*Radical Candor*](https://www.goodreads.com/book/show/29939161-radical-candor) (Kim Scott) — feedback that is
+  caring and direct at the same time. Written for managers, but the framework applies to peers just as well.
+* [*Crucial Conversations*](https://www.goodreads.com/book/show/15014.Crucial_Conversations) (Joseph Grenny et al.)
+  — what to do when stakes are high, opinions differ and emotions run strong. The full-length treatment of the
+  [Hard conversations](#hard-conversations) part.
+
+**Deep dives on single topics:**
+
+* [The Guerrilla Guide to Interviewing](https://www.joelonsoftware.com/2006/10/25/the-guerrilla-guide-to-interviewing-version-30/)
+  (Joel Spolsky) — the interviewer's side of the table. Old but still worth the twenty minutes.
+* [*Software Estimation: Demystifying the Black Art*](https://www.goodreads.com/book/show/93891.Software_Estimation)
+  (Steve McConnell) — a whole book on what [Providing estimates](#providing-estimates) squeezes into a page. Read it
+  if estimates rule your life.
+* [*TED Talks: The Official TED Guide to Public Speaking*](https://www.goodreads.com/book/show/41044212-ted-talks)
+  (Chris Anderson) — for [Presenting](#presenting), from the man who runs TED.
+* [*Demystifying Public Speaking*](https://www.goodreads.com/book/show/32784222-demystifying-public-speaking) (Lara
+  Hogan) — the alternative for nervous engineers: short, practical and gentle.
+* [Diátaxis](https://diataxis.fr) — a framework for structuring documentation, the "what to write" side that
+  [Documentation](#documentation) leaves out.
+* [Google's code review guidelines](https://google.github.io/eng-practices/review/) — battle-tested defaults for
+  both sides of a review.
+* [*On Writing Well*](https://www.goodreads.com/book/show/53343.On_Writing_Well) (William Zinsser) — plain
+  non-fiction writing; it sharpens everything from [Writing](#writing) to postmortems.
