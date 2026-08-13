@@ -2338,6 +2338,19 @@ one. The trick is paying that cost only where it makes sense.
 <tr>
   <td valign="top">
     <ul>
+      <li>Sometimes the point of a call is the call itself. Especially on a remote team, a person asking for a
+        meeting might be (at least partially) after human contact, not information.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don’t optimise every call away. Take the occasional meeting even when it’s not necessary. Build the connection and relationship.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
       <li>Neither you nor anyone else will remember what you discussed after a week.</li>
       <li>There might be people who were not on the call but might be interested in the topic.</li>
     </ul>
