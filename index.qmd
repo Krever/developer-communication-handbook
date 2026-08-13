@@ -96,6 +96,21 @@ important to do it effectively: extract as much _correct_ information as possibl
 <tr>
   <td valign="top">
     <ul>
+      <li>Asking many questions can feel like admitting incompetence. People stop early and start guessing.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Dig until you fully understand the problem and its context, no matter how many questions it takes. A
+        question cost is much smaller than building the wrong feature.</li>
+      <li>If you don't feel like asking yet another question, share your guessed understanding and let them correct it: “so the refund
+        always goes back to the original card, right?”. Confirming is easier than answering.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
       <li>Business people think in terms of <a href="https://en.wikipedia.org/wiki/Happy_path">happy paths</a>, and
         edge cases or errors are hard for them to consider.</li>
     </ul>
@@ -104,6 +119,34 @@ important to do it effectively: extract as much _correct_ information as possibl
     <ul>
       <li>Walk through concrete examples together: they confirm your understanding and flush out the edge cases
         nobody mentioned.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Non-functional requirements — performance, scalability, security — might not be brought
+        up by stakeholders on their own. Yet they drive the technical design and are your responsibility as a developer.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Raise them yourself, but in their terms: how many users, how fresh the data has to be, what happens if it
+        leaks.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Different stakeholders can want contradictory things, often without knowing about each other’s
+        expectations.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>When requirements conflict, surface the conflict back to the stakeholders instead of silently picking one
+        interpretation. Resolving it in code yourself usually only makes the problem worse.</li>
     </ul>
   </td>
 </tr>
@@ -155,6 +198,7 @@ important to do it effectively: extract as much _correct_ information as possibl
     <ul>
       <li>Tell them the cost when it matters, since they are often keen to adjust the requirements once they see the
         price.</li>
+      <li>Give a rough range with the uncertainty spelled out. A casually dropped number might get interpreted as a commitment.</li>
     </ul>
   </td>
 </tr>
@@ -169,7 +213,8 @@ important to do it effectively: extract as much _correct_ information as possibl
   <td valign="top">
     <ul>
       <li>Propose solutions instead of asking for direction, because criticising a proposal takes far less of their
-        attention than producing a starting point.</li>
+        attention than producing a starting point. (This kicks in once you understand the problem well enough — see
+        the first point about anchoring.)</li>
     </ul>
   </td>
 </tr>
@@ -181,8 +226,9 @@ important to do it effectively: extract as much _correct_ information as possibl
   </td>
   <td valign="top">
     <ul>
-      <li>Write everything down, whether as meeting notes or a Confluence page, so that decisions and the inputs
+      <li>Write things down, whether as meeting notes or a Confluence page, so that decisions and the inputs
         behind them don’t depend on anyone’s memory.</li>
+      <li>Capture the decisions and the reasoning, not a transcript — nobody will read a pure meeting dump.</li>
     </ul>
   </td>
 </tr>
@@ -291,6 +337,8 @@ holidays, competing projects, maintenance and unplanned fire-fighting.</li>
   <td valign="top">
     <ul>
       <li>Lead with the number and provide caveats later. A wall of qualifications will get skipped but can be referred to when ambiguity arises.</li>
+      <li>When the uncertainty is big, a range (“3 weeks, 5 if the provider surprises us”) still leads with numbers
+        without hiding the risk.</li>
     </ul>
   </td>
 </tr>
@@ -311,6 +359,9 @@ cutting features.</li>
     <ul>
       <li>Underpromise and overdeliver. Don’t inflate estimates artificially, but when in doubt give the bigger
         number and adjust later.</li>
+      <li>Don’t overdo the padding: work expands to fill the estimate
+        (<a href="https://en.wikipedia.org/wiki/Parkinson%27s_law">Parkinson’s law</a>), and if you always beat your
+        estimates by a wide margin, people will learn to discount them. The goal is correctness, not looking good.</li>
     </ul>
   </td>
 </tr>
@@ -402,6 +453,8 @@ problem (for the _content_ you'll have to look into other resources).
   <td valign="top">
     <ul>
       <li>Answer as many of the questions as you can before sharing the doc.</li>
+      <li>The exception is a high-uncertainty design: share a rough draft early to check the direction before
+        polishing the details.</li>
       <li>If your design still has open questions, mark them explicitly.</li>
     </ul>
   </td>
@@ -443,6 +496,8 @@ problem (for the _content_ you'll have to look into other resources).
     <ul>
       <li>Use a diagram to convey a high-level explanation. Add the details as prose if necessary (an
         overcomplicated image doesn’t help much).</li>
+      <li>Prefer diagrams generated from text (Mermaid, PlantUML, etc.) that live next to the doc or code —
+        an exported image is much harder to update.</li>
     </ul>
   </td>
 </tr>
@@ -465,7 +520,7 @@ problem (for the _content_ you'll have to look into other resources).
 </table>
 ```
 
-See also [Getting a PR review] and [Providing a PR review], as some of the advice there applies to technical designs as well.
+See also [Getting a PR review] and [Providing a PR review], as some of the advice there applies to technical designs as well — including how to get the doc actually reviewed instead of published and forgotten.
 
 ### Getting buy-in
 
@@ -596,6 +651,8 @@ helplessness.
   <td valign="top">
     <ul>
       <li>Get the approval in writing.</li>
+      <li>Scale it to the ask: for a small, reversible thing a 👍 on a Slack message is enough. Save the explicit
+        sign-off for the weighty or hard-to-reverse decisions — demanding it for everything looks weird.</li>
     </ul>
   </td>
 </tr>
@@ -603,6 +660,18 @@ helplessness.
 </table>
 ```
 
+Here is the same pitch made in two ways.
+
+> We should migrate off the legacy queue, the code is a mess and nobody wants to touch it.
+
+vs.
+
+> Migrating off the legacy queue should cut our on-call pages by about a third (most of them trace back to it) and
+> speed up every checkout change we have planned for Q3. We can do it incrementally, one consumer at a time, and stop
+> halfway with no harm done.
+
+The first asks the decider to care about your pain. The second speaks their language — fewer incidents, faster
+delivery — and makes the bet safe.
 
 ## During development
 
@@ -614,7 +683,7 @@ We start with the messages that live in the code itself: comments, error message
 
 #### Comments
 
-Comments are messages toward the people reading the code in the future and hence should be treated as a communication concern.
+A comment is a message to whoever reads the code in the future — usually a stranger without any of your context, sometimes you in two years.
 
 ```{=html}
 <table>
@@ -625,8 +694,8 @@ Comments are messages toward the people reading the code in the future and hence
 <tr>
   <td valign="top">
     <ul>
-      <li>The code already encodes the logic of the program. That used to depend on the code being readable and
-        self-explanatory, but even that matters less with AI around to explain it.</li>
+      <li>The code already encodes the logic of the program. Readable, self-explanatory code carries most of that
+        weight, and AI can now help a reader decode the tricky parts.</li>
     </ul>
   </td>
   <td valign="top">
@@ -692,12 +761,28 @@ Comments are messages toward the people reading the code in the future and hence
 <tr>
   <td valign="top">
     <ul>
+      <li>A block of commented-out code is a message too, just a confusing one: is it important? Will it come back?
+        Am I supposed to keep it working? Meanwhile version control already remembers the old code.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Delete it. If there’s a real reason it might come back, say so in one line and link the commit or ticket
+        instead.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
       <li>Humans reading your code are likely to be overworked, stressed and short on patience.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>Drop in the occasional joke or snarky comment to make that person’s day a little better.</li>
+      <li>Just keep it at nobody’s expense — with the context gone, snark aimed at a person or their code reads much
+        worse than you meant it.</li>
     </ul>
   </td>
 </tr>
@@ -705,7 +790,7 @@ Comments are messages toward the people reading the code in the future and hence
 </table>
 ```
 
-The general advice here is to **imagine what information might be needed to someone reading the code 5 years from now and provide it**.
+The general advice here is to **imagine what information might be needed by someone reading the code 5 years from now and provide it**.
 
 #### Error messages
 
@@ -843,7 +928,7 @@ and a log line explains what happened.
   <td valign="top">
     <ul>
       <li>Keep lines greppable and consistent: stable prefixes and structured <code>key=value</code> fields rather than free text.</li>
-      <li>Structured logging is even better: output the line as JSON with the fields as separate attributes, so the tooling can index and filter them instead of parsing the message.</li>
+      <li>Structured logging is even better: output the line as JSON with the fields as separate attributes, so the tooling can index and filter them instead of parsing the message. (Raw JSON is worse to read without tooling, but you can work around it, e.g. with a dedicated renderer.)</li>
     </ul>
   </td>
 </tr>
@@ -1007,6 +1092,13 @@ A name is a small message to the person who reads the code next. It will be read
 </table>
 ```
 
+A few names done in two ways:
+
+* `procDt` vs `paymentProcessedAt` — the abbreviation saves a few keystrokes once and costs every reader a guess.
+* `checkUser` vs `ensureUserIsActive` — “check” says neither what is checked nor what happens when the check fails.
+* `getUser` / `fetchAccount` / `loadProfile` vs `getUser` / `getAccount` / `getProfile` — three different verbs
+  suggest three different behaviours; if there is no difference, use one term.
+
 ### Documentation
 
 Docs are a way to move the knowledge from your head to other people, some of whom you might never meet. But what people rarely realise is that those docs are also a liability, the same way the code is —
@@ -1027,6 +1119,8 @@ every documentation page has to be kept up-to-date or it turns into a trap. The 
   <td valign="top">
     <ul>
       <li>Don't write what nobody asked for. This applies to both standalone pages and the content within them.</li>
+      <li>Yes, even onboarding guides and runbooks. The first onboarding or incident survives without them, and shows
+        you exactly what's worth writing down.</li>
     </ul>
   </td>
 </tr>
@@ -1114,6 +1208,7 @@ Getting your code reviewed in a timely and thorough way is mostly the author's j
   <td valign="top">
     <ul>
       <li>Do a self-review first, before passing it to other people.</li>
+      <li>Make the CI green before requesting the review, or say explicitly why it’s red.</li>
     </ul>
   </td>
 </tr>
@@ -1289,6 +1384,8 @@ A good review catches problems (that matter) without making an enemy of the auth
         <a href="https://blog.danlew.net/2020/04/15/the-logaf-scale/">LOGAF scale</a> or free text addition.</li>
       <li>Pick your battles. Perfect is the enemy of good, so try to ask yourself which points are most
         important.</li>
+      <li>Don’t block the merge on nits or taste — approve with the comments marked optional and let the author
+        decide.</li>
     </ul>
   </td>
 </tr>
@@ -1357,7 +1454,8 @@ A good review catches problems (that matter) without making an enemy of the auth
   <td valign="top">
     <ul>
       <li>Review quickly, or say explicitly when you’ll get to it. A decent review today is usually better than a
-        thorough one in a week.</li>
+        thorough one in a week. Quick means prompt, not skimmed — and risky changes (migrations, money,
+        security) deserve the thorough treatment.</li>
     </ul>
   </td>
 </tr>
@@ -1432,6 +1530,7 @@ The second explains the actual problem and offers a way out, while its label say
 
 Sooner or later your work has to be explained to someone who doesn't read code, like a product manager or a support agent.
 In such cases you have to become a translator from technicalese to legalese, accountinglese and other dialects that resemble English only on the surface.
+(The other direction — extracting information _from_ them — is covered in [Gathering requirements](#gathering-requirements).)
 
 ```{=html}
 <table>
@@ -1532,6 +1631,8 @@ In such cases you have to become a translator from technicalese to legalese, acc
   <td valign="top">
     <ul>
       <li>Communicate the trade-offs in business terms and let them decide.</li>
+      <li>Only hand over the trade-offs that are genuinely business calls. Things like test coverage or refactoring
+        are engineering calls — putting them up for a business vote is asking for trouble.</li>
     </ul>
   </td>
 </tr>
@@ -1568,6 +1669,8 @@ In such cases you have to become a translator from technicalese to legalese, acc
   <td valign="top">
     <ul>
       <li>Don’t be intimidated. A good high-level manager is usually an excellent communicator, and it’s their job to bridge the gap: they’ll put you at ease, ask the right questions, and pull out what they need. Answer honestly and plainly, and let them do the steering. It feels daunting the first time, but you get used to it.</li>
+      <li>Watch your casual words, though — the higher up the listener, the more weight they carry. An offhand
+        “yeah, we could do that” can come back as a roadmap item.</li>
     </ul>
   </td>
 </tr>
@@ -1587,7 +1690,7 @@ The first is accurate and means nothing to the person waiting on it. The second 
 
 ### Making your work visible
 
-Most of your work becomes visible only when you share it. This section is about sharing it the right way and knowing why it's important to do it.
+Most of your work becomes visible only when you share it. Plenty of solid engineers get passed over simply because nobody sees what they do — this section is about not becoming one of them.
 
 ```{=html}
 <table>
@@ -1637,6 +1740,8 @@ Most of your work becomes visible only when you share it. This section is about 
       <li>Stick to facts and let the reader judge: “the import now runs in 5 minutes instead of 40, using
         incremental computation” informs and helps, while “I did an amazing job on the import” brags and is
         useless.</li>
+      <li>Name the people you worked with. Taking sole credit for team work gets noticed, and not in your
+        favour.</li>
     </ul>
   </td>
 </tr>
@@ -1652,6 +1757,8 @@ Most of your work becomes visible only when you share it. This section is about 
     <ul>
       <li>Build in the open: discuss in public channels by default and treat DMs as the exception. This increases
         the chance someone will notice and respond, even if the message is not directed at them.</li>
+      <li>Some things still belong in a DM: personal feedback, security issues, anything you wouldn’t want quoted.
+        Public by default, not public by dogma.</li>
     </ul>
   </td>
 </tr>
@@ -1673,6 +1780,8 @@ Most of your work becomes visible only when you share it. This section is about 
     <ul>
       <li>Software development is a team sport, and the team needs to survive if you’re absent, be it due to
         holidays or career changes. A big part of your job is to make yourself replaceable.</li>
+      <li>Replaceable doesn’t mean dispensable. Hoarding knowledge for job security backfires: you can’t be promoted
+        away from work only you can do, and you can’t take an uninterrupted holiday from it either.</li>
     </ul>
   </td>
   <td valign="top">
@@ -1800,6 +1909,20 @@ largely decided by how the question was written. Few of the fixes below cost mor
 <tr>
   <td valign="top">
     <ul>
+      <li>Asking too soon spends someone’s time on what you’d have found yourself; struggling too long burns hours
+        on something a colleague knows off-hand.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Timebox it: give it a genuine try, and once you’ve been stuck or going in circles for something like half
+        an hour, ask. People remember a missed deadline or silence without progress much more than the questions you asked.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
       <li>A message with several questions usually gets an answer only to the first one or a subset of them.</li>
     </ul>
   </td>
@@ -1831,7 +1954,8 @@ largely decided by how the question was written. Few of the fixes below cost mor
     <ul>
       <li>People are more willing to comply when given a reason, even a weak one. In
         <a href="https://en.wikipedia.org/wiki/Ellen_Langer">Ellen Langer’s copy-machine study</a>, “may I use the
-        Xerox, because I have to make copies” beat the reasonless version.</li>
+        Xerox, because I have to make copies” beat the reasonless version. (The effect faded for bigger requests
+        though — a big ask deserves a real reason.)</li>
     </ul>
   </td>
   <td valign="top">
@@ -1849,6 +1973,8 @@ largely decided by how the question was written. Few of the fixes below cost mor
   <td valign="top">
     <ul>
       <li>Say when you need it, even roughly, e.g. “by Thursday” or “no rush, sometime this week”.</li>
+      <li>Don’t inflate the urgency. If everything you send is “urgent”, your real deadlines stop being
+        trusted.</li>
     </ul>
   </td>
 </tr>
@@ -1872,7 +1998,7 @@ I find metrics" might not even be the right question for preparing a release.
 
 ### Writing
 
-Once you know what to say, there is still the matter of how, and it often decides how effective the message is.
+Once you know what to say, there is still the matter of how. The same content can get acted on immediately or postponed until never.
 This section is about the form of a message: its structure, length, tone and words.
 
 ```{=html}
@@ -2005,6 +2131,27 @@ This section is about the form of a message: its structure, length, tone and wor
 </table>
 ```
 
+Here is the same message written in two ways.
+
+> Hey team, so I've been working on the invoice export for the last few days and I ran into a problem with the PDF
+> library we use, it turns out it doesn't support the new layout we agreed with design, I looked into alternatives
+> and there are two that could work, one is better maintained but costs money, the other is free but we'd have to
+> write the table rendering ourselves, anyway I think we should decide soon because this is blocking the export
+> work, let me know what you think.
+
+vs.
+
+> **TL;DR: the invoice export is blocked on a PDF library decision — need it by Thursday.**
+>
+> Our current library can't render the new layout. Two ways out:
+>
+> 1. **Library A** — maintained, supports everything, ~\$500/year.
+> 2. **Library B** — free, but we build the table rendering ourselves (~1 week).
+>
+> I'd go with A unless the cost is a problem. \@Marta, your call?
+
+The content is identical. The first has to be read whole to discover that a decision is needed; the second can be
+acted on from the first line.
 
 ### Responding
 
@@ -2029,6 +2176,7 @@ will handle yours.
     <ul>
       <li>Repeat important messages and questions. Try to change the phrasing a bit to increase the chance
         of being understood.</li>
+      <li>Give the follow-up some time to land — if you chase within an hour it reads as nagging. Unless it's really that urgent.</li>
       <li>Try to analyse why the message could have been ignored: not clear enough? Too long? Without a clear
         recipient?</li>
     </ul>
@@ -2145,7 +2293,8 @@ will handle yours.
 
 ### Talking
 
-Let's now talk about the most dreaded but also the most effective (if done right) way to communicate: meetings.
+Meetings are the most dreaded and the most expensive way to communicate — and, done right, also the most effective
+one. The trick is paying that cost only where it makes sense.
 
 ```{=html}
 <table>
@@ -2282,7 +2431,9 @@ On a remote, international team — which we assume in this book — you face th
   <td valign="top">
     <ul>
       <li>What feels normal to you — how blunt, how formal, how much you spell out — is a cultural default, not a uniformly accepted baseline.</li>
-      <li>Blunt feedback that feels plain-honest to you can land as an attack elsewhere.</li>
+      <li>Blunt feedback that feels plain-honest to you can land as an attack elsewhere. And the reverse:
+        softened, indirect feedback that feels polite to you can get ignored by a colleague from a more direct
+        culture.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2592,6 +2743,8 @@ The goal, though, is not to win the discussion but to reach the better decision 
   <td valign="top">
     <ul>
       <li>When it matters, put it in writing.</li>
+      <li>Keep the record collaborative: write down the trade-off (“we chose X, accepting risk Y”), not an “I told
+        you so” waiting to happen.</li>
     </ul>
   </td>
 </tr>
@@ -2611,6 +2764,19 @@ The goal, though, is not to win the discussion but to reach the better decision 
 </tbody>
 </table>
 ```
+
+Here is the same disagreement raised in two ways.
+
+> I disagree with going multi-region now. It's premature and we'll regret it.
+
+vs.
+
+> I'd hold off on multi-region for now. My main worry: it roughly doubles our ops surface while we're a three-person
+> team, and nothing in the current SLAs requires it — happy to be shown otherwise. Could we revisit once the
+> enterprise deal lands? If we decide to go now anyway, I'm ok with that — I'd just like the trade-off written down.
+
+The second states the view, the confidence and the reasoning, leaves room to be wrong, offers a way forward — and
+disagrees while committing.
 
 #### Saying no
 
@@ -2683,6 +2849,19 @@ Sometimes you will have to push back not against an idea or opinion but against 
     </ul>
   </td>
 </tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Saying no upward — to your manager or lead — feels off-limits, and an outright refusal usually is.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't refuse — re-prioritise. Surface the trade-off and hand the choice back: “I can do X or Y this week,
+        not both. Which one wins?”.</li>
+    </ul>
+  </td>
+</tr>
 </tbody>
 </table>
 ```
@@ -2738,6 +2917,8 @@ Here we focus on what to do when a good ask wasn't enough.
           <li>looping in managers: cc your manager (or theirs) on the next message.</li>
         </ul>
       </li>
+      <li>Match the ladder to the urgency. For a genuine emergency (production down, data at risk) skip some steps
+        and escalate loudly right away.</li>
     </ul>
   </td>
 </tr>
@@ -2778,7 +2959,9 @@ Here we focus on what to do when a good ask wasn't enough.
   </td>
   <td valign="top">
     <ul>
-      <li>Use a default-decision: “I'll do X on Friday unless someone objects.” Silence becomes a yes and you can move.</li>
+      <li>Use a default-decision: “I'll do X on Friday unless someone objects.” Silence becomes a yes and you can
+        move. Use it only for calls that are reasonably yours to make, and leave people real time to object —
+        otherwise it might be seen as overstepping.</li>
       <li>Or point at a decision-maker: instead of leaving it to the group, name who you think should call it, e.g. “@Alice, I think this is your call — can you decide by Friday?”.</li>
     </ul>
   </td>
@@ -3074,6 +3257,20 @@ and sometimes more.
 <tr>
   <td valign="top">
     <ul>
+      <li>In the middle of the firefight nobody remembers what was changed, when and why — and responders can
+        collide, e.g. two people rolling back different things at once.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Keep a running log in the incident thread: what you observed, what you changed and when. It coordinates
+        the responders now and becomes the postmortem timeline later.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
       <li>It's natural for multiple conversations to start about the same issue.</li>
       <li>Scattered communication makes it impossible to track the progress and the impact.</li>
     </ul>
@@ -3100,6 +3297,16 @@ and sometimes more.
 </tbody>
 </table>
 ```
+
+Here is the same incident update posted in two ways.
+
+> guys the payments thing is still broken, we're looking at it, might be the new deploy but not sure, Marek is checking something
+
+vs.
+
+> **Status 14:30** — card payments failing for ~20% of users, EU only. Root cause not confirmed; rolling back the 13:50 deploy now as the most likely fix. Next update at 15:00 or sooner.
+
+The second separates facts from guesses, states the impact, and tells everyone when to expect more.
 
 #### Postmortems
 
@@ -3173,6 +3380,18 @@ A postmortem is a way for the organisation to learn from the incident and not re
     </ul>
   </td>
 </tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Memory of an incident fades fast — after a few days the timeline and the small decisions are gone.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Write it soon, but not mid-adrenaline: mitigate, take a rest, then write while it's still fresh.</li>
+    </ul>
+  </td>
+</tr>
 </tbody>
 </table>
 ```
@@ -3194,7 +3413,8 @@ Conversations with your manager will likely be the ones with the most impact on 
 <tr>
   <td valign="top">
     <ul>
-      <li>The 1:1 exists for you, and you have all the power to drive what gets discussed there.</li>
+      <li>The 1:1 exists primarily for you. Your manager will bring their own topics, but you can and should
+        do the same.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3206,12 +3426,14 @@ Conversations with your manager will likely be the ones with the most impact on 
 <tr>
   <td valign="top">
     <ul>
-      <li>Your manager can only help with what they know.</li>
+      <li>Your manager can only help with what they know, yet some developers hide problems from them — even knowing
+        that unblocking you is literally their job.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>Make sure they know. Surface problems early (see <a href="#delivering-bad-news">delivering bad news</a>).</li>
+      <li>Use them. Ask for context, backing, pointers, decisions and anything else that helps you do your job better.</li>
     </ul>
   </td>
 </tr>
@@ -3230,18 +3452,6 @@ Conversations with your manager will likely be the ones with the most impact on 
 <tr>
   <td valign="top">
     <ul>
-      <li>Some developers hide problems from their manager, when unblocking you is literally their job.</li>
-    </ul>
-  </td>
-  <td valign="top">
-    <ul>
-      <li>Use them. Ask for context, backing, pointers, decisions and anything else that helps you do your job better.</li>
-    </ul>
-  </td>
-</tr>
-<tr>
-  <td valign="top">
-    <ul>
       <li>Your manager's manager (your “skip”) is even scarier.</li>
     </ul>
   </td>
@@ -3251,13 +3461,29 @@ Conversations with your manager will likely be the ones with the most impact on 
     </ul>
   </td>
 </tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>All of the above assumes a decent manager — and not all of them are. Some are overloaded, political or simply not on your side, and
+        with those, candour can be used against you.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Calibrate how much you share to the trust you've built. But make no mistake: a manager you have to guard
+        yourself against is pathological — a signal to change teams or companies, not something you should accept.</li>
+    </ul>
+  </td>
+</tr>
 </tbody>
 </table>
 ```
 
 ### Giving and receiving feedback
 
-Feedback serves two purposes: to learn what you do well and to learn what can be improved. This section is about feedback on people and the way they work — feedback on code lives in [Providing a PR review](#providing-a-pr-review).
+Feedback serves two purposes: to learn what you do well and to learn what can be improved. Receiving it is the easier half —
+most of this section is about giving it in a way that gets heard instead of defended against. It covers feedback on people
+and the way they work; feedback on code lives in [Providing a PR review](#providing-a-pr-review).
 
 ```{=html}
 <table>
@@ -3286,6 +3512,8 @@ Feedback serves two purposes: to learn what you do well and to learn what can be
   <td valign="top">
     <ul>
       <li>Praise in public whenever you can.</li>
+      <li>Know your colleagues, though — some people genuinely hate the spotlight and prefer the same words in a
+        DM.</li>
     </ul>
   </td>
 </tr>
@@ -3335,7 +3563,8 @@ Feedback serves two purposes: to learn what you do well and to learn what can be
   </td>
   <td valign="top">
     <ul>
-      <li>Give it while it's fresh and still actionable.</li>
+      <li>Give it while it's fresh and still actionable — but not in the heat of the moment. Let the emotions
+        (yours and theirs) settle first.</li>
     </ul>
   </td>
 </tr>
@@ -3348,6 +3577,20 @@ Feedback serves two purposes: to learn what you do well and to learn what can be
   <td valign="top">
     <ul>
       <li>Offer feedback as something you noticed, and don't try to judge the person.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Feedback aimed upward — at a senior or your manager — carries real social risk, and it's also the feedback
+        they hear least often.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Give it, but with extra care: in private, anchored to a concrete situation and its impact, and ideally
+        when they've asked for it (many do, in 1:1s).</li>
     </ul>
   </td>
 </tr>
@@ -3435,7 +3678,8 @@ When you have to evaluate yourself and receive an evaluation from your manager.
 <tr>
   <td valign="top">
     <ul>
-      <li>How much you grew usually matters more than how good you are.</li>
+      <li>How much you grew usually matters more than how good you are — especially early in your career. At senior
+        levels the bar shifts toward sustained impact.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3470,6 +3714,19 @@ When you have to evaluate yourself and receive an evaluation from your manager.
     </ul>
   </td>
 </tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A rating lower than you expected stings, and the instinct is to argue on the spot.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Don't fight it in the meeting. Ask what the rating was based on, take it away, and if you still disagree,
+        come back with evidence rather than emotion.</li>
+    </ul>
+  </td>
+</tr>
 </tbody>
 </table>
 ```
@@ -3487,12 +3744,14 @@ When you have to evaluate your colleagues and help their manager.
 <tr>
   <td valign="top">
     <ul>
-      <li>360 feedback goes to the manager, not to the person, so it doesn't have to be polite.</li>
+      <li>360 feedback goes to the manager first, not straight to the person, so it doesn't need the softening a
+        face-to-face conversation does (though parts of it often get relayed — see the anonymity point below).</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Don't sugarcoat it or spend time softening it. Be as blunt as it needs to be and save your time writing it and the manager's time reading it.</li>
+      <li>Don't sugarcoat it or spend time softening it. Be blunt about the substance (but not rude in tone) — it
+        saves your time writing and the manager's time reading.</li>
     </ul>
   </td>
 </tr>
@@ -3545,9 +3804,32 @@ When you have to evaluate your colleagues and help their manager.
     </ul>
   </td>
 </tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A 360 isn't only about problems. A specific, well-evidenced strength is often what gets a colleague
+        promoted or motivated — and it's input the manager rarely gets from anyone else.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Call out what they're genuinely great at, with the same specificity as the criticism.</li>
+    </ul>
+  </td>
+</tr>
 </tbody>
 </table>
 ```
+
+Here is the same peer feedback given in two ways.
+
+> Marek is hard to work with.
+
+vs.
+
+> In the last two design reviews Marek dismissed the alternatives before they were fully explained (the queue rework and the retry design). People have stopped proposing things in his meetings.
+
+The manager can't do anything with the first. The second names the pattern, the situations and the impact.
 
 ### Mentoring
 
@@ -3605,6 +3887,8 @@ And this activity is made almost entirely out of communication.
   <td valign="top">
     <ul>
       <li>Instead of telling them what to do (or what you would do in their place), explain your reasoning process and the options you weigh. (You will need that skill in design interviews anyway.)</li>
+      <li>When there's time, let them attempt the problem first and then compare notes — a solution they half-built
+        teaches more than one they watched. You should still share your full reasoning at the end (so you don't go into coaching too much).</li>
     </ul>
   </td>
 </tr>
@@ -3695,6 +3979,7 @@ The first step to landing a new job is to find interesting ones and get invited 
   <td valign="top">
     <ul>
       <li>Do something and make it visible. The more and better things you do, the better the results.</li>
+      <li>Understand the game: the payoff from public activity is slow and uncertain. Play the long game consciously.</li>
     </ul>
   </td>
 </tr>
@@ -3714,6 +3999,7 @@ The first step to landing a new job is to find interesting ones and get invited 
   <td valign="top">
     <ul>
       <li>Your CV gets a few seconds of attention before it's binned or kept (unless you come in as a referral).</li>
+      <li>Before any human sees it, a cold application often passes through an automated keyword filter.</li>
       <li>Your CV is a signal medium through which you communicate with the recruiter — there are different messages you might want to transfer over it:
         <ul>
           <li>deep technical expertise — familiarity with a particular tech or stack</li>
@@ -3727,6 +4013,7 @@ The first step to landing a new job is to find interesting ones and get invited 
   <td valign="top">
     <ul>
       <li>Decide which signal you want to send and make the CV carry it clearly. It has to get through in those few seconds your CV gets.</li>
+      <li>Mirror the concrete technologies from the job post (where true), so the CV survives the machine pass too.</li>
     </ul>
   </td>
 </tr>
@@ -3839,6 +4126,8 @@ Once you get invited to an interview, you start speaking to humans (hopefully). 
   <td valign="top">
     <ul>
       <li>Frame your wins as your contribution to the team's success.</li>
+      <li>But make your own part clear. “We built X” with no “I” anywhere is the other red flag — the interviewer
+        needs to know what you did and decided.</li>
     </ul>
   </td>
 </tr>
@@ -3870,6 +4159,21 @@ Once you get invited to an interview, you start speaking to humans (hopefully). 
 </tbody>
 </table>
 ```
+
+Here is the same answer to “tell me about a production issue you handled” in two ways.
+
+> Oh, so, that was back when we were on the old infrastructure, we had this monolith, well, not really a monolith,
+> more like two services, and one day — I think it was a Friday — alerts started firing, and my colleague was on
+> holiday so I had to look at it, and the dashboards were also kind of broken at the time...
+
+vs.
+
+> Our payment queue started backing up during a sales peak. I traced it to a slow external call, added a timeout
+> with a fallback, and we drained the backlog within the hour. Afterwards I added an alert on queue depth so we'd
+> catch it earlier next time.
+
+Same incident. The second is situation, action and result in three sentences — and it invites the interviewer to dig
+exactly where they want.
 
 #### Result
 
@@ -3947,7 +4251,7 @@ You went through the interviews and got some kind of result (good or bad). What 
 
 #### Onboarding
 
-You got the job, but there are sitll few things to play well.
+You got the job, but there are still a few things to play well.
 
 ```{=html}
 <table>
@@ -3978,6 +4282,19 @@ You got the job, but there are sitll few things to play well.
   <td valign="top">
     <ul>
       <li>Focus on learning the company's structure and people as much as reading code and docs, if not more.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Nobody can yet tell your silence apart from being stuck. A new joiner who goes quiet looks like struggling.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Over-communicate progress at the beginning: what you're on, what you've learned, where you're blocked.
+        Scale it back once trust is established.</li>
     </ul>
   </td>
 </tr>
@@ -4181,13 +4498,42 @@ The goal is to help you survive — and maybe even like — the internal talk yo
     </ul>
   </td>
 </tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Live demos break on stage — network, environment, a flaky feature. For developers it's one of the most
+        common presentation disasters, and also the most recoverable.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Have a fallback ready (a recording, screenshots or a verbal explanation) and switch to it at the first
+        failure. Never debug live in front of the room for more than a minute.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Talks attract questions and interruptions, and a single side-discussion can eat half your time.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Say upfront how you'd like to take questions: on the go or at the end.</li>
+      <li>“I don't know, I'll follow up” is a perfectly good answer, and deep dives can be deferred: “good one,
+        let's take it after the last slide”.</li>
+    </ul>
+  </td>
+</tr>
 </tbody>
 </table>
 ```
 
 ### Communicating in public
 
-Everything you say in the open leaves a trail that can help you or backfire spectacularly.
+Everything you say in the open leaves a permanent trail. The career upside of that trail is covered in
+[Search](#search); this section is about the ways it can backfire.
 
 ```{=html}
 <table>
