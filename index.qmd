@@ -6,26 +6,29 @@ date-modified: last-modified
 
 ## Intro
 
-Communicating with people comes naturally and mostly works, so we don't think about it. It's
-also a huge and imprecise topic, and many books have been written about it (most not very good). This handbook focuses on the **parts of
-communication that matter to software developers**. It isn't a comprehensive guide, and won't, for example, teach an
-engineering manager how to lay people off. But it does try to teach how to:
+Communicating with people comes naturally to most of us and usually works, so we don't think about it too much. It's
+also a vague and unfalsifiable topic, which is the opposite of what technical people enjoy. As a result, few of us think
+about improving that skill, often to the detriment of our colleagues, teams and companies. This handbook tries to help
+with that by focusing on the **parts of communication that matter to software developers**. It isn't a comprehensive
+guide, and won't, for example, teach an engineering manager how to lay people off, or how to tell your kids that their
+kitten has died. But it does try to teach how to:
 
 * give and receive pull request feedback
 * name and phrase things: variables, services, comments, error messages
-* talk with stakeholders, managers and fellow developers (each needs a different approach)
-* share estimates and manage expectations
+* talk with stakeholders, managers and fellow developers (spoiler: each needs a different approach)
+* share estimates and manage stakeholders' expectations
 * get buy-in for unsexy work like tech-debt reduction
 * disagree, deliver bad news and escalate when you're stuck
 * make your work visible without boring everyone at standups
 * get through job interviews and performance reviews (on either side of the table)
 
-and much much more, including a few general things like: how to ask questions, cross cultures, not be a jerk, and speak in public.
+and much, much more, including a few general things like: how to ask questions, cross cultures, not be a (total) jerk,
+and speak to a wider audience.
 
 ### Understand and adjust
 
 There is one perfect, infallible way to communicate without any friction: **know what's inside the receiver's head and send your thoughts straight into it**.
-Unfortunately, evolution never equipped us with it, so we need books like this one.
+Unfortunately, evolution never granted us that perk, so we need books like this one.
 
 And so every piece of advice in this handbook distills down to two moves:
 
@@ -42,26 +45,27 @@ understand people we talk with and how to adjust our communication so they hear 
 * **Deliberately basic.** The more experienced you are, the more obvious its content will be. Past the staff or
   engineering-manager level you're expected to read proper communication books instead.
 * **Broader than the title says.** Many items are generic communication advice tailored to the developer context
-  (with the generic-but-irrelevant parts cut). It also drifts beyond communication in places — into behaviour in
+  (with the generic-but-irrelevant parts cut out). It also drifts beyond communication in places — into behaviour in
   general, and sometimes into what to say rather than how to say it. That's intentional: the goal is to balance
   staying on topic with being as useful as possible.
 * **Written by a developer, for remote work.** I might be biased, but I believe remote is the more common setting
-  now, even for colocated teams. A lot of the advice probably transfers to other disciplines too, but I feel
-  confident speaking only from the developer's perspective — expect nuance I can't see elsewhere.
+  now, even for colocated teams. A lot of the advice transfers to other disciplines too, but I feel
+  confident speaking only from the developer's perspective.
 * **Helpful outside work.** Proper communication helps just as much with your spouse, kids or friends.
 
 ### How to read it
 
-* **In full.** The sections cover specific scenarios, but the real goal is the intuition that accumulates along the
-  way — no one can keep tens or hundreds of tiny rules in their head anyway. (If you won't read it in full, at least
-  steal the [parting principles](#parting-principles) — the rest of the book is them, expanded.)
+* **In full.** At least on the first pass. The sections cover specific scenarios, but the real goal is the intuition
+  that accumulates along the way — no one can keep tens or hundreds of tiny rules in their head anyway. Once you have
+  those intuitions, feel free to come back to individual sections when you want to improve a specific area. (If you won't read it in
+  full, at least steal the [parting principles](#parting-principles) — the rest of the book is just them, expanded.)
 * **With your brain on.** The book shows nuances and trade-offs so that you can weigh them for your particular
   situation, because it's easier to find two systems that need the same design than two conversations that need the
   same approach. It also assumes an approximate average working environment, which certainly diverges from yours
   somewhere — that's your cue to consciously ignore the advice or adjust it. And not every situation justifies the
   careful treatment described here; knowing when to let go is part of the skill.
 * **As a baseline.** Communication is an art and you will end up with your own style eventually. One book won't get
-  you there either — there is a lot here, but expect to read [half a dozen more](#appendix-resources) to actually get good at
+  you there — there is a lot here, but expect to read [half a dozen more](#appendix-resources) to actually get good at
   this.
 
 ## Before development
