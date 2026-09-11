@@ -1,5 +1,6 @@
 /.idea/
 *.iml
+/.claude/
 
 # Quarto build artifacts (everything is regenerated from index.qmd)
 /public/

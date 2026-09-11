@@ -1,115 +1,230 @@
 <script>
-// Two sidebar enhancements that Quarto can't express declaratively for a
-// single-document, left-TOC layout (carried over from the Fintech Engineering
-// Handbook, trimmed: no download tracking — needs a Cloudflare token):
-//   1. A "Take it with you" download section pinned below the TOC.
+// Everything this single-document, left-TOC layout needs that Quarto can't
+// express declaratively:
+//   1. The reader panel — downloads, the tip jar, the GitHub badge and the
+//      author line — pinned below the TOC, and repeated as a card under the
+//      title on mobile, where the TOC is hidden.
 //   2. A scrollspy that highlights the current section as you scroll/click
-//      (Quarto's built-in highlight does not track scroll for a left TOC).
+//      (Quarto's built-in highlight does not track scroll for a left TOC), and
+//      folds the subsection lists down to the one you're actually in.
+//   3. The live GitHub star count in that panel.
+//   4. Cloudflare beacons for the things a static site otherwise can't see:
+//      downloads, support clicks, and how far people actually read.
 (function () {
-  // External links shown in the sidebar footer. Edit these URLs as needed.
+  // External links shown in the reader panel. Edit these URLs as needed.
   var GITHUB_URL = 'https://github.com/Krever/developer-communication-handbook';
   var LINKEDIN_URL = 'https://www.linkedin.com/in/krever/';
   var X_URL = 'https://x.com/Krever01';
   var HOME_URL = 'https://w.pitula.me';
   // ElevenReader share link — paste the real URL after publishing the audiobook.
   var AUDIOBOOK_URL = ''; // e.g. 'https://elevenreader.io/...' ; empty = hidden
+  // Tip jar. Empty = every support CTA below stays hidden.
+  var KOFI_URL = 'https://ko-fi.com/krever';
 
-  // Matched social chips: identical rounded-square badges (currentColor
-  // background, paper-coloured mark) so the icons read as a true set.
-  var LI_SVG = '<svg class="social-ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">' +
-    '<rect width="24" height="24" rx="5" fill="currentColor"/>' +
-    '<path transform="translate(6.4 5.6) scale(0.0246)" fill="#fbf9f4" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>';
-  var X_SVG = '<svg class="social-ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">' +
-    '<rect width="24" height="24" rx="5" fill="currentColor"/>' +
-    '<path transform="translate(5.6 5.7) scale(0.533)" fill="#fbf9f4" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932zm-1.291 19.491h2.039L6.486 3.24H4.298l13.312 17.404z"/></svg>';
-  var HOME_SVG = '<svg class="social-ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">' +
-    '<rect width="24" height="24" rx="5" fill="currentColor"/>' +
-    '<path transform="translate(5.5 5.5) scale(0.8125)" fill="#fbf9f4" d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/></svg>';
-  var GH_SVG = '<svg class="social-ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">' +
-    '<rect width="24" height="24" rx="5" fill="currentColor"/>' +
-    '<path transform="translate(3.5 3.5) scale(0.708)" fill="#fbf9f4" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.51 11.51 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>';
+  // Star count is fetched live from the GitHub API on each visit, cached in
+  // localStorage so a returning reader (and a reader hopping between sections)
+  // doesn't re-hit it. Unauthenticated GitHub allows 60 requests/hour per IP,
+  // which the cache keeps us far below.
+  //
+  // While the repo is private the API answers 404 to an anonymous caller and
+  // the badge simply renders without a count; it starts working on its own the
+  // day the repo goes public, with no change here.
+  var GITHUB_API = 'https://api.github.com/repos/Krever/developer-communication-handbook';
+  var STARS_CACHE_KEY = 'dch:stars';
+  var STARS_TTL_MS = 6 * 60 * 60 * 1000; // 6h
 
-  function githubRow() {
-    return '' +
-      '<span class="sidebar-row">' +
-        '<span class="sidebar-row__label">Source on GitHub</span>' +
-        '<span class="author-socials">' +
-          '<a href="' + GITHUB_URL + '" target="_blank" rel="noopener" aria-label="Source on GitHub">' + GH_SVG + '</a>' +
-        '</span>' +
-      '</span>';
+  // Reading milestones. A pageview is not a read — someone who arrives from a
+  // link aggregator, skims the title and leaves looks identical to someone who
+  // works through a chapter. These record the moments that do mean something,
+  // so any future "N readers" claim rests on a measurement instead of a guess.
+  // See read/engaged.html for why there are two, and how the pre-launch period
+  // gets backfilled.
+  var READ_MILESTONES = [
+    { page: 'read/engaged.html', seconds: 180, depth: 0.10 },
+    { page: 'read/deep.html',    seconds: 600, depth: 0.25 }
+  ];
+  // Time only accrues while the tab is visible AND the reader has done
+  // something in the last minute, so a page parked in a background window (or
+  // an open laptop in an empty room) never reaches a milestone.
+  var IDLE_AFTER_MS = 60 * 1000;
+
+  // Bare monochrome marks — no boxes, no brand colours. They inherit
+  // currentColor so they pick up hover states from whatever contains them, and
+  // sit at the same optical weight as the Bootstrap icons on the buttons. Each
+  // viewBox is tightened to its path's ink so all three read at the same size:
+  // the stock LinkedIn box (448x512) letterboxes, rendering it visibly small.
+  function mark(viewBox, d) {
+    return '<svg class="fx-mark" viewBox="' + viewBox + '" aria-hidden="true">' +
+      '<path fill="currentColor" d="' + d + '"/></svg>';
   }
+  var GH_MARK = mark('0 0 24 24', 'M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.51 11.51 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12');
+  var LI_MARK = mark('0 0 448 448', 'M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z');
+  var X_MARK = mark('0 0 24 24', 'M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932zm-1.291 19.491h2.039L6.486 3.24H4.298l13.312 17.404z');
 
-  function authorRow() {
-    return '' +
-      '<span class="sidebar-row">' +
-        '<span class="sidebar-row__label">Voytek Pitula</span>' +
-        '<span class="author-socials">' +
-          '<a href="' + HOME_URL + '" target="_blank" rel="noopener" aria-label="Homepage">' + HOME_SVG + '</a>' +
-          '<a href="' + LINKEDIN_URL + '" target="_blank" rel="noopener" aria-label="LinkedIn">' + LI_SVG + '</a>' +
-          '<a href="' + X_URL + '" target="_blank" rel="noopener" aria-label="X">' + X_SVG + '</a>' +
-        '</span>' +
-      '</span>';
-  }
+  // ── The reader panel ──────────────────────────────────────────────────────
+  // Two groups and a byline. Everything is the same button in two weights:
+  // outline for "get the book", a soft rust fill for the ask. The GitHub link
+  // is the one exception, and only because a star count wants the split-badge
+  // shape the platform itself established.
 
-  function footerMarkup() {
+  function getGroup() {
     var listen = AUDIOBOOK_URL
-      ? '<a class="download-pill download-pill--listen" href="' + AUDIOBOOK_URL + '" target="_blank" rel="noopener">' +
-          '<i class="bi bi-headphones"></i> Audiobook</a>'
+      ? '<a class="fx-btn fx-btn--wide" href="' + AUDIOBOOK_URL + '" target="_blank" rel="noopener">' +
+          '<i class="bi bi-headphones"></i>Audiobook</a>'
       : '';
     return '' +
-      '<nav class="download-bar" aria-label="Download this handbook">' +
-        '<span class="download-bar__label">Take it with you</span>' +
-        '<span class="download-pills">' +
-          '<a class="download-pill" href="index.pdf"  download>PDF</a>' +
-          '<a class="download-pill" href="index.epub" download>EPUB</a>' +
-          listen +
-        '</span>' +
-      '</nav>' +
-      '<nav class="sidebar-links" aria-label="Source and author">' +
-        githubRow() +
-        authorRow() +
-      '</nav>';
-  }
-
-  // Mobile-only "grab it" card. The left TOC (and its pinned footer) is hidden
-  // below 768px, so the download/author links would otherwise be unreachable.
-  function grabCardMarkup() {
-    var listen = AUDIOBOOK_URL
-      ? '<a class="grab-card__btn" href="' + AUDIOBOOK_URL + '" target="_blank" rel="noopener">' +
-          '<i class="bi bi-headphones"></i> Audiobook</a>'
-      : '';
-    return '' +
-      '<span class="grab-card__label">Take it with you</span>' +
-      '<div class="grab-card__actions">' +
-        '<a class="grab-card__btn" href="index.pdf"  download><i class="bi bi-file-earmark-arrow-down"></i> PDF</a>' +
-        '<a class="grab-card__btn" href="index.epub" download><i class="bi bi-book"></i> EPUB</a>' +
+      '<div class="fx-group">' +
+        '<span class="fx-group__label">Take it with you</span>' +
+        '<div class="fx-row">' +
+          '<a class="fx-btn" href="index.pdf"  download><i class="bi bi-file-earmark-arrow-down"></i>PDF</a>' +
+          '<a class="fx-btn" href="index.epub" download><i class="bi bi-book"></i>EPUB</a>' +
+        '</div>' +
         listen +
-      '</div>' +
-      '<nav class="grab-card__links" aria-label="Source and author">' +
-        githubRow() +
-        authorRow() +
-      '</nav>';
+      '</div>';
   }
 
-  function injectFooter() {
-    // Desktop/tablet (>=768px): pinned below the left TOC.
-    const sidebar = document.querySelector('#quarto-sidebar-toc-left');
+  // Starring and tipping are the same ask at two prices, so they share a line:
+  // the paid one takes the space it needs for a warm label, the free one sizes
+  // to its count. `where` names the beacon page for this placement, so the
+  // Cloudflare dashboard shows which copy of the panel actually drives tips.
+  function supportGroup(where) {
+    var coffee = KOFI_URL
+      ? '<a class="fx-btn fx-btn--accent" href="' + KOFI_URL + '" target="_blank" rel="noopener" data-support="' + where + '">' +
+          '<i class="bi bi-cup-hot"></i>Buy me a coffee</a>'
+      : '';
+    return '' +
+      '<div class="fx-group">' +
+        '<span class="fx-group__label">Support the book</span>' +
+        '<div class="fx-row">' + coffee + githubBadge() + '</div>' +
+      '</div>';
+  }
+
+  // No "GitHub" wordmark: sharing a line with the tip jar, the octocat plus a
+  // star count says it unambiguously, and the words are better spent on the
+  // ask. The count segment stays hidden until the API answers, so a
+  // rate-limited reader gets a plain mark rather than an empty socket.
+  function githubBadge() {
+    return '' +
+      '<a class="gh-badge" href="' + GITHUB_URL + '" target="_blank" rel="noopener" aria-label="Source on GitHub">' +
+        '<span class="gh-badge__main">' + GH_MARK + '</span>' +
+        '<span class="gh-badge__count" hidden>' +
+          '<i class="bi bi-star-fill"></i><span class="gh-badge__num"></span>' +
+        '</span>' +
+      '</a>';
+  }
+
+  function authorLine() {
+    return '' +
+      '<div class="fx-author">' +
+        '<a class="fx-author__name" href="' + HOME_URL + '" target="_blank" rel="noopener">Voytek Pitula</a>' +
+        '<span class="fx-author__links">' +
+          '<a href="' + LINKEDIN_URL + '" target="_blank" rel="noopener" aria-label="LinkedIn">' + LI_MARK + '</a>' +
+          '<a href="' + X_URL + '" target="_blank" rel="noopener" aria-label="X">' + X_MARK + '</a>' +
+        '</span>' +
+      '</div>';
+  }
+
+  function panelMarkup(where) {
+    return getGroup() + supportGroup(where) + authorLine();
+  }
+
+  // Desktop/tablet (>=768px) gets the panel pinned below the left TOC. Below
+  // that the TOC is hidden entirely, so the same panel is repeated as a card
+  // right under the title — the first thing a phone reader sees, rather than
+  // buried at the end of a very long article. CSS shows exactly one of the two.
+  function injectPanel() {
+    var sidebar = document.querySelector('#quarto-sidebar-toc-left');
     if (sidebar && !sidebar.querySelector('.sidebar-footer')) {
-      const footer = document.createElement('div');
-      footer.className = 'sidebar-footer';
-      footer.innerHTML = footerMarkup();
+      var footer = document.createElement('div');
+      footer.className = 'sidebar-footer reader-panel';
+      footer.innerHTML = panelMarkup('sidebar');
       sidebar.appendChild(footer);
     }
-    // Mobile (<768px): a discoverable card just after the title block.
-    const title = document.querySelector('#title-block-header');
+    var title = document.querySelector('#title-block-header');
     if (title && !document.querySelector('.grab-card')) {
-      const card = document.createElement('aside');
-      card.className = 'grab-card';
+      var card = document.createElement('aside');
+      card.className = 'grab-card reader-panel';
       card.setAttribute('aria-label', 'Get this handbook');
-      card.innerHTML = grabCardMarkup();
+      card.innerHTML = panelMarkup('mobile');
       title.insertAdjacentElement('afterend', card);
     }
   }
+
+  // ── The ask at the end of the document ────────────────────────────────────
+  // Rarely reached, but reached by readers who got the whole value, which is
+  // the only place the ask is really earned.
+  function injectSupportCard() {
+    if (!KOFI_URL) return;
+    var body = document.querySelector('main#quarto-document-content') || document.querySelector('main');
+    if (!body || body.querySelector('.support-card')) return;
+    var card = document.createElement('aside');
+    card.className = 'support-card';
+    card.setAttribute('aria-label', 'Support this handbook');
+    card.innerHTML = '' +
+      '<h2 class="support-card__title">Found this useful?</h2>' +
+      '<p class="support-card__copy">' +
+        'This handbook is free, has no ads, and always will be. If it saved you an ' +
+        'awkward conversation, a coffee is a good way to say so!' +
+      '</p>' +
+      '<a class="support-card__btn" href="' + KOFI_URL + '" target="_blank" rel="noopener" data-support="end">' +
+        '<i class="bi bi-cup-hot-fill"></i>Buy me a coffee' +
+      '</a>';
+    body.appendChild(card);
+  }
+
+  // ── Star count ────────────────────────────────────────────────────────────
+
+  // 460 -> "460", 1234 -> "1.2k", 12345 -> "12k". Keeps the badge narrow.
+  function compact(n) {
+    if (n < 1000) return String(n);
+    if (n < 10000) return (Math.floor(n / 100) / 10).toFixed(1).replace(/\.0$/, '') + 'k';
+    return Math.round(n / 1000) + 'k';
+  }
+
+  function renderStars(stars) {
+    if (!(stars > 0)) return;
+    document.querySelectorAll('.gh-badge').forEach(function (badge) {
+      var count = badge.querySelector('.gh-badge__count');
+      var num = badge.querySelector('.gh-badge__num');
+      if (!count || !num) return;
+      num.textContent = compact(stars);
+      count.hidden = false;
+      badge.setAttribute('aria-label', 'Source on GitHub — ' + stars + ' stars');
+    });
+  }
+
+  // localStorage can throw outright (Safari private mode, storage disabled), so
+  // every access is guarded — a reader with storage off still gets a live count,
+  // just without the cache.
+  function cachedStars() {
+    try {
+      var raw = localStorage.getItem(STARS_CACHE_KEY);
+      if (!raw) return null;
+      var c = JSON.parse(raw);
+      return (Date.now() - c.at < STARS_TTL_MS) ? c.stars : null;
+    } catch (e) { return null; }
+  }
+
+  function cacheStars(stars) {
+    try {
+      localStorage.setItem(STARS_CACHE_KEY, JSON.stringify({ stars: stars, at: Date.now() }));
+    } catch (e) { /* not worth caring about */ }
+  }
+
+  function loadStars() {
+    var hit = cachedStars();
+    if (hit) { renderStars(hit); return; }
+    fetch(GITHUB_API, { headers: { Accept: 'application/vnd.github+json' } })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (!d || typeof d.stargazers_count !== 'number') return;
+        cacheStars(d.stargazers_count);
+        renderStars(d.stargazers_count);
+      })
+      .catch(function () { /* private, rate-limited or offline: badge stays countless */ });
+  }
+
+  // ── Scrollspy ─────────────────────────────────────────────────────────────
 
   function scrollspy() {
     const links = Array.from(document.querySelectorAll('#TOC .nav-link'));
@@ -155,7 +270,88 @@
     update();
   }
 
-  function init() { injectFooter(); scrollspy(); }
+  // ── Beacons ───────────────────────────────────────────────────────────────
+
+  // Records an event by loading a tiny hidden page in an iframe, which fires
+  // the Cloudflare beacon and so registers a pageview at that path. It is the
+  // only event mechanism Cloudflare Web Analytics gives a static site, and it
+  // costs the reader nothing: no redirect, no blocking, no cookie.
+  function ping(page) {
+    var frame = document.createElement('iframe');
+    frame.src = page;
+    frame.setAttribute('aria-hidden', 'true');
+    frame.style.cssText = 'position:absolute;width:0;height:0;border:0;left:-9999px;';
+    document.body.appendChild(frame);
+    setTimeout(function () { frame.remove(); }, 5000);
+  }
+
+  // Download counting without touching UX. The PDF/EPUB links remain plain
+  // `download` anchors (instant save, no redirect), so we don't preventDefault;
+  // the real download keeps the page alive, giving the beacon time to send.
+  function trackDownloads() {
+    document.addEventListener('click', function (e) {
+      const a = e.target.closest('a[download]');
+      if (!a) return;
+      const href = a.getAttribute('href') || '';
+      if (/index\.pdf$/.test(href)) ping('dl/pdf.html');
+      else if (/index\.epub$/.test(href)) ping('dl/epub.html');
+    }, { passive: true });
+  }
+
+  // The click opens Ko-fi normally; the beacon records that a reader took the
+  // step, on the path belonging to the placement they took it from.
+  function trackSupportClicks() {
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[data-support]');
+      if (a) ping('go/kofi-' + a.dataset.support + '.html');
+    }, { passive: true });
+  }
+
+  function trackReading() {
+    // Once per tab session per milestone: a reader who lingers is one reader,
+    // not one per re-scroll.
+    var pending = READ_MILESTONES.filter(function (m) {
+      try { return !sessionStorage.getItem('dch:' + m.page); } catch (e) { return true; }
+    });
+    if (!pending.length) return;
+
+    var activeSeconds = 0;
+    var maxDepth = 0;
+    var lastActivity = Date.now();
+
+    function depth() {
+      var scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollable <= 0) return 1;   // whole document already on screen
+      return Math.min(1, (window.scrollY || 0) / scrollable);
+    }
+
+    function noteActivity() { lastActivity = Date.now(); }
+    ['scroll', 'mousemove', 'keydown', 'wheel', 'touchstart', 'click'].forEach(function (evt) {
+      document.addEventListener(evt, noteActivity, { passive: true });
+    });
+
+    var timer = setInterval(function () {
+      var awake = document.visibilityState === 'visible' &&
+                  Date.now() - lastActivity < IDLE_AFTER_MS;
+      if (awake) activeSeconds += 1;
+      // Sampled here rather than on scroll, so a document short enough to need
+      // no scrolling still counts as fully read.
+      maxDepth = Math.max(maxDepth, depth());
+
+      pending = pending.filter(function (m) {
+        if (activeSeconds < m.seconds || maxDepth < m.depth) return true;
+        ping(m.page);
+        try { sessionStorage.setItem('dch:' + m.page, '1'); } catch (e) { /* fine */ }
+        return false;
+      });
+      if (!pending.length) clearInterval(timer);
+    }, 1000);
+  }
+
+  function init() {
+    injectPanel(); injectSupportCard(); scrollspy();
+    trackDownloads(); trackSupportClicks(); trackReading(); loadStars();
+  }
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);

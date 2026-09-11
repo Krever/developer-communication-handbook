@@ -7,11 +7,23 @@ project:
   # the format-level `favicon:` key only works for website projects, not this one).
   resources:
     - assets/favicon.png
+    # Hidden one-pixel-free tracking pages loaded in an iframe on download
+    # clicks, so Cloudflare records PDF/EPUB downloads as pageviews. See
+    # _includes/enhance.html.
+    - dl/pdf.html
+    - dl/epub.html
+    # Same trick for "buy me a coffee" clicks — one page per placement, since
+    # the path is all Cloudflare records.
+    - go/kofi-sidebar.html
+    - go/kofi-mobile.html
+    - go/kofi-end.html
+    # And for reading milestones, which is how we tell a reader from a visitor.
+    - read/engaged.html
+    - read/deep.html
 
-# Setup carried over from the Fintech Engineering Handbook so styling decisions
-# can be previewed immediately. Left behind (bring back when needed):
-#   - Cloudflare analytics + download tracking (needs its own token)
+# Single source of truth: index.qmd. Every output below is generated from it.
 format:
+  # Beautiful, scannable single page with a sticky left-hand table of contents.
   html:
     theme:
       - cosmo
@@ -30,6 +42,8 @@ format:
     link-external-icon: true
     link-external-newwindow: true
     code-copy: true
+    # Our own download bar is the single source of truth for the other formats;
+    # disable Quarto's auto "Other Formats" list (it labels the PDF "Typst").
     format-links: false
     include-after-body:
       - _includes/enhance.html

@@ -1,2 +1,13 @@
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <meta name="theme-color" content="#a8502e">
+
+<!-- Cloudflare Web Analytics: privacy-first, no cookies, no consent banner.
+     The JS beacon works on any host (no need to put the domain on Cloudflare).
+     TODO: create a site for this book at
+     https://dash.cloudflare.com/?to=/:account/web-analytics and replace
+     PASTE_CLOUDFLARE_TOKEN_HERE everywhere it appears (this file plus the
+     beacon pages under dl/, go/ and read/) with the token it hands you:
+       grep -rl PASTE_CLOUDFLARE_TOKEN_HERE . | xargs sed -i '' 's/PASTE_CLOUDFLARE_TOKEN_HERE/<token>/g'
+     Until then the beacon is inert and nothing else on the page is affected. -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "PASTE_CLOUDFLARE_TOKEN_HERE"}'></script>

@@ -207,210 +207,235 @@ nav[role="doc-toc"] .nav-link.active {
   }
 }
 
-// ── Sidebar footer: Download + source/author links (pinned below the TOC) ────
+// ── Reader panel ────────────────────────────────────────────────────────────
+// One component, rendered twice: pinned below the TOC on desktop, and as a card
+// under the title on mobile where the TOC (and everything pinned to it) is
+// hidden. Identical markup both times — only the tap targets differ.
+//
+// Everything inside is the same button: a rounded rect with a rust hairline, in
+// two weights — outline for "get the book", a soft rust fill for the ask. The
+// GitHub link is the one exception, and only because a star count wants the
+// split-badge shape the platform itself established.
+.reader-panel { font-family: $font-family-sans-serif; }
+
 .sidebar-footer {
   margin-top: 1.4rem;
+  padding-top: 1.2rem;
   padding-bottom: 1.75rem;
   border-top: 1px solid $rule;
-  font-family: $font-family-sans-serif;
 }
 
-// ── Mobile "grab it" card ─────────────────────────────────────────────────
-// Injected right after the title block. The left TOC (and its pinned download
-// footer) is hidden below 768px, so this card carries the download + source
-// links to phone readers — placed up top, where it's seen first, rather than
-// buried at the end of the page. Hidden at >=768px where the sidebar shows.
+// Column layout with a uniform gap, so nothing needs bespoke margins. Items
+// hug their content (the GitHub badge must), and anything full-width opts in
+// with `width: 100%`.
+.fx-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+.fx-group + .fx-group { margin-top: 1.45rem; }
+.fx-group__label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $ink-soft;
+  margin-bottom: 0.2rem;   // + the 0.4rem gap = 0.6rem under the label
+}
+// Buttons sharing a line split it evenly; the GitHub badge is the exception,
+// sizing to its count so the tip jar beside it keeps a full-length label.
+//
+// `min-width: max-content` with a zero basis is what makes this hold at every
+// width: equal shares while the labels fit, and a wrap to the next line rather
+// than a label bleeding out of its box once they don't — which is exactly what
+// happens to "Buy me a coffee" beside the badge on a 360px phone.
+.fx-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
+  gap: 0.4rem;
+}
+.fx-row > .fx-btn { flex: 1 1 0; min-width: max-content; }
+.fx-row > .gh-badge { flex: 0 0 auto; }
+
+.fx-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 2.2rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: $accent-deep;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(168, 80, 46, 0.28);
+  border-radius: 8px;
+  text-decoration: none !important;
+  white-space: nowrap;   // labels are short by design; never wrap one
+  -webkit-tap-highlight-color: transparent;
+  transition: background 0.14s ease, color 0.14s ease, border-color 0.14s ease;
+}
+.fx-btn .bi { font-size: 1em; opacity: 0.7; }
+.fx-btn:hover { background: $accent; border-color: $accent; color: #fff; }
+.fx-btn:hover .bi { opacity: 1; }
+.fx-btn--wide { display: flex; width: 100%; }
+// The one paid ask in the panel: same button, carrying a little more weight.
+.fx-btn--accent {
+  background: rgba(168, 80, 46, 0.09);
+  border-color: rgba(168, 80, 46, 0.35);
+  font-weight: 600;
+}
+.fx-btn--accent:hover { background: $accent; }
+
+// GitHub badge: the platform's own split shape — identity on the left, count on
+// the right, one hairline between them — drawn in our palette instead of theirs.
+.gh-badge {
+  display: inline-flex;
+  align-items: stretch;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: $accent-deep;
+  text-decoration: none !important;
+  border: 1px solid rgba(168, 80, 46, 0.28);
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  transition: border-color 0.14s ease;
+}
+.gh-badge__main,
+.gh-badge__count {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: 0.4rem 0.75rem;
+  transition: background 0.14s ease, color 0.14s ease;
+}
+.gh-badge__main { gap: 0.4rem; background: rgba(255, 255, 255, 0.7); }
+.gh-badge__count {
+  gap: 0.3rem;
+  border-left: 1px solid rgba(168, 80, 46, 0.22);
+  background: rgba(168, 80, 46, 0.09);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.gh-badge__count .bi { font-size: 0.8em; opacity: 0.7; }
+.gh-badge:hover { border-color: $accent; }
+.gh-badge:hover .gh-badge__main { background: $accent; color: #fff; }
+.gh-badge:hover .gh-badge__count { background: rgba(168, 80, 46, 0.16); }
+
+.fx-mark { display: block; flex: 0 0 auto; width: 15px; height: 15px; }
+
+// Byline: the quietest thing in the panel, and the only text link in it.
+.fx-author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1.05rem;
+  border-top: 1px solid $rule;
+  font-size: 0.82rem;
+}
+.fx-author__name {
+  color: $ink;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: color 0.12s ease;
+}
+.fx-author__name:hover { color: $accent; }
+.fx-author__links { display: inline-flex; align-items: center; gap: 0.7rem; }
+.fx-author__links a {
+  display: inline-flex;
+  color: $ink-soft;
+  text-decoration: none !important;
+  transition: color 0.12s ease, transform 0.12s ease;
+}
+.fx-author__links a:hover { color: $accent; transform: translateY(-1px); }
+.fx-author__links .fx-mark { width: 16px; height: 16px; }
+
+// Quarto appends an external-link glyph after every target=_blank link; it
+// wraps below the icon as a stray box inside these.
+.fx-btn::after,
+.gh-badge::after,
+.fx-author a::after,
+.support-card__btn::after { content: none !important; display: none !important; }
+
+// ── The panel on mobile ─────────────────────────────────────────────────────
+// Below 768px Quarto hides the left TOC, taking the pinned panel with it, so
+// the same markup reappears as a card under the title. Only the sizing changes.
 .grab-card { display: none; }
 
 @media (max-width: 767.98px) {
   .grab-card {
     display: block;
     margin: 1.6rem 0 2.4rem;
-    padding: 1.1rem 1.15rem 1.2rem;
+    padding: 1.15rem 1.2rem 1.25rem;
     border: 1px solid rgba(168, 80, 46, 0.28);
     border-radius: 12px;
-    // Faint paper-on-teal wash so it reads as an aside, not body copy.
+    // Faint paper-on-rust wash so it reads as an aside, not body copy.
     background:
       linear-gradient(180deg, rgba(168, 80, 46, 0.05), rgba(168, 80, 46, 0.02));
-    font-family: $font-family-sans-serif;
   }
-  .grab-card__label {
-    display: block;
-    font-size: 0.68rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: $accent-deep;
-    margin-bottom: 0.75rem;
-  }
-  .grab-card__actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  // Download/listen buttons: tappable, filled enough to read as primary actions.
-  .grab-card__btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    flex: 1 1 auto;
-    justify-content: center;
-    min-height: 2.6rem;
-    padding: 0.5rem 0.9rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.01em;
-    color: $accent-deep;
-    background: #fff;
-    border: 1px solid rgba(168, 80, 46, 0.35);
-    border-radius: 9px;
-    text-decoration: none !important;
-    -webkit-tap-highlight-color: transparent;
-    transition: background 0.14s ease, color 0.14s ease, border-color 0.14s ease;
-  }
-  .grab-card__btn:active { background: rgba(168, 80, 46, 0.08); }
-  .grab-card__btn .bi { font-size: 1.05rem; opacity: 0.85; }
-  // Source / author: quiet text links beneath the actions.
-  .grab-card__links {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0.95rem;
-    padding-top: 0.85rem;
-    border-top: 1px solid rgba(168, 80, 46, 0.16);
-  }
-  .grab-card__links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.82rem;
-    color: $ink-soft;
-    text-decoration: none;
-  }
-  .grab-card__links .bi { font-size: 0.95rem; opacity: 0.8; }
-  .grab-card__author {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.82rem;
-    color: $ink-soft;
-  }
-  .grab-card__author a { display: inline-flex; align-items: center; color: inherit; }
-  .grab-card__author a:hover { color: $accent; }
+  .grab-card .fx-btn,
+  .grab-card .gh-badge { font-size: 0.9rem; font-weight: 600; }
+  .grab-card .fx-btn,
+  .grab-card .gh-badge__main,
+  .grab-card .gh-badge__count { min-height: 2.7rem; }
+  .grab-card .fx-author { font-size: 0.86rem; }
 }
-.download-bar {
-  padding-top: 1.1rem;
+
+// ── The ask at the end of the document ──────────────────────────────────────
+.support-card {
+  margin: 4rem 0 1rem;
+  padding: 2rem 2.1rem 2.2rem;
+  border: 1px solid rgba(168, 80, 46, 0.28);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(168, 80, 46, 0.06), rgba(168, 80, 46, 0.02));
+  text-align: center;
 }
-.sidebar-links {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1.1rem;
+.support-card__title {
+  font-family: $headings-font-family;
+  color: $ink;        // Quarto greys out h2 outside the body flow
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.6rem;
+  border: 0;          // Quarto underlines h2 in the body; not here
+  padding: 0;
 }
-.sidebar-links a {
+.support-card__copy {
+  max-width: 34rem;
+  margin: 0 auto 1.5rem;
+  color: $ink-soft;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+// The page's one filled button — this is the only place the ask is the point.
+.support-card__btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.82rem;
-  color: $ink-soft;
-  text-decoration: none;
-  transition: color 0.12s ease;
-}
-.sidebar-links a:hover {
-  color: $accent;
-}
-.sidebar-links .bi {
+  min-height: 2.8rem;
+  padding: 0.6rem 1.5rem;
+  font-family: $font-family-sans-serif;
   font-size: 0.95rem;
-  opacity: 0.85;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #fff;
+  background: $accent;
+  border: 1px solid $accent;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: background 0.14s ease, transform 0.14s ease;
 }
-// Source + author: two stacked rows, each a left label with matched chips
-// trailing on the right, so both rows share the same orientation.
-.sidebar-row {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.95rem;
-  color: $ink-soft;
-}
-.sidebar-row + .sidebar-row { margin-top: 0.55rem; }
-// Equal-width labels so the trailing chips line up in a column across rows.
-.sidebar-row__label { flex: 0 0 auto; min-width: 8rem; }
-// Social chips: matched rounded-square badges (GitHub, LinkedIn, X). The chip
-// fill is currentColor so colour + hover ride on the anchor; glyph is paper.
-// NOTE: Quarto's sidebar rules stretch these anchors (display:flex + grow),
-// leaving dead space inside each link that reads as a huge gap. Force the
-// anchor to shrink to the chip.
-.author-socials {
-  display: inline-flex !important;
-  align-items: center;
-  gap: 8px;
-}
-// Quarto appends an external-link glyph after target=_blank links; suppress it
-// on the chips (it wraps below the icon as a stray box).
-.author-socials a::after { content: none !important; display: none !important; }
-.author-socials a {
-  display: inline-block !important;
-  width: 22px !important;
-  height: 22px !important;
-  min-width: 0 !important;
-  line-height: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  color: $ink-soft;
-  transition: color 0.12s ease, transform 0.12s ease;
-}
-.author-socials a:hover {
-  color: $accent;
+.support-card__btn:hover {
+  background: $accent-deep;
+  color: #fff;
   transform: translateY(-1px);
 }
-.author-socials a svg.social-ico {
-  display: block;
-  width: 22px !important;
-  height: 22px !important;
-}
-.download-bar__label {
-  display: block;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: $ink-soft;
-  margin-bottom: 0.6rem;
-}
-.download-pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-.download-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-size: 0.82rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: $accent-deep;
-  text-decoration: none !important;
-  padding: 0.34rem 0.85rem;
-  border: 1px solid rgba(168, 80, 46, 0.35);
-  border-radius: 999px;
-  background: transparent;
-  transition: background 0.14s ease, color 0.14s ease, border-color 0.14s ease;
-}
-.download-pill::before {
-  content: "↓";
-  font-size: 0.9em;
-  opacity: 0.7;
-}
-.download-pill:hover {
-  background: $accent;
-  border-color: $accent;
-  color: #fff;
-}
-.download-pill:hover::before { opacity: 1; }
-// Audiobook shares the pill style but links out rather than downloading:
-// swap the ↓ glyph for the headphones icon.
-.download-pill--listen::before { content: none; }
-.download-pill--listen .bi { font-size: 0.95rem; opacity: 0.7; }
-.download-pill--listen:hover .bi { opacity: 1; }
 
 // ── Callouts ────────────────────────────────────────────────────────────────
 .callout.callout-warning {
