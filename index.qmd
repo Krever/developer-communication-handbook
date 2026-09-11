@@ -70,17 +70,17 @@ understand people we talk with and how to adjust our communication so they hear 
 
 ## Before development
 
-Before the first line of code, a project exists only as words, which makes misunderstandings easy to create but also
-to fix. This part covers the conversations and messages that happen before coding starts.
+Before the first line of code is written, a project exists as words alone. And words mean misunderstandings, which are
+easy to create but also easy to fix. This part covers the conversations and messages that happen before coding starts.
 
-### Gathering requirements
+### Extracting requirements
 
 To deliver a product or a feature we have to know what the requirements are. The lucky among us have a product manager
 or a business analyst who makes this process simpler, but even then a significant amount of work has to be put into
 refining their vision. Alternatively (or in parallel), we need to talk directly with stakeholders (most of whom will be
 non-technical) and figure out the requirements on our own. In either case there is a lot of talking involved and it's
 important to do it effectively: extract as much _correct_ information as possible in as little time as possible
-(because who likes spending time in meetings?).
+(because who likes spending time in meetings?). And do it so the other side will want to talk to us again.
 
 ```{=html}
 <table>
@@ -91,14 +91,14 @@ important to do it effectively: extract as much _correct_ information as possibl
 <tr>
   <td valign="top">
     <ul>
-      <li>Stakeholders usually don’t know what solution they want, but they do know what problems they have. They
+      <li>People usually don’t know what solution they want, but they do know what problems they have. They
         will still ask for a solution (“add a button X”) rather than explain the problem.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>Make sure you understand why a feature is needed, not only what it’s supposed to do. Propose your own
-        solution only once you know enough about the problem, otherwise you
+        solution, but only once you know enough about the problem, otherwise you
         <a href="https://en.wikipedia.org/wiki/Anchoring_effect">anchor</a> the conversation early and risk
         solving the wrong problem.</li>
     </ul>
@@ -107,13 +107,14 @@ important to do it effectively: extract as much _correct_ information as possibl
 <tr>
   <td valign="top">
     <ul>
-      <li>People have a tendency to assume you know things that are obvious to them.</li>
+      <li>People assume you know what’s obvious to them. So an unsaid thing is ambiguous: it may be settled, or
+        never considered at all.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Don’t assume something has been thought through unless it was explicitly stated. Confirm everything of
-        importance.</li>
+      <li>Confirm everything of importance. Don’t assume something has been thought through just because nobody
+        flagged it.</li>
     </ul>
   </td>
 </tr>
@@ -126,7 +127,7 @@ important to do it effectively: extract as much _correct_ information as possibl
   <td valign="top">
     <ul>
       <li>Dig until you fully understand the problem and its context, no matter how many questions it takes. A
-        question cost is much smaller than building the wrong feature.</li>
+        question costs far less than building the wrong feature.</li>
       <li>If you don't feel like asking yet another question, share your guessed understanding and let them correct it: “so the refund
         always goes back to the original card, right?”. Confirming is easier than answering.</li>
     </ul>
@@ -135,7 +136,7 @@ important to do it effectively: extract as much _correct_ information as possibl
 <tr>
   <td valign="top">
     <ul>
-      <li>Business people think in terms of <a href="https://en.wikipedia.org/wiki/Happy_path">happy paths</a>, and
+      <li>Business people think in terms of happy paths, and
         edge cases or errors are hard for them to consider.</li>
     </ul>
   </td>
@@ -149,14 +150,14 @@ important to do it effectively: extract as much _correct_ information as possibl
 <tr>
   <td valign="top">
     <ul>
-      <li>Non-functional requirements — performance, scalability, security — might not be brought
-        up by stakeholders on their own. Yet they drive the technical design and are your responsibility as a developer.</li>
+      <li>Non-functional requirements — performance, scalability, security — are rarely brought up by
+        stakeholders on their own. Yet they drive the technical design and are your responsibility as a developer.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Raise them yourself, but in their terms: how many users, how fresh the data has to be, what happens if it
-        leaks.</li>
+      <li>Raise them yourself, but in the stakeholders’ terms: how many users, how fresh the data has to be, what
+        happens if it leaks.</li>
     </ul>
   </td>
 </tr>
@@ -208,7 +209,7 @@ important to do it effectively: extract as much _correct_ information as possibl
   </td>
   <td valign="top">
     <ul>
-      <li>Raise technical concerns yourself, because nobody else will. Phrase them in as non-technical way as you can.</li>
+      <li>Raise technical concerns yourself, because nobody else will. Phrase them in as non-technical a way as you can.</li>
     </ul>
   </td>
 </tr>
@@ -222,7 +223,8 @@ important to do it effectively: extract as much _correct_ information as possibl
     <ul>
       <li>Tell them the cost when it matters, since they are often keen to adjust the requirements once they see the
         price.</li>
-      <li>Give a rough range with the uncertainty spelled out. A casually dropped number might get interpreted as a commitment.</li>
+      <li>Give a rough range with the uncertainty spelled out. A casually dropped number might get interpreted as a
+        commitment (see <a href="#providing-estimates">providing estimates</a>).</li>
     </ul>
   </td>
 </tr>
@@ -250,7 +252,7 @@ important to do it effectively: extract as much _correct_ information as possibl
   </td>
   <td valign="top">
     <ul>
-      <li>Write things down, whether as meeting notes or a Confluence page, so that decisions and the inputs
+      <li>Write things down, whether as meeting notes or a wiki page, so that decisions and the inputs
         behind them don’t depend on anyone’s memory.</li>
       <li>Capture the decisions and the reasoning, not a transcript — nobody will read a pure meeting dump.</li>
     </ul>
@@ -1554,7 +1556,7 @@ The second explains the actual problem and offers a way out, while its label say
 
 Sooner or later your work has to be explained to someone who doesn't read code, like a product manager or a support agent.
 In such cases you have to become a translator from technicalese to legalese, accountinglese and other dialects that resemble English only on the surface.
-(The other direction — extracting information _from_ them — is covered in [Gathering requirements](#gathering-requirements).)
+(The other direction — extracting information _from_ them — is covered in [Extracting requirements](#extracting-requirements).)
 
 ```{=html}
 <table>
@@ -4655,7 +4657,7 @@ where the book leans on it.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Giving and receiving feedback](#giving-and-receiving-feedback): “good job” and “be more proactive” carry only sentiment — point at the thing and its effect: “in yesterday's standup you cut Ana off twice, and she went quiet for the rest of it”.
-  - [Gathering requirements](#gathering-requirements): business people think in happy paths — walking through concrete examples (“so the refund always goes back to the original card, right?”) flushes out the edge cases not mentioned before.
+  - [Extracting requirements](#extracting-requirements): business people think in happy paths — walking through concrete examples (“so the refund always goes back to the original card, right?”) flushes out the edge cases not mentioned before.
   - [Making your work visible](#making-your-work-visible): “the import now runs in 5 minutes instead of 40” informs; “I did an amazing job on the import” brags and is useless.
   - [Your peers'](#your-peers): “Marek is hard to work with” gives the manager nothing — “in the last two design reviews he dismissed the alternatives before they were explained” names the pattern, the situations and the impact.
   - [Talking to non-developers](#talking-to-non-developers): abstract detail lands as noise — say what the user sees: “the duplicate-charge fix should be live for customers on Tuesday”, not “the PR is merged, waiting on the migration”.
@@ -4667,7 +4669,7 @@ where the book leans on it.
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Providing estimates](#providing-estimates): confirm whether they want an estimate or a commitment, and whether the number is work-time or calendar time — ten days of work can easily be a month on the calendar.
   - [Incident coordination](#incident-coordination): separate guesses from facts out loud — “root cause not confirmed; rolling back the 13:50 deploy as the most likely fix” — because everyone's next steps depend on which is which.
-  - [Gathering requirements](#gathering-requirements): people assume you already know what's obvious to them — treat nothing as thought through unless it was explicitly stated.
+  - [Extracting requirements](#extracting-requirements): people assume you already know what's obvious to them, so an unsaid thing may be settled or may never have been considered — confirm everything of importance.
   - [Providing a PR review](#providing-a-pr-review): the author can't tell a shared standard from your personal preference — label taste as taste: “I'd have used a map here, but that's me”.
   - [Disagreeing and pushing back](#disagreeing-and-pushing-back): state the view, the confidence and the reasons together: “I think X because Y, but it's not a hill I'll die on”.
   :::
@@ -4680,7 +4682,7 @@ where the book leans on it.
   - [Talking to non-developers](#talking-to-non-developers): deploy, release, ship and launch collapse into one word for a non-technical listener — spell out the difference when it matters, use their coarser word when it doesn't.
   - [Crossing cultures](#crossing-cultures): a “yes” might mean “I agree” or only “I heard you” — don't read a nod as agreement; confirm what they actually meant.
   - [Naming things](#naming-things): readers assume different words mean different things — `get`, `fetch` and `load` for the same behaviour suggest differences that don't exist.
-  - [Gathering requirements](#gathering-requirements): domain words carry precise meanings you don't know yet — start a domain dictionary early to capture them.
+  - [Extracting requirements](#extracting-requirements): domain words carry precise meanings you don't know yet — start a domain dictionary early to capture them.
   :::
 
 - **Much of what you write is read in the future** — comments, logs, error messages, names, docs. That reader has none
@@ -4700,7 +4702,7 @@ where the book leans on it.
 - **Look behind the message** — think why a question is asked or a message is posted; don't take it at face value.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
-  - [Gathering requirements](#gathering-requirements): stakeholders ask for a solution (“add a button X”) when what they have is a problem — dig into why the feature is needed before building what was literally requested.
+  - [Extracting requirements](#extracting-requirements): stakeholders ask for a solution (“add a button X”) when what they have is a problem — dig into why the feature is needed before building what was literally requested.
   - [Providing estimates](#providing-estimates): always ask why the number is needed — planning, a public announcement and a legal deadline each call for a different answer, and no reason at all is grounds to push back.
   - [Asking](#asking), [Responding](#responding): people answer the question you asked, not the one you should have asked (the XY problem) — state your goal alongside the problem, and flag it when you smell it in someone else's question.
   - [Interviews](#interviews): “why are you leaving?” is not curiosity about your old job — it checks whether you'll trash it. Keep the answer forward-looking.
@@ -4719,7 +4721,7 @@ where the book leans on it.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Interviewing candidates](#interviewing-candidates): ask, then be quiet — let the silences sit, because people fill them with the good stuff.
-  - [Gathering requirements](#gathering-requirements): keep extracting before you propose — an early solution anchors the conversation and you risk solving the wrong problem.
+  - [Extracting requirements](#extracting-requirements): keep extracting before you propose — an early solution anchors the conversation and you risk solving the wrong problem.
   - [Giving and receiving feedback](#giving-and-receiving-feedback): on the receiving end, defending yourself defeats the point — say thanks, ask for an example, clarify later.
   :::
 
@@ -4783,7 +4785,7 @@ where the book leans on it.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Disagreeing and pushing back](#disagreeing-and-pushing-back): spoken disagreements evaporate — if it later goes wrong, nobody remembers the trade-off was flagged. Put “we chose X, accepting risk Y” on record, as a shared note rather than an “I told you so” in waiting.
-  - [Gathering requirements](#gathering-requirements): everyone forgets what was agreed — capture the decisions and the reasoning, not a transcript nobody will read.
+  - [Extracting requirements](#extracting-requirements): everyone forgets what was agreed — capture the decisions and the reasoning, not a transcript nobody will read.
   - [Incident coordination](#incident-coordination): mid-firefight nobody remembers what was changed when, and two responders can roll back different things at once — keep a running log; it becomes the postmortem timeline.
   - [Getting buy-in](#getting-buy-in): you might face “who approved this?” one day — get the approval in writing if the ask demands it.
   - [Making your work visible](#making-your-work-visible): justifying a promotion from memory alone is really hard — build a brag document as you go.
@@ -4836,7 +4838,7 @@ where the book leans on it.
   plan next to every problem. Use the asymmetry in both directions.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
-  - [Gathering requirements](#gathering-requirements): once you understand the problem, propose solutions instead of asking for direction — criticising a proposal takes far less of a busy PM's attention than producing one.
+  - [Extracting requirements](#extracting-requirements): once you understand the problem, propose solutions instead of asking for direction — criticising a proposal takes far less of a busy PM's attention than producing one.
   - [Technical design](#technical-design): reviewers criticise a concrete answer far more easily than they design from blank space — answer the open questions before sharing, or the gaps come back as vague comments.
   - [Disagreeing and pushing back](#disagreeing-and-pushing-back): a bare “this is broken” annoys people even when you're right — bring the analysis or the options you see.
   - [Delivering bad news](#delivering-bad-news): “here's a disaster” is half the story — bring a plan, or at least the first step towards mitigation.
