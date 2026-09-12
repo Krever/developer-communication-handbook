@@ -555,8 +555,8 @@ See also [Getting a PR review](#getting-a-pr-review) and [Providing a PR review]
 
 This section is a bit special, as it leans heavily on persuasion and politics and isn't really specific to
 developers. Still, I've too often seen developers struggle to get approval for things like automation, tech-debt
-reduction or adopting a new library or pattern. So it's here to help, and to limit the frustration and learned
-helplessness.
+reduction or adopting a new library or pattern. So it's here to help, and to limit the frustration and [learned
+helplessness](https://en.wikipedia.org/wiki/Learned_helplessness).
 
 ```{=html}
 <table>
@@ -568,7 +568,7 @@ helplessness.
   <td valign="top">
     <ul>
       <li>A decision-maker hearing your idea for the first time in front of others might default to the safe answer, which is
-        usually “no”.</li>
+        usually “no” (often disguised as “I will think about it”).</li>
       <li>People follow the crowd and agree more willingly when they see others do the same.</li>
     </ul>
   </td>
@@ -587,7 +587,8 @@ helplessness.
   </td>
   <td valign="top">
     <ul>
-      <li>Focus on the result and why it matters to them, in their currency (e.g. bug rate, development speed).
+      <li>Focus on the result and why it matters to them, in their currency (e.g. bug rate, development speed,
+        user experience).</li>
     </ul>
   </td>
 </tr>
@@ -620,7 +621,7 @@ helplessness.
   <td valign="top">
     <ul>
       <li>The same proposal can be accepted from someone with a track record and dismissed when it comes from a
-        stranger, because the decider bets on you as much as on the idea.</li>
+        new joiner, because the decider bets on the person as much as on the idea.</li>
     </ul>
   </td>
   <td valign="top">
@@ -697,7 +698,7 @@ vs.
 
 > Migrating off the legacy queue should cut our on-call pages by about a third (most of them trace back to it) and
 > speed up every checkout change we have planned for Q3. We can do it incrementally, one consumer at a time, and stop
-> halfway with no harm done.
+> halfway with no harm done. And we’ll be in that code anyway for the upcoming SMS notifications.
 
 The first asks the decider to care about your pain. The second speaks their language — fewer incidents, faster
 delivery — and makes the bet safe.
