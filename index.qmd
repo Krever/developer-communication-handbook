@@ -432,7 +432,7 @@ Below is an example of what an estimation message could look like.
 
 ### Technical design
 
-We write a technical design to communicate our intent to build something: the vision, context and justification for the decisions taken.
+We write a technical design (we do, right?) to communicate our intent to build something: the vision, context and justification for the decisions taken.
 In return we expect others to poke holes in it while it's still only words and cheap to change. Here we cover only the _delivery_ side of this
 problem (for the _content_ you'll have to look into other resources).
 
@@ -452,6 +452,7 @@ problem (for the _content_ you'll have to look into other resources).
   <td valign="top">
     <ul>
       <li>Keep it short, put the decision and its consequences first, and consider a ready-made template.</li>
+      <li>Stay at the right abstraction level. Details make your design tangible but obscure the big picture.</li>
     </ul>
   </td>
 </tr>
@@ -474,8 +475,7 @@ problem (for the _content_ you'll have to look into other resources).
 <tr>
   <td valign="top">
     <ul>
-      <li>It’s far easier for a reviewer to criticise a concrete answer than to design from a blank space, so gaps
-        come back as vague or unhelpful comments.</li>
+      <li>It’s far easier for a reviewer to criticise a concrete answer than to design from a blank space.</li>
     </ul>
   </td>
   <td valign="top">
@@ -504,7 +504,7 @@ problem (for the _content_ you'll have to look into other resources).
 <tr>
   <td valign="top">
     <ul>
-      <li>Full consensus in a big group is hard to reach, because it's hard to make everyone happy.</li>
+      <li>Full consensus in a big group is hard to reach, because it’s hard to make everyone happy.</li>
     </ul>
   </td>
   <td valign="top">
@@ -540,7 +540,8 @@ problem (for the _content_ you'll have to look into other resources).
     <ul>
       <li>Be explicit about whether it’s a snapshot or a living document. A snapshot is usually the safer choice,
         since readers already expect it to be out of date — put a date in the filename or the content so its age is
-        obvious. Try to generate live documents from code wherever possible.</li>
+        obvious.</li>
+      <li>If you do want a living document, generate it from the code wherever possible.</li>
     </ul>
   </td>
 </tr>
@@ -548,7 +549,7 @@ problem (for the _content_ you'll have to look into other resources).
 </table>
 ```
 
-See also [Getting a PR review] and [Providing a PR review], as some of the advice there applies to technical designs as well — including how to get the doc actually reviewed instead of published and forgotten.
+See also [Getting a PR review](#getting-a-pr-review) and [Providing a PR review](#providing-a-pr-review), as some of the advice there applies to technical designs as well — including how to get the doc actually reviewed instead of published and forgotten.
 
 ### Getting buy-in
 
