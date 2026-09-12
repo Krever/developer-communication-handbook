@@ -280,7 +280,7 @@ A good estimate is a number that means the same thing on both sides.
   <td valign="top">
     <ul>
       <li>People ask for estimates for many different reasons: internal planning, a public announcement, an external
-        deadline such as a legal requirement, comparing work items by cost, or pricing work for a client. And sometimes
+        deadline (e.g. a compliance requirement), comparing work items by cost, or pricing work for a client. And sometimes
         there is no reason at all. Each calls for a different kind of answer.</li>
     </ul>
   </td>
@@ -295,11 +295,11 @@ A good estimate is a number that means the same thing on both sides.
   <td valign="top">
     <ul>
       <li>Some reasons call for an estimate and others for a commitment, but people rarely distinguish the two words.
-<ul>
-<li><strong>Estimate</strong>: an approximation of the effort needed to deliver.</li>
-<li><strong>Commitment</strong>: a promise that something will be delivered by a certain date.</li>
-</ul>
-</li>
+        <ul>
+          <li><strong>Estimate</strong>: an approximation of the effort needed to deliver.</li>
+          <li><strong>Commitment</strong>: a promise that something will be delivered by a certain date.</li>
+        </ul>
+      </li>
     </ul>
   </td>
   <td valign="top">
@@ -326,12 +326,12 @@ A good estimate is a number that means the same thing on both sides.
   <td valign="top">
     <ul>
       <li>Estimated time can mean two different things.
-<ul>
-<li><strong>Work-time</strong>: how much time has to be spent on the scope.</li>
-<li><strong>Calendar time</strong>: work-time adjusted for the number of people involved, their availability,
-holidays, competing projects, maintenance and unplanned fire-fighting.</li>
-</ul>
-</li>
+        <ul>
+          <li><strong>Work-time</strong>: how much time has to be spent on the scope.</li>
+          <li><strong>Calendar time</strong>: work-time adjusted for the number of people involved, their
+            availability, holidays, competing projects, maintenance and unplanned fire-fighting.</li>
+        </ul>
+      </li>
     </ul>
   </td>
   <td valign="top">
@@ -349,20 +349,21 @@ holidays, competing projects, maintenance and unplanned fire-fighting.</li>
   </td>
   <td valign="top">
     <ul>
-      <li>Be explicit about the uncertainty and what it does to the number.</li>
+      <li>Be explicit about the uncertainty and what it does to the number. It’s completely fine to say “I’ve
+        multiplied it by 1.5 because of how many open questions we still have”.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>The person asking usually doesn’t care about any of these details. They want one number that fits their
-        model and their context.</li>
+      <li>The person asking usually doesn’t care about any of these details (scope, uncertainty, work-time). They
+        want one number that fits their model and their context.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Lead with the number and provide caveats later. A wall of qualifications will get skipped but can be referred to when ambiguity arises.</li>
+      <li>Numbers first, caveats later. A wall of qualifications will get skipped but can be referred to when ambiguity arises.</li>
       <li>When the uncertainty is big, a range (“3 weeks, 5 if the provider surprises us”) still leads with numbers
         without hiding the risk.</li>
     </ul>
@@ -372,12 +373,12 @@ holidays, competing projects, maintenance and unplanned fire-fighting.</li>
   <td valign="top">
     <ul>
       <li>Lowering an estimate because of perceived pressure is a form of lying.
-<ul>
-<li>A correct but uncomfortably big number can start a useful negotiation, like adding people or
-cutting features.</li>
-<li>A wrong number quietly steers the project into failure.</li>
-</ul>
-</li>
+        <ul>
+          <li>A correct but uncomfortably big number can start a useful negotiation, like adding people or
+            cutting features.</li>
+          <li>A wrong number quietly steers the project into failure.</li>
+        </ul>
+      </li>
       <li>If you deliver sooner than estimated, everyone is happy. If you deliver later, everyone is angry.</li>
     </ul>
   </td>
@@ -399,7 +400,8 @@ cutting features.</li>
   </td>
   <td valign="top">
     <ul>
-      <li>Re-estimate regularly, weekly or monthly, as unknowns get discovered and work gets completed.</li>
+      <li>Re-estimate regularly, weekly or monthly, as unknowns get discovered and work gets completed (assuming
+        anyone still needs them, which might not be the case!).</li>
     </ul>
   </td>
 </tr>
