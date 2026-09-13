@@ -843,7 +843,9 @@ can't recover from the code itself.
 
 #### Error messages
 
-Like a comment, an error message is a message into the future, except that the communication is about something that didn't go well.
+Like a comment, an error message is a message into the future, except that the communication is about something that
+didn't go well. What's worse, you can assume even less about the reader: with a comment it was most likely a developer,
+while here it might be a developer, a support agent, an SRE or the user who triggered it.
 
 ```{=html}
 <table>
@@ -880,7 +882,8 @@ Like a comment, an error message is a message into the future, except that the c
   </td>
   <td valign="top">
     <ul>
-      <li>Don't repeat what's already available, include things that can’t be easily accessed or reconstructed.</li>
+      <li>Don’t repeat what’s already available — include the things that can’t be easily accessed or
+        reconstructed.</li>
     </ul>
   </td>
 </tr>
@@ -892,7 +895,7 @@ Like a comment, an error message is a message into the future, except that the c
   </td>
   <td valign="top">
     <ul>
-      <li>Give the reader enough information to act on, e.g. what failed, why, and what should be the next step.</li>
+      <li>Give the reader enough information to act on, e.g. what failed, why, and what to do next.</li>
     </ul>
   </td>
 </tr>
@@ -911,8 +914,8 @@ Like a comment, an error message is a message into the future, except that the c
 <tr>
   <td valign="top">
     <ul>
-      <li>A user-facing error can leak information to whoever triggered it, including an adversary. E.g. “No account with
-        that email” confirms which emails are registered.</li>
+      <li>A user-facing error can leak information to whoever triggered it, including an adversary: “No account with
+        that email” confirms which addresses are registered.</li>
     </ul>
   </td>
   <td valign="top">
@@ -931,7 +934,8 @@ Here is the same error message done in two different ways.
 
 vs.
 
-> Can't update the address of an inactive user. Reactivate the account on the user main screen first, then try again.
+> Can't update the address of an inactive user. Reactivate the account from the user's main screen first,
+> then try again. [ADDR-409]
 
 #### Logging
 
