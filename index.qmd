@@ -1038,7 +1038,9 @@ The first shouts ERROR about something that will most likely fix itself, and lea
 
 #### Naming things
 
-A name is a small message to the person who reads the code next. It will be read far more often than written and has to survive years or decades.
+A name is a small message to the person who reads the code next. It will be read far more often than written and has
+to survive years or decades. And depending on the scope — a local symbol versus a whole service — it can be one of the
+highest-impact messages you ever write.
 
 ```{=html}
 <table>
@@ -1049,7 +1051,7 @@ A name is a small message to the person who reads the code next. It will be read
 <tr>
   <td valign="top">
     <ul>
-      <li>A name’s scope varies a lot: from a single-line lambda, through a method, a class body, a module/namespace, up to a public API.
+      <li>A name’s scope varies a lot: from a single-line lambda, through a method, a class body, a module/namespace, a service/subsystem, up to a public API.
       The wider the scope, the more people and code depend on the name and the more costly a change to it becomes.</li>
     </ul>
   </td>
@@ -1062,7 +1064,7 @@ A name is a small message to the person who reads the code next. It will be read
 <tr>
   <td valign="top">
     <ul>
-      <li>Most names are defined inside a context, e.g. a module, package, namespace, type, class etc.</li>
+      <li>Most names are defined inside a context, e.g. a module, package, namespace, type or class.</li>
     </ul>
   </td>
   <td valign="top">
@@ -1111,7 +1113,7 @@ A name is a small message to the person who reads the code next. It will be read
 <tr>
   <td valign="top">
     <ul>
-      <li>A reader builds a mental model based on the names and their intuition around it.</li>
+      <li>A reader builds a mental model based on the names and their intuition around them.</li>
     </ul>
   </td>
   <td valign="top">
@@ -1154,6 +1156,8 @@ A few names done in two ways:
 * `checkUser` vs `ensureUserIsActive` — “check” says neither what is checked nor what happens when the check fails.
 * `getUser` / `fetchAccount` / `loadProfile` vs `getUser` / `getAccount` / `getProfile` — three different verbs
   suggest three different behaviours; if there is no difference, use one term.
+* `weekly-digest-sender` vs `notifications-service` — the first stops being true the day it also sends an SMS, and by then
+  the name lives in every dashboard, alert and runbook you would have to change.
 
 ### Documentation
 
