@@ -705,15 +705,20 @@ delivery — and makes the bet safe.
 
 ## During development
 
-This part covers the communication that happens while the features are being developed, from code constructs to stakeholders interactions and work visibility.
+This part covers the communication that happens while the features are being developed (the so-called "real work"), from
+code constructs to stakeholder interactions and work visibility.
 
 ### In the code
 
-We start with the messages that live in the code itself: comments, error messages, log lines and names.
+We start with the messages that live in the code itself: comments, error messages, log lines and names. Your first
+instinct might be to reject the idea that any of this belongs to communication at all, but I hope to change your mind
+by the end of this section.
 
 #### Comments
 
-A comment is a message to whoever reads the code in the future — usually a stranger without any of your context, sometimes you in two years.
+A comment is a message to someone reading your code in the future. That someone has none of your context and a
+different set of knowledge and goals. That someone might as well be you in two years. So how do you write to a person
+you know nothing about?
 
 ```{=html}
 <table>
@@ -724,7 +729,7 @@ A comment is a message to whoever reads the code in the future — usually a str
 <tr>
   <td valign="top">
     <ul>
-      <li>The code already encodes the logic of the program. Readable, self-explanatory code carries most of that
+      <li>The code already precisely encodes the logic of the program. Readable, self-explanatory code carries most of that
         weight, and AI can now help a reader decode the tricky parts.</li>
     </ul>
   </td>
@@ -791,7 +796,7 @@ A comment is a message to whoever reads the code in the future — usually a str
 <tr>
   <td valign="top">
     <ul>
-      <li>A block of commented-out code is a message too, just a confusing one: is it important? Will it come back?
+      <li>A block of commented-out code is a message too, but a confusing one: is it important? Will it come back? Why was it kept?
         Am I supposed to keep it working? Meanwhile version control already remembers the old code.</li>
     </ul>
   </td>
@@ -805,12 +810,15 @@ A comment is a message to whoever reads the code in the future — usually a str
 <tr>
   <td valign="top">
     <ul>
-      <li>Humans reading your code are likely to be overworked, stressed and short on patience.</li>
+      <li>Humans reading your code are likely to be overworked, stressed and short on patience. Or they might simply
+        be having a bad day.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Drop in the occasional joke or snarky comment to make that person’s day a little better.</li>
+      <li>Drop in the occasional joke or snarky comment to make that person’s day a little better. A rant about an
+        incompetent service provider can build a sense of camaraderie with the future reader — if the provider
+        couldn’t deliver back then, they are unlikely to have improved since.</li>
       <li>Just keep it at nobody’s expense — with the context gone, snark aimed at a person or their code reads much
         worse than you meant it.</li>
     </ul>
@@ -821,6 +829,17 @@ A comment is a message to whoever reads the code in the future — usually a str
 ```
 
 The general advice here is to **imagine what information might be needed by someone reading the code 5 years from now and provide it**.
+
+Here is the same comment written in two ways.
+
+> `// retry the request three times`
+
+vs.
+
+> `// The provider drops idle connections after ~30s, so the first call after a quiet period almost always fails (PAY-1421).`
+
+The first repeats what the line below it already says. The second records the why, which is the only part a reader
+can't recover from the code itself.
 
 #### Error messages
 
