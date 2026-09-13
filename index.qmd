@@ -939,7 +939,7 @@ vs.
 
 #### Logging
 
-A log line completes the trio of messages into the future: a comment explains the code, an error message speaks up when something breaks,
+A log line completes the trio of messages into the future: a comment explains the code, an error explains the problem,
 and a log line explains what happened.
 
 ```{=html}
@@ -951,12 +951,12 @@ and a log line explains what happened.
 <tr>
   <td valign="top">
     <ul>
-      <li>The reader is likely scanning logs under pressure, e.g. during an incident.</li>
+      <li>Whoever reads the logs is likely scanning them under pressure, e.g. during an incident.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Say what happened briefly and add enough context to act on it.</li>
+      <li>Say what happened briefly and with enough context to act on it.</li>
     </ul>
   </td>
 </tr>
@@ -981,7 +981,7 @@ and a log line explains what happened.
   <td valign="top">
     <ul>
       <li>Keep lines greppable and consistent: stable prefixes and structured <code>key=value</code> fields rather than free text.</li>
-      <li>Structured logging is even better: output the line as JSON with the fields as separate attributes, so the tooling can index and filter them instead of parsing the message. (Raw JSON is worse to read without tooling, but you can work around it, e.g. with a dedicated renderer.)</li>
+      <li>Structured logging is even better: output the line as JSON with the fields as separate attributes, so the tooling can index and filter them instead of parsing the message. (Raw JSON is worse to read without tooling, but you can work around it when needed, e.g. with a separate renderer.)</li>
     </ul>
   </td>
 </tr>
@@ -993,7 +993,8 @@ and a log line explains what happened.
   </td>
   <td valign="top">
     <ul>
-      <li>Don't repeat what is already there. Add what can't be reconstructed: the why and the values involved.</li>
+      <li>Don’t repeat what is already there. Add what can’t be reconstructed: the why and the values
+        involved.</li>
     </ul>
   </td>
 </tr>
@@ -1032,6 +1033,8 @@ Here is the same event logged in two different ways.
 vs.
 
 > `INFO email send failed, retry scheduled kind=weekly_digest user_id=u_1029 provider=mailgun error=connection_timeout attempt=2 max_attempts=5`
+
+The first shouts ERROR about something that will most likely fix itself, and leaks an email address. The second is quieter, greppable, and says what happens next.
 
 #### Naming things
 
