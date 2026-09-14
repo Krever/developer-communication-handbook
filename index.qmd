@@ -1259,7 +1259,8 @@ every documentation page has to be kept up-to-date or it turns into a trap. The 
 
 ### Getting a PR review
 
-Getting your code reviewed in a timely and thorough way is mostly the author's job, even though it is someone else doing the reading. Most of it comes down to lowering the effort you ask of the people whose attention you need.
+Getting your code reviewed in a timely and thorough way is primarily the author's job, even though it is someone else doing the reading.
+Most of it comes down to lowering the effort you ask of the people whose attention you need.
 
 ```{=html}
 <table>
@@ -1284,7 +1285,7 @@ Getting your code reviewed in a timely and thorough way is mostly the author's j
 <tr>
   <td valign="top">
     <ul>
-      <li>The bigger the changeset, the less likely it is to be thoroughly reviewed.</li>
+      <li>The bigger the changeset, the less likely it is to be (thoroughly) reviewed.</li>
     </ul>
   </td>
   <td valign="top">
@@ -1323,7 +1324,7 @@ Getting your code reviewed in a timely and thorough way is mostly the author's j
   <td valign="top">
     <ul>
       <li>A review might happen at different stages of completion, e.g. before tests are written, before manual
-        testing, before self-review, or before some edge cases are covered. This changes how reviewers approach the
+        testing, or before some edge cases are covered. This changes how reviewers approach the
         pull request.</li>
     </ul>
   </td>
@@ -1365,8 +1366,8 @@ Getting your code reviewed in a timely and thorough way is mostly the author's j
 <tr>
   <td valign="top">
     <ul>
-      <li>On some platforms, force-pushing kills the incrementality of the work and makes it impossible to review
-        only the changes since the previous review.</li>
+      <li>On some platforms, force-pushing destroys the incremental history and makes it impossible to review only
+        what changed since the previous look.</li>
     </ul>
   </td>
   <td valign="top">
@@ -1378,19 +1379,21 @@ Getting your code reviewed in a timely and thorough way is mostly the author's j
 <tr>
   <td valign="top">
     <ul>
-      <li>People would like to see that their feedback was addressed.</li>
+      <li>A comment with no reply leaves the reviewer guessing whether you saw it, disagreed with it, or simply
+        forgot.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Respond to each comment explicitly.</li>
+      <li>Respond to each comment explicitly, with words or emoji.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>People might want to verify how their feedback was addressed and add further comments.</li>
+      <li>Acknowledging a comment is not the same as satisfying it. The reviewer often wants to see <em>how</em> you
+        addressed it, and sometimes to come back with more.</li>
     </ul>
   </td>
   <td valign="top">
@@ -1426,7 +1429,8 @@ vs.
 
 > \@Paolo \@Ezequiel, could you look into this PR for improved tracing in the fiat-service? I'd like to merge it by Thursday morning.
 
-The second is aimed at two named people and gives them both a reason to care and a date to aim for. The first is addressed to nobody and offers no reason to bother.
+The first is addressed to nobody in particular and gives no reason to bother. The second names two people, says what
+the change is for and when it needs to land.
 
 ### Providing a PR review
 
