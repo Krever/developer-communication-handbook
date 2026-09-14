@@ -1161,7 +1161,8 @@ A few names done in two ways:
 
 ### Documentation
 
-Docs are a way to move the knowledge from your head to other people, some of whom you might never meet. But what people rarely realise is that those docs are also a liability, the same way the code is —
+Docs are a way to move the knowledge from your head to other people, most of whom you will never meet.
+But those docs are also a liability, the same way the code is —
 every documentation page has to be kept up-to-date or it turns into a trap. The art is writing as little as you can get away with, but enough to solve the real problems that arise from the lack of it.
 
 ```{=html}
@@ -1181,6 +1182,8 @@ every documentation page has to be kept up-to-date or it turns into a trap. The 
       <li>Don't write what nobody asked for. This applies to both standalone pages and the content within them.</li>
       <li>Yes, even onboarding guides and runbooks. The first onboarding or incident survives without them, and shows
         you exactly what's worth writing down.</li>
+      <li>The exception is external docs — there you have no access to your audience, and you will lose users faster
+        than you hear about the missing page.</li>
     </ul>
   </td>
 </tr>
@@ -1205,6 +1208,8 @@ every documentation page has to be kept up-to-date or it turns into a trap. The 
   <td valign="top">
     <ul>
       <li>Generate docs from the source whenever you can; that's the only kind that can't drift. Otherwise keep them next to the code and update them in the same change.</li>
+      <li>Keep docs at a high enough level that they need adjusting only for big conceptual changes, not for every
+        rename.</li>
     </ul>
   </td>
 </tr>
@@ -1236,11 +1241,15 @@ every documentation page has to be kept up-to-date or it turns into a trap. The 
   <td valign="top">
     <ul>
       <li>Code shows what and how, but the why behind a decision evaporates from the heads that made it.</li>
+      <li>Code also doesn't say <em>when</em> to reach for a given thing. A reader facing four similar methods has no
+        way to tell which one their case calls for.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>The why is the one thing worth writing down even when the code is clear. That's why we have design docs, ADRs and RFCs.</li>
+      <li>For anything public, document when to use it as well as what it does: which situation it's meant for, and
+        what to reach for instead when it isn't.</li>
     </ul>
   </td>
 </tr>
