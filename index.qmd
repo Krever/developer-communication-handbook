@@ -1434,7 +1434,7 @@ the change is for and when it needs to land.
 
 ### Providing a PR review
 
-On the other side of the review, the roles reverse: now your comments potentially block or help someone else.
+On the other side of the review, the roles reverse: now your comments potentially block or help someone else (or make them depressed and burnt out).
 A good review catches problems (that matter) without making an enemy of the author.
 
 ```{=html}
@@ -1446,7 +1446,7 @@ A good review catches problems (that matter) without making an enemy of the auth
 <tr>
   <td valign="top">
     <ul>
-      <li>Not all issues are equally important</li>
+      <li>Not all issues are equally important.</li>
       <li>People have finite patience for adjusting their work.</li>
     </ul>
   </td>
@@ -1454,9 +1454,8 @@ A good review catches problems (that matter) without making an enemy of the auth
     <ul>
       <li>Communicate clearly on the importance of a particular issue. You can use
         <a href="https://conventionalcomments.org/">conventional comments</a>, the
-        <a href="https://blog.danlew.net/2020/04/15/the-logaf-scale/">LOGAF scale</a> or free text addition.</li>
-      <li>Pick your battles. Perfect is the enemy of good, so try to ask yourself which points are most
-        important.</li>
+        <a href="https://blog.danlew.net/2020/04/15/the-logaf-scale/">LOGAF scale</a>, or just say it in plain words.</li>
+      <li>Pick your battles. Perfect is the enemy of good, so ask yourself which points are most important.</li>
       <li>Don’t block the merge on nits or taste — approve with the comments marked optional and let the author
         decide.</li>
     </ul>
@@ -1541,8 +1540,7 @@ A good review catches problems (that matter) without making an enemy of the auth
   <td valign="top">
     <ul>
       <li>Read top-down: approach and architecture first, details later. If the approach is wrong, say so
-        immediately and hold the nits. Consider doing a first skim on an early draft to save as much wasted effort
-        as possible.</li>
+        immediately and hold the nits. Consider a first skim on an early draft, before the effort is sunk.</li>
     </ul>
   </td>
 </tr>
@@ -1569,7 +1567,7 @@ A good review catches problems (that matter) without making an enemy of the auth
   </td>
   <td valign="top">
     <ul>
-      <li>Point out the parts you genuinely liked. Don’t invent praise though, people can smell it.</li>
+      <li>Point out the parts you genuinely liked. Don’t invent praise though — people can smell it.</li>
     </ul>
   </td>
 </tr>
@@ -1597,7 +1595,8 @@ vs.
 
 > **issue (blocking):** passing the raw string skips the validation that `UserId` does on construction. Could we parse it at the boundary instead? Happy to pair on it if the change spreads too far.
 
-The second explains the actual problem and offers a way out, while its label says how much the reviewer cares.
+The first says the author is wrong and leaves them to work out why. The second explains the problem and offers a way
+out, with a label that says up front how much it matters.
 
 ### Talking to non-developers
 
