@@ -128,7 +128,7 @@ important to do it effectively: extract as much _correct_ information as possibl
     <ul>
       <li>Dig until you fully understand the problem and its context, no matter how many questions it takes. A
         question costs far less than building the wrong feature.</li>
-      <li>If you don't feel like asking yet another question, share your guessed understanding and let them correct it: “so the refund
+      <li>If you don’t feel like asking yet another question, share your guessed understanding and let them correct it: “so the refund
         always goes back to the original card, right?”. Confirming is easier than answering.</li>
     </ul>
   </td>
@@ -761,7 +761,7 @@ you know nothing about?
   </td>
   <td valign="top">
     <ul>
-      <li>Favour things that stay true such as "the why", the constraints or the historical context. Treat a comment as part of
+      <li>Favour things that stay true such as “the why”, the constraints or the historical context. Treat a comment as part of
         the diff and update or delete it when the code around it changes.</li>
     </ul>
   </td>
@@ -1179,9 +1179,9 @@ every documentation page has to be kept up-to-date or it turns into a trap. The 
   </td>
   <td valign="top">
     <ul>
-      <li>Don't write what nobody asked for. This applies to both standalone pages and the content within them.</li>
+      <li>Don’t write what nobody asked for. This applies to both standalone pages and the content within them.</li>
       <li>Yes, even onboarding guides and runbooks. The first onboarding or incident survives without them, and shows
-        you exactly what's worth writing down.</li>
+        you exactly what’s worth writing down.</li>
       <li>The exception is external docs — there you have no access to your audience, and you will lose users faster
         than you hear about the missing page.</li>
     </ul>
@@ -1190,7 +1190,7 @@ every documentation page has to be kept up-to-date or it turns into a trap. The 
 <tr>
   <td valign="top">
     <ul>
-      <li>People don't reach for docs by default — they ask. A question usually means the thing wasn't obvious enough, or the doc was not obviously visible.</li>
+      <li>People don’t reach for docs by default — they ask. A question usually means the thing wasn’t obvious enough, or the doc was not obviously visible.</li>
     </ul>
   </td>
   <td valign="top">
@@ -1207,7 +1207,7 @@ every documentation page has to be kept up-to-date or it turns into a trap. The 
   </td>
   <td valign="top">
     <ul>
-      <li>Generate docs from the source whenever you can; that's the only kind that can't drift. Otherwise keep them next to the code and update them in the same change.</li>
+      <li>Generate docs from the source whenever you can; that’s the only kind that can’t drift. Otherwise keep them next to the code and update them in the same change.</li>
       <li>Keep docs at a high enough level that they need adjusting only for big conceptual changes, not for every
         rename.</li>
     </ul>
@@ -1221,14 +1221,14 @@ every documentation page has to be kept up-to-date or it turns into a trap. The 
   </td>
   <td valign="top">
     <ul>
-      <li>Know which you're writing. A live doc is a standing liability — keep it current or kill it. A snapshot is cheap, since you never touch it again; just date it so nobody reads it as current.</li>
+      <li>Know which you’re writing. A live doc is a standing liability — keep it current or kill it. A snapshot is cheap, since you never touch it again; just date it so nobody reads it as current.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>People don't read docs (or almost anything else) start to finish; they scan for the things they need.</li>
+      <li>People don’t read docs (or almost anything else) start to finish; they scan for the things they need.</li>
     </ul>
   </td>
   <td valign="top">
@@ -1241,15 +1241,15 @@ every documentation page has to be kept up-to-date or it turns into a trap. The 
   <td valign="top">
     <ul>
       <li>Code shows what and how, but the why behind a decision evaporates from the heads that made it.</li>
-      <li>Code also doesn't say <em>when</em> to reach for a given thing. A reader facing four similar methods has no
+      <li>Code also doesn’t say <em>when</em> to reach for a given thing. A reader facing four similar methods has no
         way to tell which one their case calls for.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>The why is the one thing worth writing down even when the code is clear. That's why we have design docs, ADRs and RFCs.</li>
-      <li>For anything public, document when to use it as well as what it does: which situation it's meant for, and
-        what to reach for instead when it isn't.</li>
+      <li>The why is the one thing worth writing down even when the code is clear. That’s why we have design docs, ADRs and RFCs.</li>
+      <li>For anything public, document when to use it as well as what it does: which situation it’s meant for, and
+        what to reach for instead when it isn’t.</li>
     </ul>
   </td>
 </tr>
@@ -1937,7 +1937,7 @@ largely decided by how the question was written. Few of the fixes below cost mor
       <li>In asynchronous communication you have to expect that every message might take minutes or hours to get a
         response. If you start a conversation with a single “hello” or “can I ask you about something?”, you waste
         a round-trip without providing or receiving any information.</li>
-      <li>When the person you're asking is in a distant timezone, you will see the response the next day.</li>
+      <li>When the person you’re asking is in a distant timezone, you will see the response the next day.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2187,7 +2187,7 @@ This section is about the form of a message: its structure, length, tone and wor
 <tr>
   <td valign="top">
     <ul>
-      <li>It's hard and very inconvenient to discuss two topics in a single thread.</li>
+      <li>It’s hard and very inconvenient to discuss two topics in a single thread.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2245,7 +2245,7 @@ will handle yours.
     <ul>
       <li>Repeat important messages and questions. Try to change the phrasing a bit to increase the chance
         of being understood.</li>
-      <li>Give the follow-up some time to land — if you chase within an hour it reads as nagging. Unless it's really that urgent.</li>
+      <li>Give the follow-up some time to land — if you chase within an hour it reads as nagging. Unless it’s really that urgent.</li>
       <li>Try to analyse why the message could have been ignored: not clear enough? Too long? Without a clear
         recipient?</li>
     </ul>
@@ -2520,7 +2520,7 @@ On a remote, international team — which we assume in this book — you face th
   </td>
   <td valign="top">
     <ul>
-      <li>Don't assume your style is the neutral one. Calibrate to the room.</li>
+      <li>Don’t assume your style is the neutral one. Calibrate to the room.</li>
     </ul>
   </td>
 </tr>
@@ -2532,7 +2532,7 @@ On a remote, international team — which we assume in this book — you face th
   </td>
   <td valign="top">
     <ul>
-      <li>Don't read a nod or a silence as agreement. Confirm what they actually mean.</li>
+      <li>Don’t read a nod or a silence as agreement. Confirm what they actually mean.</li>
     </ul>
   </td>
 </tr>
@@ -2544,7 +2544,7 @@ On a remote, international team — which we assume in this book — you face th
   </td>
   <td valign="top">
     <ul>
-      <li>Learn the room's norms before you <a href="#disagreeing-and-pushing-back">disagree</a> up the chain.</li>
+      <li>Learn the room’s norms before you <a href="#disagreeing-and-pushing-back">disagree</a> up the chain.</li>
     </ul>
   </td>
 </tr>
@@ -2556,7 +2556,7 @@ On a remote, international team — which we assume in this book — you face th
   </td>
   <td valign="top">
     <ul>
-      <li>Within the known group you can use anything, but with a mixed audience it's safer to keep it plain and literal.</li>
+      <li>Within the known group you can use anything, but with a mixed audience it’s safer to keep it plain and literal.</li>
     </ul>
   </td>
 </tr>
@@ -2568,14 +2568,14 @@ On a remote, international team — which we assume in this book — you face th
   </td>
   <td valign="top">
     <ul>
-      <li>Don't always jump straight to the task. With relationship-first people, a big part of the work happens around it.</li>
+      <li>Don’t always jump straight to the task. With relationship-first people, a big part of the work happens around it.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>A norm mismatch cuts both ways. When someone seems too blunt, too formal or too quiet, it's usually their background, not rudeness — and changing ingrained habits takes time.</li>
+      <li>A norm mismatch cuts both ways. When someone seems too blunt, too formal or too quiet, it’s usually their background, not rudeness — and changing ingrained habits takes time.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2599,12 +2599,12 @@ On a remote, international team — which we assume in this book — you face th
 <tr>
   <td valign="top">
     <ul>
-      <li>A culture is an average, not any individual. “People from X are blunt” is a useful starting guess, but plenty of people break their own culture's norms.</li>
+      <li>A culture is an average, not any individual. “People from X are blunt” is a useful starting guess, but plenty of people break their own culture’s norms.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Treat it as a hypothesis and let the actual person correct it. Adjust to who's in front of you, not some arbitrary stereotype.</li>
+      <li>Treat it as a hypothesis and let the actual person correct it. Adjust to who’s in front of you, not some arbitrary stereotype.</li>
     </ul>
   </td>
 </tr>
@@ -2627,20 +2627,20 @@ LLMs draft more and more of the messages, reviews and docs flying around. And it
 <tr>
   <td valign="top">
     <ul>
-      <li>Current LLM output is verbose, generic and completely soulless. What's worse, people are really good at detecting it.</li>
+      <li>Current LLM output is verbose, generic and completely soulless. What’s worse, people are really good at detecting it.</li>
       <li>There is also the absurd loop: you inflate three bullets into three paragraphs only so that the reader can feed them back to a model to get three bullets.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Don't send raw output. Cut it to what you'd actually say; the model's default length is never your message's right length.</li>
+      <li>Don’t send raw output. Cut it to what you’d actually say; the model’s default length is never your message’s right length.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Used well, it's a genuine help, e.g. for fixing grammar, tightening or getting past a blank page (especially for non-native speakers).</li>
+      <li>Used well, it’s a genuine help, e.g. for fixing grammar, tightening or getting past a blank page (especially for non-native speakers).</li>
     </ul>
   </td>
   <td valign="top">
@@ -2652,12 +2652,12 @@ LLMs draft more and more of the messages, reviews and docs flying around. And it
 <tr>
   <td valign="top">
     <ul>
-      <li>AI will happily phrase things it doesn't understand (if it actually understands anything in the first place), and it doesn't have your context. The roughest words with substance are better than the smoothest without.</li>
+      <li>AI will happily phrase things it doesn’t understand (if it actually understands anything in the first place), and it doesn’t have your context. The roughest words with substance are better than the smoothest without.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Don't outsource the thinking. You still need something to say.</li>
+      <li>Don’t outsource the thinking. You still need something to say.</li>
     </ul>
   </td>
 </tr>
@@ -2700,7 +2700,7 @@ LLMs draft more and more of the messages, reviews and docs flying around. And it
 <tr>
   <td valign="top">
     <ul>
-      <li>Whatever you paste into an AI tool leaves your machine. Treat a public tool as fully public; a sanctioned enterprise one is safer (covered by an agreement) but still puts your data in a vendor's hands.</li>
+      <li>Whatever you paste into an AI tool leaves your machine. Treat a public tool as fully public; a sanctioned enterprise one is safer (covered by an agreement) but still puts your data in a vendor’s hands.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2717,7 +2717,7 @@ LLMs draft more and more of the messages, reviews and docs flying around. And it
   </td>
   <td valign="top">
     <ul>
-      <li>A genuine, slightly imperfect human message now stands out. Sometimes that's the better move and can get you more credit.</li>
+      <li>A genuine, slightly imperfect human message now stands out. Sometimes that’s the better move and can get you more credit.</li>
     </ul>
   </td>
 </tr>
@@ -2757,7 +2757,7 @@ The goal, though, is not to win the discussion but to reach the better decision 
 <tr>
   <td valign="top">
     <ul>
-      <li>You might be the one missing context. The other side might have reasons you can't see.</li>
+      <li>You might be the one missing context. The other side might have reasons you can’t see.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2769,12 +2769,12 @@ The goal, though, is not to win the discussion but to reach the better decision 
 <tr>
   <td valign="top">
     <ul>
-      <li>People can't weigh your opinion if they can't tell how strongly you hold it or why.</li>
+      <li>People can’t weigh your opinion if they can’t tell how strongly you hold it or why.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>State your view, how sure you are, and your reasons: “I think X because Y, but it's not a hill I'll die on”.</li>
+      <li>State your view, how sure you are, and your reasons: “I think X because Y, but it’s not a hill I’ll die on”.</li>
     </ul>
   </td>
 </tr>
@@ -2782,7 +2782,7 @@ The goal, though, is not to win the discussion but to reach the better decision 
   <td valign="top">
     <ul>
       <li>Pushing back on someone senior feels insubordinate (or at least intimidating), but a good manager or senior IC
-      wants a plurality of opinions. Silent nodding doesn't add any value.</li>
+      wants a plurality of opinions. Silent nodding doesn’t add any value.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2794,13 +2794,13 @@ The goal, though, is not to win the discussion but to reach the better decision 
 <tr>
   <td valign="top">
     <ul>
-      <li>Bringing back the same issue over and over is annoying and unhelpful, even if you're right.</li>
+      <li>Bringing back the same issue over and over is annoying and unhelpful, even if you’re right.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>The next time you mention the problem, make sure there is some result/agreement/decision from the discussion.</li>
-      <li>If the result is not what you wanted, “disagree and commit”: argue hard before the decision, then support it fully; don't relitigate (if nothing changed) or quietly sabotage.</li>
+      <li>If the result is not what you wanted, “disagree and commit”: argue hard before the decision, then support it fully; don’t relitigate (if nothing changed) or quietly sabotage.</li>
     </ul>
   </td>
 </tr>
@@ -2819,7 +2819,7 @@ The goal, though, is not to win the discussion but to reach the better decision 
 <tr>
   <td valign="top">
     <ul>
-      <li>Spoken disagreements evaporate. If you're overruled and it later goes wrong, nobody remembers the trade-off was flagged.</li>
+      <li>Spoken disagreements evaporate. If you’re overruled and it later goes wrong, nobody remembers the trade-off was flagged.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2833,13 +2833,13 @@ The goal, though, is not to win the discussion but to reach the better decision 
 <tr>
   <td valign="top">
     <ul>
-      <li>Spotting a problem is the easy half. A bare “this is broken” annoys people even if you're right.</li>
+      <li>Spotting a problem is the easy half. A bare “this is broken” annoys people even if you’re right.</li>
       <li>This becomes even more important with seniority. At some point you have to become a person with solutions, not just problems.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>You don't always need the full fix, but bring something to the table, e.g. the problem analysis or the options you see.</li>
+      <li>You don’t always need the full fix, but bring something to the table, e.g. the problem analysis or the options you see.</li>
     </ul>
   </td>
 </tr>
@@ -2873,7 +2873,7 @@ Sometimes you will have to push back not against an idea or opinion but against 
 <tr>
   <td valign="top">
     <ul>
-      <li>A vague “maybe” or “I'll try” feels polite but sets a false expectation and hurts later.</li>
+      <li>A vague “maybe” or “I’ll try” feels polite but sets a false expectation and hurts later.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2915,7 +2915,7 @@ Sometimes you will have to push back not against an idea or opinion but against 
   </td>
   <td valign="top">
     <ul>
-      <li>Offer an alternative (“I don't have time to investigate right now, but you can see the raw data here”) or a delay (“not now, but please ping me again tomorrow”) instead of a plain refusal.</li>
+      <li>Offer an alternative (“I don’t have time to investigate right now, but you can see the raw data here”) or a delay (“not now, but please ping me again tomorrow”) instead of a plain refusal.</li>
     </ul>
   </td>
 </tr>
@@ -2927,7 +2927,7 @@ Sometimes you will have to push back not against an idea or opinion but against 
   </td>
   <td valign="top">
     <ul>
-      <li>It's fine to say “let me check and get back to you” and answer once you've thought it through.</li>
+      <li>It’s fine to say “let me check and get back to you” and answer once you’ve thought it through.</li>
     </ul>
   </td>
 </tr>
@@ -2939,7 +2939,7 @@ Sometimes you will have to push back not against an idea or opinion but against 
   </td>
   <td valign="top">
     <ul>
-      <li>Don't refuse — re-prioritise. Surface the trade-off and hand the choice back: “I can do X or Y this week,
+      <li>Don’t refuse — re-prioritise. Surface the trade-off and hand the choice back: “I can do X or Y this week,
         not both. Which one wins?”.</li>
     </ul>
   </td>
@@ -2974,19 +2974,19 @@ Here we focus on what to do when a good ask wasn't enough.
   <td valign="top">
     <ul>
       <li>A polite ask buried in a thread is easy to ignore, miss or forget about.</li>
-      <li>Escalating feels like snitching, nagging, or applying pressure, so it's natural to sit on a blocker instead of doing something about it.</li>
+      <li>Escalating feels like snitching, nagging, or applying pressure, so it’s natural to sit on a blocker instead of doing something about it.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Escalating is just part of the job. Do it once enough time has passed (based on the urgency of the topic) — in the end you're responsible for your results and doing nothing is failing that responsibility. Just do it carefully (see below).</li>
+      <li>Escalating is just part of the job. Do it once enough time has passed (based on the urgency of the topic) — in the end you’re responsible for your results and doing nothing is failing that responsibility. Just do it carefully (see below).</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Escalation takes different forms with different weight. It's usually a bad move to go straight for heavy artillery.</li>
+      <li>Escalation takes different forms with different weight. It’s usually a bad move to go straight for heavy artillery.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2994,7 +2994,7 @@ Here we focus on what to do when a good ask wasn't enough.
       <li>Raise urgency in steps:
         <ul>
           <li>a nudge: “Bumping this 🙂”</li>
-          <li>a direct ask with a deadline: “Can you approve this by Thursday EOD? I'm blocked until then.”</li>
+          <li>a direct ask with a deadline: “Can you approve this by Thursday EOD? I’m blocked until then.”</li>
           <li>a default-decision: “Going with Postgres on Friday unless someone objects.”</li>
           <li>looping in managers: cc your manager (or theirs) on the next message.</li>
         </ul>
@@ -3026,7 +3026,7 @@ Here we focus on what to do when a good ask wasn't enough.
     <ul>
       <li>Make the decision cheap to give. Some strategies for this:
         <ul>
-          <li>a recommendation: “I'd go with X, any objections?”</li>
+          <li>a recommendation: “I’d go with X, any objections?”</li>
           <li>a yes/no: turn an open question into one they can answer in a word, e.g. “Can we ship without the banner?”.</li>
         </ul>
       </li>
@@ -3041,7 +3041,7 @@ Here we focus on what to do when a good ask wasn't enough.
   </td>
   <td valign="top">
     <ul>
-      <li>Use a default-decision: “I'll do X on Friday unless someone objects.” Silence becomes a yes and you can
+      <li>Use a default-decision: “I’ll do X on Friday unless someone objects.” Silence becomes a yes and you can
         move. Use it only for calls that are reasonably yours to make, and leave people real time to object —
         otherwise it might be seen as overstepping.</li>
       <li>Or point at a decision-maker: instead of leaving it to the group, name who you think should call it, e.g. “@Alice, I think this is your call — can you decide by Friday?”.</li>
@@ -3051,7 +3051,7 @@ Here we focus on what to do when a good ask wasn't enough.
 <tr>
   <td valign="top">
     <ul>
-      <li>Escalation is about the problem. If you make it about a person, it's called a complaint.</li>
+      <li>Escalation is about the problem. If you make it about a person, it’s called a complaint.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3063,25 +3063,25 @@ Here we focus on what to do when a good ask wasn't enough.
 <tr>
   <td valign="top">
     <ul>
-      <li>A private nudge is easy and polite, but it's invisible: it leaves no record and no one else can jump in to unblock you.</li>
+      <li>A private nudge is easy and polite, but it’s invisible: it leaves no record and no one else can jump in to unblock you.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>Start with the private nudge, but be prepared that it might not work.</li>
-      <li>If it doesn't work, move to a shared channel or ticket, keeping the problem public and the person out of it (don't call anyone out in front of an audience).</li>
+      <li>If it doesn’t work, move to a shared channel or ticket, keeping the problem public and the person out of it (don’t call anyone out in front of an audience).</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Sometimes the person simply can't say yes because the blocker is outside their area of influence, e.g. it's their manager who owns priorities or budget.</li>
+      <li>Sometimes the person simply can’t say yes because the blocker is outside their area of influence, e.g. it’s their manager who owns priorities or budget.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>In such a case, talking with the right person isn't “going over someone's head”. Bring that decision-maker in, ideally with the original person in the loop, not behind their back.</li>
+      <li>In such a case, talking with the right person isn’t “going over someone’s head”. Bring that decision-maker in, ideally with the original person in the loop, not behind their back.</li>
     </ul>
   </td>
 </tr>
@@ -3093,7 +3093,7 @@ Here we focus on what to do when a good ask wasn't enough.
   </td>
   <td valign="top">
     <ul>
-      <li>Talk to your own manager first, and try to show a pattern (a single situation is usually not worth the discussion). It's better not to try to solve it yourself, unless you really know what you're doing (but then, why are you reading this book?).</li>
+      <li>Talk to your own manager first, and try to show a pattern (a single situation is usually not worth the discussion). It’s better not to try to solve it yourself, unless you really know what you’re doing (but then, why are you reading this book?).</li>
     </ul>
   </td>
 </tr>
@@ -3101,12 +3101,12 @@ Here we focus on what to do when a good ask wasn't enough.
   <td valign="top">
     <ul>
       <li>Escalation creates a bit of friction and might affect relations.</li>
-      <li>An escalation left hanging makes people wonder if it's still live.</li>
+      <li>An escalation left hanging makes people wonder if it’s still live.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Once you're unblocked, thank whoever helped. It smooths over any friction and keeps them willing to help next time.</li>
+      <li>Once you’re unblocked, thank whoever helped. It smooths over any friction and keeps them willing to help next time.</li>
     </ul>
   </td>
 </tr>
@@ -3133,8 +3133,8 @@ You can't change the past but you can change how you deliver it.
   </td>
   <td valign="top">
     <ul>
-      <li>Share it immediately, even if the situation is still unfolding and you don't have the full picture yet.</li>
-      <li>If you're uncertain about the shape or impact, say so — it can even reduce the panic.</li>
+      <li>Share it immediately, even if the situation is still unfolding and you don’t have the full picture yet.</li>
+      <li>If you’re uncertain about the shape or impact, say so — it can even reduce the panic.</li>
     </ul>
   </td>
 </tr>
@@ -3146,32 +3146,32 @@ You can't change the past but you can change how you deliver it.
   </td>
   <td valign="top">
     <ul>
-      <li>If you're handling the problem, keep the audience updated. Share when they can expect the next update, e.g. “I should know more by the end of the day” or “I will let you know once I finish investigating” (and then actually do let them know).</li>
+      <li>If you’re handling the problem, keep the audience updated. Share when they can expect the next update, e.g. “I should know more by the end of the day” or “I will let you know once I finish investigating” (and then actually do let them know).</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Sugarcoating or burying the message doesn't help anybody.</li>
+      <li>Sugarcoating or burying the message doesn’t help anybody.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Start with the news, then add the details: “we'll miss the deadline”, and only then the why.</li>
-      <li>Be honest about the severity; don't soften it into something it isn't. If you downplay the news, the reaction from the audience might become inappropriate (e.g. not urgent enough).</li>
+      <li>Start with the news, then add the details: “we’ll miss the deadline”, and only then the why.</li>
+      <li>Be honest about the severity; don’t soften it into something it isn’t. If you downplay the news, the reaction from the audience might become inappropriate (e.g. not urgent enough).</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Over-apologising makes it about your feelings and doesn't improve the situation.</li>
+      <li>Over-apologising makes it about your feelings and doesn’t improve the situation.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Focus on what happened, the impact and what you're doing about it. A short “sorry” is enough.</li>
+      <li>Focus on what happened, the impact and what you’re doing about it. A short “sorry” is enough.</li>
     </ul>
   </td>
 </tr>
@@ -3195,7 +3195,7 @@ You can't change the past but you can change how you deliver it.
   </td>
   <td valign="top">
     <ul>
-      <li>Take responsibility for your part, even when it's not entirely your fault. There is no such thing as too much ownership.</li>
+      <li>Take responsibility for your part, even when it’s not entirely your fault. There is no such thing as too much ownership.</li>
     </ul>
   </td>
 </tr>
@@ -3214,7 +3214,7 @@ You can't change the past but you can change how you deliver it.
 <tr>
   <td valign="top">
     <ul>
-      <li>“Here's a disaster” with no next step is useful, but it's only half of the story.</li>
+      <li>“Here’s a disaster” with no next step is useful, but it’s only half of the story.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3259,14 +3259,14 @@ and sometimes more.
   </td>
   <td valign="top">
     <ul>
-      <li>When something looks wrong, confirm immediately and raise it as soon as you're fairly confident the problem exists.</li>
+      <li>When something looks wrong, confirm immediately and raise it as soon as you’re fairly confident the problem exists.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>During an incident people don't care about the root cause — they want to know it's being handled, what's affected, and when it might be resolved.</li>
+      <li>During an incident people don’t care about the root cause — they want to know it’s being handled, what’s affected, and when it might be resolved.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3278,12 +3278,12 @@ and sometimes more.
 <tr>
   <td valign="top">
     <ul>
-      <li>Silence during an incident creates immediate chaos — people assume nobody's on it and start pinging around.</li>
+      <li>Silence during an incident creates immediate chaos — people assume nobody’s on it and start pinging around.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Post on a fixed cadence even when there's nothing new, e.g. “still investigating, next update in 30 min”.</li>
+      <li>Post on a fixed cadence even when there’s nothing new, e.g. “still investigating, next update in 30 min”.</li>
     </ul>
   </td>
 </tr>
@@ -3296,14 +3296,14 @@ and sometimes more.
   </td>
   <td valign="top">
     <ul>
-      <li>Keep the updates calm and factual, even when it's on fire. Make urgency explicit.</li>
+      <li>Keep the updates calm and factual, even when it’s on fire. Make urgency explicit.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>It's hard to debug and answer questions at the same time.</li>
+      <li>It’s hard to debug and answer questions at the same time.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3327,7 +3327,7 @@ and sometimes more.
 <tr>
   <td valign="top">
     <ul>
-      <li>During debugging it's critical to differentiate guesses from facts — it directly affects the reasoning chain and investigation steps.</li>
+      <li>During debugging it’s critical to differentiate guesses from facts — it directly affects the reasoning chain and investigation steps.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3353,7 +3353,7 @@ and sometimes more.
 <tr>
   <td valign="top">
     <ul>
-      <li>It's natural for multiple conversations to start about the same issue.</li>
+      <li>It’s natural for multiple conversations to start about the same issue.</li>
       <li>Scattered communication makes it impossible to track the progress and the impact.</li>
     </ul>
   </td>
@@ -3367,7 +3367,7 @@ and sometimes more.
 <tr>
   <td valign="top">
     <ul>
-      <li>People stay on edge until they're told it's actually over. They don't go and periodically verify if the problem is still live.</li>
+      <li>People stay on edge until they’re told it’s actually over. They don’t go and periodically verify if the problem is still live.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3420,7 +3420,7 @@ A postmortem is a way for the organisation to learn from the incident and not re
   </td>
   <td valign="top">
     <ul>
-      <li>Write it for people who didn't participate. It's the organisation's memory of what happened.</li>
+      <li>Write it for people who didn’t participate. It’s the organisation’s memory of what happened.</li>
     </ul>
   </td>
 </tr>
@@ -3441,7 +3441,7 @@ A postmortem is a way for the organisation to learn from the incident and not re
   <td valign="top">
     <ul>
       <li>A postmortem nobody reads is wasted effort — the point is that others read and learn from it.</li>
-      <li>The bad thing already happened; sharing it doesn't make it worse, but it can make the future much better.</li>
+      <li>The bad thing already happened; sharing it doesn’t make it worse, but it can make the future much better.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3470,7 +3470,7 @@ A postmortem is a way for the organisation to learn from the incident and not re
   </td>
   <td valign="top">
     <ul>
-      <li>Write it soon, but not mid-adrenaline: mitigate, take a rest, then write while it's still fresh.</li>
+      <li>Write it soon, but not mid-adrenaline: mitigate, take a rest, then write while it’s still fresh.</li>
     </ul>
   </td>
 </tr>
@@ -3522,7 +3522,7 @@ Conversations with your manager will likely be the ones with the most impact on 
 <tr>
   <td valign="top">
     <ul>
-      <li>A manager's job is to help you grow, but they aren't mind readers. If you never say you want to work on X or grow toward Y, you won't.</li>
+      <li>A manager’s job is to help you grow, but they aren’t mind readers. If you never say you want to work on X or grow toward Y, you won’t.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3534,12 +3534,12 @@ Conversations with your manager will likely be the ones with the most impact on 
 <tr>
   <td valign="top">
     <ul>
-      <li>Your manager's manager (your “skip”) is even scarier.</li>
+      <li>Your manager’s manager (your “skip”) is even scarier.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Don't be afraid. A skip-level chat is normal and useful — just don't use it to go around your manager.</li>
+      <li>Don’t be afraid. A skip-level chat is normal and useful — just don’t use it to go around your manager.</li>
     </ul>
   </td>
 </tr>
@@ -3552,7 +3552,7 @@ Conversations with your manager will likely be the ones with the most impact on 
   </td>
   <td valign="top">
     <ul>
-      <li>Calibrate how much you share to the trust you've built. But make no mistake: a manager you have to guard
+      <li>Calibrate how much you share to the trust you’ve built. But make no mistake: a manager you have to guard
         yourself against is pathological — a signal to change teams or companies, not something you should accept.</li>
     </ul>
   </td>
@@ -3588,7 +3588,7 @@ and the way they work; feedback on code lives in [Providing a PR review](#provid
 <tr>
   <td valign="top">
     <ul>
-      <li>Praise in front of others lifts the person's standing and shows everyone what good looks like.</li>
+      <li>Praise in front of others lifts the person’s standing and shows everyone what good looks like.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3619,7 +3619,7 @@ and the way they work; feedback on code lives in [Providing a PR review](#provid
   </td>
   <td valign="top">
     <ul>
-      <li>Point at the specific thing and its effect. SBI (<a href="https://untools.co/situation-behavior-impact/">Situation–Behaviour–Impact</a>) is a decent template: “in yesterday's standup (S) you cut Ana off twice (B), and she went quiet for the rest of it (I)”.</li>
+      <li>Point at the specific thing and its effect. SBI (<a href="https://untools.co/situation-behavior-impact/">Situation–Behaviour–Impact</a>) is a decent template: “in yesterday’s standup (S) you cut Ana off twice (B), and she went quiet for the rest of it (I)”.</li>
       <li>This works for praise too — “your migration plan caught the rollback case” lands much better and deeper than “good job”.</li>
     </ul>
   </td>
@@ -3633,19 +3633,19 @@ and the way they work; feedback on code lives in [Providing a PR review](#provid
   <td valign="top">
     <ul>
       <li>Use names. Public credit is nearly free and people remember it for years.</li>
-      <li>If there are many people involved, try to pick the most impactful ones or split the feedback into a couple of separate messages. If you list 20 names, it's almost equivalent to saying “everyone”.</li>
+      <li>If there are many people involved, try to pick the most impactful ones or split the feedback into a couple of separate messages. If you list 20 names, it’s almost equivalent to saying “everyone”.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>If you save the feedback for review season, there are a few weeks or months when it couldn't be addressed. And the memories of the exact situations have faded by then.</li>
+      <li>If you save the feedback for review season, there are a few weeks or months when it couldn’t be addressed. And the memories of the exact situations have faded by then.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Give it while it's fresh and still actionable — but not in the heat of the moment. Let the emotions
+      <li>Give it while it’s fresh and still actionable — but not in the heat of the moment. Let the emotions
         (yours and theirs) settle first.</li>
     </ul>
   </td>
@@ -3658,21 +3658,21 @@ and the way they work; feedback on code lives in [Providing a PR review](#provid
   </td>
   <td valign="top">
     <ul>
-      <li>Offer feedback as something you noticed, and don't try to judge the person.</li>
+      <li>Offer feedback as something you noticed, and don’t try to judge the person.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Feedback aimed upward — at a senior or your manager — carries real social risk, and it's also the feedback
+      <li>Feedback aimed upward — at a senior or your manager — carries real social risk, and it’s also the feedback
         they hear least often.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>Give it, but with extra care: in private, anchored to a concrete situation and its impact, and ideally
-        when they've asked for it (many do, in 1:1s).</li>
+        when they’ve asked for it (many do, in 1:1s).</li>
     </ul>
   </td>
 </tr>
@@ -3685,7 +3685,7 @@ and the way they work; feedback on code lives in [Providing a PR review](#provid
   <td valign="top">
     <ul>
       <li>Say thanks and ask for an example.</li>
-      <li>If you have something to clarify, do it a bit later, once you've had time to analyse what you heard.</li>
+      <li>If you have something to clarify, do it a bit later, once you’ve had time to analyse what you heard.</li>
     </ul>
   </td>
 </tr>
@@ -3711,20 +3711,20 @@ When you have to evaluate yourself and receive an evaluation from your manager.
 <tr>
   <td valign="top">
     <ul>
-      <li>Your manager doesn't see or remember most of what you did.</li>
+      <li>Your manager doesn’t see or remember most of what you did.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Bring it yourself, don't assume they see what you see.</li>
-      <li><a href="#making-your-work-visible">Making your work visible</a> all year removes a lot of work here — the sentiment sticks even if the details get forgotten, so there's less to prove at review time.</li>
+      <li>Bring it yourself, don’t assume they see what you see.</li>
+      <li><a href="#making-your-work-visible">Making your work visible</a> all year removes a lot of work here — the sentiment sticks even if the details get forgotten, so there’s less to prove at review time.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>You won't remember most of your accomplishments either. A year/semester/quarter is long and memory is short.</li>
+      <li>You won’t remember most of your accomplishments either. A year/semester/quarter is long and memory is short.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3748,12 +3748,12 @@ When you have to evaluate yourself and receive an evaluation from your manager.
 <tr>
   <td valign="top">
     <ul>
-      <li>Self-awareness is an important skill and it's also about knowing your weak points.</li>
+      <li>Self-awareness is an important skill and it’s also about knowing your weak points.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Be ready to name something you don't excel at.</li>
+      <li>Be ready to name something you don’t excel at.</li>
     </ul>
   </td>
 </tr>
@@ -3779,8 +3779,8 @@ When you have to evaluate yourself and receive an evaluation from your manager.
   </td>
   <td valign="top">
     <ul>
-      <li>Don't take a “meets” too hard on yourself. Judge it against the level you're at.</li>
-      <li>If you're aiming to exceed, ask your manager what that would mean in practice.</li>
+      <li>Don’t take a “meets” too hard on yourself. Judge it against the level you’re at.</li>
+      <li>If you’re aiming to exceed, ask your manager what that would mean in practice.</li>
     </ul>
   </td>
 </tr>
@@ -3804,7 +3804,7 @@ When you have to evaluate yourself and receive an evaluation from your manager.
   </td>
   <td valign="top">
     <ul>
-      <li>Don't fight it in the meeting. Ask what the rating was based on, take it away, and if you still disagree,
+      <li>Don’t fight it in the meeting. Ask what the rating was based on, take it away, and if you still disagree,
         come back with evidence rather than emotion.</li>
     </ul>
   </td>
@@ -3826,22 +3826,22 @@ When you have to evaluate your colleagues and help their manager.
 <tr>
   <td valign="top">
     <ul>
-      <li>360 feedback goes to the manager first, not straight to the person, so it doesn't need the softening a
+      <li>360 feedback goes to the manager first, not straight to the person, so it doesn’t need the softening a
         face-to-face conversation does (though parts of it often get relayed — see the anonymity point below).</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Don't sugarcoat it or spend time softening it. Be blunt about the substance (but not rude in tone) — it
-        saves your time writing and the manager's time reading.</li>
+      <li>Don’t sugarcoat it or spend time softening it. Be blunt about the substance (but not rude in tone) — it
+        saves your time writing and the manager’s time reading.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>The manager has to relay your feedback, and vague input becomes something like “someone said X, but I don't really know what they meant”.</li>
-      <li>In theory they should come back to you for details, but it's not always the case. And when they do, it's work you could have saved.</li>
+      <li>The manager has to relay your feedback, and vague input becomes something like “someone said X, but I don’t really know what they meant”.</li>
+      <li>In theory they should come back to you for details, but it’s not always the case. And when they do, it’s work you could have saved.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3853,7 +3853,7 @@ When you have to evaluate your colleagues and help their manager.
 <tr>
   <td valign="top">
     <ul>
-      <li>A single incident doesn't matter much, but a pattern does.</li>
+      <li>A single incident doesn’t matter much, but a pattern does.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3865,37 +3865,37 @@ When you have to evaluate your colleagues and help their manager.
 <tr>
   <td valign="top">
     <ul>
-      <li>“Anonymous” feedback often isn't as anonymous as you might think — content, phrasing and perspective can give you away. If only the two of you touched feature X and the feedback is about feature X, it's kind of obvious, isn't it?</li>
+      <li>“Anonymous” feedback often isn’t as anonymous as you might think — content, phrasing and perspective can give you away. If only the two of you touched feature X and the feedback is about feature X, it’s kind of obvious, isn’t it?</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Don't count on anonymity. Write it as if they'll know it came from you. Don't make enemies.</li>
-    </ul>
-  </td>
-</tr>
-<tr>
-  <td valign="top">
-    <ul>
-      <li>Your feedback has consequences. If you're too polite, someone incompetent might get promoted. If you're too harsh, someone might face problems they don't deserve.</li>
-    </ul>
-  </td>
-  <td valign="top">
-    <ul>
-      <li>Aim to be accurate; describe what you observed. Write only what you genuinely believe, not what you think you're supposed to write. Integrity beats everything else.</li>
+      <li>Don’t count on anonymity. Write it as if they’ll know it came from you. Don’t make enemies.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>A 360 isn't only about problems. A specific, well-evidenced strength is often what gets a colleague
-        promoted or motivated — and it's input the manager rarely gets from anyone else.</li>
+      <li>Your feedback has consequences. If you’re too polite, someone incompetent might get promoted. If you’re too harsh, someone might face problems they don’t deserve.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Call out what they're genuinely great at, with the same specificity as the criticism.</li>
+      <li>Aim to be accurate; describe what you observed. Write only what you genuinely believe, not what you think you’re supposed to write. Integrity beats everything else.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>A 360 isn’t only about problems. A specific, well-evidenced strength is often what gets a colleague
+        promoted or motivated — and it’s input the manager rarely gets from anyone else.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Call out what they’re genuinely great at, with the same specificity as the criticism.</li>
     </ul>
   </td>
 </tr>
@@ -3927,12 +3927,12 @@ And this activity is made almost entirely out of communication.
 <tr>
   <td valign="top">
     <ul>
-      <li>Asking to be mentored takes real humility (it's not easy to say out loud that your skills are not good enough). Plenty of people never manage it.</li>
+      <li>Asking to be mentored takes real humility (it’s not easy to say out loud that your skills are not good enough). Plenty of people never manage it.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Make it as easy as possible for them to get started. Run a structured programme if possible, or offer the sessions directly (it's easier to agree than to ask for it).</li>
+      <li>Make it as easy as possible for them to get started. Run a structured programme if possible, or offer the sessions directly (it’s easier to agree than to ask for it).</li>
     </ul>
   </td>
 </tr>
@@ -3944,40 +3944,40 @@ And this activity is made almost entirely out of communication.
   </td>
   <td valign="top">
     <ul>
-      <li>Focus on mentoring: share what you know and what you'd do in their place. Learn more about coaching if you get interested.</li>
+      <li>Focus on mentoring: share what you know and what you’d do in their place. Learn more about coaching if you get interested.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>When explaining things, it's critical to know how much they know already. Assume too much understanding and they will not get the point. Assume too little and they will be offended.</li>
+      <li>When explaining things, it’s critical to know how much they know already. Assume too much understanding and they will not get the point. Assume too little and they will be offended.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Make sure you know where they stand. Just ask if you're not sure.</li>
+      <li>Make sure you know where they stand. Just ask if you’re not sure.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Most things don't have a clear answer, and everything is a tradeoff of some sort.</li>
+      <li>Most things don’t have a clear answer, and everything is a tradeoff of some sort.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>Instead of telling them what to do (or what you would do in their place), explain your reasoning process and the options you weigh. (You will need that skill in design interviews anyway.)</li>
-      <li>When there's time, let them attempt the problem first and then compare notes — a solution they half-built
-        teaches more than one they watched. You should still share your full reasoning at the end (so you don't go into coaching too much).</li>
+      <li>When there’s time, let them attempt the problem first and then compare notes — a solution they half-built
+        teaches more than one they watched. You should still share your full reasoning at the end (so you don’t go into coaching too much).</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>People don't ask questions that make them feel dumb.</li>
+      <li>People don’t ask questions that make them feel dumb.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3994,7 +3994,7 @@ And this activity is made almost entirely out of communication.
   </td>
   <td valign="top">
     <ul>
-      <li>Raise it directly and help them communicate better. Your sessions don't have to be about technical topics only.</li>
+      <li>Raise it directly and help them communicate better. Your sessions don’t have to be about technical topics only.</li>
     </ul>
   </td>
 </tr>
@@ -4048,7 +4048,7 @@ The first step to landing a new job is to find interesting ones and get invited 
   </td>
   <td valign="top">
     <ul>
-      <li>Stay in touch with people you've worked with or at least build relationships when working together. Reach out when you need a new job.</li>
+      <li>Stay in touch with people you’ve worked with or at least build relationships when working together. Reach out when you need a new job.</li>
     </ul>
   </td>
 </tr>
@@ -4080,7 +4080,7 @@ The first step to landing a new job is to find interesting ones and get invited 
 <tr>
   <td valign="top">
     <ul>
-      <li>Your CV gets a few seconds of attention before it's binned or kept (unless you come in as a referral).</li>
+      <li>Your CV gets a few seconds of attention before it’s binned or kept (unless you come in as a referral).</li>
       <li>Before any human sees it, a cold application often passes through an automated keyword filter.</li>
       <li>Your CV is a signal medium through which you communicate with the recruiter — there are different messages you might want to transfer over it:
         <ul>
@@ -4108,14 +4108,14 @@ The first step to landing a new job is to find interesting ones and get invited 
   </td>
   <td valign="top">
     <ul>
-      <li>Life is more nuanced than “adjust your CV to a particular job”. You have to predict who is reading your CV, what signals they're looking for, and how clear those signals are in your CV.</li>
+      <li>Life is more nuanced than “adjust your CV to a particular job”. You have to predict who is reading your CV, what signals they’re looking for, and how clear those signals are in your CV.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>“Quantify your impact” is the standard advice, but it's a trap. Measuring things honestly (in a way that properly reflects your personal contribution to the work, and the impact that work made on the company) is horrendously hard.</li>
+      <li>“Quantify your impact” is the standard advice, but it’s a trap. Measuring things honestly (in a way that properly reflects your personal contribution to the work, and the impact that work made on the company) is horrendously hard.</li>
       <li>Any number you do use has to survive scrutiny.</li>
     </ul>
   </td>
@@ -4133,7 +4133,7 @@ The first step to landing a new job is to find interesting ones and get invited 
   </td>
   <td valign="top">
     <ul>
-      <li>Don't put anything on it you can't talk about for a couple of minutes. If you can't defend it, remove it.</li>
+      <li>Don’t put anything on it you can’t talk about for a couple of minutes. If you can’t defend it, remove it.</li>
     </ul>
   </td>
 </tr>
@@ -4166,19 +4166,19 @@ Once you get invited to an interview, you start speaking to humans (hopefully). 
 <tr>
   <td valign="top">
     <ul>
-      <li>How you come across is weighed alongside what you say. Visible nerves or imposter syndrome don't help you.</li>
+      <li>How you come across is weighed alongside what you say. Visible nerves or imposter syndrome don’t help you.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Speak with confidence whatever you feel inside — leave the imposter syndrome at the door and talk like someone who knows their job. Don't bluff though: admit what you don't know, and own a mistake the moment you spot it.</li>
+      <li>Speak with confidence whatever you feel inside — leave the imposter syndrome at the door and talk like someone who knows their job. Don’t bluff though: admit what you don’t know, and own a mistake the moment you spot it.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Your communication skills are also judged. If you ramble or stay too abstract, it's a problem.</li>
+      <li>Your communication skills are also judged. If you ramble or stay too abstract, it’s a problem.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4190,12 +4190,12 @@ Once you get invited to an interview, you start speaking to humans (hopefully). 
 <tr>
   <td valign="top">
     <ul>
-      <li>A hiring loop is several people, and each is judging a different thing — a recruiter typically screens for communication and red flags, an engineer for how you work, a manager for whether you'd fit the team, a CEO for whether you move the organisation forward.</li>
+      <li>A hiring loop is several people, and each is judging a different thing — a recruiter typically screens for communication and red flags, an engineer for how you work, a manager for whether you’d fit the team, a CEO for whether you move the organisation forward.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Don't give all of them the same pitch. Work out what each one is there to evaluate and lean into it.</li>
+      <li>Don’t give all of them the same pitch. Work out what each one is there to evaluate and lean into it.</li>
     </ul>
   </td>
 </tr>
@@ -4207,7 +4207,7 @@ Once you get invited to an interview, you start speaking to humans (hopefully). 
   </td>
   <td valign="top">
     <ul>
-      <li>Frame your wins as your contribution to the team's success.</li>
+      <li>Frame your wins as your contribution to the team’s success.</li>
       <li>But make your own part clear. “We built X” with no “I” anywhere is the other red flag — the interviewer
         needs to know what you did and decided.</li>
     </ul>
@@ -4221,7 +4221,7 @@ Once you get invited to an interview, you start speaking to humans (hopefully). 
   </td>
   <td valign="top">
     <ul>
-      <li>Come with real questions about the team and the work you'd be doing. Good questions read as competence and genuine interest.</li>
+      <li>Come with real questions about the team and the work you’d be doing. Good questions read as competence and genuine interest.</li>
     </ul>
   </td>
 </tr>
@@ -4233,8 +4233,8 @@ Once you get invited to an interview, you start speaking to humans (hopefully). 
   </td>
   <td valign="top">
     <ul>
-      <li>Keep it forward-looking: talk about what you're moving toward.</li>
-      <li>Frame it as a tradeoff and show some understanding of the other side. Not “management is dumb” but “they optimise for things I don't agree with”.</li>
+      <li>Keep it forward-looking: talk about what you’re moving toward.</li>
+      <li>Frame it as a tradeoff and show some understanding of the other side. Not “management is dumb” but “they optimise for things I don’t agree with”.</li>
     </ul>
   </td>
 </tr>
@@ -4270,24 +4270,24 @@ You went through the interviews and got some kind of result (good or bad). What 
 <tr>
   <td valign="top">
     <ul>
-      <li>Negotiating the offer feels adversarial, but by then they've decided they want you — you have more room than it feels like.</li>
+      <li>Negotiating the offer feels adversarial, but by then they’ve decided they want you — you have more room than it feels like.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Treat it as a conversation, not a fight. It's fine to ask for time instead of answering on the spot, and to let them put a number down first. For the actual tactics, read dedicated materials like <a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/">patio11's guide</a> — it's a good one.</li>
+      <li>Treat it as a conversation, not a fight. It’s fine to ask for time instead of answering on the spot, and to let them put a number down first. For the actual tactics, read dedicated materials like <a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/">patio11's guide</a> — it’s a good one.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Telling your manager you're leaving is not an easy conversation, and the instinct might be to soften it or dump every grievance.</li>
+      <li>Telling your manager you’re leaving is not an easy conversation, and the instinct might be to soften it or dump every grievance.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Tell them directly and early. Try to keep as good a relationship as possible and don't burn bridges.</li>
+      <li>Tell them directly and early. Try to keep as good a relationship as possible and don’t burn bridges.</li>
     </ul>
   </td>
 </tr>
@@ -4299,7 +4299,7 @@ You went through the interviews and got some kind of result (good or bad). What 
   </td>
   <td valign="top">
     <ul>
-      <li>Decide how you'd respond before you announce it. To do that, you have to really understand why you're leaving in the first place.</li>
+      <li>Decide how you’d respond before you announce it. To do that, you have to really understand why you’re leaving in the first place.</li>
     </ul>
   </td>
 </tr>
@@ -4311,7 +4311,7 @@ You went through the interviews and got some kind of result (good or bad). What 
   </td>
   <td valign="top">
     <ul>
-      <li>Hand over cleanly: document what's in your head, wrap up or transfer what you can. Don't leave a slammed door behind you.</li>
+      <li>Hand over cleanly: document what’s in your head, wrap up or transfer what you can. Don’t leave a slammed door behind you.</li>
     </ul>
   </td>
 </tr>
@@ -4323,7 +4323,7 @@ You went through the interviews and got some kind of result (good or bad). What 
   </td>
   <td valign="top">
     <ul>
-      <li>Respond to rejection gracefully, and it's fine to ask for feedback.</li>
+      <li>Respond to rejection gracefully, and it’s fine to ask for feedback.</li>
     </ul>
   </td>
 </tr>
@@ -4344,7 +4344,7 @@ You got the job, but there are still a few things to play well.
 <tr>
   <td valign="top">
     <ul>
-      <li>You're the only one who can still see what's confusing, undocumented or weird. In a month you'll get used to it and become blind like everyone else.</li>
+      <li>You’re the only one who can still see what’s confusing, undocumented or weird. In a month you’ll get used to it and become blind like everyone else.</li>
       <li>The code, patterns, practices are usually “wrong” for a reason.</li>
     </ul>
   </td>
@@ -4358,12 +4358,12 @@ You got the job, but there are still a few things to play well.
 <tr>
   <td valign="top">
     <ul>
-      <li>Many things you will need aren't written down and reside in people's heads.</li>
+      <li>Many things you will need aren’t written down and reside in people’s heads.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Focus on learning the company's structure and people as much as reading code and docs, if not more.</li>
+      <li>Focus on learning the company’s structure and people as much as reading code and docs, if not more.</li>
     </ul>
   </td>
 </tr>
@@ -4375,7 +4375,7 @@ You got the job, but there are still a few things to play well.
   </td>
   <td valign="top">
     <ul>
-      <li>Over-communicate progress at the beginning: what you're on, what you've learned, where you're blocked.
+      <li>Over-communicate progress at the beginning: what you’re on, what you’ve learned, where you’re blocked.
         Scale it back once trust is established.</li>
     </ul>
   </td>
@@ -4397,12 +4397,12 @@ Sooner or later you'll be on the other side of the table, interviewing candidate
 <tr>
   <td valign="top">
     <ul>
-      <li>You're evaluating the candidate, but they're also evaluating you and the company.</li>
+      <li>You’re evaluating the candidate, but they’re also evaluating you and the company.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>It's a two-way sell. Be on time, be prepared, be someone they'd want to work with. Just be a decent human being (hopefully just yourself).</li>
+      <li>It’s a two-way sell. Be on time, be prepared, be someone they’d want to work with. Just be a decent human being (hopefully just yourself).</li>
     </ul>
   </td>
 </tr>
@@ -4414,26 +4414,26 @@ Sooner or later you'll be on the other side of the table, interviewing candidate
   </td>
   <td valign="top">
     <ul>
-      <li>Open warmly, explain how the session will go, and make it clear you want to see their best — not catch them out. Say it's fine to think out loud and ask questions. Smile a lot.</li>
+      <li>Open warmly, explain how the session will go, and make it clear you want to see their best — not catch them out. Say it’s fine to think out loud and ask questions. Smile a lot.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>It's tempting to ask tricky questions and push the candidate to the limits.</li>
+      <li>It’s tempting to ask tricky questions and push the candidate to the limits.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>It's fine, but comfort them if they don't know the answer. Make sure your question has a purpose and is not about you showing off or trying to sink the candidate.</li>
+      <li>It’s fine, but comfort them if they don’t know the answer. Make sure your question has a purpose and is not about you showing off or trying to sink the candidate.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>When you talk, you don't collect information.</li>
+      <li>When you talk, you don’t collect information.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4516,7 +4516,7 @@ The goal is to help you survive — and maybe even like — the internal talk yo
   </td>
   <td valign="top">
     <ul>
-      <li>Walk in assuming goodwill. Don't apologise for nerves or restart — keep going.</li>
+      <li>Walk in assuming goodwill. Don’t apologise for nerves or restart — keep going.</li>
     </ul>
   </td>
 </tr>
@@ -4528,7 +4528,7 @@ The goal is to help you survive — and maybe even like — the internal talk yo
   </td>
   <td valign="top">
     <ul>
-      <li>Pick the one thing they should walk away with. Cut whatever doesn't serve it. Less is more.</li>
+      <li>Pick the one thing they should walk away with. Cut whatever doesn’t serve it. Less is more.</li>
     </ul>
   </td>
 </tr>
@@ -4540,7 +4540,7 @@ The goal is to help you survive — and maybe even like — the internal talk yo
   </td>
   <td valign="top">
     <ul>
-      <li>Find out who's in the room and what they came for, then adjust to that (see <a href="#talking-to-non-developers">talking to non-developers</a> for inspiration).</li>
+      <li>Find out who’s in the room and what they came for, then adjust to that (see <a href="#talking-to-non-developers">talking to non-developers</a> for inspiration).</li>
     </ul>
   </td>
 </tr>
@@ -4564,14 +4564,14 @@ The goal is to help you survive — and maybe even like — the internal talk yo
   </td>
   <td valign="top">
     <ul>
-      <li>Keep them sparse and don't recite. A single sentence or image per slide is the best thing you can do.</li>
+      <li>Keep them sparse and don’t recite. A single sentence or image per slide is the best thing you can do.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>It's a skill, trainable like any other. Most public speakers were subpar in the beginning.</li>
+      <li>It’s a skill, trainable like any other. Most public speakers were subpar in the beginning.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4583,7 +4583,7 @@ The goal is to help you survive — and maybe even like — the internal talk yo
 <tr>
   <td valign="top">
     <ul>
-      <li>Live demos break on stage — network, environment, a flaky feature. For developers it's one of the most
+      <li>Live demos break on stage — network, environment, a flaky feature. For developers it’s one of the most
         common presentation disasters, and also the most recoverable.</li>
     </ul>
   </td>
@@ -4602,9 +4602,9 @@ The goal is to help you survive — and maybe even like — the internal talk yo
   </td>
   <td valign="top">
     <ul>
-      <li>Say upfront how you'd like to take questions: on the go or at the end.</li>
-      <li>“I don't know, I'll follow up” is a perfectly good answer, and deep dives can be deferred: “good one,
-        let's take it after the last slide”.</li>
+      <li>Say upfront how you’d like to take questions: on the go or at the end.</li>
+      <li>“I don’t know, I’ll follow up” is a perfectly good answer, and deep dives can be deferred: “good one,
+        let’s take it after the last slide”.</li>
     </ul>
   </td>
 </tr>
@@ -4631,7 +4631,7 @@ Everything you say in the open leaves a permanent trail. The career upside of th
   </td>
   <td valign="top">
     <ul>
-      <li>Write it as if the person you're talking about, and your next employer, will read it. They can. And will.</li>
+      <li>Write it as if the person you’re talking about, and your next employer, will read it. They can. And will.</li>
     </ul>
   </td>
 </tr>
@@ -4643,14 +4643,14 @@ Everything you say in the open leaves a permanent trail. The career upside of th
   </td>
   <td valign="top">
     <ul>
-      <li>Don't get pulled into that. People will be wrong on the internet, but you don't have to correct them.</li>
+      <li>Don’t get pulled into that. People will be wrong on the internet, but you don’t have to correct them.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Open-source maintainers are usually unpaid volunteers who don't owe anyone anything.</li>
+      <li>Open-source maintainers are usually unpaid volunteers who don’t owe anyone anything.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4662,7 +4662,7 @@ Everything you say in the open leaves a permanent trail. The career upside of th
 <tr>
   <td valign="top">
     <ul>
-      <li>Public means public — internal details, unreleased plans, or a client's name don't belong there.</li>
+      <li>Public means public — internal details, unreleased plans, or a client’s name don’t belong there.</li>
     </ul>
   </td>
   <td valign="top">

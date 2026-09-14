@@ -1,0 +1,17 @@
+#!/bin/sh
+# Curl the quotes inside {=html} fences before they reach a commit, so straight
+# ' and " typed by hand don't render straight in the tables.
+# Enabled with:  git config core.hooksPath tools/hooks
+# Disabled with: git config --unset core.hooksPath
+
+repo=$(git rev-parse --show-toplevel)
+staged=$(git diff --cached --name-only --diff-filter=ACM -- '*.qmd')
+[ -z "$staged" ] && exit 0
+
+cd "$repo" || exit 1
+# shellcheck disable=SC2086
+python3 tools/smarten-html-quotes.py $staged || exit 1
+
+for f in $staged; do
+  git add -- "$f"
+done
