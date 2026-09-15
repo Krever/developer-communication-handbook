@@ -1600,7 +1600,7 @@ out, with a label that says up front how much it matters.
 
 ### Talking to non-developers
 
-Sooner or later your work has to be explained to someone who doesn't read code, like a product manager or a support agent.
+Sooner or later your work has to be explained to someone who doesn't write or even read code, like a product manager, a support agent or your grandma.
 In such cases you have to become a translator from technicalese to legalese, accountinglese and other dialects that resemble English only on the surface.
 (The other direction — extracting information _from_ them — is covered in [Extracting requirements](#extracting-requirements).)
 
@@ -1618,7 +1618,7 @@ In such cases you have to become a translator from technicalese to legalese, acc
   </td>
   <td valign="top">
     <ul>
-      <li>Drop the jargon and keep a mental list of forbidden words. Speak the way your parents would understand.</li>
+      <li>Drop the jargon and keep a mental list of forbidden words. Speak so your parents would understand.</li>
     </ul>
   </td>
 </tr>
@@ -1654,14 +1654,14 @@ In such cases you have to become a translator from technicalese to legalese, acc
   </td>
   <td valign="top">
     <ul>
-      <li>Don’t correct every imprecision; go with their words unless the difference actually matters.</li>
+      <li>Don’t correct every imprecision. Go with their words unless the difference actually matters.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Developers usually sit in one large, fairly interchangeable department, while business teams are small, specialised and often disconnected from each other. “The business” is not a single voice — two teams under the same roof can hold completely different perspectives and priorities.</li>
+      <li>Developers usually sit in one large, fairly interchangeable department, while business teams are small, specialised and often disconnected from each other. “The business” is not a single voice — two teams under the same boss can hold completely different perspectives and priorities.</li>
     </ul>
   </td>
   <td valign="top">
@@ -1678,7 +1678,7 @@ In such cases you have to become a translator from technicalese to legalese, acc
   </td>
   <td valign="top">
     <ul>
-      <li>Focus on impact and timing; keep the implementation out unless someone asks.</li>
+      <li>Focus on impact and timing. Keep the implementation out unless someone asks.</li>
     </ul>
   </td>
 </tr>
@@ -1716,7 +1716,7 @@ In such cases you have to become a translator from technicalese to legalese, acc
   </td>
   <td valign="top">
     <ul>
-      <li>Provide the amount of detail they need. It’s ok to underexplain and be asked for details.</li>
+      <li>Provide the amount of detail they need. It’s fine to under-explain and be asked for more.</li>
     </ul>
   </td>
 </tr>
@@ -1740,7 +1740,8 @@ In such cases you have to become a translator from technicalese to legalese, acc
   </td>
   <td valign="top">
     <ul>
-      <li>Don’t be intimidated. A good high-level manager is usually an excellent communicator, and it’s their job to bridge the gap: they’ll put you at ease, ask the right questions, and pull out what they need. Answer honestly and plainly, and let them do the steering. It feels daunting the first time, but you get used to it.</li>
+      <li>Don’t be intimidated. A good high-level manager is usually an excellent communicator, and it’s their job to bridge the gap:
+      they should put you at ease, ask the right questions, and pull out what they need. Answer honestly and plainly, and let them do the steering. It feels daunting the first time, but you get used to it.</li>
       <li>Watch your casual words, though — the higher up the listener, the more weight they carry. An offhand
         “yeah, we could do that” can come back as a roadmap item.</li>
     </ul>
@@ -1754,7 +1755,7 @@ Here is the same status update to a non-technical stakeholder in two versions:
 
 > The PR for the idempotency keys is merged, just waiting on the migration to run in prod.
 
-vs
+vs.
 
 > The duplicate-charge fix is done and should be live for customers on Tuesday.
 
