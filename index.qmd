@@ -1915,18 +1915,16 @@ minutes to write and 5 to read. Or borrow a team-wide practice like a demo Frida
 
 ## Everyday communication
 
-The previous parts followed a project through its stages. This one steps outside that timeline and looks at the
+The previous parts followed a project through its stages. Here we step outside that timeline and look at the
 messages, pings and calls that fill every working day, whatever stage you are at. None of it is hard on its own, but
 it adds up: your message is one of the hundred the receiver will see today, and small habits decide whether it lands
-or gets lost. Most of the sections follow a message through its life: asking for something, writing it so it gets
-read, responding to what comes back, and knowing when to stop typing and talk instead. The last two step
-outside that — how culture bends the rules, and how AI is starting to reshape them.
+or gets lost.
 
 ### Asking
 
-Asking a colleague for something looks too simple to get wrong, yet questions go unanswered every day. Your question
-competes with everything else in the receiver's inbox, and whether the answer arrives in five minutes or never is
-largely decided by how the question was written. Few of the fixes below cost more than one extra sentence.
+Asking a colleague for something looks too simple to get wrong, yet you've probably seen a question go unanswered more than once.
+Your question competes with everything else in the receiver's inbox, and whether the answer arrives immediately or never is
+largely decided by how the question was written. Some of the fixes below cost no more than one extra sentence.
 
 ```{=html}
 <table>
@@ -1937,7 +1935,7 @@ largely decided by how the question was written. Few of the fixes below cost mor
 <tr>
   <td valign="top">
     <ul>
-      <li>In asynchronous communication you have to expect that every message might take minutes or hours to get a
+      <li>In asynchronous communication you have to expect that every message might take minutes, hours or days to get a
         response. If you start a conversation with a single “hello” or “can I ask you about something?”, you waste
         a round-trip without providing or receiving any information.</li>
       <li>When the person you’re asking is in a distant timezone, you will see the response the next day.</li>
@@ -1981,7 +1979,7 @@ largely decided by how the question was written. Few of the fixes below cost mor
 <tr>
   <td valign="top">
     <ul>
-      <li>Asking too soon spends someone’s time on what you’d have found yourself; struggling too long burns hours
+      <li>Asking too soon spends someone’s time on what you’d have found yourself. Struggling too long burns hours
         on something a colleague knows off-hand.</li>
     </ul>
   </td>
@@ -1995,7 +1993,7 @@ largely decided by how the question was written. Few of the fixes below cost mor
 <tr>
   <td valign="top">
     <ul>
-      <li>A message with several questions usually gets an answer only to the first one or a subset of them.</li>
+      <li>A message with several questions usually gets only some of them answered, most often just the first one.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2016,8 +2014,8 @@ largely decided by how the question was written. Few of the fixes below cost mor
   </td>
   <td valign="top">
     <ul>
-      <li>Always try to <code>@mention</code> a specific person, even if you’re not sure they’re the right one to
-        solve your problem. If you pick wrongly, you will most likely be pointed in the right direction.</li>
+      <li><code>@mention</code> a specific person, even if you’re not sure they’re the right one to solve your
+        problem. If you pick wrongly, you will most likely be pointed in the right direction.</li>
     </ul>
   </td>
 </tr>
