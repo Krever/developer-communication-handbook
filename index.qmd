@@ -1763,7 +1763,7 @@ The first is accurate and means nothing to the person waiting on it. The second 
 
 ### Making your work visible
 
-Most of your work becomes visible only when you share it. Plenty of solid engineers get passed over simply because nobody sees what they do — this section is about not becoming one of them.
+Most of your work becomes visible only when you share it. Plenty of solid engineers stay underappreciated simply because nobody sees what they do — this section is about not being one of them.
 
 ```{=html}
 <table>
@@ -1788,7 +1788,7 @@ Most of your work becomes visible only when you share it. Plenty of solid engine
     <ul>
       <li>Certain types of work are almost invisible to the outside world, e.g. fixing flaky tests, refactoring
         done alongside a feature, helping teammates, reviewing their work, handling support tickets, or answering
-        stakeholder questions. Those usually don’t produce standalone artifacts but are no less important.</li>
+        stakeholder questions. Those usually don’t produce standalone artefacts but are no less important.</li>
     </ul>
   </td>
   <td valign="top">
@@ -1822,8 +1822,8 @@ Most of your work becomes visible only when you share it. Plenty of solid engine
   <td valign="top">
     <ul>
       <li>You can never know who is affected by your work or holds context you’re missing. Someone might have
-        already solved the same problem, or is working on it right now, or learned (often the hard way) why it
-        can’t be fixed.</li>
+        already solved the same problem, might be working on it right now, or might have learned (often the hard
+        way) why it can’t be fixed.</li>
     </ul>
   </td>
   <td valign="top">
@@ -1899,7 +1899,7 @@ Most of your work becomes visible only when you share it. Plenty of solid engine
   </td>
   <td valign="top">
     <ul>
-      <li>Keeping public records of your work will make it easier to prepare such a justification.</li>
+      <li>Keep a public record of your work as you go.</li>
       <li>Read Julia Evans’ <a href="https://jvns.ca/blog/brag-documents/">post about brag documents</a> for more
         details.</li>
     </ul>
@@ -1910,9 +1910,8 @@ Most of your work becomes visible only when you share it. Plenty of solid engine
 ```
 
 You might want to use an existing format for sharing your work. A
-[5-15 report](https://swyx.io/the-importance-of-writing-weekly-updates) is a weekly update designed to take fifteen
-minutes to write and five to read. Alternatively, you can consider practices such as a demo Friday or a `#shipped`
-channel.
+[5-15 report](https://swyx.io/the-importance-of-writing-weekly-updates) is a weekly update designed to take 15
+minutes to write and 5 to read. Or borrow a team-wide practice like a demo Friday, or a `#shipped` channel.
 
 ## Everyday communication
 
