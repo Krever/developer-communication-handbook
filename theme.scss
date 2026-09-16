@@ -65,6 +65,13 @@ body {
   color: $ink-soft;
 }
 
+// Quarto hardcodes this grid to two columns, which orphans our third field
+// (Length) onto a row of its own. auto-fit collapses the empty tracks, so the
+// three sit side by side on desktop and fold to two, then one, as it narrows.
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+}
+
 // Headings ────────────────────────────────────────────────────────────────
 h1, h2, h3, h4 {
   font-family: $headings-font-family;
