@@ -2558,7 +2558,7 @@ On a remote, international team — which we assume in this book — you face th
   </td>
   <td valign="top">
     <ul>
-      <li>Within the known group you can use anything, but with a mixed audience it’s safer to keep it plain and literal.</li>
+      <li>Inside a group that knows each other, anything goes. With a mixed audience, keep it plain and literal.</li>
     </ul>
   </td>
 </tr>
@@ -2570,7 +2570,8 @@ On a remote, international team — which we assume in this book — you face th
   </td>
   <td valign="top">
     <ul>
-      <li>Don’t always jump straight to the task. With relationship-first people, a big part of the work happens around it.</li>
+      <li>Don’t always jump straight to the task. With relationship-first people, a big part of the work happens around
+        it.</li>
     </ul>
   </td>
 </tr>
@@ -2601,12 +2602,13 @@ On a remote, international team — which we assume in this book — you face th
 <tr>
   <td valign="top">
     <ul>
-      <li>A culture is an average, not any individual. “People from X are blunt” is a useful starting guess, but plenty of people break their own culture’s norms.</li>
+      <li>A culture is an average. “People from X are blunt” is a useful starting guess, but plenty of people break their own culture’s norms.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Treat it as a hypothesis and let the actual person correct it. Adjust to who’s in front of you, not some arbitrary stereotype.</li>
+      <li>Treat it as a hypothesis and let the actual person correct it. Adjust to who’s in front of you, not to the
+        average you started from.</li>
     </ul>
   </td>
 </tr>
@@ -2619,6 +2621,9 @@ For the deeper version of all this, read *The Culture Map* (E. Meyer).
 ### Using AI
 
 LLMs draft more and more of the messages, reviews and docs flying around. And it's a double-edged sword.
+
+Caveat: this section is deliberately short and basic. We (as a civilisation) are still learning the implications of AI
+and adjusting to them. Every other topic in this book has had decades to settle. AI practices change every week.
 
 ```{=html}
 <table>
@@ -2636,6 +2641,8 @@ LLMs draft more and more of the messages, reviews and docs flying around. And it
   <td valign="top">
     <ul>
       <li>Don’t send raw output. Cut it to what you’d actually say; the model’s default length is never your message’s right length.</li>
+      <li>This applies to messages, documentation, code comments and probably everything else an LLM produces for
+        you.</li>
     </ul>
   </td>
 </tr>
@@ -2707,7 +2714,7 @@ LLMs draft more and more of the messages, reviews and docs flying around. And it
   </td>
   <td valign="top">
     <ul>
-      <li>Keep anything sensitive out of public tools, and know what your enterprise agreement actually allows.</li>
+      <li>Keep anything sensitive out of public tools, and know what your company’s policy allows.</li>
     </ul>
   </td>
 </tr>
@@ -2720,6 +2727,8 @@ LLMs draft more and more of the messages, reviews and docs flying around. And it
   <td valign="top">
     <ul>
       <li>A genuine, slightly imperfect human message now stands out. Sometimes that’s the better move and can get you more credit.</li>
+      <li>Raw LLM output signals the opposite — a complete lack of effort put into the phrasing. Which might be fine
+        in some contexts, but not when someone actually cares.</li>
     </ul>
   </td>
 </tr>
