@@ -2365,7 +2365,7 @@ with them.
 
 ### Talking
 
-Meetings are the most dreaded and the most expensive way to communicate — and, done right, also the most effective
+Meetings are the most dreaded and the most expensive way to communicate — and, when done right, also the most effective
 one. The trick is paying that cost only where it makes sense.
 
 ```{=html}
@@ -2377,8 +2377,8 @@ one. The trick is paying that cost only where it makes sense.
 <tr>
   <td valign="top">
     <ul>
-      <li>A call is costly. It demands everyone’s full attention at the same time (at least in theory), but
-        its bandwidth is far higher than text — you can discuss much more in the same amount of time.</li>
+      <li>A call is costly. It demands everyone’s full attention at the same specific time (at least in theory), but
+        its bandwidth is far higher than text — you can discuss much more, and more clearly, in the same amount of time.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2417,7 +2417,7 @@ one. The trick is paying that cost only where it makes sense.
 <tr>
   <td valign="top">
     <ul>
-      <li>A meeting’s cost is its length multiplied by the number of participants. Try to calculate it for some
+      <li>A meeting’s cost is its length multiplied by the number of participants. Take a piece of paper and calculate it for some
         slots in your calendar as an experiment.</li>
       <li>Nobody has ever complained about a meeting ending early.</li>
     </ul>
@@ -2436,8 +2436,8 @@ one. The trick is paying that cost only where it makes sense.
   </td>
   <td valign="top">
     <ul>
-      <li>Use optional invites and share the notes afterwards, so nobody is locked out of the
-        loop but those who are not mandatory feel free to skip the meeting.</li>
+      <li>Use optional invites and share the notes afterwards, so nobody is locked out of the loop, while those whose
+        presence isn’t essential feel free to skip.</li>
       <li>Don’t be afraid to decline an invitation when you don’t think you add or gain value there.</li>
     </ul>
   </td>
@@ -2450,8 +2450,7 @@ one. The trick is paying that cost only where it makes sense.
   </td>
   <td valign="top">
     <ul>
-      <li>Try to put an agenda, or at least a goal, in the meeting invitation. Repeat it at the beginning of the
-        call.</li>
+      <li>Put an agenda, or at least a goal, in the meeting invitation. Repeat it at the beginning of the call.</li>
       <li>Send any materials you might have upfront. Most people won’t read them, but there is a chance someone
         will.</li>
     </ul>
@@ -2475,7 +2474,7 @@ one. The trick is paying that cost only where it makes sense.
   <td valign="top">
     <ul>
       <li>A very big chunk of communication is non-verbal, e.g. facial expressions or reactions.</li>
-      <li>There are very few reasons to have your camera off.</li>
+      <li>There are very few reasons to have your camera off. Eating, other people in the background — something else?</li>
     </ul>
   </td>
   <td valign="top">
