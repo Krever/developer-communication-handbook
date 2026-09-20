@@ -2227,8 +2227,8 @@ acted on from the first line.
 ### Responding
 
 A lot of communication happens after the initial message is sent: your questions need chasing, and other people's
-questions need answering. The way you handle other people's messages and responses (or the lack of them) affects how they
-will handle yours.
+questions need answering. The way you handle other people's messages and responses (or the lack of them) shapes your relationships
+with them.
 
 ```{=html}
 <table>
@@ -2240,7 +2240,7 @@ will handle yours.
   <td valign="top">
     <ul>
       <li>People will forget, miss and misinterpret messages you send them. This is completely normal and shouldn’t be
-        held against those people as long as it’s not pathological (i.e. it doesn’t happen every time).</li>
+        held against those people as long as it’s not pathological (i.e. it doesn’t happen with each and every message).</li>
     </ul>
   </td>
   <td valign="top">
@@ -2262,7 +2262,7 @@ will handle yours.
   </td>
   <td valign="top">
     <ul>
-      <li>For important messages ask for a confirmation and treat silence as “not received”. Don’t act like the UDP protocol.</li>
+      <li>For important messages ask for a confirmation and treat silence as “not received”. Don’t act like the [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol).</li>
     </ul>
   </td>
 </tr>
@@ -2274,10 +2274,12 @@ will handle yours.
   </td>
   <td valign="top">
     <ul>
-      <li>Give the responses you want to get, even if you don’t know the answer:
+      <li>Give the responses you want to get, even if you can’t help directly:
         <ul>
           <li>redirect to someone who might know,</li>
-          <li>say “no time now, will look on Thursday”.</li>
+          <li>say “no time now, will look on Thursday”,</li>
+          <li>react (a single ❌ will do) even when you have no answer, so they know the message wasn’t
+            ignored.</li>
         </ul>
       </li>
     </ul>
@@ -2286,7 +2288,7 @@ will handle yours.
 <tr>
   <td valign="top">
     <ul>
-      <li>The asker needs feedback on their message to know it was seen and that they don’t need to follow up.</li>
+      <li>The asker needs feedback on their message to know it was seen and that no follow-up is needed.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2308,7 +2310,7 @@ will handle yours.
     <ul>
       <li>Ping as few people as possible (but don’t hesitate to bring in people who are actually needed).</li>
       <li>When pulling someone into a long thread, give a one-line summary of what’s needed from them instead of
-        “see above”.</li>
+        “see above”. Yes, Slack can AI-summarize threads now, but it still can be you to execute that.</li>
     </ul>
   </td>
 </tr>
@@ -2333,8 +2335,7 @@ will handle yours.
 <tr>
   <td valign="top">
     <ul>
-      <li>Humans are largely driven by emotions, and emotions come and go. Unfortunately, the message will still be
-        there when they are gone.</li>
+      <li>Humans are largely driven by emotions, and emotions come and go. But the messages stay.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2354,7 +2355,7 @@ will handle yours.
   <td valign="top">
     <ul>
       <li>Answer the actual question first and plainly, then add the caveats.</li>
-      <li>If you smell an XY problem, flag it: “here’s how to do X — though if you’re trying to Z, Y is simpler.”</li>
+      <li>If you smell an XY problem, flag it: “here’s how to do X — though if you’re after Z, Y is simpler.”</li>
     </ul>
   </td>
 </tr>
