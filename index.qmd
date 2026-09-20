@@ -2068,7 +2068,7 @@ I find metrics" might not even be the right question for preparing a release.
 
 ### Writing
 
-Once you know what to say, there is still the matter of how. The same content can get acted on immediately or postponed until never.
+Once you know _what_ to say, there is still the matter of _how_. The same content can get acted on immediately or postponed until never.
 This section is about the form of a message: its structure, length, tone and words.
 
 ```{=html}
@@ -2080,7 +2080,7 @@ This section is about the form of a message: its structure, length, tone and wor
 <tr>
   <td valign="top">
     <ul>
-      <li>People rarely read messages in full — most of the time they scan them. A wall of text gets postponed for
+      <li>People rarely (if ever) read messages in full — most of the time they scan them. A wall of text gets postponed for
         “later”, which might never come.</li>
     </ul>
   </td>
@@ -2124,7 +2124,7 @@ This section is about the form of a message: its structure, length, tone and wor
   </td>
   <td valign="top">
     <ul>
-      <li>Spend the time to trim your messages. They should be as short as possible but not shorter.</li>
+      <li>Spend the time to trim your messages. They should be as short as possible (but not shorter).</li>
     </ul>
   </td>
 </tr>
@@ -2145,23 +2145,24 @@ This section is about the form of a message: its structure, length, tone and wor
       <li>Aim for warm and plain: use greetings, a “thanks”, emojis and the like to properly express your
         intentions.</li>
       <li>Don’t be a pushover and don’t sugarcoat when firmness is needed. Unfortunately, figuring out the exact
-        level of “firmness” is hard and an art.</li>
+        level of “firmness” is hard, and something of an art.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Strictly professional communication keeps people at arm’s length, while shared informality brings people
-        closer. Silly emojis and memes make you “one of us” — imagine which resonates with you more: a CTO posting
-        memes or an open-door policy.</li>
+      <li>Strictly professional communication keeps people at arm’s length, while informality brings people
+        closer. Silly emojis and memes make you “one of us”. What makes you more willing to interact with your CTO:
+        the memes they post, or the official open-door policy?</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Don’t over-sanitize your messages. Match the level of informality your team actually uses, reactions and
+      <li>Don’t over-sanitise your messages. Match the level of informality your team actually uses, reactions and
         dumb gifs included.</li>
-      <li>Calibrate to the room. Informality that bonds one team reads as unserious in another.</li>
+      <li>Calibrate to the room. Informality that bonds one team reads as unserious in another. (Maybe it’s time to
+        change teams then? Life is too short to be serious.)</li>
     </ul>
   </td>
 </tr>
@@ -2170,10 +2171,10 @@ This section is about the form of a message: its structure, length, tone and wor
     <ul>
       <li>Sophisticated vocabulary adds decoding effort for every reader and makes life harder for non-native
         speakers.</li>
-      <li>Words matter, and certain more complicated words add clarity in the long term (especially if they are
-        part of the domain). The same applies to more complicated grammar constructions.</li>
+      <li>Words matter, and some complicated words do add clarity in the long term (especially if they are part of
+        the domain). The same applies to more complicated grammar constructions.</li>
       <li>Most of the people you interact with won’t hold imperfect English against you: they are either non-native
-        speakers themselves or have long stopped noticing.</li>
+        speakers themselves or have long since stopped noticing.</li>
     </ul>
   </td>
   <td valign="top">
