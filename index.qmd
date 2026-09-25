@@ -2262,7 +2262,8 @@ with them.
   </td>
   <td valign="top">
     <ul>
-      <li>For important messages ask for a confirmation and treat silence as “not received”. Don’t act like the [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol).</li>
+      <li>For important messages ask for a confirmation and treat silence as “not received”. Don’t act like
+        <a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">UDP</a>.</li>
     </ul>
   </td>
 </tr>
@@ -2739,8 +2740,9 @@ and adjusting to them. Every other topic in this book has had decades to settle.
 ## Hard conversations
 
 Sooner or later communication stops being routine and casual and starts carrying some stakes.
-Almost all such conversations get easier if you shift your perspective from "you against them" to "it's you and them against the problem".
-But it doesn't work unless you keep your own emotions in check first.
+Such conversations are never easy, but they get much easier if you shift your perspective from "you against them" to
+"it's you and them against the problem".
+Let's walk through a few scenarios and see how this and other strategies help you stay out of trouble.
 
 ### Disagreeing and pushing back
 
@@ -2761,7 +2763,7 @@ The goal, though, is not to win the discussion but to reach the better decision 
   </td>
   <td valign="top">
     <ul>
-      <li>Focus on the problem instead of the person: “the deadline is tight”, not “your deadline is wrong”.</li>
+      <li>Focus on the problem and not the person: “the deadline is tight”, not “your deadline is wrong”.</li>
     </ul>
   </td>
 </tr>
@@ -2773,7 +2775,7 @@ The goal, though, is not to win the discussion but to reach the better decision 
   </td>
   <td valign="top">
     <ul>
-      <li>Ask (and understand) why before declaring something wrong.</li>
+      <li>Ask (and understand) <em>why</em> before declaring something wrong.</li>
     </ul>
   </td>
 </tr>
@@ -2794,11 +2796,12 @@ The goal, though, is not to win the discussion but to reach the better decision 
     <ul>
       <li>Pushing back on someone senior feels insubordinate (or at least intimidating), but a good manager or senior IC
       wants a plurality of opinions. Silent nodding doesn’t add any value.</li>
+      <li>People can feel your disagreement even if you try to hide it and never say it out loud.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Say it, maybe in private first, depending on the context.</li>
+      <li>Say it, politely and in private, but say it.</li>
     </ul>
   </td>
 </tr>
@@ -2812,6 +2815,9 @@ The goal, though, is not to win the discussion but to reach the better decision 
     <ul>
       <li>The next time you mention the problem, make sure there is some result/agreement/decision from the discussion.</li>
       <li>If the result is not what you wanted, “disagree and commit”: argue hard before the decision, then support it fully; don’t relitigate (if nothing changed) or quietly sabotage.</li>
+      <li>When disagreeing, make sure you understand the other side’s perspective and the trade-offs involved.
+        “We did it because we were told to” is unprofessional. “We did it because X was judged more important
+        than Y” is not.</li>
     </ul>
   </td>
 </tr>
@@ -2845,7 +2851,8 @@ The goal, though, is not to win the discussion but to reach the better decision 
   <td valign="top">
     <ul>
       <li>Spotting a problem is the easy half. A bare “this is broken” annoys people even if you’re right.</li>
-      <li>This becomes even more important with seniority. At some point you have to become a person with solutions, not just problems.</li>
+      <li>This becomes even more important with seniority. At a certain point you are expected to be a person with
+        solutions, not just problems.</li>
     </ul>
   </td>
   <td valign="top">
@@ -2865,15 +2872,17 @@ Here is the same disagreement raised in two ways.
 vs.
 
 > I'd hold off on multi-region for now. My main worry: it roughly doubles our ops surface while we're a three-person
-> team, and nothing in the current SLAs requires it — happy to be shown otherwise. Could we revisit once the
-> enterprise deal lands? If we decide to go now anyway, I'm ok with that — I'd just like the trade-off written down.
+> team, and nothing in the current SLAs requires it, unless I'm missing something. Could we revisit once the
+> enterprise deal lands? If we decide to go now anyway, I'm ok with that — but let's accept the trade-off
+> explicitly.
 
 The second states the view, the confidence and the reasoning, leaves room to be wrong, offers a way forward — and
 disagrees while committing.
 
 #### Saying no
 
-Sometimes you will have to push back not against an idea or opinion but against a request directed at you, like an unrealistic deadline, scope creep, or a "quick favour".
+Sometimes you will have to push back not against an idea or proposal but against a request directed at you,
+like an unrealistic deadline, scope creep, or a "quick favour".
 
 ```{=html}
 <table>
@@ -2884,7 +2893,7 @@ Sometimes you will have to push back not against an idea or opinion but against 
 <tr>
   <td valign="top">
     <ul>
-      <li>A vague “maybe” or “I’ll try” feels polite but sets a false expectation and hurts later.</li>
+      <li>A vague “maybe” or “I’ll try” feels polite but sets a false expectation and sabotages planning.</li>
     </ul>
   </td>
   <td valign="top">
