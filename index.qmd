@@ -2982,7 +2982,7 @@ The first sounds nicer but helps no one (assuming you won't manage to squeeze it
 
 What do you do when you need to proceed but get blocked? Here we talk about situations where you need a decision or an agreement from someone else, but can't get it,
 either because of lack of response or disagreement. This assumes you already asked well; if not, fix that first (see [Asking](#asking)) — a lot of blockers are just a vague request.
-Here we focus on what to do when a good ask wasn't enough.
+But sometimes a good ask isn't enough.
 
 ```{=html}
 <table>
@@ -2994,12 +2994,13 @@ Here we focus on what to do when a good ask wasn't enough.
   <td valign="top">
     <ul>
       <li>A polite ask buried in a thread is easy to ignore, miss or forget about.</li>
-      <li>Escalating feels like snitching, nagging, or applying pressure, so it’s natural to sit on a blocker instead of doing something about it.</li>
+      <li>Escalating feels like (and ussually is) applying pressure, so it’s natural to sit on a blocker instead of doing something about it.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Escalating is just part of the job. Do it once enough time has passed (based on the urgency of the topic) — in the end you’re responsible for your results and doing nothing is failing that responsibility. Just do it carefully (see below).</li>
+      <li>Escalating is just part of the job. Do it once enough time has passed (based on the urgency of the topic) —
+      in the end you’re responsible for your results and doing nothing is failing that responsibility. Just do it carefully (see below).</li>
     </ul>
   </td>
 </tr>
@@ -3016,11 +3017,12 @@ Here we focus on what to do when a good ask wasn't enough.
           <li>a nudge: “Bumping this 🙂”</li>
           <li>a direct ask with a deadline: “Can you approve this by Thursday EOD? I’m blocked until then.”</li>
           <li>a default-decision: “Going with Postgres on Friday unless someone objects.”</li>
-          <li>looping in managers: cc your manager (or theirs) on the next message.</li>
+          <li>looping in managers: cc your manager (or theirs) on the next message, or mention it to them
+            privately.</li>
         </ul>
       </li>
       <li>Match the ladder to the urgency. For a genuine emergency (production down, data at risk) skip some steps
-        and escalate loudly right away.</li>
+        and escalate loudly and promptly.</li>
     </ul>
   </td>
 </tr>
@@ -3032,7 +3034,8 @@ Here we focus on what to do when a good ask wasn't enough.
   </td>
   <td valign="top">
     <ul>
-      <li>Add something with each follow-up, for example more explanation of impact, stakes at play or context around the request.</li>
+      <li>Add something with each follow-up, for example more explanation of the impact and urgency, the stakes at
+        play, or the context around the request.</li>
     </ul>
   </td>
 </tr>
@@ -3062,8 +3065,7 @@ Here we focus on what to do when a good ask wasn't enough.
   <td valign="top">
     <ul>
       <li>Use a default-decision: “I’ll do X on Friday unless someone objects.” Silence becomes a yes and you can
-        move. Use it only for calls that are reasonably yours to make, and leave people real time to object —
-        otherwise it might be seen as overstepping.</li>
+        move. Use it only for calls that are reasonably yours to make and that you’re willing to own.</li>
       <li>Or point at a decision-maker: instead of leaving it to the group, name who you think should call it, e.g. “@Alice, I think this is your call — can you decide by Friday?”.</li>
     </ul>
   </td>
@@ -3113,7 +3115,9 @@ Here we focus on what to do when a good ask wasn't enough.
   </td>
   <td valign="top">
     <ul>
-      <li>Talk to your own manager first, and try to show a pattern (a single situation is usually not worth the discussion). It’s better not to try to solve it yourself, unless you really know what you’re doing (but then, why are you reading this book?).</li>
+      <li>Talk to your own manager first, and try to show a pattern (a single situation is usually not worth the
+        discussion). Better not to solve it yourself, unless you really know what you’re doing (but then, why are
+        you reading this book?).</li>
     </ul>
   </td>
 </tr>
