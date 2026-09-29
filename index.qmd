@@ -3528,7 +3528,7 @@ Everything so far has been about the work you do, the tasks you complete. This p
 
 ### Working with your manager
 
-Conversations with your manager will likely be the ones with the most impact on your career, and hence your life in general. Improving them even slightly might yield a lot.
+Conversations with your manager are the ones with the most impact on your career, and hence your life in general. Improving them even slightly can pay off for years.
 
 ```{=html}
 <table>
@@ -3545,21 +3545,36 @@ Conversations with your manager will likely be the ones with the most impact on 
   </td>
   <td valign="top">
     <ul>
-      <li>Bring your own topics: blockers, growth, frustrations, highs, lows, and anything else you want to share. Collect topics as you go. Figuring them out on the spot is much trickier.</li>
+      <li>Bring your own topics: blockers, growth, frustrations, highs, lows, and anything else you want to share.</li>
+      <li>Collect topics as you go. Figuring them out on the spot rarely works.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Your manager can only help with what they know, yet some developers hide problems from them — even knowing
-        that unblocking you is literally their job.</li>
+      <li>Your manager can only help with what they know, yet some developers hide problems from them — even though unblocking you is literally their job.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>Make sure they know. Surface problems early (see <a href="#delivering-bad-news">delivering bad news</a>).</li>
       <li>Use them. Ask for context, backing, pointers, decisions and anything else that helps you do your job better.</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <ul>
+      <li>Your manager is judged on their team, so your work and your behaviour affect them too — a mess of yours
+        becomes a conversation they have to have upwards, and a win of yours is one they get to report.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Making your manager look good isn’t politics, it’s the cheapest way to buy the backing and good will
+        you’ll want later.</li>
+      <li>Making them look bad burns all of that.</li>
     </ul>
   </td>
 </tr>
