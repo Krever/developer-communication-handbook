@@ -3152,13 +3152,13 @@ You can't change the past but you can change how you deliver it.
 <tr>
   <td valign="top">
     <ul>
-      <li>Bad news only gets worse with time.</li>
+      <li>Bad news ages like milk.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>Share it immediately, even if the situation is still unfolding and you don’t have the full picture yet.</li>
-      <li>If you’re uncertain about the shape or impact, say so — it can even reduce the panic.</li>
+      <li>If you’re uncertain about the shape or impact, say so — it can reduce the panic.</li>
     </ul>
   </td>
 </tr>
@@ -3170,7 +3170,8 @@ You can't change the past but you can change how you deliver it.
   </td>
   <td valign="top">
     <ul>
-      <li>If you’re handling the problem, keep the audience updated. Share when they can expect the next update, e.g. “I should know more by the end of the day” or “I will let you know once I finish investigating” (and then actually do let them know).</li>
+      <li>If you’re handling the problem, keep the audience updated. Share when they can expect the next update, e.g.
+      “I should know more by the end of the day” or “I will let you know once I finish investigating” (and then actually do let them know).</li>
     </ul>
   </td>
 </tr>
@@ -3183,14 +3184,16 @@ You can't change the past but you can change how you deliver it.
   <td valign="top">
     <ul>
       <li>Start with the news, then add the details: “we’ll miss the deadline”, and only then the why.</li>
-      <li>Be honest about the severity; don’t soften it into something it isn’t. If you downplay the news, the reaction from the audience might become inappropriate (e.g. not urgent enough).</li>
+      <li>Be honest about the severity and don’t soften it into something it isn’t. Downplay the news and people
+        will react to the version you gave them, not to the one you actually have.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Over-apologising makes it about your feelings and doesn’t improve the situation.</li>
+      <li>Over-apologising makes it about your feelings and doesn’t improve the situation. At work, people care
+        about the damage first and the feelings second.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3265,8 +3268,7 @@ Which one brings more clarity?
 
 An incident is a special kind of bad news — one that is unfolding live, requires immediate remediation,
 and usually comes with high stakes (a system, or part of it, being down; revenue or reputation being lost).
-The communication around it is as important as the remediation itself,
-and sometimes more.
+The communication around it is as important as the remediation itself, and sometimes more.
 
 ```{=html}
 <table>
@@ -3302,7 +3304,8 @@ and sometimes more.
 <tr>
   <td valign="top">
     <ul>
-      <li>Silence during an incident creates immediate chaos — people assume nobody’s on it and start pinging around.</li>
+      <li>Silence during an incident creates immediate chaos — people assume nobody’s on it and start pinging
+        around.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3356,7 +3359,8 @@ and sometimes more.
   </td>
   <td valign="top">
     <ul>
-      <li>Be very explicit about how confident you are in a given statement.</li>
+      <li>Be explicit about how confident you are in each statement: “confirmed”, “likely” and “just a guess” lead
+        to very different next steps.</li>
     </ul>
   </td>
 </tr>
@@ -3391,7 +3395,8 @@ and sometimes more.
 <tr>
   <td valign="top">
     <ul>
-      <li>People stay on edge until they’re told it’s actually over. They don’t go and periodically verify if the problem is still live.</li>
+      <li>People stay on edge until they’re told it’s actually over. Nobody goes back to check whether the problem
+        is still live.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3412,7 +3417,8 @@ vs.
 
 > **Status 14:30** — card payments failing for ~20% of users, EU only. Root cause not confirmed; rolling back the 13:50 deploy now as the most likely fix. Next update at 15:00 or sooner.
 
-The second separates facts from guesses, states the impact, and tells everyone when to expect more.
+The first tells you something is broken and nothing else you can act on. The second separates facts from guesses,
+states the impact and says when the next update lands.
 
 #### Postmortems
 
