@@ -3445,7 +3445,8 @@ A postmortem is a way for the organisation to learn from the incident and not re
 <tr>
   <td valign="top">
     <ul>
-      <li>The people in the room already learned most of the lesson, but there are plenty of people who were not there.</li>
+      <li>The people in the room already learned most of the lesson, but most of the organisation wasn’t in the
+        room.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3458,7 +3459,7 @@ A postmortem is a way for the organisation to learn from the incident and not re
   <td valign="top">
     <ul>
       <li>Most postmortems need follow-ups (e.g. a systemic way to avoid the same problem in the future).</li>
-      <li>Action items without an owner have very little chance of getting done.</li>
+      <li>Action items without an owner don’t get done.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3470,8 +3471,9 @@ A postmortem is a way for the organisation to learn from the incident and not re
 <tr>
   <td valign="top">
     <ul>
-      <li>A postmortem nobody reads is wasted effort — the point is that others read and learn from it.</li>
-      <li>The bad thing already happened; sharing it doesn’t make it worse, but it can make the future much better.</li>
+      <li>A postmortem nobody reads is wasted effort.</li>
+      <li>The bad thing already happened, so sharing it costs you nothing and might save someone else the same
+        outage.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3483,7 +3485,7 @@ A postmortem is a way for the organisation to learn from the incident and not re
 <tr>
   <td valign="top">
     <ul>
-      <li>Not every incident is the same, and a postmortem is itself a cost.</li>
+      <li>Not every incident is the same, and a postmortem is itself a cost in time and energy.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3507,6 +3509,18 @@ A postmortem is a way for the organisation to learn from the incident and not re
 </tbody>
 </table>
 ```
+
+A real postmortem wouldn't fit here, so here is just the one line that decides whether the rest of it is worth writing.
+
+> Marek deployed without running the migration check, which took payments down.
+
+vs.
+
+> The deploy pipeline let a schema change reach production before its migration ran. Nothing in the tooling flagged
+> it, and the on-call had no way to see the mismatch.
+
+The first is a name and a verdict, and it teaches the reader nothing except to be more careful than Marek. The second
+describes a system that allowed the failure, which is the only version anyone can fix.
 
 ## Career and people
 
