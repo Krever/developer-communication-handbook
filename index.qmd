@@ -3911,8 +3911,8 @@ When you have to evaluate your colleagues and help their manager.
   </td>
   <td valign="top">
     <ul>
-      <li>Don’t sugarcoat it or spend time softening it. Be blunt about the substance (but not rude in tone) — it
-        saves your time writing and the manager’s time reading.</li>
+      <li>Don’t sugarcoat it. Be blunt about the substance (but not rude in tone) — it saves your time writing and
+        the manager’s time reading.</li>
     </ul>
   </td>
 </tr>
@@ -3920,7 +3920,8 @@ When you have to evaluate your colleagues and help their manager.
   <td valign="top">
     <ul>
       <li>The manager has to relay your feedback, and vague input becomes something like “someone said X, but I don’t really know what they meant”.</li>
-      <li>In theory they should come back to you for details, but it’s not always the case. And when they do, it’s work you could have saved.</li>
+      <li>In theory they should come back to you for details, but they probably won’t. And if they do, it’s work
+        you could have saved them anyway.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3944,7 +3945,7 @@ When you have to evaluate your colleagues and help their manager.
 <tr>
   <td valign="top">
     <ul>
-      <li>“Anonymous” feedback often isn’t as anonymous as you might think — content, phrasing and perspective can give you away. If only the two of you touched feature X and the feedback is about feature X, it’s kind of obvious, isn’t it?</li>
+      <li>“Anonymous” feedback often isn’t as anonymous as you might think — content, phrasing and perspective can give you away. If only the two of you touched feature X and the feedback is about that, it becomes fairly obvious, doesn’t it?</li>
     </ul>
   </td>
   <td valign="top">
@@ -3961,7 +3962,7 @@ When you have to evaluate your colleagues and help their manager.
   </td>
   <td valign="top">
     <ul>
-      <li>Aim to be accurate; describe what you observed. Write only what you genuinely believe, not what you think you’re supposed to write. Integrity beats everything else.</li>
+      <li>Aim to be accurate. Describe what you observed. Write only what you genuinely believe, not what you think you’re supposed to write. Integrity beats everything else.</li>
     </ul>
   </td>
 </tr>
@@ -3974,7 +3975,7 @@ When you have to evaluate your colleagues and help their manager.
   </td>
   <td valign="top">
     <ul>
-      <li>Call out what they’re genuinely great at, with the same specificity as the criticism.</li>
+      <li>Call out what they’re great at, with the same specificity as the criticism.</li>
     </ul>
   </td>
 </tr>
