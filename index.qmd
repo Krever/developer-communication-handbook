@@ -4127,7 +4127,7 @@ Job hunting is almost pure communication again, with a small twist — the thing
 
 #### Search
 
-The first step to landing a new job is to find interesting ones and get invited to interview. This is what we will discuss here.
+The first step to landing a new job is to find interesting ones and get invited to interviews. This is what we will discuss here.
 
 ```{=html}
 <table>
@@ -4143,7 +4143,7 @@ The first step to landing a new job is to find interesting ones and get invited 
   </td>
   <td valign="top">
     <ul>
-      <li>Stay in touch with people you’ve worked with or at least build relationships when working together. Reach out when you need a new job.</li>
+      <li>Build relationships when working together and stay in touch once you stop. Reach out when you need a new job.</li>
     </ul>
   </td>
 </tr>
@@ -4156,7 +4156,7 @@ The first step to landing a new job is to find interesting ones and get invited 
   <td valign="top">
     <ul>
       <li>Do something and make it visible. The more and better things you do, the better the results.</li>
-      <li>Understand the game: the payoff from public activity is slow and uncertain. Play the long game consciously.</li>
+      <li>Understand the game: the payoff from public activity is slow and uncertain. Play the long game consciously and don’t expect quick returns.</li>
     </ul>
   </td>
 </tr>
@@ -4164,6 +4164,7 @@ The first step to landing a new job is to find interesting ones and get invited 
   <td valign="top">
     <ul>
       <li>The world is a small place. Recruiters might remember how you treated them.</li>
+      <li><a href="https://www.psychologytoday.com/us/blog/the-red-light-district/202006/5-research-findings-concerning-karma">Karma is a thing</a>.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4177,7 +4178,8 @@ The first step to landing a new job is to find interesting ones and get invited 
     <ul>
       <li>Your CV gets a few seconds of attention before it’s binned or kept (unless you come in as a referral).</li>
       <li>Before any human sees it, a cold application often passes through an automated keyword filter.</li>
-      <li>Your CV is a signal medium through which you communicate with the recruiter — there are different messages you might want to transfer over it:
+      <li>Your CV is the channel through which you communicate with the recruiter, and there are different messages
+        you might want to send:
         <ul>
           <li>deep technical expertise — familiarity with a particular tech or stack</li>
           <li>broad technical expertise — familiarity with many different stacks</li>
@@ -4189,7 +4191,8 @@ The first step to landing a new job is to find interesting ones and get invited 
   </td>
   <td valign="top">
     <ul>
-      <li>Decide which signal you want to send and make the CV carry it clearly. It has to get through in those few seconds your CV gets.</li>
+      <li>Decide which signal you want to send and make the CV carry it clearly. It has to land in the few seconds
+        the CV gets.</li>
       <li>Mirror the concrete technologies from the job post (where true), so the CV survives the machine pass too.</li>
     </ul>
   </td>
