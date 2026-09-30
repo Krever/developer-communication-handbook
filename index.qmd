@@ -3673,13 +3673,14 @@ and the way they work; feedback on code lives in [Providing a PR review](#provid
 <tr>
   <td valign="top">
     <ul>
-      <li>Vague feedback has very limited use. “Good job” or “be more proactive” carries only the sentiment and is almost impossible to act on.</li>
+      <li>Vague feedback is nearly useless. “Good job” or “be more proactive” carries only the sentiment and is
+        almost impossible to act on.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>Point at the specific thing and its effect. SBI (<a href="https://untools.co/situation-behavior-impact/">Situation–Behaviour–Impact</a>) is a decent template: “in yesterday’s standup (S) you cut Ana off twice (B), and she went quiet for the rest of it (I)”.</li>
-      <li>This works for praise too — “your migration plan caught the rollback case” lands much better and deeper than “good job”.</li>
+      <li>This works for praise too — “your migration plan caught the rollback case” lands better than “good job”.</li>
     </ul>
   </td>
 </tr>
@@ -3752,10 +3753,28 @@ and the way they work; feedback on code lives in [Providing a PR review](#provid
 </table>
 ```
 
+Here is the same feedback given in two ways.
+
+> You need to stop being so reckless with merges.
+
+vs.
+
+> Do you have a minute for some feedback on pull requests? The auth change on Tuesday went in about ten minutes
+> after you opened it, and the question I’d left on token expiry is now live in production. I might be missing
+> context on the urgency — was there a reason to ship it fast?
+
+The first is a verdict on the person, and the only thing they can do with it is feel bad. The second asks permission,
+names one situation, one behaviour and what it cost, and leaves the door open for the reason you don’t know about.
+
+That said, some people will take the first one over the second any day — they read the careful version as padding and
+would rather you just said the thing. If you know that about someone, give them the blunt one. You still need the
+Tuesday and the token expiry somewhere in it, though: the brevity is negotiable but the specifics are not.
+
 ### Performance reviews
 
-Let's now talk about evaluating how well you or your colleagues did over a specific period (usually a year or half of it) in a formal process.
-This is a form of [giving and receiving feedback](#giving-and-receiving-feedback), but with quite a few nuances.
+Let's now talk about that time of the year when you and your colleagues get formally evaluated on how well you did
+over the last year (or half of it).
+This is a form of [giving and receiving feedback](#giving-and-receiving-feedback), but with a few nuances sprinkled on top.
 
 #### Your own
 
@@ -3788,7 +3807,8 @@ When you have to evaluate yourself and receive an evaluation from your manager.
   </td>
   <td valign="top">
     <ul>
-      <li>Keep a running log for yourself where you note anything worth noting (achievements, deliverables, learning and so on).</li>
+      <li>Keep a running log for yourself, recording anything worth remembering (achievements, deliverables,
+        learning and so on).</li>
     </ul>
   </td>
 </tr>
@@ -3807,12 +3827,12 @@ When you have to evaluate yourself and receive an evaluation from your manager.
 <tr>
   <td valign="top">
     <ul>
-      <li>Self-awareness is an important skill and it’s also about knowing your weak points.</li>
+      <li>Self-awareness is a skill in itself, and part of it is knowing your weak points.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Be ready to name something you don’t excel at.</li>
+      <li>Be ready to name something you don’t excel at. Seriously, build a list if you have to.</li>
     </ul>
   </td>
 </tr>
@@ -3825,7 +3845,7 @@ When you have to evaluate yourself and receive an evaluation from your manager.
   </td>
   <td valign="top">
     <ul>
-      <li>Frame your review as a trajectory — bigger scope, new responsibilities, new skills and competencies and so on.</li>
+      <li>Frame your review as a trajectory: bigger scope, new responsibilities, skills you didn’t have the last time.</li>
     </ul>
   </td>
 </tr>
@@ -3838,7 +3858,7 @@ When you have to evaluate yourself and receive an evaluation from your manager.
   </td>
   <td valign="top">
     <ul>
-      <li>Don’t take a “meets” too hard on yourself. Judge it against the level you’re at.</li>
+      <li>Don’t take a “meets” too hard. Judge it against the level you’re at.</li>
       <li>If you’re aiming to exceed, ask your manager what that would mean in practice.</li>
     </ul>
   </td>
