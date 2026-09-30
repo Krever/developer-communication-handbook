@@ -3995,8 +3995,8 @@ The manager can't do anything with the first. The second names the pattern, the 
 
 ### Mentoring
 
-At some point your job will be not only about you and the tasks but also about the people around you. And one aspect of that is helping them learn through mentoring sessions.
-And this activity is made almost entirely out of communication.
+At some point your job will be not only about you and the tasks but also about the people around you. And one aspect of that is helping them learn, sometimes through mentoring sessions.
+And this activity is almost pure communication.
 
 ```{=html}
 <table>
@@ -4019,7 +4019,7 @@ And this activity is made almost entirely out of communication.
 <tr>
   <td valign="top">
     <ul>
-      <li>Mentoring and coaching often get mixed up. Coaching is about drawing the answer out of someone without giving it (basically just asking questions). Developers are not expected to do that usually.</li>
+      <li>Mentoring and coaching often get mixed up. Coaching is about drawing the answer out of someone without giving it (basically just asking questions). Developers usually aren’t expected to do that.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4043,14 +4043,14 @@ And this activity is made almost entirely out of communication.
 <tr>
   <td valign="top">
     <ul>
-      <li>Most things don’t have a clear answer, and everything is a tradeoff of some sort.</li>
+      <li>Most things don’t have a clear answer, and everything is a trade-off of some sort.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>Instead of telling them what to do (or what you would do in their place), explain your reasoning process and the options you weigh. (You will need that skill in design interviews anyway.)</li>
       <li>When there’s time, let them attempt the problem first and then compare notes — a solution they half-built
-        teaches more than one they watched. You should still share your full reasoning at the end (so you don’t go into coaching too much).</li>
+        teaches more than one they watched. You should still share your full reasoning at the end (so you don’t drift into coaching).</li>
     </ul>
   </td>
 </tr>
@@ -4062,14 +4062,15 @@ And this activity is made almost entirely out of communication.
   </td>
   <td valign="top">
     <ul>
-      <li>Make it safe to ask any question. Treat a basic question as normal, and admit your own gaps when possible. Never make judgements about their level or competency.</li>
+      <li>Make it safe to ask any question. Treat a basic question as normal, and admit your own gaps when possible. Never make judgements about their level or competence.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>A mentee will make communication mistakes too, like talking too much or burying the point. Most devs spend very little focus and energy on things like this.</li>
+      <li>A mentee will make communication mistakes too, like talking too much or burying the point. Most devs put
+        very little thought into things like this.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4098,13 +4099,27 @@ And this activity is made almost entirely out of communication.
   </td>
   <td valign="top">
     <ul>
-      <li>Make it a recurring standing slot in the calendar so it takes no decision to attend and a bit of effort to cancel.</li>
+      <li>Make it a standing slot in the calendar, so attending takes no decision and cancelling takes a bit of
+        effort.</li>
     </ul>
   </td>
 </tr>
 </tbody>
 </table>
 ```
+
+Here is the same answer to “should this call go through a queue?” in two ways.
+
+> Yes, use a queue. That's what we do everywhere.
+
+vs.
+
+> What's pushing you towards one? I'd be weighing two things: whether the caller can wait for the result, and what
+> should happen if the provider is down for an hour. Have a think and tell me where you land — then I'll tell you
+> what I'd pick and why.
+
+The first hands over an answer that works exactly once. The second shows the two questions that produced it, which is
+the part that transfers, and it still promises the actual answer at the end so the session doesn't turn into coaching.
 
 ### Changing jobs
 
