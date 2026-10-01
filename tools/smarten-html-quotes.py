@@ -18,8 +18,8 @@ OPAQUE = re.compile(r"<code>.*?</code>|<[^>]*>|&[a-zA-Z#0-9]+;", re.S)
 
 
 def curl(text: str) -> str:
-    # possessives and contractions: letter ' letter, or letter ' at a word end
-    text = re.sub(r"(?<=[A-Za-z])'(?=[A-Za-z])", "’", text)
+    # possessives and contractions, after a letter or a digit (patio11's)
+    text = re.sub(r"(?<=[A-Za-z0-9])'(?=[A-Za-z])", "’", text)
     text = re.sub(r"(?<=[A-Za-z])'(?![A-Za-z])", "’", text)
     # paired double quotes, left to right
     out, open_q = [], True

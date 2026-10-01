@@ -4252,7 +4252,7 @@ Once you get invited to an interview, you start speaking to humans (hopefully). 
 <tr>
   <td valign="top">
     <ul>
-      <li>In a technical interview they want to see how you think, not just the final answer.</li>
+      <li>In a technical interview they want to see how you think. The final answer is secondary.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4269,7 +4269,7 @@ Once you get invited to an interview, you start speaking to humans (hopefully). 
   </td>
   <td valign="top">
     <ul>
-      <li>Speak with confidence whatever you feel inside — leave the imposter syndrome at the door and talk like someone who knows their job. Don’t bluff though: admit what you don’t know, and own a mistake the moment you spot it.</li>
+      <li>Speak with confidence, whatever you feel inside — leave the imposter syndrome at the door and talk like someone who knows their craft. Don’t bluff though: admit what you don’t know, and own a mistake the moment you spot it.</li>
     </ul>
   </td>
 </tr>
@@ -4281,7 +4281,7 @@ Once you get invited to an interview, you start speaking to humans (hopefully). 
   </td>
   <td valign="top">
     <ul>
-      <li>Tell <em>short</em> stories: the situation, what you did, and how it turned out. Absolute minimum of details to get your point across.</li>
+      <li>Tell <em>short</em> stories: the situation, what you did, and how it turned out. The absolute minimum of detail needed to get your point across.</li>
     </ul>
   </td>
 </tr>
@@ -4300,7 +4300,7 @@ Once you get invited to an interview, you start speaking to humans (hopefully). 
 <tr>
   <td valign="top">
     <ul>
-      <li>Software is a team sport and companies hire for it. Someone who claims they did everything alone is a red flag, regardless of their achievements.</li>
+      <li>Software is a team sport and companies hire for it. Someone who claims they did everything alone is a red flag, even when it’s true.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4314,7 +4314,7 @@ Once you get invited to an interview, you start speaking to humans (hopefully). 
 <tr>
   <td valign="top">
     <ul>
-      <li>The questions you ask are sometimes as important as your answers, and are being evaluated too.</li>
+      <li>The questions you ask are often as important as your answers, and are being evaluated too.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4332,7 +4332,7 @@ Once you get invited to an interview, you start speaking to humans (hopefully). 
   <td valign="top">
     <ul>
       <li>Keep it forward-looking: talk about what you’re moving toward.</li>
-      <li>Frame it as a tradeoff and show some understanding of the other side. Not “management is dumb” but “they optimise for things I don’t agree with”.</li>
+      <li>Frame it as a trade-off and show some understanding of the other side. Not “management is dumb” but “they optimise for things I don’t agree with”.</li>
     </ul>
   </td>
 </tr>
@@ -4373,7 +4373,8 @@ You went through the interviews and got some kind of result (good or bad). What 
   </td>
   <td valign="top">
     <ul>
-      <li>Treat it as a conversation, not a fight. It’s fine to ask for time instead of answering on the spot, and to let them put a number down first. For the actual tactics, read dedicated materials like <a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/">patio11's guide</a> — it’s a good one.</li>
+      <li>Treat it as a conversation, not a fight. It’s fine to ask for time instead of answering on the spot, and to let them put a number down first.
+      For the actual tactics, read dedicated materials like <a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/">patio11’s guide</a> — it’s a good one.</li>
     </ul>
   </td>
 </tr>
@@ -4385,7 +4386,7 @@ You went through the interviews and got some kind of result (good or bad). What 
   </td>
   <td valign="top">
     <ul>
-      <li>Tell them directly and early. Try to keep as good a relationship as possible and don’t burn bridges.</li>
+      <li>Tell them directly and early, and keep the relationship intact — you will meet these people again.</li>
     </ul>
   </td>
 </tr>
@@ -4409,7 +4410,7 @@ You went through the interviews and got some kind of result (good or bad). What 
   </td>
   <td valign="top">
     <ul>
-      <li>Hand over cleanly: document what’s in your head, wrap up or transfer what you can. Don’t leave a slammed door behind you.</li>
+      <li>Hand over cleanly: document what’s in your head, wrap up or transfer what you can.</li>
     </ul>
   </td>
 </tr>
@@ -4431,7 +4432,7 @@ You went through the interviews and got some kind of result (good or bad). What 
 
 #### Onboarding
 
-You got the job, but there are still a few things to play well.
+You got the job, but there are still a few things worth getting right.
 
 ```{=html}
 <table>
@@ -4443,7 +4444,7 @@ You got the job, but there are still a few things to play well.
   <td valign="top">
     <ul>
       <li>You’re the only one who can still see what’s confusing, undocumented or weird. In a month you’ll get used to it and become blind like everyone else.</li>
-      <li>The code, patterns, practices are usually “wrong” for a reason.</li>
+      <li>The code, patterns and practices are usually “wrong” for a reason.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4468,7 +4469,7 @@ You got the job, but there are still a few things to play well.
 <tr>
   <td valign="top">
     <ul>
-      <li>Nobody can yet tell your silence apart from being stuck. A new joiner who goes quiet looks like struggling.</li>
+      <li>Nobody knows your working rhythm yet, so a new joiner who goes quiet just looks stuck.</li>
     </ul>
   </td>
   <td valign="top">
