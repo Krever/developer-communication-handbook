@@ -4485,7 +4485,7 @@ You got the job, but there are still a few things worth getting right.
 
 ### Interviewing candidates
 
-Sooner or later you'll be on the other side of the table, interviewing candidates yourself — quite likely with no training, or very little of it. The golden rule here is "treat others like you would like to be treated yourself".
+Sooner or later you'll be on the other side of the table, interviewing candidates yourself — quite likely with no training, or very little of it. The golden rule here is "treat others as you would like to be treated".
 
 ```{=html}
 <table>
@@ -4508,7 +4508,9 @@ Sooner or later you'll be on the other side of the table, interviewing candidate
 <tr>
   <td valign="top">
     <ul>
-      <li>A nervous candidate performs worse, and then you get a worse read on them. Your task is to evaluate how they will do on the job, so the stress level should be similar. Unless you work in a really harsh environment, the interview is not fully representative by definition.</li>
+      <li>A nervous candidate performs worse, which gives you a worse read on them. You are trying to predict how
+        they will do on the job, so the stress level should match the job’s. Unless you work somewhere genuinely
+        harsh, it never does — an interview isn’t representative, by definition.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4525,7 +4527,7 @@ Sooner or later you'll be on the other side of the table, interviewing candidate
   </td>
   <td valign="top">
     <ul>
-      <li>It’s fine, but comfort them if they don’t know the answer. Make sure your question has a purpose and is not about you showing off or trying to sink the candidate.</li>
+      <li>It’s fine, but reassure them when they don’t know the answer. Make sure your question has a purpose and is not about you showing off or trying to sink the candidate.</li>
     </ul>
   </td>
 </tr>
@@ -4544,7 +4546,9 @@ Sooner or later you'll be on the other side of the table, interviewing candidate
 <tr>
   <td valign="top">
     <ul>
-      <li>There is a chance you will form a verdict in the first couple of minutes, then spend the rest of the interview gathering evidence for it.</li>
+      <li>You will probably form a verdict in the first couple of minutes, then spend the rest of the interview
+        gathering evidence for it (<a href="https://en.wikipedia.org/wiki/Confirmation_bias">confirmation
+        bias</a>).</li>
     </ul>
   </td>
   <td valign="top">
@@ -4580,19 +4584,34 @@ Sooner or later you'll be on the other side of the table, interviewing candidate
 <tr>
   <td valign="top">
     <ul>
-      <li>Letting the person ask their own questions is comforting and good for the candidate.</li>
-      <li>You can get quite a lot of signal from questions they ask if you look for it.</li>
+      <li>Letting the candidate ask their own questions settles their nerves.</li>
+      <li>Their questions carry a lot of signal, if you listen for it.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Reserve significant time for their questions.</li>
+      <li>Reserve real time for their questions, not the last two minutes.</li>
     </ul>
   </td>
 </tr>
 </tbody>
 </table>
 ```
+
+Here is the same first thirty seconds of an interview in two ways.
+
+> Right, let's get started. So, tell me about yourself.
+
+vs.
+
+> Hi, good to meet you. I'm Voytek, I work on the payments team — so I'll be the one you'd be sitting next to. We
+> have an hour: 10 minutes on something you've built, 25 on a problem we'll work through together, 10 for me to tell
+> you about the team, and the last 15 are yours for questions. I'd rather we run out of time there than anywhere
+> else. Think out loud, ask me anything as we go, and if you get stuck I'll help — I'm not here to catch you out.
+
+The first costs nothing and buys nothing. The second spends half a minute to make the rest of the hour worth more:
+the candidate knows who you are, what is coming, that thinking aloud is allowed, and that being stuck isn't fatal.
+All of which makes them less nervous, and that means more signal for you.
 
 ### Presenting
 
