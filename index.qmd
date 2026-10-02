@@ -4615,8 +4615,8 @@ All of which makes them less nervous, and that means more signal for you.
 
 ### Presenting
 
-At some point in your career you will be forced to present something. It can be a new feature, a new idea, a knowledge sharing session or anything in between.
-This section is targeted toward people who got dragged into it without any prior interest in the craft.
+At some point in your career you will be forced to present something, whether you want to or not. It can be a new feature, a new idea, a knowledge sharing session or anything in between.
+This section is aimed at people who got dragged into it without any prior interest in the craft.
 You won't become a keynote speaker from one handbook section, but that's not the goal.
 The goal is to help you survive — and maybe even like — the internal talk you got handed. If you want to go deeper, you will find whole books on the topic in the [resources](#appendix-resources).
 
@@ -4629,12 +4629,13 @@ The goal is to help you survive — and maybe even like — the internal talk yo
 <tr>
   <td valign="top">
     <ul>
-      <li>An internal audience is your colleagues, they want you to do well, and they notice far less of your mistakes than you feel.</li>
+      <li>An internal audience is your colleagues. They want you to do well, and they notice far fewer of your
+        mistakes than it feels like.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
-      <li>Walk in assuming goodwill. Don’t apologise for nerves or restart — keep going.</li>
+      <li>Walk in assuming goodwill. Don’t apologise for nerves or restart — just keep going.</li>
     </ul>
   </td>
 </tr>
@@ -4647,6 +4648,8 @@ The goal is to help you survive — and maybe even like — the internal talk yo
   <td valign="top">
     <ul>
       <li>Pick the one thing they should walk away with. Cut whatever doesn’t serve it. Less is more.</li>
+      <li>Seriously, I’d bet your presentation is either too long or has too many words on the slides. Cut it.</li>
+      <li>I mean it.</li>
     </ul>
   </td>
 </tr>
@@ -4659,6 +4662,8 @@ The goal is to help you survive — and maybe even like — the internal talk yo
   <td valign="top">
     <ul>
       <li>Find out who’s in the room and what they came for, then adjust to that (see <a href="#talking-to-non-developers">talking to non-developers</a> for inspiration).</li>
+      <li>If you’re not sure, aim for fewer details. For a developer, the risk of boring people to death with detail
+        is much higher than the risk of being too abstract.</li>
     </ul>
   </td>
 </tr>
@@ -4670,14 +4675,16 @@ The goal is to help you survive — and maybe even like — the internal talk yo
   </td>
   <td valign="top">
     <ul>
-      <li>Prepare instead of hoping the fear passes. Rehearsals help a lot.</li>
+      <li>Prepare instead of hoping the fear passes. Rehearse, rehearse, rehearse. And then rehearse a bit more.</li>
     </ul>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <ul>
-      <li>Slides read out word-for-word are worse than no slides; people read ahead and stop listening to you.</li>
+      <li>Slides read out word-for-word are worse than no slides, because people read ahead and stop listening to
+        you.</li>
+      <li>Some of the best talks you will ever see are done without slides at all.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4689,7 +4696,7 @@ The goal is to help you survive — and maybe even like — the internal talk yo
 <tr>
   <td valign="top">
     <ul>
-      <li>It’s a skill, trainable like any other. Most public speakers were subpar in the beginning.</li>
+      <li>Presenting is a skill, trainable like any other. Most public speakers were subpar in the beginning.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4702,13 +4709,13 @@ The goal is to help you survive — and maybe even like — the internal talk yo
   <td valign="top">
     <ul>
       <li>Live demos break on stage — network, environment, a flaky feature. For developers it’s one of the most
-        common presentation disasters, and also the most recoverable.</li>
+        common presentation disasters.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>Have a fallback ready (a recording, screenshots or a verbal explanation) and switch to it at the first
-        failure. Never debug live in front of the room for more than a minute.</li>
+        or second failure. Never debug live in front of the room for more than a minute.</li>
     </ul>
   </td>
 </tr>
@@ -5114,6 +5121,9 @@ roughly the order I'd reach for them, followed by deeper dives on single topics.
   (Chris Anderson) — for [Presenting](#presenting), from the man who runs TED.
 * [*Demystifying Public Speaking*](https://www.goodreads.com/book/show/32784222-demystifying-public-speaking) (Lara
   Hogan) — the alternative for nervous engineers: short, practical and gentle.
+* [How to Speak](https://www.youtube.com/watch?v=Unzc731iCUY) (Patrick Winston) — an hour of concrete heuristics
+  for talks and lectures, from an MIT tradition that ran for forty years. Watch it before your next
+  [presentation](#presenting).
 * [Diátaxis](https://diataxis.fr) — a framework for structuring documentation, the "what to write" side that
   [Documentation](#documentation) leaves out.
 * [Google's code review guidelines](https://google.github.io/eng-practices/review/) — battle-tested defaults for
