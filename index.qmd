@@ -4740,7 +4740,7 @@ The goal is to help you survive — and maybe even like — the internal talk yo
 ### Communicating in public
 
 Everything you say in the open leaves a permanent trail. The career upside of that trail is covered in
-[Search](#search); this section is about the ways it can backfire.
+[Search](#search), while this section is about the ways it can backfire.
 
 ```{=html}
 <table>
@@ -4752,11 +4752,15 @@ Everything you say in the open leaves a permanent trail. The career upside of th
   <td valign="top">
     <ul>
       <li>A PR comment, an issue, a Stack Overflow answer, a tweet — all of it is public, permanent, and tied to your name (even if you try to stay anonymous).</li>
+      <li>The medium also changes how you behave in it. With no face in front of you, the brakes come off — it’s called
+        <a href="https://en.wikipedia.org/wiki/Online_disinhibition_effect">online disinhibition effect</a>.</li>
     </ul>
   </td>
   <td valign="top">
     <ul>
       <li>Write it as if the person you’re talking about, and your next employer, will read it. They can. And will.</li>
+      <li>And even more importantly, communicate as you would in real life. If you wouldn’t say it to their face in
+        a meeting, don’t type it.</li>
     </ul>
   </td>
 </tr>
@@ -4768,7 +4772,8 @@ Everything you say in the open leaves a permanent trail. The career upside of th
   </td>
   <td valign="top">
     <ul>
-      <li>Don’t get pulled into that. People will be wrong on the internet, but you don’t have to correct them.</li>
+      <li>Don’t get pulled into that. People will be
+        <a href="https://xkcd.com/386/">wrong on the internet</a>, but you don’t have to correct them.</li>
     </ul>
   </td>
 </tr>
@@ -4780,7 +4785,7 @@ Everything you say in the open leaves a permanent trail. The career upside of th
   </td>
   <td valign="top">
     <ul>
-      <li>Do your best when interacting: search first, bring a reproduction, be gracious and understanding.</li>
+      <li>Do your best when interacting: search first, bring a reproduction, be gracious.</li>
     </ul>
   </td>
 </tr>
@@ -4799,6 +4804,33 @@ Everything you say in the open leaves a permanent trail. The career upside of th
 </tbody>
 </table>
 ```
+
+Here is the same bug reported to an open-source project in two ways.
+
+> **Still broken?!**
+>
+> This has been broken for months and nobody seems to care. Same thing as #412, which you closed without fixing.
+> Trace from our prod: `at com.acmebank.settlement.PayoutJob … host=prod-db-07.acme-internal.net
+> user=svc_settlement token=eyJhbGci…`
+>
+> Please fix ASAP, this is blocking our launch for Megacorp.
+
+vs.
+
+> **NPE in RetryPolicy when maxAttempts is 0 (4.2.1)**
+>
+> I couldn't find an open issue for this — #412 looks close but was about timeouts. Minimal reproduction in a gist:
+> [link]. Happens on 4.2.1 and 4.2.0 but not on 4.1.x, so possibly the change in #398.
+>
+> Happy to open a pull request if you tell me which approach you'd prefer. Thanks for maintaining this.
+
+The second is the one that gets fixed: it searched first, it brings a reproduction, and it offers the maintainer help
+rather than a deadline.
+
+But look again at what the first one costs its author. The snark is permanent and attached to
+their name. And in one casually pasted line they published their employer, an internal hostname, a service account
+and a token — plus the name of a client, and the fact that the client has a launch coming. Nobody at that company
+asked for any of that to be public, and nobody there will ever find out it is.
 
 ## Parting principles
 
