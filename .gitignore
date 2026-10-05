@@ -8,3 +8,7 @@
 /index.typ
 
 **/*.quarto_ipynb
+
+# Python bytecode from the tools/ scripts
+__pycache__/
+*.pyc

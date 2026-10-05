@@ -10,6 +10,9 @@
 //   3. The live GitHub star count in that panel.
 //   4. Cloudflare beacons for the things a static site otherwise can't see:
 //      downloads, support clicks, and how far people actually read.
+//   5. A "#" permalink on each Understand/Adjust row, so a reader can share one
+//      rule. The ids it links to are permanent and live in index.qmd — see
+//      tools/anchor-rows.py.
 (function () {
   // External links shown in the reader panel. Edit these URLs as needed.
   var GITHUB_URL = 'https://github.com/Krever/developer-communication-handbook';
@@ -348,9 +351,41 @@
     }, 1000);
   }
 
+  // A "#" in the right margin of every table row, revealed on hover. Clicking
+  // jumps to the row (CSS :target marks it) and copies the URL. It goes in the
+  // last cell because an <a> is not valid as a direct child of <tr>.
+  // Desktop only: theme.scss hides the glyph below 992px, so on a phone this
+  // would build hundreds of invisible nodes. Receiving a link still works
+  // everywhere — the highlight is pure CSS.
+  function injectRowLinks() {
+    if (!window.matchMedia('(min-width: 992px)').matches) return;
+    document.querySelectorAll('.content tbody tr[id]').forEach(function (row) {
+      var cell = row.cells[row.cells.length - 1];
+      if (!cell) return;
+      var a = document.createElement('a');
+      a.className = 'row-anchor';
+      a.href = '#' + row.id;
+      a.textContent = '#';
+      a.title = a.ariaLabel = 'Copy a link to this row';
+      a.addEventListener('click', function () {
+        // a.href resolves to the absolute URL already; the jump is the default.
+        if (!navigator.clipboard) return;
+        navigator.clipboard.writeText(a.href).then(function () {
+          a.classList.add('is-copied');
+          setTimeout(function () { a.classList.remove('is-copied'); }, 1000);
+        }, function () { /* clipboard refused; the jump still worked */ });
+      });
+      cell.appendChild(a);
+    });
+  }
+
   function init() {
     injectPanel(); injectSupportCard(); scrollspy();
     trackDownloads(); trackSupportClicks(); trackReading(); loadStars();
+    // Hover-only decoration, so it is deferred past first paint. Not
+    // requestIdleCallback: the trackers above keep this page busy enough that
+    // an idle callback never fires at all (measured).
+    setTimeout(injectRowLinks, 0);
   }
 
   if (document.readyState === 'loading') {

@@ -557,3 +557,68 @@ nav[role="doc-toc"] .nav-link.active {
 }
 .content tbody td:first-child li::marker { color: rgba($slate, 0.7); }
 .content tbody td:last-child li::marker  { color: rgba($accent, 0.7); }
+
+// ── Per-row permalinks ──────────────────────────────────────────────────────
+// Every row carries a permanent id (tools/anchor-rows.py) so a reader can share
+// a single rule rather than a whole section. The glyph is hung in the right
+// margin on hover by _includes/row-links.html; the row someone lands on stays
+// marked via :target. Receiving a link works everywhere; the glyph itself needs
+// margin room, so it is desktop-only.
+.content tbody tr { position: relative; }
+
+.row-anchor {
+  position: absolute;
+  right: -1.55rem;
+  top: 0.85rem;
+  width: 1.1rem;
+  text-align: center;
+  font-family: $font-family-sans-serif;
+  font-size: 0.85rem;
+  line-height: 1;
+  text-decoration: none !important;   // Quarto underlines content links
+  color: rgba($ink-soft, 0.4);
+  opacity: 0;
+  transition: opacity 0.12s ease, color 0.12s ease;
+
+  &:hover, &:focus { color: $accent; }
+
+  // confirmation after a click has put the URL on the clipboard
+  // Hangs leftward from the glyph so it never runs off the right edge.
+  &.is-copied::after {
+    content: "Copied!";
+    position: absolute;
+    right: 0;
+    bottom: 1.4em;
+    padding: 0.15em 0.45em;
+    border-radius: 3px;
+    background: $ink;
+    color: $paper;
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+}
+.content tbody tr:hover .row-anchor,
+.row-anchor:focus,
+.content tbody tr:target .row-anchor { opacity: 1; }
+
+@media (max-width: 991.98px) {
+  .row-anchor { display: none; }
+}
+
+// The row a shared link points at. Keeps the column hues and deepens them, so
+// the highlight reads as the same device rather than a new one, after a brief
+// flash that catches the eye on arrival.
+.content tbody tr:target td:first-child {
+  background: rgba($slate, 0.15);
+  box-shadow: inset 3px 0 0 $slate;
+}
+.content tbody tr:target td:last-child { background: rgba($accent, 0.15); }
+
+// One stop only: the flash settles into the :target colours above instead of
+// travelling to a different value and snapping back when the animation ends.
+.content tbody tr:target td { animation: row-landed 1.3s ease-out; }
+
+@keyframes row-landed {
+  from { background-color: rgba($accent, 0.38); }
+}

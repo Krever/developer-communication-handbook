@@ -1,6 +1,6 @@
 #!/bin/sh
-# Curl the quotes inside {=html} fences before they reach a commit, so straight
-# ' and " typed by hand don't render straight in the tables.
+# Keep index.qmd's {=html} tables tidy on the way into a commit: curl the quotes
+# typed straight by hand, and give any new table row its permanent link id.
 # Enabled with:  git config core.hooksPath tools/hooks
 # Disabled with: git config --unset core.hooksPath
 
@@ -11,6 +11,9 @@ staged=$(git diff --cached --name-only --diff-filter=ACM -- '*.qmd')
 cd "$repo" || exit 1
 # shellcheck disable=SC2086
 python3 tools/smarten-html-quotes.py $staged || exit 1
+# Give any newly added table row a permanent id, so it can be linked to.
+# shellcheck disable=SC2086
+python3 tools/anchor-rows.py $staged || exit 1
 
 for f in $staged; do
   git add -- "$f"
