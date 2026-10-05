@@ -3590,6 +3590,20 @@ Conversations with your manager are the ones with the most impact on your career
     </ul>
   </td>
 </tr>
+<tr id="working-with-your-manager-r7">
+  <td valign="top">
+    <ul>
+      <li>Your manager is a person with their own workload, their own boss and a limited amount of standing to
+        spend. They get overloaded, they get things wrong, and they lose some of the arguments they take up on
+        your behalf.</li>
+    </ul>
+  </td>
+  <td valign="top">
+    <ul>
+      <li>Be empathetic and understanding, and offer help where you can.</li>
+    </ul>
+  </td>
+</tr>
 <tr id="working-with-your-manager-r5">
   <td valign="top">
     <ul>
@@ -4834,9 +4848,9 @@ asked for any of that to be public, and nobody there will ever find out it is.
 
 ## Parting principles
 
-The whole book applies two moves — understand, then adjust — to different corners of a developer's job. One level
-below sits this list: the principles behind most of the advice here. Each folds out into a few (of many) places
-where the book leans on it.
+Throughout the book we have seen communication from two angles: the strategic (understand, then adjust) and the
+operational (all the advice). This section fills the level between them: principles more general than any single
+piece of advice, more concrete than the overall approach.
 
 ### Shaping the message
 
@@ -4844,13 +4858,13 @@ where the book leans on it.
   the point, brevity and scannable structure are all required to deliver the message.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
-  - [Writing](#writing): a wall of text gets postponed for “later” — TL;DR at the top, the ask in the first line, essence in bold, so a reader who stops after the notification preview still knows what you want.
+  - [Writing](#writing): a wall of text gets postponed or ignored — TL;DR at the top, the ask in the first line, essence in bold, so a reader who stops after the notification preview still knows what you want.
   - [Providing estimates](#providing-estimates): lead with the number (“3 weeks, 5 if the provider surprises us”) and keep the caveats for later — a wall of qualifications up front gets skipped.
   - [Delivering bad news](#delivering-bad-news): start with the news itself — “we'll miss the deadline” — and only then the why.
   - [Technical design](#technical-design): the longer the doc, the less likely a thorough review — keep it short, goal, decision and consequences first.
   - [Documentation](#documentation): nobody reads docs start to finish — build them from headings and snippets a reader can jump to.
   - [Search](#search): your CV gets a few seconds before it's binned or kept — pick clear signals and make them land within those seconds.
-  - [Presenting](#presenting): most talks try to say too much and the audience leaves remembering nothing — pick the one thing they should walk away with and emphasize it.
+  - [Presenting](#presenting): most talks try to say too much — pick the one thing they should walk away with and emphasize it.
   :::
 
 - **Concrete beats abstract** — examples, names, numbers, quoted phrases; vague phrasing can't be acted on and won't be
@@ -4868,7 +4882,7 @@ where the book leans on it.
   confidence, intent: say them out loud.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
-  - [Providing estimates](#providing-estimates): confirm whether they want an estimate or a commitment, and whether the number is work-time or calendar time — ten days of work can easily be a month on the calendar.
+  - [Providing estimates](#providing-estimates): confirm whether they want an estimate or a commitment, and whether the number is work-time or calendar time.
   - [Incident coordination](#incident-coordination): separate guesses from facts out loud — “root cause not confirmed; rolling back the 13:50 deploy as the most likely fix” — because everyone's next steps depend on which is which.
   - [Extracting requirements](#extracting-requirements): people assume you already know what's obvious to them, so an unsaid thing may be settled or may never have been considered — confirm everything of importance.
   - [Providing a PR review](#providing-a-pr-review): the author can't tell a shared standard from your personal preference — label taste as taste: “I'd have used a map here, but that's me”.
@@ -4895,8 +4909,8 @@ where the book leans on it.
   - [Giving and receiving feedback](#giving-and-receiving-feedback): praise in public lifts most people, but some prefer the same words in a DM. Some would rather have the blunt version than the careful one.
   - [Crossing cultures](#crossing-cultures): a culture is an average, so “people from X are blunt” is a starting guess.
   - [Talking to non-developers](#talking-to-non-developers): “the business” is not a single voice — two teams under the same boss can hold opposite priorities, so learn the specifics.
-  - [Mentoring](#mentoring): assume too much and they miss the point, assume too little and they're offended — figure out where they stand.
-  - [Working with your manager](#working-with-your-manager): most of the advice assumes a decent manager, and not all of them are — calibrate how much you share to the trust you have actually built.
+  - [Mentoring](#mentoring): assume too much and the mentee misses the point, assume too little and they're offended — figure out where they stand.
+  - [Working with your manager](#working-with-your-manager): most of the advice assumes a decent manager, and not all of them are.
   - [How to read it](#how-to-read-it): this book assumes an approximate average working environment too, and yours diverges from it somewhere — that divergence is your cue to ignore the advice or adjust it.
   :::
 
@@ -4905,8 +4919,8 @@ where the book leans on it.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Comments](#comments): a comment is a message to a stranger reading the code five years from now — record what can't be recovered from the code itself: the why, the constraints, the history.
-  - [Error messages](#error-messages): give the future reader enough to act on — “can't update the address of an inactive user; reactivate the account first” beats “operation unsupported”.
-  - [Logging](#logging): the infrastructure already stamps time, service and host — a log line should add what can't be reconstructed: the why and the values involved.
+  - [Error messages](#error-messages): give the future reader enough to act on.
+  - [Logging](#logging): a log line should add what can't be reconstructed: the why and the values involved.
   - [Naming things](#naming-things): a name is read far more often than it's written and has to survive years of readers who won't open the docs around it.
   - [Postmortems](#postmortems): the people in the room already learned the lesson — write it for those who weren't there; it's the organisation's memory of what happened.
   - [Making your work visible](#making-your-work-visible): someone will investigate your work when you're not around to ask — leave breadcrumbs by linking the commits, tickets and conversations together.
