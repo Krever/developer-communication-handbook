@@ -5037,13 +5037,13 @@ piece of advice, more concrete than the overall approach.
   conventions and smiles matter, and every review, refusal or rejection builds or spends social capital.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
-  - [Getting a PR review](#getting-a-pr-review): a half-baked pull request signals you didn't value the reviewer's time — they'll be slower to pick up your next one.
-  - [Communicating in public](#communicating-in-public): every public comment is permanent and tied to your name — write it as if the person you're talking about, and your next employer, will read it. They can, and will.
+  - [Getting a PR review](#getting-a-pr-review): a half-baked pull request signals you didn't value the reviewer's time.
+  - [Communicating in public](#communicating-in-public): every public comment is permanent and tied to your name.
   - [Search](#search): recruiters remember how you treated them — turn down offers with basic decency.
   - [Result](#result): take a rejection gracefully (asking for feedback is fine) — the industry is smaller than it feels, and how you took the “no” gets remembered.
   :::
 
-- **Control your emotions** — emotions pass but messages stay. Never send under strong emotion; draft, sit on it,
+- **Control your emotions** — emotions pass but messages stay. Never send under strong emotion: draft, sit on it,
   then delete (or not).
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
@@ -5054,13 +5054,13 @@ piece of advice, more concrete than the overall approach.
   - [Postmortems](#postmortems): don't write it mid-adrenaline — mitigate, rest, then write while it's still fresh.
   :::
 
-- **You and them against the problem** — code not person, problem not complaint, blameless postmortems, behaviour not
-  character.
+- **You and them against the problem** — point at the code, the behaviour, the outcome, never at the person behind
+  it. The moment someone has to defend themselves, they have stopped helping you fix anything.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Providing a PR review](#providing-a-pr-review): comment on the code, not the person — “this function swallows the error”, not “you swallowed the error”.
-  - [Postmortems](#postmortems): blameless by design — describe what the system did and what people knew, never who made the mistake; blame makes people hide the next incident.
-  - [Escalating when you're stuck](#escalating-when-youre-stuck): escalation is about the problem; the moment it's about a person it becomes a complaint — “this is blocked and we might miss the deadline”, never “XXX is slacking”.
+  - [Postmortems](#postmortems): blameless by design — describe what the system did and what people knew, never who made the mistake, because blame makes people hide the next incident.
+  - [Escalating when you're stuck](#escalating-when-youre-stuck): escalation is about the problem, and the moment it's about a person it becomes a complaint — “this is blocked and we might miss the deadline”, never “XXX is slacking”.
   - [Disagreeing and pushing back](#disagreeing-and-pushing-back): aim at the problem — “the deadline is tight”, not “your deadline is wrong”.
   :::
 
@@ -5081,8 +5081,8 @@ piece of advice, more concrete than the overall approach.
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Asking](#asking): don't inflate urgency — if everything you send is “urgent”, your real deadlines stop being trusted.
   - [Providing estimates](#providing-estimates): don't overdo the padding — always beating your estimates by a wide margin teaches people to discount them.
-  - [Performance reviews](#performance-reviews): underselling harms your result, inflating harms your credibility — stick to facts you can defend.
-  - [Search](#search): “quantify your impact” is a trap unless the number survives scrutiny — remove from your CV anything you can't talk about for a couple of minutes.
+  - [Performance reviews](#performance-reviews): underselling harms your result, while inflating harms your credibility — stick to facts you can defend.
+  - [Search](#search): “quantify your impact” is a trap unless the number survives scrutiny. Remove from your CV anything you can't talk about for a couple of minutes.
   - [Getting buy-in](#getting-buy-in): the decider bets on you as much as on the idea — spend your credibility on the asks that matter, and find a sponsor when you're short.
   - [Using AI](#using-ai): pasting model output puts your name on something you might not be able to defend — “AI wrote it” is not an acceptable excuse.
   :::
