@@ -4928,7 +4928,8 @@ piece of advice, more concrete than the overall approach.
 
 ### Reading the other side
 
-- **Look behind the message** — think why a question is asked or a message is posted; don't take it at face value.
+- **Look behind the message** — think why a question is asked or a message is posted, rather than taking it at
+  face value.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Extracting requirements](#extracting-requirements): stakeholders ask for a solution (“add a button X”) when what they have is a problem — dig into why the feature is needed before building what was literally requested.
@@ -4940,7 +4941,7 @@ piece of advice, more concrete than the overall approach.
 - **What looks wrong might be deliberate** — the other side can have context you can't see. Ask why before judging.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
-  - [Providing a PR review](#providing-a-pr-review): the author may have constraints agreed elsewhere or approaches already tried — ask “is there a reason this isn't X?” rather than “change this to X”. Half the time there is a reason.
+  - [Providing a PR review](#providing-a-pr-review): the author may have constraints agreed elsewhere or approaches already tried — ask “is there a reason this isn't X?” rather than “change this to X”.
   - [Onboarding](#onboarding): in a new codebase the weird code, patterns and practices are usually “wrong” for a reason — learn the history before proposing changes.
   - [Disagreeing and pushing back](#disagreeing-and-pushing-back): you might be the one missing context — ask and understand why before declaring something wrong.
   - [Crossing cultures](#crossing-cultures): a colleague who seems too blunt or too quiet is usually following their culture's defaults, not being rude — assume good intent.
@@ -4959,7 +4960,7 @@ piece of advice, more concrete than the overall approach.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Getting a PR review](#getting-a-pr-review): a request to a group triggers the bystander effect, and the more people it reaches the stronger it gets — ask two or three named people.
-  - [Asking](#asking): always `@mention` someone, even if you're not sure they're the right one — a wrong pick gets redirected; an untargeted message gets silence.
+  - [Asking](#asking): always `@mention` someone, even if you're not sure they're the right one — a wrong pick gets redirected, while an untargeted message gets silence.
   - [Escalating when you're stuck](#escalating-when-youre-stuck): a stalemate can persist just because nobody feels entitled to decide — name the decision-maker: “\@Alice, I think this is your call”.
   - [Incident coordination](#incident-coordination): a dedicated, named comms owner (the incident commander) keeps the updates flowing while everyone else focuses on the fix.
   - [Postmortems](#postmortems): action items without an owner have very little chance of getting done — assign each one explicitly.
