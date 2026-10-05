@@ -4970,12 +4970,12 @@ piece of advice, more concrete than the overall approach.
 ### Owning the exchange
 
 - **You own the outcome, not just the sending** — sent doesn't mean received, received doesn't mean
-  understood. Getting the answer/review/decision is your job, not just asking for it.
+  understood. Your job is getting the answer/review/decision you need, not just asking for it.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Getting a PR review](#getting-a-pr-review): getting code reviewed promptly and thoroughly is the author's job, even though someone else does the reading.
   - [Responding](#responding): for important messages ask for a confirmation and treat silence as “not received”.
-  - [Escalating when you're stuck](#escalating-when-youre-stuck): escalating feels like nagging, so the natural move is to sit on the blocker — but you're responsible for your results, and doing nothing is failing that responsibility.
+  - [Escalating when you're stuck](#escalating-when-youre-stuck): escalating feels like nagging, but you're responsible for your results.
   - [Talking to non-developers](#talking-to-non-developers): your words get acted on — “it's almost done” turns into “we release on Friday” — so make sure you've been understood, not just heard.
   :::
 
@@ -5015,20 +5015,20 @@ piece of advice, more concrete than the overall approach.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Disagreeing and pushing back](#disagreeing-and-pushing-back): spoken disagreements evaporate — if it later goes wrong, nobody remembers the trade-off was flagged. Put “we chose X, accepting risk Y” on record, as a shared note rather than an “I told you so” in waiting.
-  - [Extracting requirements](#extracting-requirements): everyone forgets what was agreed — capture the decisions and the reasoning, not a transcript nobody will read.
-  - [Incident coordination](#incident-coordination): mid-firefight nobody remembers what was changed when, and two responders can roll back different things at once — keep a running log; it becomes the postmortem timeline.
+  - [Extracting requirements](#extracting-requirements): everyone forgets what was agreed — capture the decisions and the reasoning.
+  - [Incident coordination](#incident-coordination): mid-firefight nobody remembers what was changed when, and two responders can roll back different things at once — keep a running log, and it becomes the postmortem timeline.
   - [Getting buy-in](#getting-buy-in): you might face “who approved this?” one day — get the approval in writing if the ask demands it.
   - [Making your work visible](#making-your-work-visible): justifying a promotion from memory alone is really hard — build a brag document as you go.
   :::
 
-- **Communicate in the open** — easier to ignore a message than to become a telepath; DMs as the exception, not the
-  norm.
+- **Communicate in the open** — it's easier to ignore a message than to become a telepath — DMs as the exception, not
+  the norm.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Making your work visible](#making-your-work-visible): you can never know who already solved your problem, is solving it right now, or learned the hard way why it can't be solved — discuss in public channels by default, DMs as the exception.
   - [Escalating when you're stuck](#escalating-when-youre-stuck): a private nudge is polite but invisible — when it fails, move to a shared channel, keeping the problem public and the person out of it.
   - [Postmortems](#postmortems): the bad thing already happened and sharing it can't make it worse — publish widely and make it findable.
-  - [Giving and receiving feedback](#giving-and-receiving-feedback): praise in public, where it lifts the person and shows everyone what good looks like; keep criticism private.
+  - [Giving and receiving feedback](#giving-and-receiving-feedback): praise in public, where it lifts the person and shows everyone what good looks like, and keep criticism private.
   :::
 
 ### Conducting yourself
