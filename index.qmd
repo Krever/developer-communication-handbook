@@ -5179,7 +5179,7 @@ roughly the order I'd reach for them, followed by deeper dives on single topics.
   (Steve McConnell) — a whole book on what [Providing estimates](#providing-estimates) squeezes into a page. Read it
   if estimates rule your life.
 * [*TED Talks: The Official TED Guide to Public Speaking*](https://www.goodreads.com/book/show/41044212-ted-talks)
-  (Chris Anderson) — for [Presenting](#presenting), from the man who runs TED.
+  (Chris Anderson) — for [Presenting](#presenting), from the man who ran TED for 25 years.
 * [*Demystifying Public Speaking*](https://www.goodreads.com/book/show/32784222-demystifying-public-speaking) (Lara
   Hogan) — the alternative for nervous engineers: short, practical and gentle.
 * [How to Speak](https://www.youtube.com/watch?v=Unzc731iCUY) (Patrick Winston) — an hour of concrete heuristics
