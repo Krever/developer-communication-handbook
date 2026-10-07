@@ -5124,21 +5124,21 @@ piece of advice, more concrete than the overall approach.
 
 ## Outro
 
-One caveat before you go. This whole book was about packaging: how to shape a message, whom to aim it at, when to
-send it. And that packaging is not optional, but it's also not enough. **At the end of the day you have to have something to say**,
-and no amount of technique will hide it if you don't.
+One caveat before you go. Even if you somehow magically remember and internalise this whole book, it won't be enough.
+That's because we talked only about packaging: how to shape a message, whom to aim it at, when to
+send it. And that packaging is important, but **at the end of the day you have to have something to say** — no amount of
+technique will hide it if you don't.
 
-The other thing worth saying: this skill compounds. The estimate that was believed, the review that didn't
-make an enemy, the escalation that worked — none of them look like much on their own, but stack a few years of them
-and people start noticing. They might not know what they notice exactly, but the way you're perceived changes. And that's something that
+The other thing worth saying: this skill compounds. Making one message a little more precise, naming a class a little better or getting a review slightly sooner — none
+of them look like much on their own, but over a few years you stack up thousands of them and people start
+noticing. They might not know what they notice exactly, but the way you're perceived changes. And that's something that
 can push your career forward when you've already achieved technical mastery.
 
-One more thing, for when the advice above runs out. Whatever the mess — a conflict you can't resolve, a blocker
-nobody will clear, politics you can't read — [your manager](#working-with-your-manager) is the escape hatch, and
-helping you through it is literally their job. Plenty of developers hide exactly those problems from the one person
-paid to remove them. Ask.
+And when the advice in this book isn't enough, whatever the mess — a conflict, a blocker or politics —
+[your manager](#working-with-your-manager) is the escape hatch, and helping you through it is what they are paid
+for. Ask.
 
-There is still no way to know what's inside the receiver's head. Until evolution ships that update, understand, adjust, repeat.
+There is still no way to know what's inside the other person's head. Until evolution ships that update, understand, adjust, repeat.
 
 ## Appendix: Resources
 
