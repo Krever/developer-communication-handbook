@@ -65,7 +65,7 @@ understand people we talk with and how to adjust our communication so they hear 
   somewhere — that's your cue to consciously ignore the advice or adjust it. And not every situation justifies the
   careful treatment described here; knowing when to let go is part of the skill.
 * **As a baseline.** Communication is an art and you will end up with your own style eventually. One book won't get
-  you there — there is a lot here, but expect to read [half a dozen more](#appendix-resources) to actually get good at
+  you there — there is a lot here, but expect to read [a dozen more](#appendix-resources) to actually get good at
   this.
 
 ## Before development
@@ -937,6 +937,9 @@ vs.
 > Can't update the address of an inactive user. Reactivate the account from the user's main screen first,
 > then try again. [ADDR-409]
 
+The first is true and completely useless. The second says what failed, what to do about it, and hands the reader something they
+can paste into a support ticket.
+
 #### Logging
 
 A log line completes the trio of messages into the future: a comment explains the code, an error explains the problem,
@@ -951,7 +954,8 @@ and a log line explains what happened.
 <tr id="logging-r1">
   <td valign="top">
     <ul>
-      <li>Whoever reads the logs is likely scanning them under pressure, e.g. during an incident.</li>
+      <li>Whoever reads the logs is likely scanning them under pressure — possibly at 3am, on a phone, woken by an
+        alert they don’t understand yet.</li>
     </ul>
   </td>
   <td valign="top">
@@ -963,7 +967,10 @@ and a log line explains what happened.
 <tr id="logging-r2">
   <td valign="top">
     <ul>
-      <li>Nobody reads logs until something breaks, and then they read a flood of lines at once. Noise hides the signal.</li>
+      <li>Nobody reads logs until something breaks, and then they read a flood of lines at once. Noise hides the
+        signal.</li>
+      <li>Logging everything at ERROR feels safer, in the same way <code>catch (Exception e)</code> feels safer.
+        It fails the same way.</li>
     </ul>
   </td>
   <td valign="top">
@@ -1163,7 +1170,9 @@ A few names done in two ways:
 
 Docs are a way to move the knowledge from your head to other people, most of whom you will never meet.
 But those docs are also a liability, the same way the code is —
-every documentation page has to be kept up-to-date or it turns into a trap. The art is writing as little as you can get away with, but enough to solve the real problems that arise from the lack of it.
+every documentation page has to be kept up-to-date or it turns into a trap. The art is writing as little as you can get away with, but enough to solve the real problems that arise from the
+lack of it. This section is about how much to write and where to put it — for the *what to write* side, you can start with
+[Diátaxis](https://diataxis.fr).
 
 ```{=html}
 <table>
@@ -1286,6 +1295,8 @@ Most of it comes down to lowering the effort you ask of the people whose attenti
   <td valign="top">
     <ul>
       <li>The bigger the changeset, the less likely it is to be (thoroughly) reviewed.</li>
+      <li>Everyone repeats “keep pull requests small” and almost nobody does, because the work doesn’t naturally arrive in
+        small pieces. You have to deliberately cut it into them.</li>
     </ul>
   </td>
   <td valign="top">
@@ -1359,7 +1370,8 @@ Most of it comes down to lowering the effort you ask of the people whose attenti
   </td>
   <td valign="top">
     <ul>
-      <li>Put a soft deadline or expectation on when you want the review.</li>
+      <li>Put a soft deadline or expectation on when you want the review - “No rush, but I’d like to merge this before
+        Thursday’s release”.</li>
     </ul>
   </td>
 </tr>
@@ -1600,7 +1612,7 @@ out, with a label that says up front how much it matters.
 
 ### Talking to non-developers
 
-Sooner or later your work has to be explained to someone who doesn't write or even read code, like a product manager, a support agent or your grandma.
+One day your work has to be explained to someone who doesn't write or even read code, like a product manager, a support agent or your grandma.
 In such cases you have to become a translator from technicalese to legalese, accountinglese and other dialects that resemble English only on the surface.
 (The other direction — extracting information _from_ them — is covered in [Extracting requirements](#extracting-requirements).)
 
@@ -2313,7 +2325,7 @@ with them.
     <ul>
       <li>Ping as few people as possible (but don’t hesitate to bring in people who are actually needed).</li>
       <li>When pulling someone into a long thread, give a one-line summary of what’s needed from them instead of
-        “see above”. Yes, Slack can AI-summarize threads now, but it still can be you to execute that.</li>
+        “see above”. Yes, Slack can AI-summarise threads now, but it still can be you to execute that.</li>
     </ul>
   </td>
 </tr>
@@ -3583,7 +3595,7 @@ Conversations with your manager are the ones with the most impact on your career
 <tr id="working-with-your-manager-r4">
   <td valign="top">
     <ul>
-      <li>A manager’s job is to help you grow, but they aren’t mind readers. If you never say you want to work on X or grow toward Y, you won’t.</li>
+      <li>A manager’s job is to help you grow, but they aren’t mind readers. If you never say you want to work on X or grow towards Y, you won’t.</li>
     </ul>
   </td>
   <td valign="top">
@@ -3856,7 +3868,7 @@ When you have to evaluate yourself and receive an evaluation from your manager.
   <td valign="top">
     <ul>
       <li>How much you grew usually matters more than how good you are — especially early in your career. At senior
-        levels the bar shifts toward sustained impact.</li>
+        levels the bar shifts towards sustained impact.</li>
     </ul>
   </td>
   <td valign="top">
@@ -4011,7 +4023,7 @@ The manager can't do anything with the first. The second names the pattern, the 
 
 ### Mentoring
 
-At some point your job will be not only about you and the tasks but also about the people around you. And one aspect of that is helping them learn, sometimes through mentoring sessions.
+Eventually your job stops being only about you and the tasks, and starts being about the people around you. And one aspect of that is helping them learn, sometimes through mentoring sessions.
 And this activity is almost pure communication.
 
 ```{=html}
@@ -4501,7 +4513,7 @@ You got the job, but there are still a few things worth getting right.
 
 ### Interviewing candidates
 
-Sooner or later you'll be on the other side of the table, interviewing candidates yourself — quite likely with no training, or very little of it. The golden rule here is "treat others as you would like to be treated".
+One day the calendar invite arrives and you are on the other side of the table, interviewing candidates yourself — quite likely with no training, or very little of it. The golden rule here is "treat others as you would like to be treated".
 
 ```{=html}
 <table>
@@ -4631,7 +4643,7 @@ All of which makes them less nervous, and that means more signal for you.
 
 ### Presenting
 
-At some point in your career you will be forced to present something, whether you want to or not. It can be a new feature, a new idea, a knowledge sharing session or anything in between.
+Somebody will eventually make you present something, whether you want to or not. It can be a new feature, a new idea, a knowledge sharing session or anything in between.
 This section is aimed at people who got dragged into it without any prior interest in the craft.
 You won't become a keynote speaker from one handbook section, but that's not the goal.
 The goal is to help you survive — and maybe even like — the internal talk you got handed. If you want to go deeper, you will find whole books on the topic in the [resources](#appendix-resources).
@@ -4866,7 +4878,7 @@ piece of advice, more concrete than the overall approach.
   - [Technical design](#technical-design): the longer the doc, the less likely a thorough review — keep it short, goal, decision and consequences first.
   - [Documentation](#documentation): nobody reads docs start to finish — build them from headings and snippets a reader can jump to.
   - [Search](#search): your CV gets a few seconds before it's binned or kept — pick clear signals and make them land within those seconds.
-  - [Presenting](#presenting): most talks try to say too much — pick the one thing they should walk away with and emphasize it.
+  - [Presenting](#presenting): most talks try to say too much — pick the one thing they should walk away with and emphasise it.
   :::
 
 - **Concrete beats abstract** — examples, names, numbers, quoted phrases. Vague phrasing can't be acted on and
@@ -4874,7 +4886,7 @@ piece of advice, more concrete than the overall approach.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Giving and receiving feedback](#giving-and-receiving-feedback): “good job” and “be more proactive” carry only sentiment — point at the thing and its effect: “in yesterday's standup you cut Ana off twice, and she went quiet for the rest of it”.
-  - [Extracting requirements](#extracting-requirements): business people think in happy paths — walking through concrete examples (“so the refund always goes back to the original card, right?”) flushes out the edge cases not mentioned before.
+  - [Extracting requirements](#extracting-requirements): business people think in happy paths — walk concrete examples through with them, and say your own guess out loud to be corrected: “so the refund always goes back to the original card, right?”.
   - [Making your work visible](#making-your-work-visible): “the import now runs in 5 minutes instead of 40” informs; “I did an amazing job on the import” brags and is useless.
   - [Your peers'](#your-peers): “Marek is hard to work with” gives the manager nothing — “in the last two design reviews he dismissed the alternatives before they were explained” names the pattern, the situations and the impact.
   - [Talking to non-developers](#talking-to-non-developers): abstract detail lands as noise — say what the user sees: “the duplicate-charge fix should be live for customers on Tuesday”, not “the PR is merged, waiting on the migration”.
@@ -5050,7 +5062,7 @@ piece of advice, more concrete than the overall approach.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Responding](#responding): never send under strong emotion, anger especially — write the draft, sit on it, then delete it (or not).
-  - [Performance reviews](#performance-reviews): a low rating stings, but don't fight it in the meeting — ask what it was based on, take it away, come back with evidence rather than emotion.
+  - [Your own](#your-own): a low rating stings, but don't fight it in the meeting — ask what it was based on, take it away, come back with evidence rather than emotion.
   - [Giving and receiving feedback](#giving-and-receiving-feedback): give feedback fresh, but never in the heat of the moment — let the emotions settle first, yours and theirs.
   - [Incident coordination](#incident-coordination): people follow the room temperature and escalate it — keep updates calm and factual even when everything is on fire.
   - [Postmortems](#postmortems): don't write it mid-adrenaline — mitigate, rest, then write while it's still fresh.
@@ -5083,7 +5095,7 @@ piece of advice, more concrete than the overall approach.
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Asking](#asking): don't inflate urgency — if everything you send is “urgent”, your real deadlines stop being trusted.
   - [Providing estimates](#providing-estimates): don't overdo the padding — always beating your estimates by a wide margin teaches people to discount them.
-  - [Performance reviews](#performance-reviews): underselling harms your result, while inflating harms your credibility — stick to facts you can defend.
+  - [Your own](#your-own): underselling harms your result, while inflating harms your credibility — stick to facts you can defend.
   - [Search](#search): “quantify your impact” is a trap unless the number survives scrutiny. Remove from your CV anything you can't talk about for a couple of minutes.
   - [Getting buy-in](#getting-buy-in): the decider bets on you as much as on the idea — spend your credibility on the asks that matter, and find a sponsor when you're short.
   - [Using AI](#using-ai): pasting model output puts your name on something you might not be able to defend — “AI wrote it” is not an acceptable excuse.
@@ -5095,7 +5107,7 @@ piece of advice, more concrete than the overall approach.
 
   ::: {.callout-note appearance="minimal" collapse="true" icon="false" title="Examples"}
   - [Technical design](#technical-design): scale the format to how important and hard to undo the decision is — a quick FYI, a discussion, an ADR or a full RFC.
-  - [Documentation](#documentation): every doc is a liability that has to be kept current or it turns into a trap — write as little as you can get away with, and skip the pages nobody asked for.
+  - [Documentation](#documentation): every live doc is a liability that has to be kept current or it turns into a trap — write as little as you can get away with, and skip the pages nobody asked for.
   - [Naming things](#naming-things): a single letter is fine for a lambda variable, while a public API field will be read for years and deserves dedicated thought.
   - [Postmortems](#postmortems): match the effort to the severity — sometimes a short message, sometimes a full report and hours of discussion.
   - [Getting buy-in](#getting-buy-in): a 👍 on Slack covers a small reversible change, while the weighty ones are worth a formal sign-off — demanding it for everything looks weird.
@@ -5125,7 +5137,7 @@ piece of advice, more concrete than the overall approach.
 ## Outro
 
 One caveat before you go. Even if you somehow magically remember and internalise this whole book, it won't be enough.
-That's because we talked only about packaging: how to shape a message, whom to aim it at, when to
+That's because we talked mostly about packaging: how to shape a message, whom to aim it at, when to
 send it. And that packaging is important, but **at the end of the day you have to have something to say** — no amount of
 technique will hide it if you don't.
 
@@ -5142,8 +5154,8 @@ There is still no way to know what's inside the other person's head. Until evolu
 
 ## Appendix: Resources
 
-The intro promised you'd need half a dozen more books to actually get good at this. Here they are (rounding up), in
-roughly the order I'd reach for them, followed by deeper dives on single topics.
+The intro promised you'd need a dozen more books to actually get good at this. Here are eleven, in roughly the order
+I'd reach for them, plus a handful of shorter things worth your time, followed by deeper dives on single topics.
 
 **On communication itself:**
 
