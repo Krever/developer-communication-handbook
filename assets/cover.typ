@@ -49,7 +49,7 @@
 #place(top + left, dx: 132pt, dy: 812pt,
   block(width: 860pt)[
     #set par(leading: 14pt)
-    #text(font: "Newsreader", size: 44pt, style: "italic", fill: muted)[Communication advice tailored to people who build software]
+    #text(font: "Newsreader", size: 44pt, style: "italic", fill: muted)[From code review comments to handing in your notice]
   ])
 
 // Author.

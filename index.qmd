@@ -1,5 +1,6 @@
 ---
 title: "The Developer Communication Handbook"
+subtitle: "From code review comments to handing in your notice"
 author: "Voytek Pitula"
 date-modified: last-modified
 ---
