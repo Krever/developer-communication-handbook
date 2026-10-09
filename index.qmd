@@ -3195,6 +3195,27 @@ But sometimes a good ask isn't enough.
 </table>
 ```
 
+Here is the same escalation — a decision the team has gone quiet on for a week — posted in two ways.
+
+> Third time asking about this. \@Tomasz \@Marta is anyone going to make a decision here? I've been blocked a week
+> and it's getting silly.
+
+vs.
+
+> Bumping the queue decision — still blocked, and the billing work behind it is now at risk of slipping past
+> the April deadline.
+>
+> Since last week I've costed both options: Postgres is about three days, Kafka about two weeks and needs ops
+> capacity we don't have.
+>
+> Unless I hear otherwise by Wednesday I'll go with Postgres and write the trade-off down. \@Marta — you own the
+> platform roadmap, so if that's the wrong call, please let me know.
+
+The first is about two people who haven't replied. The second is about a date that is going to be missed, and it
+carries something that didn't exist last week: the costing. It also makes the decision cheap to give — there is a
+default, so nobody has to design an answer, only object to one — and it says who gets to object and why it is
+theirs. Nobody has to be accused for any of that to work in a public channel.
+
 ### Delivering bad news
 
 Sooner or later you'll have to tell someone something they don't want to hear.
@@ -3690,6 +3711,33 @@ Conversations with your manager are the ones with the most impact on your career
 </tbody>
 </table>
 ```
+
+Here is the same opening minute of a 1:1, twice.
+
+> **Manager:** Anything on your mind?
+>
+> **You:** Not really. Migration's going fine. How about you?
+
+vs.
+
+> **Manager:** Anything on your mind?
+>
+> **You:** Three things. First, the migration slipped a week — the provider's sandbox was down for three days.
+> Nothing I need from you, I just didn't want you hearing it from the report first.
+>
+> *…*
+>
+> **You:** Second: I'd like to lead the next piece of work that has a real design phase. What would you need to see
+> from me before that's an easy yes?
+>
+> *…*
+>
+> **You:** Last one, and I don't have an answer to it — review turnaround is getting slow and it isn't any one
+> person. Can we look at that together?
+
+The first hands the half hour back. The second spends it: something they should hear from you rather than from a
+report, something you want, phrased so it can actually be answered, and something you are not trying to solve on
+your own.
 
 ### Giving and receiving feedback
 
