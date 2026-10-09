@@ -2378,6 +2378,30 @@ with them.
 </table>
 ```
 
+Here is the same reply — to “do you know how to make the retry wrapper work with the new auth client?” — in two ways.
+
+> *(seen; nothing for two days)*
+>
+> Oh I saw this, sorry! So the auth client thing is a bit tricky, we had a whole discussion about it last quarter,
+> basically the new one refreshes tokens differently and there were some thread pool issues too. Have you looked at
+> the wiki page?
+
+vs.
+
+> *(👀 within a minute)*
+>
+> Wrap the retry *inside* the auth client, not around it — outside, you retry with a stale token.
+>
+> I can't look at it properly before Thursday. Marta set this up originally and will be faster than me — \@Marta,
+> worth five minutes?
+>
+> One thing: if what you're really after is surviving a provider outage, retries alone won't get you there. Worth a
+> quick call before you build it.
+
+The first leaves them waiting two days and then makes them dig for the answer. The second costs about the same
+typing and does four jobs: the emoji stops them wondering whether it landed, the answer comes before the caveats,
+someone else is named while you're busy, and the question behind the question gets flagged.
+
 ### Talking
 
 Meetings are the most dreaded and the most expensive way to communicate — and, when done right, also the most effective
@@ -2514,6 +2538,25 @@ one. The trick is paying that cost only where it makes sense.
 </tbody>
 </table>
 ```
+
+A meeting isn't text, but the invite is. Here is the same one written in two ways.
+
+> **Sync**
+> Tomorrow 10:00–11:00 · 8 people, all required
+>
+> *(no description)*
+
+vs.
+
+> **Decide: do we migrate the payment queue this quarter?**
+> Tomorrow 10:00–10:30
+> Required: Marta, Paolo. Optional: everyone else — I'll put the decision in the thread afterwards.
+>
+> One decision to make: migrate now, or after the enterprise deal lands. Both options and the numbers are in the
+> doc (link). Read it if you can; I'll give a two-minute recap if not.
+
+The first costs eight people an hour and cannot fail, because it has no goal to fail at. The second costs two people
+half an hour, tells everyone else they are free to skip it, and ends the moment the decision is made.
 
 ### Crossing cultures
 
